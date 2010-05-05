@@ -1,0 +1,1062 @@
+# Swedish translation of drupal (6.13)
+# Copyright (c) 2009 by the Swedish translation team
+# Generated from files:
+#  content_types.inc,v 1.50.2.2 2009/04/27 14:28:57 goba
+#  node.admin.inc,v 1.19.2.3 2009/06/08 16:45:34 goba
+#  node.pages.inc,v 1.28.2.4 2009/04/27 11:35:01 goba
+#  node.module,v 1.947.2.15 2009/02/16 14:39:40 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-08-04 10:44+0200\n"
+"PO-Revision-Date: 2009-05-19 22:58+0200\n"
+"Language-Team: Swedish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/node/content_types.inc:42
+msgid "No content types available."
+msgstr "Inga innehållstyper tillgängliga."
+
+#: modules/node/content_types.inc:75
+msgid ""
+"The human-readable name of this content type. This text will be displayed as "
+"part of the list on the <em>create content</em> page. It is recommended that "
+"this name begin with a capital letter and contain only letters, numbers, and "
+"<strong>spaces</strong>. This name must be unique."
+msgstr ""
+"Det synliga namnet på denna innehållstyp. Denna text kommer att visas i "
+"listan på <em>skapa innehåll</em>-sidan. Detta namn bör inledas med en "
+"versal bokstav och bara innehålla bokstäver, siffror och <strong>mellanslag</"
+"strong>. Namnet måste vara unikt."
+
+#: modules/node/content_types.inc:86
+msgid ""
+"The machine-readable name of this content type. This text will be used for "
+"constructing the URL of the <em>create content</em> page for this content "
+"type. This name must contain only lowercase letters, numbers, and "
+"underscores. Underscores will be converted into hyphens when constructing "
+"the URL of the <em>create content</em> page. This name must be unique."
+msgstr ""
+"Det maskinläsbara namnet på denna innehållstyp. Denna text kommer att "
+"användas för att bygga upp URL:en till <em>skapa innehåll</em>-sidan för "
+"denna innehållstyp. Namnet får bara innehålla gemena bokstäver, siffror och "
+"understreck. Understreck konverteras till bindestreck när URL:en till "
+"<em>skapa innehåll</em>-sidan byggs. Namnet måste vara unikt."
+
+#: modules/node/content_types.inc:98
+msgid ""
+"The machine-readable name of this content type. This field cannot be "
+"modified for system-defined content types."
+msgstr ""
+"Det maskinläsbara namnet på denna innehållstyp. Detta fält kan inte ändras "
+"för innehållstyper som definierats av systemet."
+
+#: modules/node/content_types.inc:106
+msgid ""
+"A brief description of this content type. This text will be displayed as "
+"part of the list on the <em>create content</em> page."
+msgstr ""
+"En kort beskrivning av denna innehållstyp. Denna text visas i listan på "
+"<em>skapa innehåll</em>-sidan."
+
+#: modules/node/content_types.inc:111
+msgid "Submission form settings"
+msgstr "Inställningar för inskrivningsformulär"
+
+#: modules/node/content_types.inc:116
+msgid "Title field label"
+msgstr "Rubrikfältets etikett"
+
+#: modules/node/content_types.inc:125
+msgid "This content type does not have a title field."
+msgstr "Denna innehållstyp saknar rubrikfält."
+
+#: modules/node/content_types.inc:129
+msgid "Body field label"
+msgstr "Brödtextfältets etikett"
+
+#: modules/node/content_types.inc:132
+msgid ""
+"To omit the body field for this content type, remove any text and leave this "
+"field blank."
+msgstr ""
+"För att utelämna brödtextfältet för denna innehållstyp, ta bort all text och "
+"lämna detta fält tomt."
+
+#: modules/node/content_types.inc:136
+msgid "Minimum number of words"
+msgstr "Minsta antal ord"
+
+#: modules/node/content_types.inc:139
+msgid ""
+"The minimum number of words for the body field to be considered valid for "
+"this content type. This can be useful to rule out submissions that do not "
+"meet the site's standards, such as short test posts."
+msgstr ""
+"Det minsta antalet ord som fältet för brödtext måste ha för att anses som "
+"giltigt för denna innehållstyp. Detta kan användas för att stoppa inlägg som "
+"inte följer webbplatsens standard, såsom korta testinlägg."
+
+#: modules/node/content_types.inc:143
+msgid "Explanation or submission guidelines"
+msgstr "Förklaring eller riktlinjer för inlägg"
+
+#: modules/node/content_types.inc:145
+msgid ""
+"This text will be displayed at the top of the submission form for this "
+"content type. It is useful for helping or instructing your users."
+msgstr ""
+"Denna text kommer att visas överst i formuläret för att lägga till innehåll "
+"av denna typ. Den kan användas för att hjälpa eller instruera dina användare."
+
+#: modules/node/content_types.inc:149
+msgid "Workflow settings"
+msgstr "Inställningar för arbetsflöde"
+
+#: modules/node/content_types.inc:154
+msgid "Default options"
+msgstr "Standardval"
+
+#: modules/node/content_types.inc:162
+msgid ""
+"Users with the <em>administer nodes</em> permission will be able to override "
+"these options."
+msgstr ""
+"Användare med behörigheten <em>administrera noder</em> kan åsidosätta dessa "
+"inställningar."
+
+#: modules/node/content_types.inc:192
+msgid "Save content type"
+msgstr "Spara innehållstyp"
+
+#: modules/node/content_types.inc:200,282
+msgid "Delete content type"
+msgstr "Radera innehållstyp"
+
+#: modules/node/content_types.inc:231
+msgid "The machine-readable name %type is already taken."
+msgstr "Det maskinläsbara namnet %type används redan."
+
+#: modules/node/content_types.inc:234
+msgid ""
+"The machine-readable name must contain only lowercase letters, numbers, and "
+"underscores."
+msgstr ""
+"Det maskinläsbara namnet får bara innehålla gemena bokstäver, siffror och "
+"understreck."
+
+#: modules/node/content_types.inc:239
+msgid "Invalid machine-readable name. Please enter a name other than %invalid."
+msgstr ""
+"Det maskinläsbara namnet är ogiltigt. Var vänlig ange ett annat namn än %"
+"invalid."
+
+#: modules/node/content_types.inc:246
+msgid "The human-readable name %name is already taken."
+msgstr "Det synliga namnet %name används redan."
+
+#: modules/node/content_types.inc:326
+msgid "The content type %name has been reset to its default values."
+msgstr "Innehållstypen %name har återställts till sina standardvärden."
+
+#: modules/node/content_types.inc:331
+msgid "The content type %name has been updated."
+msgstr "Innehållstypen %name har uppdaterats."
+
+#: modules/node/content_types.inc:334
+msgid "The content type %name has been added."
+msgstr "Innehållstypen %name har lagts till."
+
+#: modules/node/content_types.inc:383
+msgid "Are you sure you want to delete the content type %type?"
+msgstr "Är du säker på att du vill radera innehållstypen %type?"
+
+#: modules/node/content_types.inc:403
+msgid "The content type %name has been deleted."
+msgstr "Innehållstypen %name har raderats."
+
+#: modules/node/content_types.inc:335
+msgid "Added content type %name."
+msgstr "Innehållstypen %name lades till."
+
+#: modules/node/content_types.inc:404
+msgid "Deleted content type %name."
+msgstr "Raderade innehållstypen %name."
+
+#: modules/node/content_types.inc:350
+msgid "Changed the content type of 1 post from %old-type to %type."
+msgid_plural ""
+"Changed the content type of @count posts from %old-type to %type."
+msgstr[0] "Ändrade innehållstypen hos ett inlägg från %old-type till %type."
+msgstr[1] "Ändrade innehållstypen hos @count inlägg från %old-type till %type."
+
+#: modules/node/content_types.inc:388
+msgid ""
+"<strong>Warning:</strong> there is currently 1 %type post on your site. It "
+"may not be able to be displayed or edited correctly, once you have removed "
+"this content type."
+msgid_plural ""
+"<strong>Warning:</strong> there are currently @count %type posts on your "
+"site. They may not be able to be displayed or edited correctly, once you "
+"have removed this content type."
+msgstr[0] ""
+"<strong>Varning:</strong> det finns för närvarande 1 %type-inlägg på "
+"webbplatsen. Det kanske inte kan visas eller redigeras korrekt när du tagit "
+"bort denna innehållstyp."
+msgstr[1] ""
+"<strong>Varning:</strong> det finns för närvarande @count %type poster på "
+"webbplatsen. De kanske inte kan visas eller redigeras korrekt om du tar bort "
+"denna innehållstyp."
+
+#: modules/node/node.admin.inc:13
+msgid ""
+"If the site is experiencing problems with permissions to content, you may "
+"have to rebuild the permissions cache. Possible causes for permission "
+"problems are disabling modules or configuration changes to permissions. "
+"Rebuilding will remove all privileges to posts, and replace them with "
+"permissions based on the current modules and settings."
+msgstr ""
+"Om webbplatsen har problem med behörigheter kan du behöva bygga om "
+"behörighetscachen. Möjliga orsaker till behörighetsproblem kan vara "
+"inaktivering av moduler eller ändringar i behörighetsinställningarna. När "
+"man bygger om tas alla gamla behörigheter bort och ersätts med nya, baserade "
+"på nuvarande moduler och inställningar."
+
+#: modules/node/node.admin.inc:14
+msgid ""
+"Rebuilding may take some time if there is a lot of content or complex "
+"permission settings. After rebuilding has completed posts will automatically "
+"use the new permissions."
+msgstr ""
+"Ombyggnaden kan ta lång tid om det finns mycket innehåll, eller om "
+"behörigheterna är komplexa. När det är klart kommer inläggen automatiskt att "
+"använda de nya behörigheterna."
+
+#: modules/node/node.admin.inc:18
+msgid "Node access status"
+msgstr "Status för nodåtkomst"
+
+#: modules/node/node.admin.inc:28
+msgid "Number of posts on main page"
+msgstr "Antalet inlägg på förstasidan"
+
+#: modules/node/node.admin.inc:30
+msgid ""
+"The default maximum number of posts to display per page on overview pages "
+"such as the main page."
+msgstr ""
+"Det förvalda antalet inlägg som maximalt visas per sida på översiktssidor "
+"såsom förstasidan."
+
+#: modules/node/node.admin.inc:33
+msgid "Length of trimmed posts"
+msgstr "Längden på förkortade inlägg"
+
+#: modules/node/node.admin.inc:36
+msgid "200 characters"
+msgstr "200 tecken"
+
+#: modules/node/node.admin.inc:37
+msgid "400 characters"
+msgstr "400 tecken"
+
+#: modules/node/node.admin.inc:38
+msgid "600 characters"
+msgstr "600 tecken"
+
+#: modules/node/node.admin.inc:39
+msgid "800 characters"
+msgstr "800 tecken"
+
+#: modules/node/node.admin.inc:40
+msgid "1000 characters"
+msgstr "1000 tecken"
+
+#: modules/node/node.admin.inc:41
+msgid "1200 characters"
+msgstr "1200 tecken"
+
+#: modules/node/node.admin.inc:42
+msgid "1400 characters"
+msgstr "1400 tecken"
+
+#: modules/node/node.admin.inc:43
+msgid "1600 characters"
+msgstr "1600 tecken"
+
+#: modules/node/node.admin.inc:44
+msgid "1800 characters"
+msgstr "1800 tecken"
+
+#: modules/node/node.admin.inc:45
+msgid "2000 characters"
+msgstr "2000 tecken"
+
+#: modules/node/node.admin.inc:47
+msgid ""
+"The maximum number of characters used in the trimmed version of a post. "
+"Drupal will use this setting to determine at which offset long posts should "
+"be trimmed. The trimmed version of a post is typically used as a teaser when "
+"displaying the post on the main page, in XML feeds, etc. To disable teasers, "
+"set to 'Unlimited'. Note that this setting will only affect new or updated "
+"content and will not affect existing teasers."
+msgstr ""
+"Det maximala antalet tecken som används i den förkortade versionen av ett "
+"inlägg. Drupal använder denna inställning för att fastställa var långa "
+"inlägg ska kapas. Den förkortade versionen av ett inlägg används "
+"företrädesvis som ingress när inlägget visas på framsidan, i XML-flöden osv. "
+"För att stänga av ingresser, välj 'Obegränsat'. Observera att detta val bara "
+"påverkar nytt eller uppdaterat innehåll och inte befintliga ingresser."
+
+#: modules/node/node.admin.inc:52
+msgid "Preview post"
+msgstr "Förhandsvisa inlägg"
+
+#: modules/node/node.admin.inc:55
+msgid "Must users preview posts before submitting?"
+msgstr "Måste användarna förhandsvisa inlägg innan de sparas?"
+
+#: modules/node/node.admin.inc:72
+msgid "Are you sure you want to rebuild the permissions on site content?"
+msgstr "Är du säker på att du vill bygga om behörigheterna på webbplatsen?"
+
+#: modules/node/node.admin.inc:73
+msgid ""
+"This action rebuilds all permissions on site content, and may be a lengthy "
+"process. This action cannot be undone."
+msgstr ""
+"Denna åtgärd bygger om alla rättigheter för webbplatsens innehåll, och detta "
+"kan ta lång tid. Du kan inte ångra åtgärden."
+
+#: modules/node/node.admin.inc:90
+msgid "Publish"
+msgstr "Publicera"
+
+#: modules/node/node.admin.inc:95
+msgid "Unpublish"
+msgstr "Häv publicering"
+
+#: modules/node/node.admin.inc:100
+msgid "Promote to front page"
+msgstr "Publicera på förstasidan"
+
+#: modules/node/node.admin.inc:105
+msgid "Demote from front page"
+msgstr "Ta bort från förstasidan"
+
+#: modules/node/node.admin.inc:110
+msgid "Make sticky"
+msgstr "Visa överst i listor"
+
+#: modules/node/node.admin.inc:115
+msgid "Remove stickiness"
+msgstr "Visa inte överst i listor"
+
+#: modules/node/node.admin.inc:135,492
+msgid "published"
+msgstr "publicerad"
+
+#: modules/node/node.admin.inc:136,492
+msgid "not published"
+msgstr "inte publicerad"
+
+#: modules/node/node.admin.inc:137
+msgid "promoted"
+msgstr "på framsidan"
+
+#: modules/node/node.admin.inc:138
+msgid "not promoted"
+msgstr "inte på framsidan"
+
+#: modules/node/node.admin.inc:139
+msgid "sticky"
+msgstr "överst i listor"
+
+#: modules/node/node.admin.inc:140
+msgid "not sticky"
+msgstr "inte överst i listor"
+
+#: modules/node/node.admin.inc:146
+msgid "Up to date translation"
+msgstr "Aktuell översättning"
+
+#: modules/node/node.admin.inc:147
+msgid "Outdated translation"
+msgstr "Inaktuell översättning"
+
+#: modules/node/node.admin.inc:151
+msgid "type"
+msgstr "typ"
+
+#: modules/node/node.admin.inc:155
+msgid "category"
+msgstr "kategori"
+
+#: modules/node/node.admin.inc:160
+msgid "language"
+msgstr "språk"
+
+#: modules/node/node.admin.inc:212
+msgid "Show only items where"
+msgstr "Visa bara poster där"
+
+#: modules/node/node.admin.inc:230
+msgid "<em>and</em> where <strong>%a</strong> is <strong>%b</strong>"
+msgstr "<em>och</em> där <strong>%a</strong> är <strong>%b</strong>"
+
+#: modules/node/node.admin.inc:233
+msgid "<strong>%a</strong> is <strong>%b</strong>"
+msgstr "<strong>%a</strong> är <strong>%b</strong>"
+
+#: modules/node/node.admin.inc:361
+msgid "The update has encountered an error."
+msgstr "Uppdateringen stötte på ett fel."
+
+#: modules/node/node.admin.inc:427
+msgid "An error occurred and processing did not complete."
+msgstr "Ett fel inträffade och behandlingen fulföljdes inte."
+
+#: modules/node/node.admin.inc:513
+msgid "No items selected."
+msgstr "Inga poster valda."
+
+#: modules/node/node.admin.inc:611
+msgid "Are you sure you want to delete these items?"
+msgstr "Är du säker på att du vill ta bort dessa poster?"
+
+#: modules/node/node.admin.inc:621
+msgid "The items have been deleted."
+msgstr "Posterna har tagits bort."
+
+#: modules/node/node.admin.inc:428
+msgid "1 item successfully processed:"
+msgid_plural "@count items successfully processed:"
+msgstr[0] "1 post behandlades framgångsrikt"
+msgstr[1] "@count poster behandlades framgångsrikt"
+
+#: modules/node/node.pages.inc:57
+msgid "Create @name"
+msgstr "Skapa @name"
+
+#: modules/node/node.pages.inc:149
+msgid "Revision information"
+msgstr "Revisionsinformation"
+
+#: modules/node/node.pages.inc:163
+msgid "Log message"
+msgstr "Loggmeddelande"
+
+#: modules/node/node.pages.inc:166
+msgid ""
+"An explanation of the additions or updates being made to help other authors "
+"understand your motivations."
+msgstr ""
+"En förklaring av de tillägg eller uppdateringar du gjort för att andra "
+"författare skall förstå varför du gjort dem."
+
+#: modules/node/node.pages.inc:174
+msgid "Authoring information"
+msgstr "Författarinformation"
+
+#: modules/node/node.pages.inc:186
+msgid "Leave blank for %anonymous."
+msgstr "Lämna detta tomt för %anonymous."
+
+#: modules/node/node.pages.inc:192
+msgid "Format: %time. Leave blank to use the time of form submission."
+msgstr "Format: %time. Lämna tomt för att använda tiden då formuläret skickas."
+
+#: modules/node/node.pages.inc:203
+msgid "Publishing options"
+msgstr "Publiceringsalternativ"
+
+#: modules/node/node.pages.inc:284
+msgid "Show summary in full view"
+msgstr "Visa sammanfattningen i fullt visningsläge"
+
+#: modules/node/node.pages.inc:437
+msgid ""
+"The trimmed version of your post shows what your post looks like when "
+"promoted to the main page or when exported for syndication.<span class=\"no-"
+"js\"> You can insert the delimiter \"&lt;!--break--&gt;\" (without the "
+"quotes) to fine-tune where your post gets split.</span>"
+msgstr ""
+"Den nedkortade versionen av ditt inlägg visar hur det ser ut när det ligger "
+"på framsidan eller när det exporteras i ett RSS-flöde.<span class=\"no-js\"> "
+"Du kan infoga avgränsaren \"&lt;!--break--&gt;\" (utan citattecknen) för att "
+"styra var ditt inlägg kapas.</span>"
+
+#: modules/node/node.pages.inc:438
+msgid "Preview trimmed version"
+msgstr "Förhandsvisa trimmad version"
+
+#: modules/node/node.pages.inc:440
+msgid "Preview full version"
+msgstr "Förhandsvisa komplett version"
+
+#: modules/node/node.pages.inc:463
+msgid "@type %title has been created."
+msgstr "%title (@type) har skapats."
+
+#: modules/node/node.pages.inc:467
+msgid "@type %title has been updated."
+msgstr "%title (@type) har uppdaterats."
+
+#: modules/node/node.pages.inc:477
+msgid "The post could not be saved."
+msgstr "Inlägget kunde inte sparas."
+
+#: modules/node/node.pages.inc:505
+msgid "Are you sure you want to delete %title?"
+msgstr "Är du säker på att du vill ta bort %title?"
+
+#: modules/node/node.pages.inc:528
+msgid "Revisions for %title"
+msgstr "Revisioner för %title"
+
+#: modules/node/node.pages.inc:530
+msgid "Revision"
+msgstr "Revision"
+
+#: modules/node/node.pages.inc:548,554
+msgid "!date by !username"
+msgstr "!date av !username"
+
+#: modules/node/node.pages.inc:551
+msgid "current revision"
+msgstr "nuvarande revision"
+
+#: modules/node/node.pages.inc:557
+msgid "revert"
+msgstr "återställ"
+
+#: modules/node/node.pages.inc:574
+msgid "Are you sure you want to revert to the revision from %revision-date?"
+msgstr "Är du säker på att du vill återställa revisionen från %revision-date?"
+
+#: modules/node/node.pages.inc:574
+msgid "Revert"
+msgstr "Återställ"
+
+#: modules/node/node.pages.inc:580
+msgid "Copy of the revision from %date."
+msgstr "Kopia av revisionen från %date."
+
+#: modules/node/node.pages.inc:588
+msgid ""
+"@type %title has been reverted back to the revision from %revision-date."
+msgstr "%title (@type) har återställts till revisionen från %revision-date."
+
+#: modules/node/node.pages.inc:594
+msgid "Are you sure you want to delete the revision from %revision-date?"
+msgstr "Är du säker på att du vill radera revisionen från %revision-date?"
+
+#: modules/node/node.pages.inc:602
+msgid "Revision from %revision-date of @type %title has been deleted."
+msgstr "Revisionen från %revision-date av %title (@type) har raderats."
+
+#: modules/node/node.pages.inc:462
+msgid "@type: added %title."
+msgstr "@type: lade till %title."
+
+#: modules/node/node.pages.inc:466
+msgid "@type: updated %title."
+msgstr "@type: uppdaterade %title."
+
+#: modules/node/node.pages.inc:587
+msgid "@type: reverted %title revision %revision."
+msgstr "@type: återställde revisionen %revision av %title."
+
+#: modules/node/node.pages.inc:601
+msgid "@type: deleted %title revision %revision."
+msgstr "@type: raderade revisionen %revision av %title."
+
+#: modules/node/node.module:29
+msgid "The content access permissions need to be rebuilt."
+msgstr "Åtkomstreglerna för innehåll måste byggas om."
+
+#: modules/node/node.module:32
+msgid ""
+"The content access permissions need to be rebuilt. Please visit <a href="
+"\"@node_access_rebuild\">this page</a>."
+msgstr ""
+"Åtkomstreglerna för innehåll måste byggas om. Vänligen besök <a href="
+"\"@node_access_rebuild\">denna sida</a>."
+
+#: modules/node/node.module:39
+msgid ""
+"The node module manages content on your site, and stores all posts "
+"(regardless of type) as a \"node\". In addition to basic publishing "
+"settings, including whether the post has been published, promoted to the "
+"site front page, or should remain present (or sticky) at the top of lists, "
+"the node module also records basic information about the author of a post. "
+"Optional revision control over edits is available. For additional "
+"functionality, the node module is often extended by other modules."
+msgstr ""
+"Modulen Node handhar innehåll på webbplatsen och lagrar alla inlägg (oavsett "
+"typ) som en \"nod\". Förutom grundläggande publiceringsinställning, "
+"inklusive om inlägget publicerats, visas på förstasidan, eller ska förbli "
+"närvarande (eller klistrad) vid toppen av listor, lagrar modulen Node också "
+"information om författaren av inlägget. Valfri revisionskontroll över "
+"redigeringar är tillgänglig. För utökad funktionalitet kompletteras ofta "
+"modulen Node av andra moduler."
+
+#: modules/node/node.module:40
+msgid ""
+"Though each post on your site is a node, each post is also of a particular "
+"<a href=\"@content-type\">content type</a>. <a href=\"@content-type"
+"\">Content types</a> are used to define the characteristics of a post, "
+"including the title and description of the fields displayed on its add and "
+"edit pages. Each content type may have different default settings for "
+"<em>Publishing options</em> and other workflow controls. By default, the two "
+"content types in a standard Drupal installation are <em>Page</em> and "
+"<em>Story</em>. Use the <a href=\"@content-type\">content types page</a> to "
+"add new or edit existing content types. Additional content types also become "
+"available as you enable additional core, contributed and custom modules."
+msgstr ""
+"Även om varje inlägg på webbplatsen är en nod har inlägget också en särskild "
+"<a href=\"@content-type\">innehållstyp</a>. <a href=\"@content-type"
+"\">Innehållstyper</a> används för att definiera inläggets karaktäristik, "
+"såsom titel och beskrivning för fälten som visas på dess lägg till- och "
+"redigera-sidor. Varje innehållstyp kan ha olika grundinställningar för "
+"<em>Publiceringsalternativ</em> och andra kontroller av arbetsflödet. En "
+"standardinstallation av Drupal har två innehållstyper: <em>Sida</em> och "
+"<em>Artikel</em>. Använd <a href=\"@content-type\">innehållstypsidan</a> för "
+"att lägga till eller redigera innehållstyper. Fler innehållstyper kan också "
+"bli tillgängliga då du aktiverar ytterligare moduler."
+
+#: modules/node/node.module:41
+msgid ""
+"The administrative <a href=\"@content\">content page</a> allows you to "
+"review and manage your site content. The <a href=\"@post-settings\">post "
+"settings page</a> sets certain options for the display of posts. The node "
+"module makes a number of permissions available for each content type, which "
+"may be set by role on the <a href=\"@permissions\">permissions page</a>."
+msgstr ""
+"Administrationssidan för <a href=\"@content\">innehåll</a> låter dig se och "
+"hantera webbplatsens innehåll. <a href=\"@post-settings\">Inställningssidan "
+"för inlägg</a> ställer in vissa alternativ för hur inlägg visas. Modulen "
+"Node gör ett antal rättigheter tillgängliga för varje innehållstyp som kan "
+"anges för olika roller på <a href=\"@permissions\">rättighetssidan</a>."
+
+#: modules/node/node.module:42
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@node"
+"\">Node module</a>."
+msgstr "Läs mer om <a href=\"@node\">modulen Node</a> i onlinehandboken."
+
+#: modules/node/node.module:47
+msgid ""
+"Below is a list of all the content types on your site. All posts that exist "
+"on your site are instances of one of these content types."
+msgstr ""
+"Nedan finns en lista över alla innehållstyper på din webbplats. Alla inlägg "
+"som existerar på webbplatsen är instanser av någon av dessa innehållstyper."
+
+#: modules/node/node.module:49
+msgid ""
+"To create a new content type, enter the human-readable name, the machine-"
+"readable name, and all other relevant fields that are on this page. Once "
+"created, users of your site will be able to create posts that are instances "
+"of this content type."
+msgstr ""
+"Fyll i det synliga namnet, det maskinläsbara namnet och alla andra relevanta "
+"fält på den här sidan för att skapa en ny innehållstyp. När den är skapad "
+"kommer webbplatsens användare att kunna skapa inlägg som är instanser av den "
+"här innehållstypen."
+
+#: modules/node/node.module:51
+msgid ""
+"The revisions let you track differences between multiple versions of a post."
+msgstr ""
+"Revisioner håller reda på skillnader mellan olika versioner av ett inlägg."
+
+#: modules/node/node.module:260
+msgid ""
+"You specified that the summary should not be shown when this post is "
+"displayed in full view. This setting is ignored when the summary is empty."
+msgstr ""
+"Du angav att sammandraget inte skall visas när detta inlägg visas i sin "
+"helhet. Denna inställning ignoreras när sammandraget är tomt."
+
+#: modules/node/node.module:264
+msgid ""
+"You specified that the summary should not be shown when this post is "
+"displayed in full view. This setting has been ignored since you have not "
+"defined a summary for the post. (To define a summary, insert the delimiter "
+"\"&lt;!--break--&gt;\" (without the quotes) in the Body of the post to "
+"indicate the end of the summary and the start of the main content.)"
+msgstr ""
+"Du angav att sammandraget inte skall visas när detta inlägg visas i sin "
+"helhet. Denna inställning har ignorerats eftersom du inte har definierat "
+"något sammandrag för inlägget. (För att ange ett sammandrag, lägg till "
+"avgränsaren \"&lt;!--break--&gt;\" (utan citationstecken) i huvudtexten för "
+"inlägget för att ange var sammandraget slutar och var huvudinnehållet "
+"börjar.)"
+
+#: modules/node/node.module:785
+msgid "The body of your @type is too short. You need at least %words words."
+msgstr "Texten i din @type är för kort. Du måste ha åtminstone %words ord."
+
+#: modules/node/node.module:789
+msgid ""
+"This content has been modified by another user, changes cannot be saved."
+msgstr ""
+"Detta innehåll har modifieras av en annan användare. Ändringarna kan inte "
+"sparas."
+
+#: modules/node/node.module:798
+msgid "The username %name does not exist."
+msgstr "Användarnamnet %name finns inte."
+
+#: modules/node/node.module:979
+msgid "@type %title has been deleted."
+msgstr "%title (@type) har raderats."
+
+#: modules/node/node.module:1094
+msgid "Revision of %title from %date"
+msgstr "Revision av %title från %date"
+
+#: modules/node/node.module:1114
+msgid "Log"
+msgstr "Logg"
+
+#: modules/node/node.module:1159
+msgid "Content ranking"
+msgstr "Rangordning av innehåll"
+
+#: modules/node/node.module:1163
+msgid ""
+"The following numbers control which properties the content search should "
+"favor when ordering the results. Higher numbers mean more influence, zero "
+"means the property is ignored. Changing these numbers does not require the "
+"search index to be rebuilt. Changes take effect immediately."
+msgstr ""
+"Följande värden styr vilka egenskaper som innehållssökningen ska gynna när "
+"den sorterar sökresultaten. Högre värden betyder mer inflytande, noll "
+"betyder att egenskapen ignoreras. Att ändra dessa värden kräver inte att "
+"sökindexet byggs om. Ändringarna får genomslag direkt."
+
+#: modules/node/node.module:1166
+msgid "Keyword relevance"
+msgstr "Sökordsrelevans"
+
+#: modules/node/node.module:1167
+msgid "Recently posted"
+msgstr "Senaste inlägg"
+
+#: modules/node/node.module:1169
+msgid "Number of comments"
+msgstr "Antal kommentarer"
+
+#: modules/node/node.module:1172
+msgid "Number of views"
+msgstr "Antal visningar"
+
+#: modules/node/node.module:1322
+msgid "Factor"
+msgstr "Faktor"
+
+#: modules/node/node.module:1356
+msgid "Read more"
+msgstr "Läs mer"
+
+#: modules/node/node.module:1360
+msgid "Read the rest of !title."
+msgstr "Läs resten av !title."
+
+#: modules/node/node.module:1623,1629,1630
+msgid "Syndicate"
+msgstr "Dela ut nyhetsflöde"
+
+#: modules/node/node.module:1759
+msgid "RSS"
+msgstr "RSS"
+
+#: modules/node/node.module:1763
+msgid ""
+"<h1 class=\"title\">Welcome to your new Drupal website!</h1><p>Please follow "
+"these steps to set up and start using your website:</p>"
+msgstr ""
+"<h1 class=\"title\">Välkommen till din nya Drupal-webbplats!</h1><p>Följ "
+"dessa steg för att ställa in och börja använda din webbplats:</p>"
+
+#: modules/node/node.module:1766
+msgid ""
+"<strong>Configure your website</strong> Once logged in, visit the <a href="
+"\"@admin\">administration section</a>, where you can <a href=\"@config"
+"\">customize and configure</a> all aspects of your website."
+msgstr ""
+"<strong>Ställ in webbplatsen</strong> När du har loggat in kan du besöka <a "
+"href=\"@admin\">administrationssektionen</a> där du kan <a href=\"@config"
+"\">anpassa och ställa in</a> alla delar av din webbplats."
+
+#: modules/node/node.module:1767
+msgid ""
+"<strong>Enable additional functionality</strong> Next, visit the <a href="
+"\"@modules\">module list</a> and enable features which suit your specific "
+"needs. You can find additional modules in the <a href=\"@download_modules"
+"\">Drupal modules download section</a>."
+msgstr ""
+"<strong>Aktivera fler funktioner</strong> Besök sedan <a href=\"@modules"
+"\">modullistan</a> och aktivera de funktioner som passar för dina specifika "
+"behov. Du finner fler moduler på <a href=\"@download_modules\">Drupals "
+"nedladdningssida för moduler</a>."
+
+#: modules/node/node.module:1768
+msgid ""
+"<strong>Customize your website design</strong> To change the \"look and feel"
+"\" of your website, visit the <a href=\"@themes\">themes section</a>. You "
+"may choose from one of the included themes or download additional themes "
+"from the <a href=\"@download_themes\">Drupal themes download section</a>."
+msgstr ""
+"<strong>Anpassa formen på din webbplats</strong> För att ändra webbplatsens "
+"utseende, besök <a href=\"@themes\">temasektionen</a>. Du kan välja bland de "
+"teman som ingår som standard eller ladda ner fler teman på <a href="
+"\"@download_themes\">Drupals nedladdningssida för teman</a>."
+
+#: modules/node/node.module:1769
+msgid ""
+"<strong>Start posting content</strong> Finally, you can <a href=\"@content"
+"\">create content</a> for your website. This message will disappear once you "
+"have promoted a post to the front page."
+msgstr ""
+"<strong>Börja lägga in innehåll</strong> Slutligen kan du <a href=\"@content"
+"\">skapa innehåll</a> för webbplatsen. Detta meddelande kommer att försvinna "
+"så fort du har publicerat ett inlägg på förstasidan."
+
+#: modules/node/node.module:1771
+msgid ""
+"For more information, please refer to the <a href=\"@help\">help section</"
+"a>, or the <a href=\"@handbook\">online Drupal handbooks</a>. You may also "
+"post at the <a href=\"@forum\">Drupal forum</a>, or view the wide range of "
+"<a href=\"@support\">other support options</a> available."
+msgstr ""
+"Läs mer i <a href=\"@help\">hjälpsektionen</a> eller i <a href=\"@handbook"
+"\">Drupals onlinemanualer</a>. Du kan också ställa frågor i <a href=\"@forum"
+"\">Drupals forum</a> eller utforska det breda utbudet av <a href=\"@support"
+"\">andra tillgängliga supportkanaler</a>."
+
+#: modules/node/node.module:1843,1895
+msgid "Advanced search"
+msgstr "Avancerad sökning"
+
+#: modules/node/node.module:1854
+msgid "Containing any of the words"
+msgstr "Innehåller något av orden"
+
+#: modules/node/node.module:1860
+msgid "Containing the phrase"
+msgstr "Innehåller frasen"
+
+#: modules/node/node.module:1866
+msgid "Containing none of the words"
+msgstr "Innehåller inget av orden"
+
+#: modules/node/node.module:1875
+msgid "Only in the category(s)"
+msgstr "Endast i kategorin/kategorierna"
+
+#: modules/node/node.module:1888
+msgid "Only of the type(s)"
+msgstr "Endast av typen/typerna"
+
+#: modules/node/node.module:2312
+msgid "Rebuilding content access permissions"
+msgstr "Bygger om rättigheter för innehåll"
+
+#: modules/node/node.module:2342
+msgid "Content permissions have been rebuilt."
+msgstr "Innehållsrättigheterna har byggts om."
+
+#: modules/node/node.module:2388
+msgid "The content access permissions have been rebuilt."
+msgstr "Rättigheterna för innehåll har byggts om."
+
+#: modules/node/node.module:2392
+msgid "The content access permissions have not been properly rebuilt."
+msgstr "Rättigheterna för innehåll har inte byggts om ordentligt."
+
+#: modules/node/node.module:2480
+msgid "Submitted by !username on @datetime"
+msgstr "Skrivet av !username @datetime"
+
+#: modules/node/node.module:2495
+msgid "When either saving a new post or updating an existing post"
+msgstr ""
+"När antingen ett nytt inlägg sparas eller ett existerande inlägg uppdateras"
+
+#: modules/node/node.module:2498
+msgid "After saving a new post"
+msgstr "När ett nytt inlägg sparats"
+
+#: modules/node/node.module:2501
+msgid "After saving an updated post"
+msgstr "När ett uppdaterat inlägg sparats"
+
+#: modules/node/node.module:2504
+msgid "After deleting a post"
+msgstr "När ett inlägg har raderats"
+
+#: modules/node/node.module:2507
+msgid "When content is viewed by an authenticated user"
+msgstr "När innehåll visas för en inloggad användare"
+
+#: modules/node/node.module:2521
+msgid "Publish post"
+msgstr "Publicera inlägg"
+
+#: modules/node/node.module:2531
+msgid "Unpublish post"
+msgstr "Avpublicera inlägg"
+
+#: modules/node/node.module:2541
+msgid "Make post sticky"
+msgstr "Visa inlägget överst i listor"
+
+#: modules/node/node.module:2551
+msgid "Make post unsticky"
+msgstr "Visa inte inlägget överst i listor"
+
+#: modules/node/node.module:2561
+msgid "Promote post to front page"
+msgstr "Publicera inlägget på förstasidan"
+
+#: modules/node/node.module:2571
+msgid "Remove post from front page"
+msgstr "Ta bort inlägget från förstasidan"
+
+#: modules/node/node.module:2581
+msgid "Change the author of a post"
+msgstr "Ändra författaren av inlägget"
+
+#: modules/node/node.module:2592
+msgid "Save post"
+msgstr "Spara inlägg"
+
+#: modules/node/node.module:2600
+msgid "Unpublish post containing keyword(s)"
+msgstr "Avpublicera inlägg innehållande nyckelord(en)"
+
+#: modules/node/node.module:2683
+msgid "The username of the user to which you would like to assign ownership."
+msgstr "Användarnamnet för den användare som du vill tilldela ägarskapet till."
+
+#: modules/node/node.module:2722
+msgid "Please enter a valid username."
+msgstr "Du måste ange ett giltigt användarnamn."
+
+#: modules/node/node.module:2736
+msgid ""
+"The post will be unpublished if it contains any of the character sequences "
+"above. Use a comma-separated list of character sequences. Example: funny, "
+"bungee jumping, \"Company, Inc.\". Character sequences are case-sensitive."
+msgstr ""
+"Inlägget kommer att avpubliceras om det innehåller någon av ovanstående "
+"teckenserier. Använd en kommaseparerad lista med teckenserier. Exempel: "
+"rolig, bungee jump, \"Företag, Inc\". Teckenserierna skiljer på gemener och "
+"versaler."
+
+#: modules/node/node.module:978
+msgid "@type: deleted %title."
+msgstr "@type: raderade %title."
+
+#: modules/node/node.module:2615
+msgid "Set @type %title to published."
+msgstr "Sätt %title (@type) som publicerad."
+
+#: modules/node/node.module:2624,2759
+msgid "Set @type %title to unpublished."
+msgstr "Sätt %title (@type) som ej publicerad."
+
+#: modules/node/node.module:2633
+msgid "Set @type %title to sticky."
+msgstr "Visa %title (@type) överst i listor."
+
+#: modules/node/node.module:2642
+msgid "Set @type %title to unsticky."
+msgstr "Visa inte %title (@type) överst i listor"
+
+#: modules/node/node.module:2651
+msgid "Promoted @type %title to front page."
+msgstr "Visar %title (@type) på förstasidan."
+
+#: modules/node/node.module:2660
+msgid "Removed @type %title from front page."
+msgstr "Tog bort %title (@type) från förstasidan."
+
+#: modules/node/node.module:2669
+msgid "Saved @type %title"
+msgstr "Sparade %title (@type)"
+
+#: modules/node/node.module:2679
+msgid "Changed owner of @type %title to uid %name."
+msgstr "Ändrade ägare av %title (@type) till uid %name."
+
+#: modules/node/node.module:1120
+msgid "administer content types"
+msgstr "administrera innehållstyper"
+
+#: modules/node/node.module:1120
+msgid "administer nodes"
+msgstr "administrera noder"
+
+#: modules/node/node.module:1120
+msgid "access content"
+msgstr "komma åt innehåll"
+
+#: modules/node/node.module:1120
+msgid "view revisions"
+msgstr "visa revisioner"
+
+#: modules/node/node.module:1120
+msgid "revert revisions"
+msgstr "återgå till tidigare revisioner"
+
+#: modules/node/node.module:1411
+msgid "View, edit, and delete your site's content."
+msgstr "Visa, redigera och radera webbplatsens innehåll."
+
+#: modules/node/node.module:1425
+msgid "Post settings"
+msgstr "Inställningar för inlägg"
+
+#: modules/node/node.module:1426
+msgid ""
+"Control posting behavior, such as teaser length, requiring previews before "
+"posting, and the number of posts on the front page."
+msgstr ""
+"Inställningar för nya inlägg, som till exempel längd på ingress, krav på "
+"förhandvisning och antal inlägg på förstasidan."
+
+#: modules/node/node.module:1444
+msgid ""
+"Manage posts by content type, including default status, front page "
+"promotion, etc."
+msgstr ""
+"Hantera inlägg per innehållstyp, bland annat standardstatus och publicering "
+"på förstasidan."
+
+#: modules/node/node.module:1455
+msgid "Add content type"
+msgstr "Lägg till innehållstyp"
+
+#: modules/node/node.module:1469
+msgid "Create content"
+msgstr "Skapa innehåll"
+
+#: modules/node/node.module:1545,1555
+msgid "Revisions"
+msgstr "Revisioner"
+
+#: modules/node/node.module:1564
+msgid "Revert to earlier revision"
+msgstr "Återgå till tidigare revision"
+
+#: modules/node/node.module:1574
+msgid "Delete earlier revision"
+msgstr "Radera tidigare revision"

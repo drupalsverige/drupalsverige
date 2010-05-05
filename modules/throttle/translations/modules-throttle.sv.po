@@ -1,0 +1,172 @@
+# Swedish translation of drupal (6.13)
+# Copyright (c) 2009 by the Swedish translation team
+# Generated from files:
+#  throttle.admin.inc,v 1.2 2008/01/08 10:35:43 goba
+#  throttle.module,v 1.83 2007/12/14 18:08:49 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-08-04 10:44+0200\n"
+"PO-Revision-Date: 2009-07-22 23:27+0200\n"
+"Language-Team: Swedish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/throttle/throttle.admin.inc:21
+msgid "Auto-throttle on anonymous users"
+msgstr "Automatisk lastbegränsning vid detta antal gäster"
+
+#: modules/throttle/throttle.admin.inc:25
+msgid ""
+"The congestion control throttle can be automatically enabled when the number "
+"of anonymous users currently visiting your site exceeds the specified "
+"threshold. For example, to start the throttle when your site has 250 "
+"anonymous users online at once, enter '250' in this field. Leave this value "
+"blank or set to \"0\" if you do not wish to auto-throttle on anonymous "
+"users. You can inspect the current number of anonymous users using the "
+"\"Who's online\" block."
+msgstr ""
+"Lastbegränsningen kan aktiveras automatiskt när antalet anonyma användare "
+"som för tillfället besöker webbplatsen överstiger det angivna tröskelvärdet. "
+"För att exempelvis starta lastbegränsningen när din webbplats har 250 gäster "
+"samtidigt, skriv in \"250\" i detta fält. Låt värdet vara tomt eller \"0\" "
+"om du inte vill ha automatiskt begränsning beroende på antalet gäster. Du "
+"kan se det aktuella antalet gäster med hjälp av blocket \"Vem är online\"."
+
+#: modules/throttle/throttle.admin.inc:29
+msgid "Auto-throttle on authenticated users"
+msgstr "Automatisk lastbegränsning vid detta antal inloggade användare"
+
+#: modules/throttle/throttle.admin.inc:33
+msgid ""
+"The congestion control throttle can be automatically enabled when the number "
+"of authenticated users currently visiting your site exceeds the specified "
+"threshold. For example, to start the throttle when your site has 50 "
+"registered users online at once, enter '50' in this field. Leave this value "
+"blank or set to \"0\" if you do not wish to auto-throttle on authenticated "
+"users. You can inspect the current number of authenticated users using the "
+"\"Who's online\" block."
+msgstr ""
+"Lastbegränsningen kan aktiveras automatiskt när antalet inloggade användare "
+"som för tillfället besöker webbplatsen överstiger det angivna tröskelvärdet. "
+"För att exempelvis starta lastbegränsningen när din webbplats har 50 "
+"inloggade besökare samtidigt, skriv in \"50\" i detta fält. Låt värdet vara "
+"tomt eller \"0\" om du inte vill ha automatiskt begränsning beroende på "
+"antalet inloggade användare. Du kan se det aktuella antalet inloggade "
+"användare med hjälp av blocket \"Vem är online\"."
+
+#: modules/throttle/throttle.admin.inc:37
+msgid "Auto-throttle probability limiter"
+msgstr "Lastbegränsningens sannolikhetsgräns"
+
+#: modules/throttle/throttle.admin.inc:40
+msgid ""
+"The auto-throttle probability limiter is an efficiency mechanism to "
+"statistically reduce the overhead of the auto-throttle. The limiter is "
+"expressed as a percentage of page views, so for example if set to the "
+"default of 10% we only perform the extra database queries to update the "
+"throttle status 1 out of every 10 page views. The busier your site, the "
+"lower you should set the limiter value."
+msgstr ""
+"Lastbegränsningens sannolikhetsgräns är en effektiv mekanism för att "
+"statistiskt reducera funktionens extra resursanvändning. Gränsen uttrycks "
+"som ett procenttal av sidvisningarna, så om den exempelvis har "
+"standardvärdet 10% så kommer de extra databasfrågorna för att uppdatera "
+"lastbegränsningens status bara att utföras var tionde sidvisning. Ju mer "
+"trafik din webbplats har, desto lägre bör du ställa sannolikhetsgränsen."
+
+#: modules/throttle/throttle.admin.inc:50,53
+msgid ""
+"%value is not a valid auto-throttle setting. Please enter a positive numeric "
+"value."
+msgstr ""
+"%value är inte ett giltigt gränsvärde för lastbegränsningen. Ange ett "
+"positivt numeriskt värde."
+
+#: modules/throttle/throttle.module:121
+msgid ""
+"The throttle module provides a congestion control mechanism that "
+"automatically adjusts to a surge in incoming traffic. If your site is "
+"referenced by a popular website, or experiences a \"Denial of Service"
+"\" (DoS) attack, your webserver might become overwhelmed. The throttle "
+"mechanism is utilized by modules to temporarily disable CPU-intensive "
+"functionality, increasing performance. For instance, via the throttle "
+"module, modules may choose to disable resource-intensive blocks or the code "
+"within the site theme may temporarily disable user pictures in posts."
+msgstr ""
+"Modulen Throttle ger ett överbelastningsskydd som automatiskt kan upptäcka "
+"en tillströmning i inkommande trafik. Om webbplatsen blir länkad av en "
+"populär webbplats eller om den den hamnar under en \"Denial of Service\"-"
+"attack (DoS) så kan webbservern bli överbelastad. Denna mekanism används av "
+"andra moduler för att automatiskt optimera prestanda genom att tillfälligt "
+"stänga av resurskrävande funktioner. Till exempel kan man välja att inte "
+"visa bilder i webbplatsens tema när webbplatsen är för belastad (vilket "
+"begränsar bandbredden), eller så kan man hoppa över viss komplicerad logik i "
+"moduler (vilket begränsar processoranvändning)."
+
+#: modules/throttle/throttle.module:122
+msgid ""
+"The congestion control throttle can be automatically enabled when the number "
+"of anonymous or authenticated users currently visiting the site exceeds a "
+"specified threshold."
+msgstr ""
+"Lastbegränsningen kan aktiveras automatiskt när antalet gäster eller "
+"inloggade användare som besöker webbplatsen samtidigt överskrider ett visst "
+"tröskelvärde."
+
+#: modules/throttle/throttle.module:123
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@throttle"
+"\">Throttle module</a>."
+msgstr ""
+"Läs mer om <a href=\"@throttle\">modulen Throttle</a> i onlinehandboken."
+
+#: modules/throttle/throttle.module:126
+msgid ""
+"The throttle module provides a congestion control mechanism that "
+"automatically adjusts to a surge in incoming traffic. If your site is "
+"referenced by a popular website, or experiences a \"Denial of Service"
+"\" (DoS) attack, your webserver might become overwhelmed. The throttle "
+"mechanism is utilized by modules to temporarily disable CPU-intensive "
+"functionality, increasing performance."
+msgstr ""
+"Modulen Throttle ger ett överbelastningsskydd som automatiskt kan upptäcka "
+"en tillströmning i inkommande trafik. Om webbplatsen blir länkad av en "
+"populär webbplats eller om den den hamnar under en \"Denial of Service\"-"
+"attack (DoS) så kan webbservern bli överbelastad. Denna mekanism används av "
+"andra moduler för att automatiskt optimera prestanda genom att tillfälligt "
+"stänga av resurskrävande funktioner."
+
+#: modules/throttle/throttle.module:110,0
+msgid "throttle"
+msgstr "Lastbegränsning"
+
+#: modules/throttle/throttle.module:110
+msgid "Throttle: %message"
+msgstr "Lastbegränsning: %message"
+
+#: modules/throttle/throttle.module:87
+msgid "1 user accessing site; throttle enabled."
+msgid_plural "@count users accessing site; throttle enabled."
+msgstr[0] "1 användare besöker webbplatsen - begränsning aktiverad."
+msgstr[1] "@count användare besöker webbplatsen - begränsning aktiverad."
+
+#: modules/throttle/throttle.module:95
+msgid "1 guest accessing site; throttle enabled."
+msgid_plural "@count guests accessing site; throttle enabled."
+msgstr[0] "1 gäst besöker webbplatsen - begränsning aktiverad."
+msgstr[1] "@count gäster besöker webbplatsen - begränsning aktiverad."
+
+#: modules/throttle/throttle.module:105
+msgid "1 guest accessing site; throttle disabled"
+msgid_plural "@count guests accessing site; throttle disabled"
+msgstr[0] "1 gäst besöker webbplatsen - begränsning inaktiverad."
+msgstr[1] "@count gäster besöker webbplatsen - begränsning inaktiverad."
+
+#: modules/throttle/throttle.module:12
+msgid "Control how your site cuts out content during heavy load."
+msgstr ""
+"Kontrollera hur din webbplats stänger av innehåll under hård belastning."

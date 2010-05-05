@@ -1,0 +1,400 @@
+# Swedish translation of drupal (6.13)
+# Copyright (c) 2009 by the Swedish translation team
+# Generated from files:
+#  block-admin-display-form.tpl.php,v 1.3 2008/01/16 22:57:26 goba
+#  block.admin.inc,v 1.14.2.5 2008/11/24 06:00:02 dries
+#  block.module,v 1.299.2.3 2008/06/24 14:40:08 goba
+#  block.js,v 1.2 2007/12/16 10:36:53 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-08-04 10:44+0200\n"
+"PO-Revision-Date: 2009-07-22 23:57+0200\n"
+"Language-Team: Swedish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/block/block-admin-display-form.tpl.php:42
+msgid "Region"
+msgstr "Region"
+
+#: modules/block/block-admin-display-form.tpl.php:57
+msgid "No blocks in this region"
+msgstr "Inga block i detta område"
+
+#: modules/block/block.admin.inc:91
+msgid "Save blocks"
+msgstr "Spara block"
+
+#: modules/block/block.admin.inc:106
+msgid "The block settings have been updated."
+msgstr "Blockinställningarna har uppdaterats."
+
+#: modules/block/block.admin.inc:156
+msgid "Block specific settings"
+msgstr "Blockspecifika inställningar"
+
+#: modules/block/block.admin.inc:161
+msgid "Block title"
+msgstr "Blocktitel"
+
+#: modules/block/block.admin.inc:163
+msgid "The title of the block as shown to the user."
+msgstr "Titeln på ett block såsom det visas för användaren."
+
+#: modules/block/block.admin.inc:163
+msgid ""
+"Override the default title for the block. Use <em>&lt;none&gt;</em> to "
+"display no title, or leave blank to use the default block title."
+msgstr ""
+"Ändra standardtiteln för detta block. Använd <em>&lt;none&gt;</em> för att "
+"dölja titeln eller lämna fältet tomt om standardtiteln ska användas."
+
+#: modules/block/block.admin.inc:179
+msgid "'%name' block"
+msgstr "Blocket '%name'"
+
+#: modules/block/block.admin.inc:185
+msgid "User specific visibility settings"
+msgstr "Användarspecifika visningsinställningar"
+
+#: modules/block/block.admin.inc:190
+msgid "Custom visibility settings"
+msgstr "Anpassade visningsinställningar"
+
+#: modules/block/block.admin.inc:192
+msgid "Users cannot control whether or not they see this block."
+msgstr "Användare kan inte styra visningen av detta block."
+
+#: modules/block/block.admin.inc:193
+msgid "Show this block by default, but let individual users hide it."
+msgstr "Visa detta block som standard, men låt användare gömma det."
+
+#: modules/block/block.admin.inc:194
+msgid "Hide this block by default but let individual users show it."
+msgstr "Göm detta block som standard, men låt användare visa det."
+
+#: modules/block/block.admin.inc:196
+msgid ""
+"Allow individual users to customize the visibility of this block in their "
+"account settings."
+msgstr "Låter användarna anpassa blockets synlighet i kontoinställningarna."
+
+#: modules/block/block.admin.inc:213
+msgid "Role specific visibility settings"
+msgstr "Rollspecifika visningsinställningar"
+
+#: modules/block/block.admin.inc:218
+msgid "Show block for specific roles"
+msgstr "Visa block för specifika användarroller"
+
+#: modules/block/block.admin.inc:221
+msgid ""
+"Show this block only for the selected role(s). If you select no roles, the "
+"block will be visible to all users."
+msgstr ""
+"Visa detta block endast för valda roller. Om du inte väljer någon roll visas "
+"blocket för alla roller."
+
+#: modules/block/block.admin.inc:226
+msgid "Page specific visibility settings"
+msgstr "Sidspecifika visningsinställningar"
+
+#: modules/block/block.admin.inc:237
+msgid "Show on every page except the listed pages."
+msgstr "Visa block på alla sidor förutom de sidor som finns i listan."
+
+#: modules/block/block.admin.inc:237
+msgid "Show on only the listed pages."
+msgstr "Visa endast på de sidor som finns i listan."
+
+#: modules/block/block.admin.inc:238
+msgid ""
+"Enter one page per line as Drupal paths. The '*' character is a wildcard. "
+"Example paths are %blog for the blog page and %blog-wildcard for every "
+"personal blog. %front is the front page."
+msgstr ""
+"Skriv en sida per rad i form av Drupal-sökvägar. Jokertecken är '*'. "
+"Sökvägsexempel: %blog för blogg-sidan, %blog-wildcard för alla personliga "
+"bloggar. %front är startsidan."
+
+#: modules/block/block.admin.inc:241
+msgid ""
+"Show if the following PHP code returns <code>TRUE</code> (PHP-mode, experts "
+"only)."
+msgstr ""
+"Visa om följande PHP-kod returnerar <code>TRUE</code> (PHP-läge, bara för "
+"experter)."
+
+#: modules/block/block.admin.inc:242
+msgid ""
+"If the PHP-mode is chosen, enter PHP code between %php. Note that executing "
+"incorrect PHP-code can break your Drupal site."
+msgstr ""
+"Om PHP är valt skriver du PHP-kod mellan %php. Observera att felaktig PHP-"
+"kod kan förstöra din Drupal-webbplats när den körs."
+
+#: modules/block/block.admin.inc:246
+msgid "Show block on specific pages"
+msgstr "Visa block på specifika sidor"
+
+#: modules/block/block.admin.inc:252
+msgid "Pages"
+msgstr "Sidor"
+
+#: modules/block/block.admin.inc:260
+msgid "Save block"
+msgstr "Spara blocket"
+
+#: modules/block/block.admin.inc:269,298
+msgid "Please ensure that each block description is unique."
+msgstr "Beskrivningen av varje block måste vara unik."
+
+#: modules/block/block.admin.inc:282
+msgid "The block configuration has been saved."
+msgstr "Blockinställningarna har sparats."
+
+#: modules/block/block.admin.inc:319
+msgid "The block has been created."
+msgstr "Ett nytt block har lagts till."
+
+#: modules/block/block.admin.inc:334
+msgid "Are you sure you want to delete the block %name?"
+msgstr "Är du säker på att du vill ta bort blocket %name?"
+
+#: modules/block/block.admin.inc:343
+msgid "The block %name has been removed."
+msgstr "Blocket %name har tagits bort."
+
+#: modules/block/block.module:70
+msgid ""
+"Blocks are boxes of content rendered into an area, or region, of a web page. "
+"The default theme Garland, for example, implements the regions \"left sidebar"
+"\", \"right sidebar\", \"content\", \"header\", and \"footer\", and a block "
+"may appear in any one of these areas. The <a href=\"@blocks\">blocks "
+"administration page</a> provides a drag-and-drop interface for assigning a "
+"block to a region, and for controlling the order of blocks within regions."
+msgstr ""
+"Block är boxar med innehåll som återges på en yta eller ett område av en "
+"webbsida. Det förvalda temat Garland använder områdena \"vänster sidfält\", "
+"\"höger sidfält\", \"innehåll\", \"sidhuvud\", och \"sidfot\". Ett block kan "
+"visas i vilket som helst av dessa områden. <a href=\"@blocks"
+"\">Administrationssidan för block</a> har ett drag-och-släpp-gränssnitt för "
+"att tilldela ett block till ett område, och för att kontrollera ordningen på "
+"blocken inom ett område."
+
+#: modules/block/block.module:71
+msgid ""
+"Although blocks are usually generated automatically by modules (like the "
+"<em>User login</em> block, for example), administrators can also define "
+"custom blocks. Custom blocks have a title, description, and body. The body "
+"of the block can be as long as necessary, and can contain content supported "
+"by any available <a href=\"@input-format\">input format</a>."
+msgstr ""
+"Även om block vanligen skapas automatiskt av moduler (som blocket "
+"<em>Användarinloggning</em> till exempel) kan administratörer också "
+"definiera egna block. Egna block har en titel, en beskrivning och en "
+"brödtext. Brödtexten i ett block kan vara så lång som är nödvändigt och kan "
+"innehålla innehåll som stöds av vilket som helst tillgängligt <a href="
+"\"@input-format\">inmatningsformat</a>."
+
+#: modules/block/block.module:72
+msgid "When working with blocks, remember that:"
+msgstr "Då du arbetar med block, kom ihåg att:"
+
+#: modules/block/block.module:73
+msgid ""
+"since not all themes implement the same regions, or display regions in the "
+"same way, blocks are positioned on a per-theme basis."
+msgstr ""
+"eftersom alla teman inte tillämpar samma områden, eller visar områden på "
+"samma sätt, placeras block på basis av varje tema."
+
+#: modules/block/block.module:74
+msgid "disabled blocks, or blocks not in a region, are never shown."
+msgstr ""
+"inaktiverade block, eller block som inte är i ett område, visas aldrig."
+
+#: modules/block/block.module:75
+msgid ""
+"when throttle module is enabled, throttled blocks (blocks with the "
+"<em>Throttle</em> checkbox selected) are hidden during high server loads."
+msgstr ""
+"då modulen Throttle är aktiverad göms lastbegränsade block (de block där "
+"kryssrutan <em>Lastbegränsning</em> är vald) då servern belastas hårt."
+
+#: modules/block/block.module:76
+msgid "blocks can be configured to be visible only on certain pages."
+msgstr "block kan konfigureras att vara synliga endast på vissa sidor."
+
+#: modules/block/block.module:77
+msgid ""
+"blocks can be configured to be visible only when specific conditions are "
+"true."
+msgstr ""
+"block kan konfigureras att vara synliga endast då särskilda villkor "
+"uppfyllts."
+
+#: modules/block/block.module:78
+msgid "blocks can be configured to be visible only for certain user roles."
+msgstr ""
+"block kan konfigureras att vara synliga endast för vissa användarroller."
+
+#: modules/block/block.module:79
+msgid ""
+"when allowed by an administrator, specific blocks may be enabled or disabled "
+"on a per-user basis using the <em>My account</em> page."
+msgstr ""
+"då det tillåts av en administratör kan vissa block aktiveras eller "
+"inaktiveras på användarbasis med hjälp av <em>Mitt konto</em>-sidan."
+
+#: modules/block/block.module:80
+msgid ""
+"some dynamic blocks, such as those generated by modules, will be displayed "
+"only on certain pages."
+msgstr ""
+"en del dynamiska block, sådana som skapas av moduler, kommer endast att "
+"visas på vissa sidor."
+
+#: modules/block/block.module:81
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@block"
+"\">Block module</a>."
+msgstr "Läs mer om <a href=\"@block\">modulen Block</a> i onlinehandboken."
+
+#: modules/block/block.module:85
+msgid ""
+"This page provides a drag-and-drop interface for assigning a block to a "
+"region, and for controlling the order of blocks within regions. To change "
+"the region or order of a block, grab a drag-and-drop handle under the "
+"<em>Block</em> column and drag the block to a new location in the list. "
+"(Grab a handle by clicking and holding the mouse while hovering over a "
+"handle icon.) Since not all themes implement the same regions, or display "
+"regions in the same way, blocks are positioned on a per-theme basis. "
+"Remember that your changes will not be saved until you click the <em>Save "
+"blocks</em> button at the bottom of the page."
+msgstr ""
+"Denna sida tillämpar ett drag-och-släpp-gränssnitt för att tilldela ett "
+"block till ett område, och för att kontrollera ordningen på block inom "
+"området. För att ändra område eller ordning på ett block ta tag i ett drag-"
+"och-släpp-handtag under kolumnen <em>Block</em> och dra blocket till en ny "
+"plats i listan. (Ta tag i ett hantag genom att klicka och hålla nere "
+"musknappen medan pekaren svävar över handtagsikonen.) Eftersom inte alla "
+"teman tillämpar samma områden eller visar områden på samma sätt placeras "
+"block utifrån varje tema. Kom ihåg att dina ändringar inte sparas tills du "
+"klickar på <em>Spara block</em>-knappen längst ner på sidan."
+
+#: modules/block/block.module:87
+msgid ""
+"To reduce CPU usage, database traffic or bandwidth, blocks may be "
+"automatically disabled during high server loads by selecting their "
+"<em>Throttle</em> checkbox. Adjust throttle thresholds on the <a href="
+"\"@throttleconfig\">throttle configuration page</a>."
+msgstr ""
+"För att minska CPU-användning, databastrafik eller bandbredd kan block "
+"automatiskt inaktiveras då servern belastas hårt genom att markera ett "
+"blocks kryssruta för <em>Lastbegränsning</em>. Justera lastbegränsningen för "
+"block på <a href=\"@throttleconfig\">inställningssidan för lastbegränsning</"
+"a>."
+
+#: modules/block/block.module:89
+msgid ""
+"Click the <em>configure</em> link next to each block to configure its "
+"specific title and visibility settings. Use the <a href=\"@add-block\">add "
+"block page</a> to create a custom block."
+msgstr ""
+"Klicka på <em>konfigurera</em>-länken bredvid ett block för att konfigurera "
+"dess titel och synlighetsinställning. Använd <a href=\"@add-block\">lägg "
+"till block-sidan</a> för att skapa ett eget block."
+
+#: modules/block/block.module:92
+msgid ""
+"Use this page to create a new custom block. New blocks are disabled by "
+"default, and must be moved to a region on the <a href=\"@blocks\">blocks "
+"administration page</a> to be visible."
+msgstr ""
+"Använd denna sida för att skapa ett nytt eget block. Nya block är som "
+"grundinställning inaktiverade och måste flyttas till ett område på <a href="
+"\"@blocks\">sidan för blockadministration</a> för att bli synlig."
+
+#: modules/block/block.module:276
+msgid ""
+"The block %info was assigned to the invalid region %region and has been "
+"disabled."
+msgstr ""
+"Blocket %info var tilldelat till den ogiltiga regionen %region och har "
+"blivit inaktiverat."
+
+#: modules/block/block.module:315
+msgid "Block description"
+msgstr "Blockbeskrivning"
+
+#: modules/block/block.module:318
+msgid ""
+"A brief description of your block. Used on the <a href=\"@overview\">block "
+"overview page</a>."
+msgstr ""
+"En kort beskrivning av ditt block. Används på <a href=\"@overview"
+"\">blocköversiktssidan</a>."
+
+#: modules/block/block.module:325
+msgid "Block body"
+msgstr "Blockinnehåll"
+
+#: modules/block/block.module:328
+msgid "The content of the block as shown to the user."
+msgstr "Innehållet i ett block såsom det visas för användaren."
+
+#: modules/block/block.module:361
+msgid "Block configuration"
+msgstr "Blockinställningar"
+
+#: modules/block/block.module:113
+msgid "administer blocks"
+msgstr "hantera block"
+
+#: modules/block/block.module:113
+msgid "use PHP for block visibility"
+msgstr "använda PHP för block-synlighet"
+
+#: modules/block/block.module:121
+msgid "Blocks"
+msgstr "Block"
+
+#: modules/block/block.module:122
+msgid ""
+"Configure what block content appears in your site's sidebars and other "
+"regions."
+msgstr ""
+"Ställ in vilka block som visas i webbplatsens sidospalter och andra regioner."
+
+#: modules/block/block.module:133
+msgid "JavaScript List Form"
+msgstr "JavaScript listformulär"
+
+#: modules/block/block.module:140
+msgid "Configure block"
+msgstr "Konfigurera block"
+
+#: modules/block/block.module:148
+msgid "Delete block"
+msgstr "Radera block"
+
+#: modules/block/block.module:156
+msgid "Add block"
+msgstr "Lägg till block"
+
+#: modules/block/block.module:0
+msgid "block"
+msgstr "block"
+
+#: modules/block/block.js:0
+msgid ""
+"The changes to these blocks will not be saved until the <em>Save blocks</em> "
+"button is clicked."
+msgstr ""
+"Ändringarna i dessa block kommer inte att sparas tills <em>Spara block</em> "
+"knappen klickats."

@@ -1,0 +1,406 @@
+# Swedish translation of drupal (6.13)
+# Copyright (c) 2009 by the Swedish translation team
+# Generated from files:
+#  contact.admin.inc,v 1.3 2007/11/09 07:55:13 dries
+#  contact.pages.inc,v 1.6.2.2 2009/04/27 14:48:21 goba
+#  contact.module,v 1.103.2.1 2008/04/09 21:11:46 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-08-04 10:44+0200\n"
+"PO-Revision-Date: 2009-07-22 23:35+0200\n"
+"Language-Team: Swedish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/contact/contact.admin.inc:18,47
+msgid "Recipients"
+msgstr "Mottagare"
+
+#: modules/contact/contact.admin.inc:43
+msgid "Example: 'website feedback' or 'product information'."
+msgstr "Exempel: 'feedback' eller 'produktinformation'."
+
+#: modules/contact/contact.admin.inc:49
+msgid ""
+"Example: 'webmaster@example.com' or 'sales@example.com,support@example.com'. "
+"To specify multiple recipients, separate each e-mail address with a comma."
+msgstr ""
+"Exempel: 'webmaster@exempel.se' eller 'sales@exempel.se,support@dinsajt.se'. "
+"För att ange flera mottagare, separera adresserna med kommatecken."
+
+#: modules/contact/contact.admin.inc:53
+msgid "Auto-reply"
+msgstr "Automatiskt svar"
+
+#: modules/contact/contact.admin.inc:55
+msgid ""
+"Optional auto-reply. Leave empty if you do not want to send the user an auto-"
+"reply message."
+msgstr ""
+"Valfritt automatiskt svar. Lämna detta tomt om du inte vill skicka ett "
+"automatiskt svarsmeddelande."
+
+#: modules/contact/contact.admin.inc:60
+msgid ""
+"When listing categories, those with lighter (smaller) weights get listed "
+"before categories with heavier (larger) weights. Categories with equal "
+"weights are sorted alphabetically."
+msgstr ""
+"När kategorier visas kommer de med mindre vikt att visas ovanför de med "
+"större vikt. Kategorier med samma vikt kommer att visas i alfabetisk ordning."
+
+#: modules/contact/contact.admin.inc:66
+msgid ""
+"Set this to <em>Yes</em> if you would like this category to be selected by "
+"default."
+msgstr "Välj <em>Ja</em> om du vill att denna kategori skall vara förvald."
+
+#: modules/contact/contact.admin.inc:86
+msgid "You must enter one or more recipients."
+msgstr "Du måste ange en eller flera mottagare."
+
+#: modules/contact/contact.admin.inc:92
+msgid "%recipient is an invalid e-mail address."
+msgstr "%recipient är inte en giltig e-postadress."
+
+#: modules/contact/contact.admin.inc:114
+msgid "Category %category has been added."
+msgstr "Kategorin %category har lagts till."
+
+#: modules/contact/contact.admin.inc:120
+msgid "Category %category has been updated."
+msgstr "Kategorin %category har uppdaterats."
+
+#: modules/contact/contact.admin.inc:138
+msgid "Are you sure you want to delete %category?"
+msgstr "Är du säker på att du vill radera %category?"
+
+#: modules/contact/contact.admin.inc:147
+msgid "Category %category has been deleted."
+msgstr "Kategorin %category har raderats."
+
+#: modules/contact/contact.admin.inc:156
+msgid "Additional information"
+msgstr "Mer information"
+
+#: modules/contact/contact.admin.inc:158
+msgid ""
+"Information to show on the <a href=\"@form\">contact page</a>. Can be "
+"anything from submission guidelines to your postal address or telephone "
+"number."
+msgstr ""
+"Information som visas på <a href=\"@form\">kontaktsidan</a>. Det kan gälla "
+"allt från regler för att skriva inlägg till ditt telefonnummer eller "
+"postadress."
+
+#: modules/contact/contact.admin.inc:161
+msgid "Hourly threshold"
+msgstr "Tröskelvärde per timme"
+
+#: modules/contact/contact.admin.inc:164
+msgid ""
+"The maximum number of contact form submissions a user can perform per hour."
+msgstr ""
+"Det maximala antalet meddelanden per timme som en användare kan skicka genom "
+"kontaktformuläret."
+
+#: modules/contact/contact.admin.inc:168
+msgid "Enable personal contact form by default"
+msgstr "Aktivera personligt kontaktformulär som standard"
+
+#: modules/contact/contact.admin.inc:170
+msgid "Default status of the personal contact form for new users."
+msgstr ""
+"Förvald inställning för det personliga kontaktformuläret för nya användare."
+
+#: modules/contact/contact.admin.inc:115
+msgid "Contact form: category %category added."
+msgstr "Kontaktformulär: kategorin %category tillagd."
+
+#: modules/contact/contact.admin.inc:121
+msgid "Contact form: category %category updated."
+msgstr "Kontaktformulär: kategorin %category uppdaterades."
+
+#: modules/contact/contact.admin.inc:148
+msgid "Contact form: category %category deleted."
+msgstr "Kontaktformulär: kategorin %category raderades."
+
+#: modules/contact/contact.pages.inc:17
+msgid ""
+"You cannot send more than %number messages per hour. Please try again later."
+msgstr ""
+"Du kan inte skicka fler än %number meddelanden per timme. Försök igen senare."
+
+#: modules/contact/contact.pages.inc:49
+msgid "Your e-mail address"
+msgstr "Din e-postadress"
+
+#: modules/contact/contact.pages.inc:88,197
+msgid "Send yourself a copy."
+msgstr "Skicka en kopia till dig själv."
+
+#: modules/contact/contact.pages.inc:99
+msgid ""
+"The contact form has not been configured. <a href=\"@add\">Add one or more "
+"categories</a> to the form."
+msgstr ""
+"Kontaktformuläret har inte konfigurerats. <a href=\"@add\">Lägg till en "
+"eller fler kategorier</a> till formuläret."
+
+#: modules/contact/contact.pages.inc:109
+msgid "You must select a valid category."
+msgstr "Du måste välja en giltig kategori."
+
+#: modules/contact/contact.pages.inc:112
+msgid "You must enter a valid e-mail address."
+msgstr "Du måste ange en giltig e-postadress."
+
+#: modules/contact/contact.pages.inc:147
+msgid "Your message has been sent."
+msgstr "Ditt meddelande har skickats."
+
+#: modules/contact/contact.pages.inc:161
+msgid ""
+"You need to provide a valid e-mail address to contact other users. Please "
+"update your <a href=\"@url\">user information</a> and try again."
+msgstr ""
+"Du måste ange en giltig e-postadress för att kontakta andra användare. Var "
+"vänlig ändra din <a href=\"@url\">användarinformation</a>."
+
+#: modules/contact/contact.pages.inc:164
+msgid ""
+"You cannot contact more than %number users per hour. Please try again later."
+msgstr ""
+"Du kan inte kontakta mer än %number användare per timme. Försök igen senare."
+
+#: modules/contact/contact.pages.inc:179
+msgid "From"
+msgstr "Från"
+
+#: modules/contact/contact.pages.inc:183
+msgid "To"
+msgstr "Till"
+
+#: modules/contact/contact.pages.inc:232
+msgid "The message has been sent."
+msgstr "Meddelandet har skickats."
+
+#: modules/contact/contact.pages.inc:146
+msgid "%name-from sent an e-mail regarding %category."
+msgstr "%name-from skickade ett e-postmeddelande angående %category."
+
+#: modules/contact/contact.pages.inc:231
+msgid "%name-from sent %name-to an e-mail."
+msgstr "%name-from skickade e-post till %name-to."
+
+#: modules/contact/contact.module:15
+msgid ""
+"The contact module facilitates communication via e-mail, by allowing your "
+"site's visitors to contact one another (personal contact forms), and by "
+"providing a simple way to direct messages to a set of administrator-defined "
+"recipients (the <a href=\"@contact\">contact page</a>). With either form, "
+"users specify a subject, write their message, and (optionally) have a copy "
+"of their message sent to their own e-mail address."
+msgstr ""
+"Modulen Contact underlättar kommunikation via e-post. Den ger besökare "
+"möjlighet att kontakta varandra genom personliga kontaktformulär, och även "
+"möjligheter att skicka meddelanden till mottagarlistor som administratörer "
+"bestämmer (genom <a href=\"@contact\">kontakt-sidan</a>). I vardera formulär "
+"fyller användaren i ämne, skriver meddelande, och kan också skicka en kopia "
+"av meddelandet till sin egen e-postadress."
+
+#: modules/contact/contact.module:16
+msgid ""
+"Personal contact forms allow users to be contacted via e-mail, while keeping "
+"recipient e-mail addresses private. Users may enable or disable their "
+"personal contact forms by editing their <em>My account</em> page. If "
+"enabled, a <em>Contact</em> tab leading to their personal contact form is "
+"available on their user profile. Site administrators have access to all "
+"personal contact forms (even if they have been disabled). The <em>Contact</"
+"em> tab is only visible when viewing another user's profile (users do not "
+"see their own <em>Contact</em> tab)."
+msgstr ""
+"Personliga kontaktformulär låter användare bli kontaktade via e-post utan "
+"att lämna ut sin e-postadress. Användare kan själva aktivera eller "
+"inaktivera sitt personliga kontaktformulär via sitt <em>användarkonto</em>. "
+"Om formuläret är aktiverat leder en <em>kontakt</em>-flik i användarprofilen "
+"till kontaktformuläret. Webbplatsens administratörer har åtkomst till alla "
+"personliga kontaktformulär (även om de är inaktiverade). <em>Kontakt</em>-"
+"fliken är bara synlig på andra användares profilsidor. (Användare ser inte "
+"sin egen kontaktflik.)"
+
+#: modules/contact/contact.module:17
+msgid ""
+"The <a href=\"@contact\">contact page</a> provides a simple form for "
+"visitors to leave comments, feedback, or other requests. Messages are routed "
+"by selecting a category from a list of administrator-defined options; each "
+"category has its own set of e-mail recipients. Common categories for a "
+"business site include, for example, \"Website feedback\" (messages are "
+"forwarded to web site administrators) and \"Product information\" (messages "
+"are forwarded to members of the sales department). The actual e-mail "
+"addresses defined within a category are not displayed. Only users in roles "
+"with the <em>access site-wide contact form</em> permission may access the <a "
+"href=\"@contact\">contact page</a>."
+msgstr ""
+"<a href=\"@contact\">Kontaktsidan</a> ger ett enkelt formulär där besökare "
+"kan e-posta kommentarer, kritik eller frågor. Mottagare väljs genom en "
+"kategorilista som administratörer skapat; varje kategori har en egen "
+"uppsättning e-postmottagare. Vanliga kategorier för en företagswebbplats "
+"omfattar till exempel \"synpunkter på webbplatsen\" (med webbplatsens "
+"administratörer som mottagare) och \"produktärenden\" (där meddelanden "
+"skickas till försäljare). De faktiska e-postadresserna i kategorierna visas "
+"inte. Endast användare med roller som har <em>komma åt webbplatsens "
+"kontaktformulär</em> aktiverat kan nå <a href=\"@contact\">kontaktsidan</a>."
+
+#: modules/contact/contact.module:18
+msgid ""
+"A link to your site's <a href=\"@contact\">contact page</a> from the main "
+"<em>Navigation</em> menu is created, but is disabled by default. Create a "
+"similar link on another menu by adding a menu item pointing to the path "
+"\"contact\""
+msgstr ""
+"En länk till din webbplats <a href=\"@contact\">kontaktsida</a> från "
+"<em>navigeringsblocket</em> skapas, men är inaktiverad som förval. Skapa "
+"liknande länkar i andra menyer genom att skapa menyval som hänvisar till "
+"sökvägen \"contact\"."
+
+#: modules/contact/contact.module:19
+msgid ""
+"Customize the <a href=\"@contact\">contact page</a> with additional "
+"information (like physical location, mailing address, and telephone number) "
+"using the <a href=\"@contact-settings\">contact form settings page</a>. The "
+"<a href=\"@contact-settings\">settings page</a> also provides configuration "
+"options for the maximum number of contact form submissions a user may "
+"perform per hour, and the default status of users' personal contact forms."
+msgstr ""
+"Anpassa <a href=\"@contact\">kontaktsidan</a> med ytterligare information "
+"(så som ort, adress och telefonnummer) genom <a href=\"@contact-settings"
+"\">sidan för kontaktformulärens inställningar</a>. Där kan du också ange "
+"högsta antal utskick med kontaktformulär en användare får genomföra per "
+"timme, samt standardinställningarna för användarnas personliga "
+"kontaktformulär."
+
+#: modules/contact/contact.module:20
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@contact"
+"\">Contact module</a>."
+msgstr "Läs mer om <a href=\"@contact\">modulen Contact</a> i onlinehandboken."
+
+#: modules/contact/contact.module:23
+msgid ""
+"This page lets you set up <a href=\"@form\">your site-wide contact form</a>. "
+"To do so, add one or more categories. You can associate different recipients "
+"with each category to route e-mails to different people. For example, you "
+"can route website feedback to the webmaster and direct product information "
+"requests to the sales department. On the <a href=\"@settings\">settings "
+"page</a>, you can customize the information shown above the contact form. "
+"This can be useful to provide additional contact information such as your "
+"postal address and telephone number."
+msgstr ""
+"På den här sidan kan du göra inställningar för <a href=\"@form"
+"\">webbplatsens kontaktformulär</a>. För att använda dem skapar du en eller "
+"flera kategorier. Varje kategori innehåller ett antal e-postmottagare. Du "
+"kan till exempel skicka synpunkter på webbplatsen till webmaster eller "
+"frågor om produkter till säljavdelningen. På <a href=\"@settings"
+"\">inställningssidan</a> kan du anpassa informationen som visas ovanför "
+"kontaktformuläret. Detta kan användas för att ge ytterligare "
+"kontaktinformation såsom adress och telefonnummer."
+
+#: modules/contact/contact.module:25
+msgid ""
+"The menu item can be customized and configured only once the menu module has "
+"been <a href=\"@modules-page\">enabled</a>."
+msgstr ""
+"Menyvalet kan anpassas och ställas in först när modulen Menu har <a href="
+"\"@modules-page\">aktiverats</a>."
+
+#: modules/contact/contact.module:30
+msgid ""
+"The contact module also adds a <a href=\"@menu-settings\">menu item</a> "
+"(disabled by default) to the navigation block."
+msgstr ""
+"Modulen Contact lägger också till ett <a href=\"@menu-settings\">menyval</a> "
+"(inaktivt som standard) i navigeringsblocket."
+
+#: modules/contact/contact.module:144
+msgid "Contact settings"
+msgstr "Kontaktinställningar"
+
+#: modules/contact/contact.module:149
+msgid "Personal contact form"
+msgstr "Personligt kontaktformulär"
+
+#: modules/contact/contact.module:151
+msgid ""
+"Allow other users to contact you by e-mail via <a href=\"@url\">your "
+"personal contact form</a>. Note that while your e-mail address is not made "
+"public to other members of the community, privileged users such as site "
+"administrators are able to contact you even if you choose not to enable this "
+"feature."
+msgstr ""
+"Tillåt andra användare att kontakta dig genom e-post via <a href=\"@url"
+"\">ditt personliga kontaktformulär</a>. Observera att din e-postadress inte "
+"visas för andra användare. Privilegierade användare, som administratörerna "
+"för webbplatsen, kan kontakta dig även om du väljer att inte aktivera denna "
+"funktion."
+
+#: modules/contact/contact.module:172,178
+msgid "[!category] !subject"
+msgstr "[!category] !subject"
+
+#: modules/contact/contact.module:173
+msgid "!name sent a message using the contact form at !form."
+msgstr "!name skickade ett meddelande via kontaktformuläret !form."
+
+#: modules/contact/contact.module:187
+msgid ""
+"!name (!name-url) has sent you a message via your contact form (!form-url) "
+"at !site."
+msgstr ""
+"!name (!name-url) har skickat ett meddelande via ditt kontaktformulär (!form-"
+"url) på !site."
+
+#: modules/contact/contact.module:188
+msgid ""
+"If you don't want to receive such e-mails, you can change your settings at !"
+"url."
+msgstr ""
+"Om du inte vill ta emot sådan e-post kan du ändra dina inställningar på !url."
+
+#: modules/contact/contact.module:189
+msgid "Message:"
+msgstr "Meddelande:"
+
+#: modules/contact/contact.module:39
+msgid "access site-wide contact form"
+msgstr "tillgång till webbplatsens kontaktformulär"
+
+#: modules/contact/contact.module:39
+msgid "administer site-wide contact form"
+msgstr "administrera webbplatsens kontaktformulär"
+
+#: modules/contact/contact.module:46
+msgid "Contact form"
+msgstr "Kontaktformulär"
+
+#: modules/contact/contact.module:47
+msgid "Create a system contact form and set up categories for the form to use."
+msgstr ""
+"Skapa systemets kontaktformulär och skapa kategorier som formuläret kan "
+"använda."
+
+#: modules/contact/contact.module:68
+msgid "Edit contact category"
+msgstr "Redigera kontaktkategori"
+
+#: modules/contact/contact.module:76
+msgid "Delete contact"
+msgstr "Radera kontakt"
+
+#: modules/contact/contact.module:0
+msgid "contact"
+msgstr "kontakt"

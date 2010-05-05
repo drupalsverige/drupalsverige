@@ -1,0 +1,219 @@
+# Swedish translation of drupal (6.13)
+# Copyright (c) 2009 by the Swedish translation team
+# Generated from files:
+#  path.admin.inc,v 1.7.2.1 2008/11/22 10:49:15 dries
+#  path.module,v 1.138.2.3 2008/11/22 10:49:15 dries
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-08-04 10:44+0200\n"
+"PO-Revision-Date: 2009-07-22 23:33+0200\n"
+"Language-Team: Swedish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/path/path.admin.inc:30
+msgid "Alias"
+msgstr "Alias"
+
+#: modules/path/path.admin.inc:54
+msgid "No URL aliases found."
+msgstr "Inga URL-alias hittades."
+
+#: modules/path/path.admin.inc:54
+msgid "No URL aliases available."
+msgstr "Inga URL-alias tillgängliga."
+
+#: modules/path/path.admin.inc:93
+msgid "Existing system path"
+msgstr "Befintlig systemsökväg"
+
+#: modules/path/path.admin.inc:97
+msgid ""
+"Specify the existing path you wish to alias. For example: node/28, forum/1, "
+"taxonomy/term/1+2."
+msgstr ""
+"Ange den befintliga sökvägen som du vill skapa ett alias för. Exempelvis: "
+"node/28, forum/1, taxonomy/term/1+2."
+
+#: modules/path/path.admin.inc:103
+msgid "Path alias"
+msgstr "Sökvägalias"
+
+#: modules/path/path.admin.inc:107
+msgid ""
+"Specify an alternative path by which this data can be accessed. For example, "
+"type \"about\" when writing an about page. Use a relative path and don't add "
+"a trailing slash or the URL alias won't work."
+msgstr ""
+"Ange en alternativ sökväg som detta innehåll kan nås genom. Till exempel kan "
+"man skriva \"om\" om man vill ha en sida om webbplatsen. Använd en relativ "
+"sökväg och lägg inte till snedstreck i slutet, eftersom aliaset då inte "
+"fungerar."
+
+#: modules/path/path.admin.inc:118
+msgid "Update alias"
+msgstr "Uppdatera alias"
+
+#: modules/path/path.admin.inc:121
+msgid "Create new alias"
+msgstr "Skapa nytt alias"
+
+#: modules/path/path.admin.inc:139
+msgid "The alias %alias is already in use in this language."
+msgstr "Aliaset %alias används redan för detta språk."
+
+#: modules/path/path.admin.inc:154
+msgid "The alias has been saved."
+msgstr "Aliaset har sparats."
+
+#: modules/path/path.admin.inc:167
+msgid "Are you sure you want to delete path alias %title?"
+msgstr "Vill du verkligen radera aliaset %title?"
+
+#: modules/path/path.admin.inc:194
+msgid "Filter aliases"
+msgstr "Filtrera alias"
+
+#: modules/path/path.module:15
+msgid ""
+"The path module allows you to specify aliases for Drupal URLs. Such aliases "
+"improve readability of URLs for your users and may help internet search "
+"engines to index your content more effectively. More than one alias may be "
+"created for a given page."
+msgstr ""
+"Modulen Path låter dig skapa alias för Drupals URL:er. Sådana alias gör URL:"
+"en mer läsbar för dina användare och kan hjälpa Internet-sökmotorer att "
+"indexera innehållet mer effektivt. Flera alias kan skapas för en och samma "
+"sida."
+
+#: modules/path/path.module:16
+msgid ""
+"<p>Some examples of URL aliases are:</p>\n"
+"<ul>\n"
+"<li>user/login =&gt; login</li>\n"
+"<li>image/tid/16 =&gt; store</li>\n"
+"<li>taxonomy/term/7+19+20+21 =&gt; store/products/whirlygigs</li>\n"
+"<li>node/3 =&gt; contact</li>\n"
+"</ul>\n"
+msgstr ""
+"<p>Exempel på URL-alias:</p>\n"
+"<ul>\n"
+"<li>user/login =&gt; login</li>\n"
+"<li>image/tid/16 =&gt; shop</li>\n"
+"<li>taxonomy/term/7+19+20+21 =&gt; shop/produkter/dekorationer</li>\n"
+"<li>node/3 =&gt; kontakt</li>\n"
+"</ul>\n"
+
+#: modules/path/path.module:24
+msgid ""
+"The path module enables appropriately permissioned users to specify an "
+"optional alias in all node input and editing forms, and provides an "
+"interface to view and edit all URL aliases. The two permissions related to "
+"URL aliasing are <em>administer url aliases</em> and <em>create url aliases</"
+"em>. "
+msgstr ""
+"Modulen Path ger användare med rätt behörighet möjlighet att specificera ett "
+"alternativt alias på inmatnings- och redigeringsformulär för noder. Den ger "
+"också ett administrativt gränssnitt för att visa och redigera alla URL-"
+"alias. De två olika rättigheterna som hör till URL-alias är <em>administrera "
+"URL-alias</em> och <em>skapa URL-alias</em>. "
+
+#: modules/path/path.module:25
+msgid ""
+"This module also provides user-defined mass URL aliasing capabilities, which "
+"is useful if you wish to uniformly use URLs different from the default. For "
+"example, you may want to have your URLs presented in a different language. "
+"Access to the Drupal source code on the web server is required to set up "
+"mass URL aliasing. "
+msgstr ""
+"Denna modul ger också möjlighet till massöversättning av URL:er, vilket är "
+"praktiskt om du rutinmässigt vill ha andra URL:er än vad som är standard. "
+"Till exempel kanske du vill visa adresserna på ett annat språk. För att "
+"kunna sätta upp massöversättning av URL:er måste du ha tillgång till Drupals "
+"källkod på webbservern. "
+
+#: modules/path/path.module:26
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@path"
+"\">Path module</a>."
+msgstr "Läs mer om <a href=\"@path\">modulen Path</a>i onlinehandboken."
+
+#: modules/path/path.module:29
+msgid ""
+"Drupal provides complete control over URLs through aliasing, which is often "
+"used to make URLs more readable or easy to remember. For example, the alias "
+"'about' may be mapped onto the post at the system path 'node/1', creating a "
+"more meaningful URL. Each system path can have multiple aliases."
+msgstr ""
+"Drupal ger användarna full kontroll över URL:er med hjälp av alias. Denna "
+"funktion används vanligtvis för att göra URL:er mer läsbara och lätta att "
+"komma ihåg. Till exempel kan man låta aliaset 'om' representera "
+"systemsökvägen 'node/1' för att få en mer meningsfull adress. Varje "
+"systemsökväg kan ha flera alias."
+
+#: modules/path/path.module:31
+msgid ""
+"Enter the path you wish to create the alias for, followed by the name of the "
+"new alias."
+msgstr ""
+"Skriv in den sökväg som du vill skapa ett alias för, följt av namnet på det "
+"nya aliaset."
+
+#: modules/path/path.module:82
+msgid "The alias has been deleted."
+msgstr "Aliaset har tagits bort."
+
+#: modules/path/path.module:143
+msgid "The path is already in use."
+msgstr "Sökvägen används redan."
+
+#: modules/path/path.module:186
+msgid "URL path settings"
+msgstr "Inställningar för URL-alias"
+
+#: modules/path/path.module:198
+msgid ""
+"Optionally specify an alternative URL by which this node can be accessed. "
+"For example, type \"about\" when writing an about page. Use a relative path "
+"and don't add a trailing slash or the URL alias won't work."
+msgstr ""
+"Ange frivilligt en alternativ URL som denna nod kan nås med. Skriv "
+"exempelvis \"om\" om du skapar en sida om webbplatsen. Använd en relativ "
+"sökväg och lägg inte till ett snedstreck i slutet, eftersom aliaset då inte "
+"fungerar."
+
+#: modules/path/path.module:213
+msgid "create url aliases"
+msgstr "skapa URL-alias"
+
+#: modules/path/path.module:213
+msgid "administer url aliases"
+msgstr "administrera URL-alias"
+
+#: modules/path/path.module:40
+msgid "URL aliases"
+msgstr "URL-alias"
+
+#: modules/path/path.module:41
+msgid "Change your site's URL paths by aliasing them."
+msgstr "Ändra URL:er på din webbplats genom att skapa alias."
+
+#: modules/path/path.module:47
+msgid "Edit alias"
+msgstr "Redigera alias"
+
+#: modules/path/path.module:54
+msgid "Delete alias"
+msgstr "Radera alias"
+
+#: modules/path/path.module:67
+msgid "Add alias"
+msgstr "Lägg till alias"
+
+#: modules/path/path.module:0
+msgid "path"
+msgstr "sökväg"

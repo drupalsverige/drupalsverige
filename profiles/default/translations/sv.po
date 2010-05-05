@@ -1,0 +1,1479 @@
+# Swedish translation of drupal (6.13)
+# Copyright (c) 2009 by the Swedish translation team
+# Generated from files:
+#  install.php,v 1.113.2.9 2009/04/27 10:50:35 goba
+#  taxonomy.admin.inc,v 1.22.2.3 2009/02/25 12:53:24 goba
+#  system.admin.inc,v 1.63.2.8 2009/06/09 10:58:09 goba
+#  system.js,v 1.14.2.1 2008/02/07 18:23:30 goba
+#  install.inc,v 1.56.2.4 2009/02/16 10:25:02 goba
+#  system.module,v 1.585.2.38 2009/07/01 20:51:56 goba
+#  node.module,v 1.947.2.15 2009/02/16 14:39:40 goba
+#  user.admin.inc,v 1.18.2.1 2008/08/13 23:59:14 drumm
+#  user.module,v 1.892.2.14 2009/07/01 20:51:56 goba
+#  block.admin.inc,v 1.14.2.5 2008/11/24 06:00:02 dries
+#  comment.module,v 1.617.2.8 2009/07/01 20:51:55 goba
+#  locale.module,v 1.212.2.6 2009/02/25 11:47:37 goba
+#  statistics.admin.inc,v 1.6 2008/01/08 10:35:42 goba
+#  statistics.module,v 1.272.2.1 2009/04/27 12:25:24 goba
+#  system.install,v 1.238.2.15 2009/07/01 20:51:56 goba
+#  upload.module,v 1.197.2.4 2009/01/12 15:30:23 goba
+#  locale.inc,v 1.174.2.9 2009/06/18 12:50:33 goba
+#  menu.admin.inc,v 1.26.2.4 2009/02/25 13:15:40 goba
+#  batch.inc,v 1.14 2007/12/20 11:57:20 goba
+#  unicode.inc,v 1.29 2007/12/28 12:02:50 dries
+#  database.mysql.inc,v 1.89 2008/01/24 10:46:54 goba
+#  database.mysqli.inc,v 1.54 2008/01/23 09:59:29 goba
+#  database.pgsql.inc,v 1.68.2.5 2009/06/09 10:53:52 goba
+#  file.inc,v 1.121.2.7 2009/06/09 10:37:38 goba
+#  form.inc,v 1.265.2.25 2009/05/26 08:18:46 goba
+#  filter.module,v 1.204.2.8 2008/12/10 22:30:14 goba
+#  node.admin.inc,v 1.19.2.3 2009/06/08 16:45:34 goba
+#  install.mysql.inc,v 1.9 2008/01/23 09:59:29 goba
+#  install.mysqli.inc,v 1.12 2008/01/23 09:59:29 goba
+#  install.pgsql.inc,v 1.6 2007/10/22 15:22:39 dries
+#  theme.maintenance.inc,v 1.10 2008/01/24 09:42:50 goba
+#  menu.install,v 1.9.2.1 2009/01/06 15:46:37 goba
+#  statistics.pages.inc,v 1.2.2.1 2009/04/27 12:08:29 goba
+#  default.profile,v 1.22 2007/12/17 12:43:34 goba
+#  update.report.inc,v 1.10.2.4 2009/06/09 11:08:32 goba
+#  update.module,v 1.17.2.5 2009/06/09 11:08:32 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-08-04 10:44+0200\n"
+"PO-Revision-Date: 2009-07-22 23:48+0200\n"
+"Language-Team: Swedish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: install.php:118
+msgid "Requirements problem"
+msgstr "Systemkravsproblem"
+
+#: install.php:200
+msgid "Database configuration"
+msgstr "Databasinställningar"
+
+#: install.php:222
+msgid ""
+"Your web server does not appear to support any common database types. Check "
+"with your hosting provider to see if they offer any databases that <a href="
+"\"@drupal-databases\">Drupal supports</a>."
+msgstr ""
+"Din webbserver verkar inte ha stöd för några vanliga databastyper. "
+"Kontrollera med din leverantör om de erbjuder några databaser som <a href="
+"\"@drupal-databases\">stöds av Drupal</a>."
+
+#: install.php:228
+msgid "Basic options"
+msgstr "Grundläggande alternativ"
+
+#: install.php:229
+msgid "To set up your @drupal database, enter the following information."
+msgstr "För att upprätta din @drupal-databas, fyll i följande information."
+
+#: install.php:235
+msgid "Database type"
+msgstr "Databastyp"
+
+#: install.php:239
+msgid "The type of database your @drupal data will be stored in."
+msgstr "Den typ av databas som din @drupal-data ska sparas i."
+
+#: install.php:241
+msgid ""
+"The name of the database your @drupal data will be stored in. It must exist "
+"on your server before @drupal can be installed."
+msgstr ""
+"Namnet på den databas som dina @drupal-data kommer att lagras i. Den måste "
+"finnas på din server innan @drupal kan installeras."
+
+#: install.php:250
+msgid ""
+"The name of the %db_type database your @drupal data will be stored in. It "
+"must exist on your server before @drupal can be installed."
+msgstr ""
+"Namnet på den %db_type-databas som din @drupal-data kommer att lagras i. Den "
+"måste finnas på din server innan @drupal kan installeras."
+
+#: install.php:257
+msgid "Database name"
+msgstr "Databasens namn"
+
+#: install.php:267
+msgid "Database username"
+msgstr "Databasens användarnamn"
+
+#: install.php:276
+msgid "Database password"
+msgstr "Databasens lösenord"
+
+#: install.php:283; modules/taxonomy/taxonomy.admin.inc:676
+msgid "Advanced options"
+msgstr "Avancerade alternativ"
+
+#: install.php:286
+msgid ""
+"These options are only necessary for some sites. If you're not sure what you "
+"should enter here, leave the default settings or check with your hosting "
+"provider."
+msgstr ""
+"Dessa alternativ är bara nödvändiga på vissa webbplatser. Om du är osäker på "
+"vad du ska skriva in här, låt standardinställningen stå kvar eller fråga din "
+"webbleverantör."
+
+#: install.php:292
+msgid "Database host"
+msgstr "Databasserver"
+
+#: install.php:298
+msgid "If your database is located on a different server, change this."
+msgstr "Ändra detta om din databas ligger på en annan server."
+
+#: install.php:304
+msgid "Database port"
+msgstr "Databasport"
+
+#: install.php:309
+msgid ""
+"If your database server is listening to a non-standard port, enter its "
+"number."
+msgstr ""
+"Om din databasserver lyssnar på en port som inte är standard, skriv in "
+"portnumret här."
+
+#: install.php:316
+msgid "Table prefix"
+msgstr "Tabellprefix"
+
+#: install.php:319
+msgid ""
+"If more than one application will be sharing this database, enter a table "
+"prefix such as %prefix for your @drupal site here."
+msgstr ""
+"Om fler än en applikation kommer att använda denna databas, ange ett "
+"tabellprefix såsom %prefix för din @drupal-webbplats här."
+
+#: install.php:324,489,1101
+msgid "Save and continue"
+msgstr "Spara och fortsätt"
+
+#: install.php:352
+msgid ""
+"The database table prefix you have entered, %db_prefix, is invalid. The "
+"table prefix can only contain alphanumeric characters, periods, or "
+"underscores."
+msgstr ""
+"Tabellprefixet för databasen som du angav, %db_prefix, är ogiltigt. "
+"Tabellprefixet får bara innehålla alfanumeriska tecken, punkter eller "
+"understreck."
+
+#: install.php:356
+msgid "Database port must be a number."
+msgstr "Databasporten måste vara ett heltal."
+
+#: install.php:366
+msgid ""
+"In your %settings_file file you have configured @drupal to use a %db_type "
+"server, however your PHP installation currently does not support this "
+"database type."
+msgstr ""
+"I filen %settings_file har du ställt in att @drupal ska använda en %db_type-"
+"server, men din PHP-installation stöder för närvarande inte denna databastyp."
+
+#: install.php:379
+msgid ""
+"In order for Drupal to work, and to continue with the installation process, "
+"you must resolve all permission issues reported above. We were able to "
+"verify that we have permission for the following commands: %commands. For "
+"more help with configuring your database server, see the <a href=\"http://"
+"drupal.org/node/258\">Installation and upgrading handbook</a>. If you are "
+"unsure what any of this means you should probably contact your hosting "
+"provider."
+msgstr ""
+"För att Drupal ska fungera och för att du ska kunna gå vidare med "
+"installationsprocessen måste du lösa alla rättighetsproblem som visas ovan. "
+"Vi kunde bekräfta att rättigheter finns för följande kommandon: %commands. "
+"För mer hjälp med att ställa in din databasserver, se <a href=\"http://"
+"drupal.org/node/258\">Installations- och uppgraderingshandboken</a>. Om du "
+"är osäker på vad detta betyder bör du förmodligen kontakta din "
+"webbleverantör."
+
+#: install.php:441
+msgid "Select an installation profile"
+msgstr "Välj en installationsprofil"
+
+#: install.php:523,567,951
+msgid "Choose language"
+msgstr "Välj språk"
+
+#: install.php:525
+msgid ""
+"With the addition of an appropriate translation package, this installer is "
+"capable of proceeding in another language of your choice. To install and use "
+"Drupal in a language other than English:"
+msgstr ""
+"Genom att lägga till ett lämpligt språkpaket kan denna installation "
+"fortsätta processen på ett annat språk. För att installera och använda "
+"Drupal på ett annat språk än engelska:"
+
+#: install.php:526
+msgid ""
+"Determine if <a href=\"@translations\" target=\"_blank\">a translation of "
+"this Drupal version</a> is available in your language of choice. A "
+"translation is provided via a translation package; each translation package "
+"enables the display of a specific version of Drupal in a specific language. "
+"Not all languages are available for every version of Drupal."
+msgstr ""
+"Ta reda på om <a href=\"@translations\" target=\"_blank\">en översättning av "
+"denna version av Drupal</a> finns tillgänglig på det språk du önskar. "
+"Översättningar tillhandahålls i form av språkpaket som gör det möjligt att "
+"visa en viss version av Drupal på ett visst språk. Alla språk finns inte "
+"tillgängliga för alla versioner av Drupal."
+
+#: install.php:527
+msgid ""
+"If an alternative translation package of your choice is available, download "
+"and extract its contents to your Drupal root directory."
+msgstr ""
+"Om det finns ett alternativt språkpaket som du vill använda, ladda ner det "
+"och packa upp dess innehåll i Drupals rotkatalog."
+
+#: install.php:528
+msgid ""
+"Return to choose language using the second link below and select your "
+"desired language from the displayed list. Reloading the page allows the list "
+"to automatically adjust to the presence of new translation packages."
+msgstr ""
+"Återgå till att välja språk med den andra länken nedan och välj sedan ditt "
+"önskade språk i listan som visas. Genom att ladda om sidan kan listan utökas "
+"automatiskt om det finns nya språkpaket."
+
+#: install.php:529
+msgid ""
+"Alternatively, to install and use Drupal in English, or to defer the "
+"selection of an alternative language until after installation, select the "
+"first link below."
+msgstr ""
+"För att istället installera och använda Drupal på engelska, eller för att "
+"skjuta upp språkvalet till efter installationen, välj den första länken "
+"nedan."
+
+#: install.php:530
+msgid "How should the installation continue?"
+msgstr "Hur ska installationen fortsätta?"
+
+#: install.php:531
+msgid "Continue installation in English"
+msgstr "Fortsätt installationen på engelska"
+
+#: install.php:531
+msgid "Return to choose a language"
+msgstr "Återgå för att välja ett språk"
+
+#: install.php:534
+msgid "Install Drupal in English"
+msgstr "Installera Drupal på engelska"
+
+#: install.php:534
+msgid "Learn how to install Drupal in other languages"
+msgstr "Få mer information om hur man installerar Drupal på andra språk"
+
+#: install.php:583
+msgid "(@language)"
+msgstr "(@language)"
+
+#: install.php:589
+msgid "(built-in)"
+msgstr "(inbyggt)"
+
+#: install.php:595
+msgid "Select language"
+msgstr "Välj språk"
+
+#: install.php:605
+msgid "No profiles available"
+msgstr "Inga profiler tillgängliga"
+
+#: install.php:606
+msgid ""
+"We were unable to find any installer profiles. Installer profiles tell us "
+"what modules to enable and what schema to install in the database. A profile "
+"is necessary to continue with the installation process."
+msgstr ""
+"Inga installationsprofiler kunde hittas. Installationsprofiler talar om "
+"vilka moduler som ska aktiveras och vilket databasschema som ska "
+"installeras. En profil är nödvändig för att kunna fortsätta "
+"installationsprocessen."
+
+#: install.php:617
+msgid "Drupal already installed"
+msgstr "Drupal är redan installerat"
+
+#: install.php:618
+msgid ""
+"<ul><li>To start over, you must empty your existing database.</li><li>To "
+"install to a different database, edit the appropriate <em>settings.php</em> "
+"file in the <em>sites</em> folder.</li><li>To upgrade an existing "
+"installation, proceed to the <a href=\"@base-url/update.php\">update script</"
+"a>.</li><li>View your <a href=\"@base-url\">existing site</a>.</li></ul>"
+msgstr ""
+"<ul><li>För att börja från början måste du tömma din befintliga databas.</"
+"li><li>För att installera i en annan databas, ändra i den aktuella "
+"<em>settings.php</em>-filen i <em>sites</em>-katalogen.</li><li>För att "
+"uppgradera en befintlig installation, gå vidare till <a href=\"@base-url/"
+"update.php\">uppgraderingsskriptet</a>.</li><li>Gå till din <a href=\"@base-"
+"url\">befintliga webbplats</a>.</li></ul>"
+
+#: install.php:657
+msgid "Installing @drupal"
+msgstr "Installerar @drupal"
+
+#: install.php:658
+msgid "The installation has encountered an error."
+msgstr "Ett fel har inträffat under installationen."
+
+#: install.php:714,956
+msgid "Configure site"
+msgstr "Anpassa webbplatsen"
+
+#: install.php:720
+msgid ""
+"All necessary changes to %dir and %file have been made, so you should remove "
+"write permissions to them now in order to avoid security risks. If you are "
+"unsure how to do so, please consult the <a href=\"@handbook_url\">on-line "
+"handbook</a>."
+msgstr ""
+"Alla nödvändiga ändringar i %dir och %file har utförts, så du bör nu ta bort "
+"skrivrättigheterna till dem nu för att undvika säkerhetsrisker. Om du är "
+"osäker på hur det går till, se <a href=\"@handbook_url\">onlinehandboken</a>."
+
+#: install.php:723
+msgid ""
+"All necessary changes to %dir and %file have been made. They have been set "
+"to read-only for security."
+msgstr ""
+"Alla nödvändiga ändringar i %dir och %file har utförts. De har av "
+"säkerhetsskäl ställts in för att endast kunna läsas."
+
+#: install.php:731; modules/system/system.admin.inc:1678;
+#: modules/system/system.js:0
+msgid "Your server has been successfully tested to support this feature."
+msgstr "Din server har testats och har stöd för denna funktion."
+
+#: install.php:731; modules/system/system.js:0
+msgid ""
+"Your system configuration does not currently support this feature. The <a "
+"href=\"http://drupal.org/node/15365\">handbook page on Clean URLs</a> has "
+"additional troubleshooting information."
+msgstr ""
+"Din systemkonfiguration har för närvarande inte stöd för denna funktion. <a "
+"href=\"http://drupal.org/node/15365\">Handboksidan om Rena URL:er</a> har "
+"mer information om felsökning."
+
+#: install.php:731; modules/system/system.js:0
+msgid "Testing clean URLs..."
+msgstr "Testar rena URL:er..."
+
+#: install.php:796
+msgid "@drupal installation complete"
+msgstr "Installationen av @drupal är klar"
+
+#: install.php:798
+msgid "Congratulations, @drupal has been successfully installed."
+msgstr "Gratulerar, @drupal har installerats korrekt."
+
+#: install.php:799
+msgid ""
+"Please review the messages above before continuing on to <a href=\"@url"
+"\">your new site</a>."
+msgstr ""
+"Var god kontrollera meddelandena ovan innan du går vidare till <a href=\"@url"
+"\">din nya webbplats</a>."
+
+#: install.php:799
+msgid "You may now visit <a href=\"@url\">your new site</a>."
+msgstr "Du kan nu besöka <a href=\"@url\">din nya webbplats</a>."
+
+#: install.php:841
+msgid "Installed %module module."
+msgstr "Installerade modulen %module."
+
+#: install.php:901
+msgid ""
+"The @drupal installer requires that you create a settings file as part of "
+"the installation process.\n"
+"<ol>\n"
+"<li>Copy the %default_file file to %file.</li>\n"
+"<li>Change file permissions so that it is writable by the web server. If you "
+"are unsure how to grant file permissions, please consult the <a href="
+"\"@handbook_url\">on-line handbook</a>.</li>\n"
+"</ol>\n"
+"More details about installing Drupal are available in INSTALL.txt."
+msgstr ""
+"@drupal-installeraren kräver att du skapar en inställningsfil som en del av "
+"installtionsprocessen.\r\n"
+"<ol>\r\n"
+"<li>Kopiera filen %default_file till %file.</li>\r\n"
+"<li>Ändra filrättigheterna så att filen är skrivbar av webbservern. Om du är "
+"osäker på hur man ändrar filrättigheter, se <a href=\"@handbook_url\">online-"
+"handboken</a>.</li>\r\n"
+"</ol>\r\n"
+"Mer information om hur man installerar Drupal finns i INSTALL.txt."
+
+#: install.php:909
+msgid ""
+"The @drupal installer requires write permissions to %file during the "
+"installation process. If you are unsure how to grant file permissions, "
+"please consult the <a href=\"@handbook_url\">on-line handbook</a>."
+msgstr ""
+"@drupal-installeraren kräver skrivrättigheter till %file under "
+"installationsprocessen. Om du är osäker på hur man sätter filrättigheter, se "
+"<a href=\"@handbook_url\">onlinehandboken</a>."
+
+#: install.php:924,936; includes/install.inc:728
+msgid "Currently using !item !version"
+msgstr "Använder för närvarande !item !version"
+
+#: install.php:950
+msgid "Choose profile"
+msgstr "Välj profil"
+
+#: install.php:952
+msgid "Verify requirements"
+msgstr "Verifiera systemkrav"
+
+#: install.php:953
+msgid "Set up database"
+msgstr "Installera databas"
+
+#: install.php:954
+msgid "Install profile"
+msgstr "Installationsprofil"
+
+#: install.php:955
+msgid "Set up translations"
+msgstr "Installera översättningar"
+
+#: install.php:967
+msgid "Install site"
+msgstr "Installera webbplats"
+
+#: install.php:987
+msgid "Finish translations"
+msgstr "Slutför översättningar"
+
+#: install.php:992
+msgid "Finished"
+msgstr "Slutfört"
+
+#: install.php:1009
+msgid "To configure your website, please provide the following information."
+msgstr "För att anpassa din webbplats, fyll i följande information."
+
+#: install.php:1014; modules/system/system.module:379
+msgid "Site information"
+msgstr "Information om webbplatsen"
+
+#: install.php:1019; modules/system/system.admin.inc:378
+msgid "Site name"
+msgstr "Webbplatsens namn"
+
+#: install.php:1025
+msgid "Site e-mail address"
+msgstr "Webbplatsens e-postadress"
+
+#: install.php:1027; modules/system/system.admin.inc:1138
+msgid ""
+"The <em>From</em> address in automated e-mails sent during registration and "
+"new password requests, and other notifications. (Use an address ending in "
+"your site's domain to help prevent this e-mail being flagged as spam.)"
+msgstr ""
+"Den <em>Från</em>-adress som används i automatisk e-post som skickas vid "
+"registrering och begäran om nytt lösenord, liksom vid andra aviseringar. "
+"(Använd en adress som slutar med din webbplats domän för att minska risken "
+"för att e-posten flaggas som spam.)"
+
+#: install.php:1033
+msgid "Administrator account"
+msgstr "Administratörskonto"
+
+#: install.php:1038
+msgid ""
+"The administrator account has complete access to the site; it will "
+"automatically be granted all permissions and can perform any administrative "
+"activity. This will be the only account that can perform certain activities, "
+"so keep its credentials safe."
+msgstr ""
+"Administratörskontot har fullständig åtkomst till webbplatsen. Det ges "
+"automatiskt alla tillgängliga rättigheter och kan utföra allt administrativt "
+"arbete. Detta är det enda konto som kan utföra vissa uppgifter, så förvara "
+"inloggninguppgifterna säkert."
+
+#: install.php:1043; modules/node/node.module:2699,2708;
+#: modules/user/user.admin.inc:134,745,790,907;
+#: modules/user/user.module:653,1248,1445
+msgid "Username"
+msgstr "Användarnamn"
+
+#: install.php:1045; modules/user/user.module:1448
+msgid ""
+"Spaces are allowed; punctuation is not allowed except for periods, hyphens, "
+"and underscores."
+msgstr ""
+"Mellanslag är tillåtna. Skiljetecken är inte tillåtna förutom punkter, "
+"bindestreck och understreck."
+
+#: install.php:1051; modules/system/system.admin.inc:1136;
+#: modules/user/user.module:1453
+msgid "E-mail address"
+msgstr "E-postadress"
+
+#: install.php:1053
+msgid ""
+"All e-mails from the system will be sent to this address. The e-mail address "
+"is not made public and will only be used if you wish to receive a new "
+"password or wish to receive certain news or notifications by e-mail."
+msgstr ""
+"All e-post från det här systemet kommer att skickas till denna adress. E-"
+"postadressen kommer inte att visas utan används endast om du behöver ett "
+"nytt lösenord, eller om du vill ha vissa nyheter eller meddelanden via e-"
+"post."
+
+#: install.php:1066
+msgid "Server settings"
+msgstr "Inställningar för servern"
+
+#: install.php:1071; modules/system/system.admin.inc:1499
+msgid "Default time zone"
+msgstr "Förvald tidszon"
+
+#: install.php:1074
+msgid ""
+"By default, dates in this site will be displayed in the chosen time zone."
+msgstr ""
+"Datum och tid på webbplatsen kommer som standard att visas i denna tidszon."
+
+#: install.php:1080; modules/system/system.admin.inc:1661;
+#: modules/system/system.module:457
+msgid "Clean URLs"
+msgstr "Rena URL:er"
+
+#: install.php:1082; modules/block/block.admin.inc:363;
+#: modules/comment/comment.module:501,553,585;
+#: modules/locale/locale.module:264;
+#: modules/statistics/statistics.admin.inc:185;
+#: modules/statistics/statistics.module:255;
+#: modules/system/system.admin.inc:1276,1293,1307,1325,1333,1509,1663;
+#: modules/system/system.install:60; modules/upload/upload.module:215;
+#: modules/user/user.admin.inc:412,430
+msgid "Disabled"
+msgstr "Inaktiverad"
+
+#: install.php:1082; includes/locale.inc:90;
+#: modules/comment/comment.module:553; modules/locale/locale.module:264;
+#: modules/menu/menu.admin.inc:176,293;
+#: modules/statistics/statistics.admin.inc:185;
+#: modules/system/system.admin.inc:1293,1325,1333,1509,1663,2018,2207;
+#: modules/system/system.install:282; modules/upload/upload.module:215;
+#: modules/user/user.admin.inc:412,430
+msgid "Enabled"
+msgstr "Aktiverat"
+
+#: install.php:1083; modules/system/system.admin.inc:1664
+msgid ""
+"This option makes Drupal emit \"clean\" URLs (i.e. without <code>?q=</code> "
+"in the URL)."
+msgstr ""
+"Detta val gör att Drupal använder \"rena\" URL:er (det vill säga utan <code>?"
+"q=</code> i adressen)."
+
+#: install.php:1092; modules/system/system.install:285
+msgid "Update notifications"
+msgstr "Meddelanden om uppdateringar"
+
+#: install.php:1093
+msgid "Check for updates automatically"
+msgstr "Sök efter uppdateringar automatiskt"
+
+#: install.php:1095
+msgid ""
+"With this option enabled, Drupal will notify you when new releases are "
+"available. This will significantly enhance your site's security and is "
+"<strong>highly recommended</strong>. This requires your site to periodically "
+"send anonymous information on its installed components to <a href=\"@drupal"
+"\">drupal.org</a>. For more information please see the <a href=\"@update"
+"\">update notification information</a>."
+msgstr ""
+"Med denna inställning aktiv kommer Drupal meddela dig när nya versioner "
+"finns tillgängliga. Detta förbättrar din webbplats säkerhet avsevärt och "
+"<strong>rekommenderas starkt</strong>. Detta kräver att din webbplats "
+"återkommande skickar anonym information om installerade komponenter till <a "
+"href=\"@drupal\">drupal.org</a>. För mer information, se <a href=\"@update"
+"\">informationen om uppdateringsaviseringar</a>."
+
+#: includes/batch.inc:101; includes/unicode.inc:86
+msgid "Error"
+msgstr "Fel"
+
+#: includes/database.mysql.inc:26; includes/database.mysqli.inc:29
+msgid "MySQL database"
+msgstr "MySQL-databas"
+
+#: includes/database.mysql.inc:32; includes/database.mysqli.inc:35
+msgid "Your MySQL Server is too old. Drupal requires at least MySQL %version."
+msgstr ""
+"Din version av MySQL Server är för gammal. Drupal kräver minst MySQL %"
+"version."
+
+#: includes/database.pgsql.inc:23
+msgid "PostgreSQL database"
+msgstr "PostgreSQL-databas"
+
+#: includes/database.pgsql.inc:29
+msgid ""
+"Your PostgreSQL Server is too old. Drupal requires at least PostgreSQL %"
+"version."
+msgstr ""
+"Din version av PostgreSQL Server är för gammal. Drupal kräver minst "
+"PostgreSQL %version."
+
+#: includes/database.pgsql.inc:406
+msgid ""
+"Your PostgreSQL database is set up with the wrong character encoding (%"
+"encoding). It is possible it will not work as expected. It is advised to "
+"recreate it with UTF-8/Unicode encoding. More information can be found in "
+"the <a href=\"@url\">PostgreSQL documentation</a>."
+msgstr ""
+"Din PostgreSQL-databas har fel teckenkodning (%encoding). Det är möjligt att "
+"den inte kommer att fungera som förväntat. Du bör återskapa den med UTF-8/"
+"Unicode-kodning. Mer information finns i <a href=\"@url\">PostgreSQL-"
+"dokumentationen</a>."
+
+#: includes/file.inc:109; modules/system/system.install:198
+msgid "The directory %directory does not exist."
+msgstr "Katalogen %directory finns inte."
+
+#: includes/form.inc:679
+msgid "!name field is required."
+msgstr "Fältet !name är obligatoriskt."
+
+#: includes/form.inc:684
+msgid ""
+"!name cannot be longer than %max characters but is currently %length "
+"characters long."
+msgstr ""
+"!name får inte vara längre än %max tecken, men är för närvarande %length "
+"tecken."
+
+#: includes/form.inc:698,704; modules/filter/filter.module:537
+msgid ""
+"An illegal choice has been detected. Please contact the site administrator."
+msgstr ""
+"Ett ogiltigt val har upptäckts. Var vänlig kontakta webbplatsadministratören."
+
+#: includes/form.inc:2200
+msgid "This field is required."
+msgstr "Detta fält är obligatoriskt."
+
+#: includes/form.inc:2205,2208
+msgid "!title: !required"
+msgstr "!title: !required"
+
+#: includes/form.inc:2445; modules/node/node.admin.inc:357
+msgid "Processing"
+msgstr "Bearbetar"
+
+#: includes/form.inc:2446
+msgid "Initializing."
+msgstr "Initierar."
+
+#: includes/form.inc:2447
+msgid "Remaining @remaining of @total."
+msgstr "@remaining av @total återstår."
+
+#: includes/form.inc:2448
+msgid "An error has occurred."
+msgstr "Ett fel har uppstått."
+
+#: includes/form.inc:2521
+msgid "Please continue to <a href=\"@error_url\">the error page</a>"
+msgstr "Fortsätt till <a href=\"@error_url\">felsidan</a>"
+
+#: includes/install.inc:238
+msgid "Failed to modify %settings, please verify the file permissions."
+msgstr "Kunde inte modifiera %settings, var god kontrollera filrättigheterna."
+
+#: includes/install.inc:242
+msgid "Failed to open %settings, please verify the file permissions."
+msgstr "Kunde inte öppna %settings, var god kontrollera filrättigheterna."
+
+#: includes/install.inc:296
+msgid ""
+"The %module module is required but was not found. Please move it into the "
+"<em>modules</em> subdirectory."
+msgstr ""
+"Modulen %module är obligatorisk men kunde inte hittas. Var god lägg in den i "
+"underkatalogen <em>modules</em>."
+
+#: includes/install.mysql.inc:24
+msgid "PHP MySQL support not enabled."
+msgstr "Stöd för PHP MySQL är inte aktivt."
+
+#: includes/install.mysql.inc:44; includes/install.mysqli.inc:39
+msgid ""
+"Failed to connect to your MySQL database server. MySQL reports the following "
+"message: %error.<ul><li>Are you sure you have the correct username and "
+"password?</li><li>Are you sure that you have typed the correct database "
+"hostname?</li><li>Are you sure that the database server is running?</li></"
+"ul>For more help, see the <a href=\"http://drupal.org/node/258"
+"\">Installation and upgrading handbook</a>. If you are unsure what these "
+"terms mean you should probably contact your hosting provider."
+msgstr ""
+"Kunde inte ansluta till din MySQL-databasserver. MySQL ger följande "
+"felmeddelande: %error.<ul><li>Är du säker på att du har angett rätt "
+"användarnamn och lösenord?</li><li>Är du säker på att du har skrivit in rätt "
+"databas-servernamn?</li><li>Är du säker på att databasservern är igång?</"
+"li></ul>För mer hjälp, se <a href=\"http://drupal.org/node/258"
+"\">Installations- och uppgraderingshandboken</a>. Om du är osäker på vad "
+"detta betyder bör du förmodligen kontakta din webbleverantör."
+
+#: includes/install.mysql.inc:50; includes/install.mysqli.inc:45
+msgid ""
+"Failed to select your database on your MySQL database server, which means "
+"the connection username and password are valid, but there is a problem "
+"accessing your data. MySQL reports the following message: %error.<ul><li>Are "
+"you sure you have the correct database name?</li><li>Are you sure the "
+"database exists?</li><li>Are you sure the username has permission to access "
+"the database?</li></ul>For more help, see the <a href=\"http://drupal.org/"
+"node/258\">Installation and upgrading handbook</a>. If you are unsure what "
+"these terms mean you should probably contact your hosting provider."
+msgstr ""
+"Kunde inte välja din databas på MySQL-databasservern, vilket betyder att "
+"ditt användarnamn och lösenord stämmer, men det är problem med att komma åt "
+"din data. MySQL ger följande felmeddelande: %error.<ul><li>Är du säker på "
+"att du har rätt databasnamn?</li><li>Är du säker på att databasen existerar?"
+"</li><li>Är du säker på att användarnamnet har tillräckliga rättigheter för "
+"att använda databasen?</li></ul>För mer hjälp, se <a href=\"http://drupal."
+"org/node/258\">Installations- och uppgraderingshandboken</a>. Om du är "
+"osäker på vad dessa begrepp betyder bör du förmodligen kontakta din "
+"webbleverantör."
+
+#: includes/install.mysql.inc:60; includes/install.mysqli.inc:55
+msgid ""
+"Failed to create a test table on your MySQL database server with the command "
+"%query. MySQL reports the following message: %error.<ul><li>Are you sure the "
+"configured username has the necessary MySQL permissions to create tables in "
+"the database?</li></ul>For more help, see the <a href=\"http://drupal.org/"
+"node/258\">Installation and upgrading handbook</a>. If you are unsure what "
+"these terms mean you should probably contact your hosting provider."
+msgstr ""
+"Kunde inte skapa en testtabell i din MySQL-databas med kommandot %query. "
+"MySQL ger följande felmeddelande: %error.<ul><li>Är du säker på att det "
+"inställda användarnamnet har de nödvändiga MySQL-rättigheterna för att skapa "
+"tabeller i databasen?</li></ul>För mer hjälp, se <a href=\"http://drupal.org/"
+"node/258\">Installations- och uppgraderingshandboket</a>. Om du är osäker på "
+"vad dessa begrepp betyder bör du förmodligen kontakta din webbleverantör."
+
+#: includes/install.mysql.inc:71; includes/install.mysqli.inc:66
+msgid ""
+"Failed to insert a value into a test table on your MySQL database server. We "
+"tried inserting a value with the command %query and MySQL reported the "
+"following error: %error."
+msgstr ""
+"Kunde inte infoga ett värde i en testtabell på din MySQL-databasserver. "
+"Kommandot för att infoga värdet var %query och MySQL gav följande "
+"felmeddelande: %error."
+
+#: includes/install.mysql.inc:82; includes/install.mysqli.inc:77
+msgid ""
+"Failed to update a value in a test table on your MySQL database server. We "
+"tried updating a value with the command %query and MySQL reported the "
+"following error: %error."
+msgstr ""
+"Kunde inte uppdatera ett värde i en testtabell på din MySQL-databasserver. "
+"Kommandot för att uppdatera värdet var %query och MySQL gav följande "
+"felmeddelande: %error."
+
+#: includes/install.mysql.inc:93; includes/install.mysqli.inc:88
+msgid ""
+"Failed to delete a value from a test table on your MySQL database server. We "
+"tried deleting a value with the command %query and MySQL reported the "
+"following error: %error."
+msgstr ""
+"Kunde inte radera ett värde i en testtabell på din MySQL-databasserver. "
+"Kommandot för att radera värdet var %query och MySQL gav följande "
+"felmeddelande: %error."
+
+#: includes/install.mysql.inc:104; includes/install.mysqli.inc:99
+msgid ""
+"Failed to drop a test table from your MySQL database server. We tried "
+"dropping a table with the command %query and MySQL reported the following "
+"error %error."
+msgstr ""
+"Kunde inte ta bort en testtabell på din MySQL-databasserver. Kommandot för "
+"att ta bort tabellen var %query och MySQL gav följande felmeddelande: %error."
+
+#: includes/install.mysqli.inc:24
+msgid "PHP MySQLi support not enabled."
+msgstr "Stöd för PHP MySQLi är inte aktivt."
+
+#: includes/install.pgsql.inc:24
+msgid "PHP PostgreSQL support not enabled."
+msgstr "Stöd för PHP PostgreSQL är inte aktivt."
+
+#: includes/install.pgsql.inc:51
+msgid ""
+"Failed to connect to your PostgreSQL database server. PostgreSQL reports the "
+"following message: %error.<ul><li>Are you sure you have the correct username "
+"and password?</li><li>Are you sure that you have typed the correct database "
+"hostname?</li><li>Are you sure that the database server is running?</"
+"li><li>Are you sure you typed the correct database name?</li></ul>For more "
+"help, see the <a href=\"http://drupal.org/node/258\">Installation and "
+"upgrading handbook</a>. If you are unsure what these terms mean you should "
+"probably contact your hosting provider."
+msgstr ""
+"Kunde inte ansluta till din PostgreSQL-databasserver. PostgreSQL gav "
+"följande felmeddelande: %error. <ul><li>Är du säker på att du har angett "
+"rätt användarnamn och lösenord?</li><li>Är du säker på att du har skrivit in "
+"rätt databas-servernamn?</li><li>Är du säker på att databasservern är igång?"
+"</li><li>Är du säker på att du skrivit in rätt databasnamn?</li></ul>För mer "
+"hjälp, se <a href=\"http://drupal.org/node/258\">Installations- och "
+"uppgraderingshandboken</a>. Om du är osäker på vad dessa begrepp betyder bör "
+"du förmodligen kontakta din webbleverantör."
+
+#: includes/install.pgsql.inc:61
+msgid ""
+"Failed to create a test table on your PostgreSQL database server with the "
+"command %query. PostgreSQL reports the following message: %error.<ul><li>Are "
+"you sure the configured username has the necessary PostgreSQL permissions to "
+"create tables in the database?</li></ul>For more help, see the <a href="
+"\"http://drupal.org/node/258\">Installation and upgrading handbook</a>. If "
+"you are unsure what these terms mean you should probably contact your "
+"hosting provider."
+msgstr ""
+"Kunde inte skapa en testtabell i din PostgreSQL-databas med kommandot %"
+"query. PostgreSQL gav följande felmeddelande: %error.<ul><li>Är du säker på "
+"att det angivna användarnamnet har de nödvändiga PostgreSQL-rättigheterna "
+"för att skapa tabeller i databasen?</li></ul>För mer hjälp, se <a href="
+"\"http://drupal.org/node/258\">Installations- och uppgraderingshandboket</"
+"a>. Om du är osäker på vad detta betyder bör du förmodligen kontakta din "
+"webbleverantör."
+
+#: includes/install.pgsql.inc:72
+msgid ""
+"Failed to insert a value into a test table on your PostgreSQL database "
+"server. We tried inserting a value with the command %query and PostgreSQL "
+"reported the following error: %error."
+msgstr ""
+"Kunde inte infoga ett värde i en testtabell på din PostgreSQL-databasserver. "
+"Kommandot för att infoga värdet var %query och PostgreSQL gav följande "
+"felmeddelande: %error."
+
+#: includes/install.pgsql.inc:83
+msgid ""
+"Failed to update a value in a test table on your PostgreSQL database server. "
+"We tried updating a value with the command %query and PostgreSQL reported "
+"the following error: %error."
+msgstr ""
+"Kunde inte uppdatera ett värde i en testtabell på din PostgreSQL-"
+"databasserver. Kommandot för att uppdatera värdet var %query och PostgreSQL "
+"gav följande felmeddelande: %error."
+
+#: includes/install.pgsql.inc:94
+msgid ""
+"Failed to lock a test table on your PostgreSQL database server. We tried "
+"locking a table with the command %query and PostgreSQL reported the "
+"following error: %error."
+msgstr ""
+"Kunde inte låsa en testtabell på din PostgreSQL-databasserver. Kommandot för "
+"att låsa tabellen var %query och PostgreSQL gav följande felmeddelande: %"
+"error."
+
+#: includes/install.pgsql.inc:105
+msgid ""
+"Failed to unlock a test table on your PostgreSQL database server. We tried "
+"unlocking a table with the command %query and PostgreSQL reported the "
+"following error: %error."
+msgstr ""
+"Kunde inte låsa upp en testtabell på din PostgreSQL-databasserver. Kommandot "
+"för att låsa upp tabellen var %query och PostgreSQL gav följande "
+"felmeddelande: %error."
+
+#: includes/install.pgsql.inc:116
+msgid ""
+"Failed to delete a value from a test table on your PostgreSQL database "
+"server. We tried deleting a value with the command %query and PostgreSQL "
+"reported the following error: %error."
+msgstr ""
+"Kunde inte ta bort ett värde i en testtabell på din PostgreSQL-"
+"databasserver. Kommandot för att ta bort värdet var %query och PostgreSQL "
+"gav följande felmeddelande: %error."
+
+#: includes/install.pgsql.inc:127
+msgid ""
+"Failed to drop a test table from your PostgreSQL database server. We tried "
+"dropping a table with the command %query and PostgreSQL reported the "
+"following error %error."
+msgstr ""
+"Kunde inte ta bort en testtabell på din PostgreSQL-databasserver. Kommandot "
+"för att ta bort tabellen var %query och PostgreSQL gav följande "
+"felmeddelande: %error."
+
+#: includes/locale.inc:1081
+msgid ""
+"The translation import failed, because the file %filename could not be read."
+msgstr ""
+"Importen av översättningen misslyckades eftersom filen %filename inte kunde "
+"läsas."
+
+#: includes/locale.inc:1110
+msgid ""
+"The translation file %filename contains an error: \"msgstr\" was expected "
+"but not found on line %line."
+msgstr ""
+"Översättningsfilen %filename innehåller ett fel: \"msgstr\" förväntades, men "
+"hittades inte på rad %line."
+
+#: includes/locale.inc:1116
+msgid ""
+"The translation file %filename contains an error: \"msgid_plural\" was "
+"expected but not found on line %line."
+msgstr ""
+"Översättningsfilen %filename innehåller ett fel: \"msgid_plural\" "
+"förväntades, men hittades inte på rad %line."
+
+#: includes/locale.inc:1122,1140,1152,1160,1174,1183
+msgid "The translation file %filename contains a syntax error on line %line."
+msgstr "Översättningsfilen %filename har ett syntaxfel på rad %line."
+
+#: includes/locale.inc:1134
+msgid ""
+"The translation file %filename contains an error: \"msgid\" is unexpected on "
+"line %line."
+msgstr ""
+"Översättningsfilen %filename har ett fel: \"msgid\" förväntades inte på rad %"
+"line."
+
+#: includes/locale.inc:1148
+msgid ""
+"The translation file %filename contains an error: \"msgstr[]\" is unexpected "
+"on line %line."
+msgstr ""
+"Översättningsfilen %filename har ett fel: \"msgstr[]\" förväntades inte på "
+"rad %line."
+
+#: includes/locale.inc:1168
+msgid ""
+"The translation file %filename contains an error: \"msgstr\" is unexpected "
+"on line %line."
+msgstr ""
+"Översättningsfilen %filename har ett fel: \"msgstr\" förväntades inte på rad "
+"%line."
+
+#: includes/locale.inc:1196
+msgid ""
+"The translation file %filename contains an error: there is an unexpected "
+"string on line %line."
+msgstr ""
+"Översättningsfilen %filename har ett fel: oväntad textsträng på rad %line."
+
+#: includes/locale.inc:1207
+msgid "The translation file %filename ended unexpectedly at line %line."
+msgstr "Översättningsfilen %filename slutade oväntat på rad %line."
+
+#: includes/locale.inc:2581
+msgid "Importing interface translations"
+msgstr "Importerar gränssnittsöversättningar"
+
+#: includes/locale.inc:2582
+msgid "Starting import"
+msgstr "Påbörjar import"
+
+#: includes/locale.inc:2583
+msgid "Error importing interface translations"
+msgstr "Ett fel uppstod under importen av gränssnittsöversättningar"
+
+#: includes/theme.maintenance.inc:122
+msgid ""
+"The following errors must be resolved before you can continue the "
+"installation process"
+msgstr ""
+"Följande fel måste åtgärdas innan du kan fortsätta installationsprocessen"
+
+#: includes/theme.maintenance.inc:122
+msgid ""
+"The following error must be resolved before you can continue the "
+"installation process"
+msgstr ""
+"Följande fel måste åtgärdas innan du kan fortsätta installationsprocessen"
+
+#: includes/theme.maintenance.inc:125
+msgid "Please check the error messages and <a href=\"!url\">try again</a>."
+msgstr ""
+"Var god kontrollera felmeddelandena och <a href=\"!url\">försök igen</a>."
+
+#: includes/theme.maintenance.inc:130
+msgid "The following installation warnings should be carefully reviewed"
+msgstr "Följande installationsvarningar bör granskas noga"
+
+#: includes/theme.maintenance.inc:130
+msgid "The following installation warning should be carefully reviewed"
+msgstr "Följande installationsvarning bör granskas noga"
+
+#: includes/theme.maintenance.inc:137
+msgid ""
+"The following installation warnings should be carefully reviewed, but in "
+"most cases may be safely ignored"
+msgstr ""
+"Följande installationsvarningar bör granskas noga, men kan i de flesta fall "
+"ignoreras"
+
+#: includes/theme.maintenance.inc:137
+msgid ""
+"The following installation warning should be carefully reviewed, but in most "
+"cases may be safely ignored"
+msgstr ""
+"Följande installationsvarning bör granskas noga, men kan i de flesta fall "
+"ignoreras"
+
+#: includes/unicode.inc:48
+msgid ""
+"The PCRE library in your PHP installation is outdated. This will cause "
+"problems when handling Unicode text. If you are running PHP 4.3.3 or higher, "
+"make sure you are using the PCRE library supplied by PHP. Please refer to "
+"the <a href=\"@url\">PHP PCRE documentation</a> for more information."
+msgstr ""
+"PCRE-biblioteket i din PHP-installation är föråldrat. Detta kommer att "
+"innebära problem med hantering av Unicode-text. Om du använder PHP 4.3.3 "
+"eller högre, se till att du använder PCRE-biblioteket som tillhandahålls av "
+"PHP. Se <a href=\"@url\">PHPs PCRE-dokumentation</a> för mer information."
+
+#: includes/unicode.inc:53
+msgid ""
+"Operations on Unicode strings are emulated on a best-effort basis. Install "
+"the <a href=\"@url\">PHP mbstring extension</a> for improved Unicode support."
+msgstr ""
+"Operationer på Unicode-strängar emuleras efter bästa förmåga. Installera <a "
+"href=\"@url\">PHPs mbstring-tillägg</a> för att få bättre Unicode-stöd."
+
+#: includes/unicode.inc:58
+msgid ""
+"Multibyte string function overloading in PHP is active and must be disabled. "
+"Check the php.ini <em>mbstring.func_overload</em> setting. Please refer to "
+"the <a href=\"@url\">PHP mbstring documentation</a> for more information."
+msgstr ""
+"Överlagring av multibyte-strängfunktioner i PHP är aktivt och måste stängas "
+"av. Kontrollera inställningen <em>mbstring.func_overload</em> i php.ini. Se "
+"<a href=\"@url\">PHPs mbstring-dokumentation</a> för mer information."
+
+#: includes/unicode.inc:61
+msgid ""
+"Multibyte string input conversion in PHP is active and must be disabled. "
+"Check the php.ini <em>mbstring.encoding_translation</em> setting. Please "
+"refer to the <a href=\"@url\">PHP mbstring documentation</a> for more "
+"information."
+msgstr ""
+"Konvertering av multibyte-strängindata i PHP är aktivt och måste stängas av. "
+"Kontrollera inställningen för <em>mbstring.encoding_translation</em> i php."
+"ini. Se <a href=\"@url\">PHPs mbstring-dokumentation</a> för mer information."
+
+#: includes/unicode.inc:64
+msgid ""
+"Multibyte string input conversion in PHP is active and must be disabled. "
+"Check the php.ini <em>mbstring.http_input</em> setting. Please refer to the "
+"<a href=\"@url\">PHP mbstring documentation</a> for more information."
+msgstr ""
+"Konvertering av multibyte-strängindata i PHP är aktivt och måste stängas av. "
+"Kontrollera inställningen för <em>mbstring.http_input</em> i php.ini. Se <a "
+"href=\"@url\">PHPs mbstring-dokumentation</a> för mer information."
+
+#: includes/unicode.inc:67
+msgid ""
+"Multibyte string output conversion in PHP is active and must be disabled. "
+"Check the php.ini <em>mbstring.http_output</em> setting. Please refer to the "
+"<a href=\"@url\">PHP mbstring documentation</a> for more information."
+msgstr ""
+"Konvertering av multibyte-strängutdata i PHP är aktivt och måste stängas av. "
+"Kontrollera inställningen för <em>mbstring.http_output</em> i php.ini. Se <a "
+"href=\"@url\">PHPs mbstring-dokumentation</a> för mer information."
+
+#: includes/unicode.inc:84
+msgid "Standard PHP"
+msgstr "Standard-PHP"
+
+#: includes/unicode.inc:85
+msgid "PHP Mbstring Extension"
+msgstr "PHPs Mbstring-komponent"
+
+#: includes/unicode.inc:96
+msgid "Unicode library"
+msgstr "Unicode-bibliotek"
+
+#: modules/menu/menu.install:12; modules/user/user.module:687,737
+msgid "Navigation"
+msgstr "Meny"
+
+#: modules/menu/menu.install:12
+msgid ""
+"The navigation menu is provided by Drupal and is the main interactive menu "
+"for any site. It is usually the only menu that contains personalized links "
+"for authenticated users, and is often not even visible to anonymous users."
+msgstr ""
+"Navigationsmenyn tillhandahålls av Drupal och är den huvudsakliga "
+"interaktiva menyn för alla webbsidor. Den är vanligtvis den enda menyn som "
+"innehåller anpassade länkar för inloggade användare och visas oftast inte "
+"ens för gäster."
+
+#: modules/menu/menu.install:13; modules/system/system.admin.inc:385
+msgid "Primary links"
+msgstr "Primära länkar"
+
+#: modules/menu/menu.install:13
+msgid ""
+"Primary links are often used at the theme layer to show the major sections "
+"of a site. A typical representation for primary links would be tabs along "
+"the top."
+msgstr ""
+"Primära länkar används ofta i temalagret för att visa de större "
+"avdelningarna på webbplatsen. Ett vanligt sätt att presentera primära länkar "
+"är flikar högst upp på sidan."
+
+#: modules/menu/menu.install:14; modules/system/system.admin.inc:386
+msgid "Secondary links"
+msgstr "Sekundära länkar"
+
+#: modules/menu/menu.install:14
+msgid ""
+"Secondary links are often used for pages like legal notices, contact "
+"details, and other secondary navigation items that play a lesser role than "
+"primary links"
+msgstr ""
+"Sekundära länkar används ofta för sidor som juridiska meddelanden, "
+"kontaktinformation och andra sekundära navigationsval som spelar mindre roll "
+"än de primära länkarna."
+
+#: modules/statistics/statistics.admin.inc:15,51;
+#: modules/statistics/statistics.pages.inc:47;
+#: profiles/default/default.profile:100
+msgid "Page"
+msgstr "Sida"
+
+#: modules/system/system.module:410; modules/system/system.install:184
+msgid "File system"
+msgstr "Filsystem"
+
+#: modules/system/system.module:498; modules/system/system.install:36
+msgid "PHP"
+msgstr "PHP"
+
+#: modules/system/system.install:20
+msgid "Drupal"
+msgstr "Drupal"
+
+#: modules/system/system.install:30
+msgid "Web server"
+msgstr "Webbserver"
+
+#: modules/system/system.install:40
+msgid ""
+"Your PHP installation is too old. Drupal requires at least PHP %version."
+msgstr ""
+"Din PHP-installation är för gammal. Drupal kräver åtminstone PHP %version."
+
+#: modules/system/system.install:46
+msgid "PHP register globals"
+msgstr "PHP: register globals"
+
+#: modules/system/system.install:55
+msgid ""
+"<em>register_globals</em> is enabled. Drupal requires this configuration "
+"directive to be disabled. Your site may not be secure when "
+"<em>register_globals</em> is enabled. The PHP manual has instructions for <a "
+"href=\"http://php.net/configuration.changes\">how to change configuration "
+"settings</a>."
+msgstr ""
+"<em>register_globals</em> är aktivt. Drupal kräver att detta "
+"inställningsdirektiv är inaktivt. Din webbplats är eventuellt inte säker när "
+"<em>register_globals</em> är aktivt. PHP-manualen har instruktioner för <a "
+"href=\"http://php.net/configuration.changes\">hur man ändrar dessa "
+"inställningar</a>."
+
+#: modules/system/system.install:57
+msgid "Enabled ('@value')"
+msgstr "Aktiverad ('@value')"
+
+#: modules/system/system.install:66
+msgid "PHP memory limit"
+msgstr "PHP: memory limit"
+
+#: modules/system/system.install:73
+msgid ""
+"Consider increasing your PHP memory limit to %memory_minimum_limit to help "
+"prevent errors in the installation process."
+msgstr ""
+"Överväg att öka PHPs minnestilldelning (memory limit) till %"
+"memory_minimum_limit för att undvika fel i installationsprocessen."
+
+#: modules/system/system.install:76
+msgid ""
+"Consider increasing your PHP memory limit to %memory_minimum_limit to help "
+"prevent errors in the update process."
+msgstr ""
+"Överväg att öka PHPs minnestilldelning (memory limit) till %"
+"memory_minimum_limit för att undvika fel i uppdateringsprocessen."
+
+#: modules/system/system.install:79
+msgid ""
+"Depending on your configuration, Drupal can run with a %memory_limit PHP "
+"memory limit. However, a %memory_minimum_limit PHP memory limit or above is "
+"recommended, especially if your site uses additional custom or contributed "
+"modules."
+msgstr ""
+"Beroende på din konfiguration kan Drupal köras med %memory_limit som "
+"minnesgräns för PHP. Dock rekommenderas en minnesgräns för PHP på minst %"
+"memory_minimum_limit eller mer, speciellt om din webbplats använder flera "
+"tilläggsmoduler."
+
+#: modules/system/system.install:84
+msgid ""
+"Increase the memory limit by editing the memory_limit parameter in the file %"
+"configuration-file and then restart your web server (or contact your system "
+"administrator or hosting provider for assistance)."
+msgstr ""
+"Höj minnesgränsen genom att redigera parametern memory_limit i filen %"
+"configuration-file och starta sedan om webbservern (eller be din "
+"systemadministratör eller webbleverantör om hjälp)."
+
+#: modules/system/system.install:87
+msgid ""
+"Contact your system administrator or hosting provider for assistance with "
+"increasing your PHP memory limit."
+msgstr ""
+"Be din systemadministratör eller webbleverantör om hjälp med att höja "
+"minnesgränsen för PHP."
+
+#: modules/system/system.install:90
+msgid "See the <a href=\"@url\">Drupal requirements</a> for more information."
+msgstr "Läs <a href=\"@url\">Drupals krav</a> för mer information."
+
+#: modules/system/system.install:107,254
+msgid "Not protected"
+msgstr "Ej skyddad"
+
+#: modules/system/system.install:112
+msgid ""
+"The directory %file is not protected from modifications and poses a security "
+"risk. You must change the directory's permissions to be non-writable. "
+msgstr ""
+"Katalogen %file är inte skyddad från ändringar och utgör en säkerhetsrisk. "
+"Du måste ändra katalogens behörighetsinställningar till att vara icke-"
+"skrivbara. "
+
+#: modules/system/system.install:115
+msgid ""
+"The file %file is not protected from modifications and poses a security "
+"risk. You must change the file's permissions to be non-writable."
+msgstr ""
+"Filen %file är inte skyddad för modifieringar och utgör en säkerhetsrisk. Du "
+"måste ändra filens rättigheter så att den inte är skrivbar."
+
+#: modules/system/system.install:120,261
+msgid "Protected"
+msgstr "Skyddad"
+
+#: modules/system/system.install:123
+msgid "Configuration file"
+msgstr "Inställningsfil"
+
+#: modules/system/system.install:133
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@cron-"
+"handbook\">configuring cron jobs</a>."
+msgstr ""
+"För mer information, se onlinehandbokens sida om att <a href=\"@cron-handbook"
+"\">ställa in cron-uppgifter</a>."
+
+#: modules/system/system.install:157
+msgid ""
+"Cron has not run. Please visit the <a href=\"@status\">status report</a> for "
+"more information."
+msgstr ""
+"Schemalagda aktiviteter (cron) har inte körts. Se <a href=\"@status"
+"\">statusrapporten</a> för mer information."
+
+#: modules/system/system.install:162
+msgid "Never run"
+msgstr "Aldrig utfört"
+
+#: modules/system/system.install:163
+msgid "Cron has not run."
+msgstr "Cron har inte körts."
+
+#: modules/system/system.install:166
+msgid "Last run !time ago"
+msgstr "Kördes senast för !time sedan"
+
+#: modules/system/system.install:169
+msgid "Cron has not run recently."
+msgstr "Cron har inte körts nyligen."
+
+#: modules/system/system.install:174
+msgid "Cron maintenance tasks"
+msgstr "Underhållsuppgifter för cron"
+
+#: modules/system/system.install:177
+msgid "You can <a href=\"@cron\">run cron manually</a>."
+msgstr "Du kan <a href=\"@cron\">köra cron manuellt</a>."
+
+#: modules/system/system.install:196
+msgid "Not writable"
+msgstr "Ej skrivbar"
+
+#: modules/system/system.install:201
+msgid "The directory %directory is not writable."
+msgstr "Mappen %directory är skrivskyddad."
+
+#: modules/system/system.install:205
+msgid ""
+"You may need to set the correct directory at the <a href=\"@admin-file-system"
+"\">file system settings page</a> or change the current directory's "
+"permissions so that it is writable."
+msgstr ""
+"Du behöver eventuellt ställa in rätt katalog på <a href=\"@admin-file-system"
+"\">inställningssidan för filsystem</a> eller ändra nuvarande katalogs "
+"rättigheter så att den är skrivbar."
+
+#: modules/system/system.install:210
+msgid ""
+"An automated attempt to create this directory failed, possibly due to a "
+"permissions problem. To proceed with the installation, either create the "
+"directory and modify its permissions manually, or ensure that the installer "
+"has the permissions to create it automatically. For more information, please "
+"see INSTALL.txt or the <a href=\"@handbook_url\">on-line handbook</a>."
+msgstr ""
+"Ett automatiskt försök att skapa den här katalogen misslyckades, förmodligen "
+"på grund av problem med filrättigheter. För att gå vidare med installationen "
+"måste du antingen skapa katalogen och redigera rättigheterna manuellt, eller "
+"så ser du till att installeraren har rättigheterna att skapa katalogen "
+"automatiskt. För mer information, se filen INSTALL.txt eller <a href="
+"\"@handbook_url\">onlinehandboken</a>."
+
+#: modules/system/system.install:220
+msgid "Writable (<em>public</em> download method)"
+msgstr "Skrivbar (<em>öppen</em> nerladdningsmetod)"
+
+#: modules/system/system.install:223
+msgid "Writable (<em>private</em> download method)"
+msgstr "Skrivbar (<em>stängd</em> nerladdningsmetod)"
+
+#: modules/system/system.install:230
+msgid "Database updates"
+msgstr "Databasuppdateringar"
+
+#: modules/system/system.install:232; modules/update/update.report.inc:84;
+#: modules/update/update.module:284
+msgid "Up to date"
+msgstr "Aktuell"
+
+#: modules/system/system.install:242; modules/update/update.module:274
+msgid "Out of date"
+msgstr "Föråldrad"
+
+#: modules/system/system.install:243
+msgid ""
+"Some modules have database schema updates to install. You should run the <a "
+"href=\"@update\">database update script</a> immediately."
+msgstr ""
+"Vissa moduler har uppdateringar för databas-schemat att installera. Du bör "
+"köra <a href=\"@update\">skriptet för databasuppdatering</a> omgående."
+
+#: modules/system/system.install:256
+msgid ""
+"The update.php script is accessible to everyone without authentication "
+"check, which is a security risk. You must change the $update_free_access "
+"value in your settings.php back to FALSE."
+msgstr ""
+"Skriptet update.php är åtkomligt för alla utan behörighetskontroll, vilket "
+"är en säkerhetsrisk. Du måste ändra tillbaka värdet på $update_free_access i "
+"settings.php till FALSE."
+
+#: modules/system/system.install:264
+msgid "Access to update.php"
+msgstr "Åtkomst till update.php"
+
+#: modules/system/system.install:275
+msgid "Not enabled"
+msgstr "Ej aktiverat"
+
+#: modules/system/system.install:277
+msgid ""
+"Update notifications are not enabled. It is <strong>highly recommended</"
+"strong> that you enable the update status module from the <a href=\"@module"
+"\">module administration page</a> in order to stay up-to-date on new "
+"releases. For more information please read the <a href=\"@update\">Update "
+"status handbook page</a>."
+msgstr ""
+"Meddelanden om uppdateringar är inte aktiva. Det <strong>rekommenderas "
+"starkt att du aktiverar modulen Update status från <a href=\"@module"
+"\">administrationssidan för moduler</a> för att hålla dig underrättad om nya "
+"versioner. För mer information, se <a href=\"@update\">handboksidan för "
+"Update status</a>.</strong></strong>"
+
+#: modules/system/system.install:290
+msgid "HTTP request status"
+msgstr "Status för HTTP-anrop"
+
+#: modules/system/system.install:291
+msgid "Fails"
+msgstr "Misslyckas"
+
+#: modules/system/system.install:293
+msgid ""
+"Your system or network configuration does not allow Drupal to access web "
+"pages, resulting in reduced functionality. This could be due to your "
+"webserver configuration or PHP settings, and should be resolved in order to "
+"download information about available updates, fetch aggregator feeds, sign "
+"in via OpenID, or use other network-dependent services."
+msgstr ""
+"Ditt system eller dina nätverksinställningar tillåter inte Drupal att komma "
+"åt webbsidor, vilket innebär nedsatt funktionalitet. Detta kan bero på "
+"webbserverns eller PHPs inställningar och bör lösas för att göra det möjligt "
+"att ladda ner information om tillgängliga uppdateringar, hämta nyhetsflöden, "
+"använda OpenID-inloggning eller för att använda andra nätverksberoende "
+"tjänster."
+
+#: profiles/default/default.profile:102
+msgid ""
+"A <em>page</em>, similar in form to a <em>story</em>, is a simple method for "
+"creating and displaying information that rarely changes, such as an \"About "
+"us\" section of a website. By default, a <em>page</em> entry does not allow "
+"visitor comments and is not featured on the site's initial home page."
+msgstr ""
+"En <em>sida</em>, till formen lik en <em>artikel</em>, är ett enkelt sätt "
+"att skapa och visa information som sällan ändras, som en \"Om oss\"-sektion "
+"på en webbsida. Som standard tillåter inte <em>sidor</em> besökarkommentarer "
+"och visas inte på webbplatsens startsida."
+
+#: profiles/default/default.profile:111
+msgid "Story"
+msgstr "Artikel"
+
+#: profiles/default/default.profile:113
+msgid ""
+"A <em>story</em>, similar in form to a <em>page</em>, is ideal for creating "
+"and displaying content that informs or engages website visitors. Press "
+"releases, site announcements, and informal blog-like entries may all be "
+"created with a <em>story</em> entry. By default, a <em>story</em> entry is "
+"automatically featured on the site's initial home page, and provides the "
+"ability to post comments."
+msgstr ""
+"En <em>artikel</em>, till formen lik en <em>sida</em>, är lämplig för att "
+"skapa och visas innehåll som informerar eller engagerar webbplatsens "
+"besökare. Pressmeddelanden, kungörelser och informella bloggliknande inlägg "
+"kan alla skapas i form av en <em>artikel</em>. Som standard visas en "
+"<em>artikel</em> automatisk på webbplatsens startsida och ger möjlighet att "
+"skriva kommentarer."

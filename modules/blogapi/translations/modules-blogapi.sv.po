@@ -1,0 +1,291 @@
+# Swedish translation of drupal (6.13)
+# Copyright (c) 2009 by the Swedish translation team
+# Generated from file: blogapi.module,v 1.115.2.5 2008/10/08 20:12:17 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-08-04 10:44+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Swedish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/blogapi/blogapi.module:15
+msgid ""
+"The Blog API module allows your site's users to access and post to their "
+"blogs from external blogging clients. External blogging clients are "
+"available for a wide range of desktop operating systems, and generally "
+"provide a feature-rich graphical environment for creating and editing posts."
+msgstr ""
+"Modulen Blog API låter användare på din webbplats komma åt och göra nya "
+"inlägg på deras blogg från externa bloggklienter. Externa bloggklienter "
+"finns för en rad olika operativsystem och brukar ge en funktionsrik grafisk "
+"miljö för att skapa och redigera inlägg."
+
+#: modules/blogapi/blogapi.module:16
+msgid ""
+"<a href=\"@ecto-link\">Ecto</a>, a blogging client available for both Mac OS "
+"X and Microsoft Windows, can be used with Blog API. Blog API also supports "
+"<a href=\"@blogger-api\">Blogger API</a>, <a href=\"@metaweblog-api"
+"\">MetaWeblog API</a>, and most of the <a href=\"@movabletype-api\">Movable "
+"Type API</a>. Blogging clients and other services (e.g. <a href=\"@flickr"
+"\">Flickr's</a> \"post to blog\") that support these APIs may also be "
+"compatible."
+msgstr ""
+"<a href=\"@ecto-link\">Ecto</a> är en bloggklient, för både Mac OS X och "
+"Microsoft Windows, som kan användas med Blog API. Blog API stödjer också <a "
+"href=\"@blogger-api\">Blogger API</a>, <a href=\"@metaweblog-api"
+"\">MetaWeblog API</a> och största delen av <a href=\"@movabletype-api"
+"\">Movable Type API</a>. Bloggklienter och andra tjänster (t ex. <a href="
+"\"@flickr\">Flickrs</a> \"publicera i blogg\") som stödjer dessa API:er bör "
+"också fungera."
+
+#: modules/blogapi/blogapi.module:17
+msgid ""
+"Select the content types available to external clients on the <a href="
+"\"@blogapi-settings\">Blog API settings page</a>. If supported and "
+"available, each content type will be displayed as a separate \"blog\" by the "
+"external client."
+msgstr ""
+"Välj de innehållstyper som ska vara tillgängliga för externa bloggklienter "
+"på <a href=\"@blogapi-settings\">inställningssidan för Blog API</a>. Ifall "
+"de stöds och finns tillgängliga visas varje innehållstyp som en separat "
+"\"blogg\" av den externa klienten."
+
+#: modules/blogapi/blogapi.module:18
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@blogapi"
+"\">Blog API module</a>."
+msgstr ""
+"Läs mer om <a href=\"@blogapi\">modulen Blog API</a> i onlinehandboken."
+
+#: modules/blogapi/blogapi.module:39
+msgid "Returns a list of blogs to which an author has posting privileges."
+msgstr "Visar en lista med bloggar som författaren kan skapa inlägg i."
+
+#: modules/blogapi/blogapi.module:44
+msgid "Returns information about an author in the system."
+msgstr "Visar information om en författare i systemet."
+
+#: modules/blogapi/blogapi.module:49,74
+msgid "Creates a new post, and optionally publishes it."
+msgstr "Skapar ett nytt inlägg och kan även publicera det."
+
+#: modules/blogapi/blogapi.module:54
+msgid "Updates the information about an existing post."
+msgstr "Uppdaterar information om ett befintligt inlägg."
+
+#: modules/blogapi/blogapi.module:59,84
+msgid "Returns information about a specific post."
+msgstr "Ger information om ett befintligt inlägg."
+
+#: modules/blogapi/blogapi.module:64
+msgid "Deletes a post."
+msgstr "Raderar ett inlägg."
+
+#: modules/blogapi/blogapi.module:69,99
+msgid "Returns a list of the most recent posts in the system."
+msgstr "Ger en lista med de senaste inläggen i systemet."
+
+#: modules/blogapi/blogapi.module:79
+msgid "Updates information about an existing post."
+msgstr "Uppdaterar information om ett befintligt inlägg."
+
+#: modules/blogapi/blogapi.module:89
+msgid "Uploads a file to your webserver."
+msgstr "Laddar upp en fil till webbservern."
+
+#: modules/blogapi/blogapi.module:94,114
+msgid "Returns a list of all categories to which the post is assigned."
+msgstr "Ger en lista över inläggets kategorier."
+
+#: modules/blogapi/blogapi.module:104
+msgid ""
+"Returns a bandwidth-friendly list of the most recent posts in the system."
+msgstr "Ger en bandbreddsvänlig lista med de senaste inläggen i systemet."
+
+#: modules/blogapi/blogapi.module:109
+msgid "Returns a list of all categories defined in the blog."
+msgstr "Ger en lista med alla kategorier som är definierade i bloggen."
+
+#: modules/blogapi/blogapi.module:119
+msgid "Sets the categories for a post."
+msgstr "Anger kategorier för ett inlägg."
+
+#: modules/blogapi/blogapi.module:124
+msgid "Retrieve information about the XML-RPC methods supported by the server."
+msgstr "Hämtar information om vilka XML-RPC-metoder som stöds av servern."
+
+#: modules/blogapi/blogapi.module:129
+msgid ""
+"Retrieve information about the text formatting plugins supported by the "
+"server."
+msgstr ""
+"Hämtar information om de insticksmoduler för textformatering som stöds av "
+"servern."
+
+#: modules/blogapi/blogapi.module:134
+msgid ""
+"Publish (rebuild) all of the static files related to an entry from your "
+"blog. Equivalent to saving an entry in the system (but without the ping)."
+msgstr ""
+"Publicera (återskapa) alla statiska filer knutna till något inlägg i din "
+"blogg. Samma som att spara ett inlägg i systemet (men utan ping)."
+
+#: modules/blogapi/blogapi.module:216
+msgid "You do not have permission to create this type of post."
+msgstr "Du har inte rättighet att skapa denna typ av inlägg."
+
+#: modules/blogapi/blogapi.module:243,304
+msgid "Error storing post."
+msgstr "Ett fel uppstod när inlägget sparades."
+
+#: modules/blogapi/blogapi.module:265,644
+msgid "You do not have permission to update this post."
+msgstr "Du har inte rättighet att uppdatera detta inlägg."
+
+#: modules/blogapi/blogapi.module:338
+msgid ""
+"You do not have permission to publish this type of post. Please save it as a "
+"draft instead."
+msgstr ""
+"Du har inte behörighet att publicera denna typ av inlägg. Var god spara den "
+"som ett utkast istället."
+
+#: modules/blogapi/blogapi.module:341
+msgid ""
+"You do not have permission to save this post as a draft. Please publish it "
+"instead."
+msgstr ""
+"Du har inte behörighet att spara detta inlägg som ett utkast. Var god "
+"publicera den istället."
+
+#: modules/blogapi/blogapi.module:426
+msgid ""
+"It is not possible to upload the file, because it exceeded the maximum "
+"filesize of @maxsize."
+msgstr ""
+"Det går inte att ladda upp filen eftersom den överstiger den maximala "
+"filstorleken på @maxsize."
+
+#: modules/blogapi/blogapi.module:430
+msgid ""
+"The file can not be attached to this post, because the disk quota of @quota "
+"has been reached."
+msgstr ""
+"Filen kan inte bifogas till inlägget eftersom diskkvoten på @quota har "
+"uppnåtts."
+
+#: modules/blogapi/blogapi.module:446
+msgid ""
+"It is not possible to upload the file, because it is only possible to upload "
+"files with the following extensions: @extensions"
+msgstr ""
+"Det går inte att ladda upp filen eftersom det bara går att ladda upp filer "
+"med följande filtillägg: @extensions"
+
+#: modules/blogapi/blogapi.module:456
+msgid "No file sent."
+msgstr "Ingen fil skickades."
+
+#: modules/blogapi/blogapi.module:460
+msgid "Error storing file."
+msgstr "Ett fel uppstod när filen skulle sparas."
+
+#: modules/blogapi/blogapi.module:584
+msgid "Invalid categories submitted."
+msgstr "Ogiltiga kategorier skickade."
+
+#: modules/blogapi/blogapi.module:593
+msgid "A category from the @vocabulary_name vocabulary is required."
+msgstr "En kategori från vokabulären @vocabulary_name krävs."
+
+#: modules/blogapi/blogapi.module:597
+msgid "You may only choose one category from the @vocabulary_name vocabulary."
+msgstr "Du kan bara välja en kategori från vokabulären @vocabulary_name."
+
+#: modules/blogapi/blogapi.module:602
+msgid "Error saving categories. This feature is not available."
+msgstr "Fel när kategorierna sparades. Denna funktion är inte tillgänglig."
+
+#: modules/blogapi/blogapi.module:635
+msgid "Invalid post."
+msgstr "Ogiltigt inlägg."
+
+#: modules/blogapi/blogapi.module:680
+msgid "You do not have permission to edit this blog."
+msgstr "Du har inte rättighet att redigera denna blogg."
+
+#: modules/blogapi/blogapi.module:684
+msgid "Wrong username or password."
+msgstr "Fel användarnamn eller lösenord."
+
+#: modules/blogapi/blogapi.module:707
+msgid "Enable for external blogging clients"
+msgstr "Aktivera för externa bloggklienter"
+
+#: modules/blogapi/blogapi.module:711
+msgid ""
+"Select the content types available to external blogging clients via Blog "
+"API. If supported, each enabled content type will be displayed as a separate "
+"\"blog\" by the external client."
+msgstr ""
+"Välj de innehållstyper som ska vara tillgängliga för externa bloggklienter "
+"via Blog API. Ifall de stöds och finns tillgängliga visas varje innehållstyp "
+"som en separat \"blogg\" av den externa klienten."
+
+#: modules/blogapi/blogapi.module:720
+msgid "File settings"
+msgstr "Filinställningar"
+
+#: modules/blogapi/blogapi.module:738
+msgid "The default maximum file size a user can upload."
+msgstr ""
+"Standardvärde för den maximala filstorleken som en användare kan ladda upp."
+
+#: modules/blogapi/blogapi.module:777
+msgid "The maximum size of a file a user can upload (in megabytes)."
+msgstr "Den maximala filstorleken som en användare kan ladda upp (i megabyte)."
+
+#: modules/blogapi/blogapi.module:785
+msgid ""
+"The maximum size of all files a user can have on the site (in megabytes)."
+msgstr ""
+"Den maximala storleken på alla filer som en användare tillåts ha på "
+"webbplatsen (i megabyte)."
+
+#: modules/blogapi/blogapi.module:815,794
+msgid "RSD"
+msgstr "RSD"
+
+#: modules/blogapi/blogapi.module:933
+msgid ""
+"Blog API module is not configured to support the %type content type, or you "
+"don't have sufficient permissions to post this type of content."
+msgstr ""
+"Modulen Blog API är inte konfigurerad för att stödja innehållstypen %type, "
+"eller också har du inte tillräckliga rättigheter för att lägga in denna typ "
+"av innehåll."
+
+#: modules/blogapi/blogapi.module:238
+msgid "@type: added %title using blog API."
+msgstr "@type: lade till %title via blogg-API."
+
+#: modules/blogapi/blogapi.module:300
+msgid "@type: updated %title using Blog API."
+msgstr "@type: uppdaterade %title via Blog API."
+
+#: modules/blogapi/blogapi.module:27
+msgid "administer content with blog api"
+msgstr "administrera innehåll med Blog API"
+
+#: modules/blogapi/blogapi.module:801
+msgid "Configure the content types available to external blogging clients."
+msgstr "Välj vilka innehållstyper som externa bloggklienter kan använda."
+
+#: modules/blogapi/blogapi.module:0
+msgid "blogapi"
+msgstr "blogapi"

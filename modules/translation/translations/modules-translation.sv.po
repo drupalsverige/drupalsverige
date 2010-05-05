@@ -1,0 +1,248 @@
+# Swedish translation of drupal (6.13)
+# Copyright (c) 2009 by the Swedish translation team
+# Generated from files:
+#  translation.pages.inc,v 1.2.2.1 2008/09/30 10:50:43 goba
+#  translation.module,v 1.23.2.4 2009/01/14 23:34:07 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-08-04 10:44+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Swedish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/translation/translation.pages.inc:41
+msgid "outdated"
+msgstr "inaktuell"
+
+#: modules/translation/translation.pages.inc:43
+msgid "<strong>@language_name</strong> (source)"
+msgstr "<strong>@language_name</strong> (källa)"
+
+#: modules/translation/translation.pages.inc:50
+msgid "add translation"
+msgstr "lägg till översättning"
+
+#: modules/translation/translation.pages.inc:52
+msgid "Not translated"
+msgstr "Ej översatt"
+
+#: modules/translation/translation.pages.inc:57
+msgid "Translations of %title"
+msgstr "Översättning av %title"
+
+#: modules/translation/translation.module:34
+msgid ""
+"The content translation module allows content to be translated into "
+"different languages. Working with the <a href=\"@locale\">locale module</a> "
+"(which manages enabled languages and provides translation for the site "
+"interface), the content translation module is key to creating and "
+"maintaining translated site content."
+msgstr ""
+"Modulen Content Translation möjliggör översättning av innehåll till olika "
+"språk. Genom att använda sig av <a href=\"@locale\">modulen Locale</a> (som "
+"hanterar listan över möjliga språkval och tillhandahåller funktioner för att "
+"översätta webbplatsens användargränssnitt), så arbetar modulen Content "
+"Translation som spindel i nätet för att lägga till och underhålla översatt "
+"innehåll på webbplatsen."
+
+#: modules/translation/translation.module:35
+msgid "Configuring content translation and translation-enabled content types:"
+msgstr ""
+"Inställningar för översättning av innehåll och innehållstyper som har "
+"översättning aktiverat:"
+
+#: modules/translation/translation.module:36
+msgid ""
+"Assign the <em>translate content</em> permission to the appropriate user "
+"roles at the <a href=\"@permissions\">Permissions configuration page</a>."
+msgstr ""
+"Tilldela rättigheten <em>översätta innehåll</em> till lämpliga "
+"användarroller via <a href=\"@permissions\">Inställningssidan för "
+"rättigheter</a>."
+
+#: modules/translation/translation.module:37
+msgid ""
+"Add and enable desired languages at the <a href=\"@languages\">Languages "
+"configuration page</a>."
+msgstr ""
+"Lägga till och välja önskade språk via <a href=\"@languages"
+"\">Inställningssidan för språk</a>."
+
+#: modules/translation/translation.module:38
+msgid ""
+"Determine which <a href=\"@content-types\">content types</a> should support "
+"translation features. To enable translation support for a content type, edit "
+"the type and at the <em>Multilingual support</em> drop down, select "
+"<em>Enabled, with translation</em>. (<em>Multilingual support</em> is "
+"located within <em>Workflow settings</em>.) Be sure to save each content "
+"type after enabling multilingual support."
+msgstr ""
+"Avgör vilka <a href=\"@content-types\">innehållstyper</a> som stödjer "
+"översättning. För att aktivera översättning för en viss typ av innehåll, "
+"redigera önskad innehållstyp och välj <em>Aktiverad, med översättning</em> i "
+"rullgardinsmenyn under <em>Stöd för flera språk</em>. (<em>Stöd för flera "
+"språk</em> finner du under <em>Inställningar för arbetsflöde</em>.) Glöm "
+"inte att spara varje innehållstyp efter att ha aktiverat stöd för flera "
+"språk."
+
+#: modules/translation/translation.module:39
+msgid "Working with translation-enabled content types:"
+msgstr "Arbeta med innehållstyper som har flerspråkighet aktiverad:"
+
+#: modules/translation/translation.module:40
+msgid ""
+"Use the <em>Language</em> drop down to select the appropriate language when "
+"creating or editing posts."
+msgstr ""
+"Använd rullgardinsmenyn <em>Språk</em> for att välja önskat språk när du "
+"skapar eller redigerar inlägg."
+
+#: modules/translation/translation.module:41
+msgid ""
+"Provide new or edit current translations for existing posts via the "
+"<em>Translation</em> tab. Only visible while viewing a post as a user with "
+"the <em>translate content</em> permission, this tab allows translations to "
+"be added or edited using a specialized editing form that also displays the "
+"content being translated."
+msgstr ""
+"Tillhandahåll ny eller ändra aktuell översättning för inlägg via fliken "
+"<em>Översättning</em>. Fliken är endast synlig när användaren är på "
+"inläggets sida och har rättigheten <em>översätta innehåll</em>. Via denna "
+"flik kan man lägga till och redigera översättningar genom ett speciellt "
+"användargränssnitt som också visar det översatta innehållet."
+
+#: modules/translation/translation.module:42
+msgid ""
+"Update translations as needed, so that they accurately reflect changes in "
+"the content of the original post. The translation status flag provides a "
+"simple method for tracking outdated translations. After editing a post, for "
+"example, select the <em>Flag translations as outdated</em> check box to mark "
+"all of its translations as outdated and in need of revision. Individual "
+"translations may be marked for revision by selecting the <em>This "
+"translation needs to be updated</em> check box on the translation editing "
+"form."
+msgstr ""
+"Uppdatera översättningar när så önskas så att de korrekt återspeglar "
+"originalinlägget. Statusflaggan för översättning tillhandahåller ett enkelt "
+"sätt att hålla koll på vilka översättningar som behöver uppdateras. "
+"Exempelvis, efter att ha redigerat ett inlägg, välj kryssrutan <em>Markera "
+"översättningar som inaktuella</em> för att markera att alla översättningar "
+"behöver ses över. Individuella översättningar kan även markeras genom att "
+"kryssa i <em>Kräver uppdatering</em> i formuläret för att redigera en "
+"översättning."
+
+#: modules/translation/translation.module:43
+msgid ""
+"The <a href=\"@content-node\">Content management administration page</a> "
+"displays the language of each post, and also allows filtering by language or "
+"translation status."
+msgstr ""
+"<a href=\"@content-node\">Administrationssidan för innehåll</a> visar "
+"språket för varje inlägg och gör det även möjligt att filtrera listan över "
+"inlägg baserat på språk eller status på deras översättningar."
+
+#: modules/translation/translation.module:44
+msgid ""
+"Use the <a href=\"@blocks\">language switcher block</a> provided by locale "
+"module to allow users to select a language. If available, both the site "
+"interface and site content are presented in the language selected."
+msgstr ""
+"Använd blocket <a href=\"@blocks\">språkbytare</a> som tillhandahålls av "
+"modulen Locale för att tillåta användare att välja språk. Om det finns "
+"tillgängligt visas både webbsidan gränssnitt och innehåll med det valda "
+"språket."
+
+#: modules/translation/translation.module:45
+msgid ""
+"For more information, see the online handbook entry for <a href="
+"\"@translation\">Translation module</a>."
+msgstr ""
+"Läs mer om <a href=\"@translation\">modulen Translation</a> i "
+"onlinehandboken."
+
+#: modules/translation/translation.module:48
+msgid ""
+"Translations of a piece of content are managed with translation sets. Each "
+"translation set has one source post and any number of translations in any of "
+"the <a href=\"!languages\">enabled languages</a>. All translations are "
+"tracked to be up to date or outdated based on whether the source post was "
+"modified significantly."
+msgstr ""
+"Översättningar av ett visst innehåll hanteras genom grupperade "
+"översättningar. Varje översättning är kopplad till ett originalinlägg. Man "
+"kan ha hur många översättningar som helst från listan över <a href=\"!"
+"languages\">aktiverade språk</a>. Alla översättningars status, aktuell eller "
+"inaktuell, uppdateras beroende på hur mycket originalinlägget har ändrats."
+
+#: modules/translation/translation.module:99
+msgid "Enabled, with translation"
+msgstr "Aktiverad, med översättningar"
+
+#: modules/translation/translation.module:101
+msgid ""
+"Enable multilingual support for this content type. If enabled, a language "
+"selection field will be added to the editing form, allowing you to select "
+"from one of the <a href=\"!languages\">enabled languages</a>. You can also "
+"turn on translation for this content type, which lets you have content "
+"translated to any of the enabled languages. If disabled, new posts are saved "
+"with the default language. Existing content will not be affected by changing "
+"this option."
+msgstr ""
+"Aktivera stöd för flera språk för denna typ av innehåll. Om detta är aktiv "
+"kommer ett fält för att välja ett av de <a href=\"!languages\">aktiverade "
+"språken</a> läggas till på sidan där denna innehållstyp redigeras. Du kan "
+"också aktivera översättning av denna innehållstyp, vilket möjliggör att "
+"översätta innehåll till de aktiverade språken. Om detta är aktivt kommer "
+"alla inlägg att sparas i standardspråket. Tidigare inlägg kommer inte att "
+"beröras av detta val."
+
+#: modules/translation/translation.module:124
+msgid "Translation settings"
+msgstr "Inställningar för översättning"
+
+#: modules/translation/translation.module:135
+msgid "Flag translations as outdated"
+msgstr "Markera översättningar som inaktuella"
+
+#: modules/translation/translation.module:137
+msgid ""
+"If you made a significant change, which means translations should be "
+"updated, you can flag all translations of this post as outdated. This will "
+"not change any other property of those posts, like whether they are "
+"published or not."
+msgstr ""
+"Om du har gjort en större ändring, vilket betyder att översättningarna "
+"behöver ses över, kan du flagga alla översättningar som är inaktuella. Att "
+"flagga översättningar ändrar inga andra egenskaper, såsom huruvida "
+"översättningarna är publicerade eller ej."
+
+#: modules/translation/translation.module:144
+msgid "This translation needs to be updated"
+msgstr "Översättningen behöver uppdateras"
+
+#: modules/translation/translation.module:146
+msgid ""
+"When this option is checked, this translation needs to be updated because "
+"the source post has changed. Uncheck when the translation is up to date "
+"again."
+msgstr ""
+"När detta alternativ är markerat så behöver denna översättning uppdateras "
+"eftersom det ursprungliga inlägget har ändrats. Avmarkera när översättningen "
+"är aktuell igen."
+
+#: modules/translation/translation.module:86
+msgid "translate content"
+msgstr "översätta innehåll"
+
+#: modules/translation/translation.module:59
+msgid "Translate"
+msgstr "Översätt"
+
+#: modules/translation/translation.module:0
+msgid "translation"
+msgstr "översättning"

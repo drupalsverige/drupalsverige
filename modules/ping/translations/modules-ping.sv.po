@@ -1,0 +1,55 @@
+# Swedish translation of drupal (6.13)
+# Copyright (c) 2009 by the Swedish translation team
+# Generated from file: ping.module,v 1.52 2007/12/19 17:45:42 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-08-04 10:44+0200\n"
+"PO-Revision-Date: 2009-07-22 23:37+0200\n"
+"Language-Team: Swedish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/ping/ping.module:15
+msgid ""
+"The ping module is useful for notifying interested sites that your site has "
+"changed. It automatically sends notifications, or \"pings\", to the <a href="
+"\"@external-http-pingomatic-com\">pingomatic</a> service about new or "
+"updated content. In turn, <a href=\"@external-http-pingomatic-com"
+"\">pingomatic</a> notifies other popular services, including weblogs.com, "
+"Technorati, blo.gs, BlogRolling, Feedster.com, and Moreover."
+msgstr ""
+"Modulen Ping är användbar för att meddela intresserade webbplatser att din "
+"webbplats har ändrats. Den skickar automatiskt meddelanden (så kallade "
+"pingar) om ändringar till tjänsten <a href=\"@external-http-pingomatic-com"
+"\">pingomatic</a>. Pingomatic meddelar i sin tur andra tjänster såsom "
+"weblogs.com, Technocrati, blo.gs, Blogrolling, Feedster.com och Moreover."
+
+#: modules/ping/ping.module:16
+msgid ""
+"The ping module requires a correctly configured <a href=\"@cron\">cron "
+"maintenance task</a>."
+msgstr ""
+"Modulen Ping kräver en korrekt inställd <a href=\"@cron\">schemalagd "
+"aktivitet</a>."
+
+#: modules/ping/ping.module:17
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@ping"
+"\">Ping module</a>."
+msgstr "Läs mer om <a href=\"@ping\">modulen Ping</a> i onlinehandboken."
+
+#: modules/ping/ping.module:55
+msgid "directory ping"
+msgstr "katalogping"
+
+#: modules/ping/ping.module:55
+msgid "Failed to notify pingomatic.com (site)."
+msgstr "Misslyckades att meddela pingomatic.com (webbplats)."
+
+#: modules/ping/ping.module:0
+msgid "ping"
+msgstr "ping"
