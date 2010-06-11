@@ -1,0 +1,413 @@
+# Swedish translation of drupal (6.13)
+# Copyright (c) 2009 by the Swedish translation team
+# Generated from files:
+#  profile.admin.inc,v 1.8.2.1 2008/10/16 12:43:08 goba
+#  profile.module,v 1.236.2.3 2009/01/12 10:09:19 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-08-04 10:44+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Swedish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/profile/profile.admin.inc:55
+msgid "Add new field"
+msgstr "Lägg till ett nytt fält"
+
+#: modules/profile/profile.admin.inc:82
+msgid "Profile fields have been updated."
+msgstr "Profilfältet har uppdaterats."
+
+#: modules/profile/profile.admin.inc:115
+msgid ""
+"No fields in this category. If this category remains empty when saved, it "
+"will be removed."
+msgstr ""
+"Det finns inga fält i den här kategorin. Om den här kategorin fortfarande är "
+"tom när den sparas kommer den att raderas."
+
+#: modules/profile/profile.admin.inc:144
+msgid "No fields available."
+msgstr "Inga fält tillgängliga."
+
+#: modules/profile/profile.admin.inc:178
+msgid "edit %title"
+msgstr "redigera %title"
+
+#: modules/profile/profile.admin.inc:196
+msgid "add new %type"
+msgstr "lägg till ny %type"
+
+#: modules/profile/profile.admin.inc:211
+msgid "Field settings"
+msgstr "Inställningar för fält"
+
+#: modules/profile/profile.admin.inc:217
+msgid ""
+"The category the new field should be part of. Categories are used to group "
+"fields logically. An example category is \"Personal information\"."
+msgstr ""
+"Kategorin som det nya fältet skall tillhöra. Kategorin används för att "
+"gruppera fältet logiskt. Ett exempel på kategori är \"Personlig information"
+"\"."
+
+#: modules/profile/profile.admin.inc:223
+msgid ""
+"The title of the new field. The title will be shown to the user. An example "
+"title is \"Favorite color\"."
+msgstr ""
+"Namnet på det nya fältet. Namnet kommer att visas för användaren. Exempel på "
+"namn är \"Favoritfärg\"."
+
+#: modules/profile/profile.admin.inc:227
+msgid "Form name"
+msgstr "Formulärnamn"
+
+#: modules/profile/profile.admin.inc:229
+msgid ""
+"The name of the field. The form name is not shown to the user but used "
+"internally in the HTML code and URLs.\n"
+"Unless you know what you are doing, it is highly recommended that you prefix "
+"the form name with <code>profile_</code> to avoid name clashes with other "
+"fields. Spaces or any other special characters except dash (-) and "
+"underscore (_) are not allowed. An example name is \"profile_favorite_color"
+"\" or perhaps just \"profile_color\"."
+msgstr ""
+"Fältets namn. Fältnamnet visas inte för användaren utan används internt av "
+"HTML-kod och URL:er.\n"
+"OM du inte vet exakt vad du ska göra, så rekommenderas det starkt att du "
+"inleder formulärnamnen med <code>profile_</code> för att undvika "
+"namnkonflikter med andra fält. Mellanslag och andra specialtecken är inte "
+"tillåtna, förutom bindestreck (-) och understrykningstecken (_). Exempel på "
+"fältnamn är \"profile_favorite_color\" eller kanske bara \"profile_color\"."
+
+#: modules/profile/profile.admin.inc:234
+msgid "Explanation"
+msgstr "Förklaring"
+
+#: modules/profile/profile.admin.inc:236
+msgid ""
+"An optional explanation to go with the new field. The explanation will be "
+"shown to the user."
+msgstr ""
+"En frivillig förklaring till fältet. Förklaringen kommer att visas för "
+"användaren."
+
+#: modules/profile/profile.admin.inc:240
+msgid "Selection options"
+msgstr "Urvalsalternativ"
+
+#: modules/profile/profile.admin.inc:242
+msgid ""
+"A list of all options. Put each option on a separate line. Example options "
+"are \"red\", \"blue\", \"green\", etc."
+msgstr ""
+"En lista med samtliga alternativ. Skriv varje alternativ på en egen rad. "
+"Exempel på alternativ är \"röd\", \"blå\", \"grön\" etc."
+
+#: modules/profile/profile.admin.inc:246
+msgid "Visibility"
+msgstr "Synlighet"
+
+#: modules/profile/profile.admin.inc:248
+msgid ""
+"Hidden profile field, only accessible by administrators, modules and themes."
+msgstr "Dolt profilfält, visas bara för administratörer, moduler och teman."
+
+#: modules/profile/profile.admin.inc:248
+msgid "Private field, content only available to privileged users."
+msgstr "Privat fält, innehållet visas endast för privilegierade användare."
+
+#: modules/profile/profile.admin.inc:248
+msgid ""
+"Public field, content shown on profile page but not used on member list "
+"pages."
+msgstr ""
+"Publikt fält, innehållet visas på profilsidan men används inte på sidor med "
+"medlemslistor."
+
+#: modules/profile/profile.admin.inc:248
+msgid "Public field, content shown on profile page and on member list pages."
+msgstr ""
+"Publikt fält, innehållet visas på profilsidan och på sidor med medlemslistor."
+
+#: modules/profile/profile.admin.inc:252,259
+msgid "Page title"
+msgstr "Sidrubrik"
+
+#: modules/profile/profile.admin.inc:254
+msgid ""
+"To enable browsing this field by value, enter a title for the resulting "
+"page. The word <code>%value</code> will be substituted with the "
+"corresponding value. An example page title is \"People whose favorite color "
+"is %value\". This is only applicable for a public field."
+msgstr ""
+"För att göra detta fälts värden klickbara, måste du skriva in en rubrik för "
+"resultatsidan. Ordet <code>%value</code> byts ut mot det motsvarande värdet. "
+"Exempel på en sidrubrik är \"Användare vars favoritfärg är %value\". Endast "
+"tillämpligt om fältet är publikt."
+
+#: modules/profile/profile.admin.inc:261
+msgid ""
+"To enable browsing this field by value, enter a title for the resulting "
+"page. An example page title is \"People who are employed\". This is only "
+"applicable for a public field."
+msgstr ""
+"För att göra detta fälts värden klickbara måste du skriva in en rubrik för "
+"resultatsidan. Exempel på en sidrubrik är \"Användare som är anställda\". "
+"Endast tillämpligt om fältet är publikt."
+
+#: modules/profile/profile.admin.inc:267
+msgid ""
+"The weights define the order in which the form fields are shown. Lighter "
+"fields \"float up\" towards the top of the category."
+msgstr ""
+"Vikterna bestämmer i vilken ordning fälten visas. Lättare fält \"flyter upp"
+"\" mot kategorins topp."
+
+#: modules/profile/profile.admin.inc:270
+msgid "Form will auto-complete while user is typing."
+msgstr "Fältet kompletteras automatiskt när användaren skriver."
+
+#: modules/profile/profile.admin.inc:272
+msgid ""
+"For security, auto-complete will be disabled if the user does not have "
+"access to user profiles."
+msgstr ""
+"Av säkerhetsskäl kommer automatisk komplettering att stängas av om "
+"användaren inte har behörighet till användarprofiler."
+
+#: modules/profile/profile.admin.inc:275
+msgid "The user must enter a value."
+msgstr "Användaren måste ange ett värde."
+
+#: modules/profile/profile.admin.inc:279
+msgid "Visible in user registration form."
+msgstr "Synligt i användarregistreringsformuläret."
+
+#: modules/profile/profile.admin.inc:283
+msgid "Save field"
+msgstr "Spara fält"
+
+#: modules/profile/profile.admin.inc:294
+msgid ""
+"The specified form name contains one or more illegal characters. Spaces or "
+"any other special characters except dash (-) and underscore (_) are not "
+"allowed."
+msgstr ""
+"Det uppräknade formulärnamnet innehåller ett eller flera otillåtna tecken. "
+"Mellanslag eller andra specialtecken, förutom streck (-) och understreck "
+"(_), är inte tillåtna."
+
+#: modules/profile/profile.admin.inc:298
+msgid "The specified form name is reserved for use by Drupal."
+msgstr "Det valda formulärnamnet är reserverat för att användas av Drupal."
+
+#: modules/profile/profile.admin.inc:305
+msgid "The specified category name is reserved for use by Drupal."
+msgstr "Det valda kategorinamnet är reserverat för att användas av Drupal."
+
+#: modules/profile/profile.admin.inc:317
+msgid "The specified title is already in use."
+msgstr "Den valda rubriken används redan."
+
+#: modules/profile/profile.admin.inc:320
+msgid "The specified name is already in use."
+msgstr "Det valda namnet används redan."
+
+#: modules/profile/profile.admin.inc:324
+msgid "A hidden field cannot be required."
+msgstr "Ett dolt fält kan inte vara obligatoriskt."
+
+#: modules/profile/profile.admin.inc:327
+msgid "A hidden field cannot be set to visible on the user registration form."
+msgstr ""
+"Ett dolt fält kan inte sättas till synligt på användarens "
+"registreringsformulär."
+
+#: modules/profile/profile.admin.inc:345
+msgid "The field has been created."
+msgstr "Fältet har skapats."
+
+#: modules/profile/profile.admin.inc:351
+msgid "The field has been updated."
+msgstr "Fältet har uppdaterats."
+
+#: modules/profile/profile.admin.inc:373
+msgid "Are you sure you want to delete the field %field?"
+msgstr "Är du säker att du vill du radera fältet %field?"
+
+#: modules/profile/profile.admin.inc:374
+msgid ""
+"This action cannot be undone. If users have entered values into this field "
+"in their profile, these entries will also be deleted. If you want to keep "
+"the user-entered data, instead of deleting the field you may wish to <a href="
+"\"@edit-field\">edit this field</a> and change it to a hidden profile field "
+"so that it may only be accessed by administrators."
+msgstr ""
+"Detta kan inte ångras. Om användare har skrivit in värden i detta fält i "
+"sina profiler så kommer dessa värden också att raderas. Om du vill behålla "
+"användarnas data så kan du, istället för att radera det, <a href=\"@edit-"
+"field\">redigera fältet</a> och ändra det till ett dolt profilfält så att "
+"bara administratörer kan se det."
+
+#: modules/profile/profile.admin.inc:387
+msgid "The field %field has been deleted."
+msgstr "Fältet %field har raderats."
+
+#: modules/profile/profile.admin.inc:346
+msgid "Profile field %field added under category %category."
+msgstr "Profilfältet %field lades till under kategorin %category."
+
+#: modules/profile/profile.admin.inc:388
+msgid "Profile field %field deleted."
+msgstr "Profilfältet %field har raderats."
+
+#: modules/profile/profile.module:35
+msgid ""
+"The profile module allows custom fields (such as country, full name, or age) "
+"to be defined and displayed in the <em>My Account</em> section. This permits "
+"users of a site to share more information about themselves, and can help "
+"community-based sites organize users around specific information."
+msgstr ""
+"Modulen Profil låter dig definiera egna fält (såsom land, namn eller ålder) "
+"i användarprofilen som visas under delen <em>Mitt konto</em>. På så sätt kan "
+"webbplatsens användare ge mer information om sig själva och det möjliggör "
+"också för community-baserade webbplatser att organisera användarna efter "
+"fält i profilen."
+
+#: modules/profile/profile.module:36
+msgid "The following types of fields can be added to a user profile:"
+msgstr "Följande typer av fält kan läggas till en användarprofil:"
+
+#: modules/profile/profile.module:37,545
+msgid "single-line textfield"
+msgstr "enradigt textfält"
+
+#: modules/profile/profile.module:38,546
+msgid "multi-line textfield"
+msgstr "flerradigt textfält"
+
+#: modules/profile/profile.module:39,547
+msgid "checkbox"
+msgstr "kryssruta"
+
+#: modules/profile/profile.module:40,548
+msgid "list selection"
+msgstr "listval"
+
+#: modules/profile/profile.module:41,549
+msgid "freeform list"
+msgstr "lista i fritt format"
+
+#: modules/profile/profile.module:43,551
+msgid "date"
+msgstr "datum"
+
+#: modules/profile/profile.module:44
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@profile"
+"\">Profile module</a>."
+msgstr "Läs mer om <a href=\"@profile\">modulen Profile</a> i onlinehandboken."
+
+#: modules/profile/profile.module:47
+msgid ""
+"This page displays a list of the existing custom profile fields to be "
+"displayed on a user's <em>My Account</em> page. To provide structure, "
+"similar or related fields may be placed inside a category. To add a new "
+"category (or edit an existing one), edit a profile field and provide a new "
+"category name. To change the category of a field or the order of fields "
+"within a category, grab a drag-and-drop handle under the Title column and "
+"drag the field to a new location in the list. (Grab a handle by clicking and "
+"holding the mouse while hovering over a handle icon.) Remember that your "
+"changes will not be saved until you click the <em>Save configuration</em> "
+"button at the bottom of the page."
+msgstr ""
+"Den här sidan visar en lista på de nuvarande, anpassade profilfält som ska "
+"visas på en användares <em>Mitt konto</em>-sida. Likartade eller relaterade "
+"fält kan placeras i en kategori för att ge struktur. Redigera ett profilfält "
+"och förse det med ett nytt kategorinamn för att lägga till en kategori "
+"(eller redigera en redan existerande). Under kolumnen <em>Titel</em> kan du "
+"använda drag-och-släpp-handtaget för att ändra kategorin på ett fält eller "
+"ordningen inom en kategori. (Ta tag i ett handtag genom att hålla musen över "
+"handtagsikonen, klicka och hålla musknappen nedtryckt.) Kom ihåg att dina "
+"ändringar inte kommer att sparas förrän du klickar på knappen <em>Spara "
+"inställningar</em> längst ner på sidan."
+
+#: modules/profile/profile.module:141
+msgid "Author information"
+msgstr "Författarinformation"
+
+#: modules/profile/profile.module:152
+msgid "Link to full user profile"
+msgstr "Länk till fullständig användarprofil"
+
+#: modules/profile/profile.module:154
+msgid "Profile fields to display"
+msgstr "Vilka profilfält som ska visas"
+
+#: modules/profile/profile.module:157
+msgid ""
+"Select which profile fields you wish to display in the block. Only fields "
+"designated as public in the <a href=\"@profile-admin\">profile field "
+"configuration</a> are available."
+msgstr ""
+"Välj vilka profilfält du vill visa i blocket. Bara fält som angetts som "
+"publika i <a href=\"@profile-admin\">inställningarna för profilfält</a> "
+"finns tillgängliga."
+
+#: modules/profile/profile.module:189
+msgid "View full user profile"
+msgstr "Visa fullständig användarprofil"
+
+#: modules/profile/profile.module:194
+msgid "About %name"
+msgstr "Om %name"
+
+#: modules/profile/profile.module:337
+msgid ""
+"Put each item on a separate line or separate them by commas. No HTML allowed."
+msgstr ""
+"Skriv varje alternativ på en egen rad, eller separera dem med kommatecken. "
+"HTML är inte tillåtet."
+
+#: modules/profile/profile.module:439
+msgid "The value provided for %field is not a valid URL."
+msgstr "Det angivna värdet för %field är inte en giltig URL."
+
+#: modules/profile/profile.module:444
+msgid "The field %field is required."
+msgstr "Fältet %field är obligatoriskt."
+
+#: modules/profile/profile.module:87
+msgid "Profiles"
+msgstr "Profiler"
+
+#: modules/profile/profile.module:88
+msgid "Create customizable fields for your users."
+msgstr "Skapa egna fält i användarprofilerna."
+
+#: modules/profile/profile.module:95
+msgid "Add field"
+msgstr "Lägg till fält"
+
+#: modules/profile/profile.module:103
+msgid "Profile category autocomplete"
+msgstr "Automatisk ifyllning av kategori"
+
+#: modules/profile/profile.module:110
+msgid "Edit field"
+msgstr "Redigera fält"
+
+#: modules/profile/profile.module:118
+msgid "Delete field"
+msgstr "Radera fält"
+
+#: modules/profile/profile.module:126
+msgid "Profile autocomplete"
+msgstr "Automatisk ifyllning av profil"

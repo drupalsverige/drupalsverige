@@ -1,0 +1,271 @@
+# Swedish translation of drupal (6.13)
+# Copyright (c) 2009 by the Swedish translation team
+# Generated from files:
+#  search.admin.inc,v 1.4 2008/01/08 10:35:42 goba
+#  search.pages.inc,v 1.4 2007/12/06 09:51:01 goba
+#  search.module,v 1.250.2.6 2009/03/10 17:20:01 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-08-04 10:44+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Swedish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/search/search.admin.inc:13
+msgid "Are you sure you want to re-index the site?"
+msgstr "Är du säker på att du vill indexera om webbplatsen?"
+
+#: modules/search/search.admin.inc:14
+msgid ""
+" The search index is not cleared but systematically updated to reflect the "
+"new settings. Searching will continue to work but new content won't be "
+"indexed until all existing content has been re-indexed. This action cannot "
+"be undone."
+msgstr ""
+" Sökindexet raderas inte utan uppdateras systematiskt för att återspegla de "
+"nya inställningarna. Sökfunktionen kommer att fortsätta fungera, men nytt "
+"innehåll kommer inte att indexeras förrän allt existerande innehåll har "
+"indexerats om. Detta kan inte ångras."
+
+#: modules/search/search.admin.inc:14,52,76
+msgid "Re-index site"
+msgstr "Indexera om webbplatsen"
+
+#: modules/search/search.admin.inc:23,82
+msgid "The index will be rebuilt."
+msgstr "Indexet kommer att byggas om."
+
+#: modules/search/search.admin.inc:49
+msgid "%percentage of the site has been indexed."
+msgstr "%percentage av webbplatsen har indexerats."
+
+#: modules/search/search.admin.inc:50
+msgid "Indexing status"
+msgstr "Indexeringsstatus"
+
+#: modules/search/search.admin.inc:57
+msgid "Indexing throttle"
+msgstr "Indexeringsbegränsning"
+
+#: modules/search/search.admin.inc:58
+msgid "Number of items to index per cron run"
+msgstr "Antalet poster som ska indexeras per schemalagd körning"
+
+#: modules/search/search.admin.inc:58
+msgid ""
+"The maximum number of items indexed in each pass of a <a href=\"@cron\">cron "
+"maintenance task</a>. If necessary, reduce the number of items to prevent "
+"timeouts and memory errors while indexing."
+msgstr ""
+"Maximalt antal indexerade poster i varje omgång av en <a href=\"@cron"
+"\">schemalagd aktivitet</a>. Om det behövs kan du minska antalet poster för "
+"att förhindra timeouts och minnesfel under indexeringen."
+
+#: modules/search/search.admin.inc:60
+msgid "Indexing settings"
+msgstr "Inställningar för indexering"
+
+#: modules/search/search.admin.inc:61
+msgid ""
+"<p><em>Changing the settings below will cause the site index to be rebuilt. "
+"The search index is not cleared but systematically updated to reflect the "
+"new settings. Searching will continue to work but new content won't be "
+"indexed until all existing content has been re-indexed.</em></p><p><em>The "
+"default settings should be appropriate for the majority of sites.</em></p>"
+msgstr ""
+"<p><em>Ändringar i inställningarna nedan gör att webbplatsens index byggs "
+"om. Sökindexet raderas inte utan uppdateras systematiskt för att återspegla "
+"de nya inställningarna. Sökfunktionen kommer att fortsätta fungera, men nytt "
+"innehåll kommer inte att indexeras förrän allt existerande innehåll har "
+"indexerats om.</em></p><p><em>Standardinställningarna är förmodligen "
+"lämpliga för de flesta webbplatser.</em></p>"
+
+#: modules/search/search.admin.inc:62
+msgid "Minimum word length to index"
+msgstr "Minsta ordlängd som indexeras"
+
+#: modules/search/search.admin.inc:62
+msgid ""
+"The number of characters a word has to be to be indexed. A lower setting "
+"means better search result ranking, but also a larger database. Each search "
+"query must contain at least one keyword that is this size (or longer)."
+msgstr ""
+"Antalet tecken ett ord måste ha för att det ska indexeras. Ett lägre värde "
+"betyder bättre sökresultat, men också större databas. Varje sökning måste "
+"innehålla minst ett sökord som har denna längd (eller längre)."
+
+#: modules/search/search.admin.inc:63
+msgid "Simple CJK handling"
+msgstr "Enkel CJK-hantering"
+
+#: modules/search/search.admin.inc:63
+msgid ""
+"Whether to apply a simple Chinese/Japanese/Korean tokenizer based on "
+"overlapping sequences. Turn this off if you want to use an external "
+"preprocessor for this instead. Does not affect other languages."
+msgstr ""
+"Anger om en enkel kinesisk/japansk/koreansk teckenhanterare som baseras på "
+"överlappande sekvenser ska användas. Stäng av denna inställning om du vill "
+"använda en extern hanterare för detta istället. Påverkar inte övriga språk."
+
+#: modules/search/search.admin.inc:47
+msgid "There is 1 item left to index."
+msgid_plural "There are @count items left to index."
+msgstr[0] "1 post återstår att indexera."
+msgstr[1] "@count poster återstår att indexera."
+
+#: modules/search/search.pages.inc:29
+msgid "results"
+msgstr "resultat"
+
+#: modules/search/search.pages.inc:35
+msgid "Search results"
+msgstr "Sökresultat"
+
+#: modules/search/search.pages.inc:38
+msgid "Your search yielded no results"
+msgstr "Din sökning gav inget resultat"
+
+#: modules/search/search.pages.inc:123
+msgid "Please enter some keywords."
+msgstr "Ange några sökord."
+
+#: modules/search/search.pages.inc:29
+msgid "%keys (@type)."
+msgstr "Sökning: %keys (@type)."
+
+#: modules/search/search.module:99
+msgid ""
+"The search module adds the ability to search for content by keywords. Search "
+"is often the only practical way to find content on a large site, and is "
+"useful for finding both users and posts."
+msgstr ""
+"Modulen Search lägger till möjligheten att söka efter nyckelord i "
+"webbplatsens innehåll. Sökningen är ofta det enda fungerande sättet att "
+"hitta innehåll på en stor webbplats och kan användas för att hitta både "
+"användare och inlägg."
+
+#: modules/search/search.module:100
+msgid ""
+"To provide keyword searching, the search engine maintains an index of words "
+"found in your site's content. To build and maintain this index, a correctly "
+"configured <a href=\"@cron\">cron maintenance task</a> is required. Indexing "
+"behavior can be adjusted using the <a href=\"@searchsettings\">search "
+"settings page</a>; for example, the <em>Number of items to index per cron "
+"run</em> sets the maximum number of items indexed in each pass of a <a href="
+"\"@cron\">cron maintenance task</a>. If necessary, reduce this number to "
+"prevent timeouts and memory errors when indexing."
+msgstr ""
+"För att tillåta nyckelordssökning har sökmotorn ett index över ord som finns "
+"i din webbplats innehåll. För att underhålla detta index krävs att <a href="
+"\"@cron\">cron</a> är korrekt konfigurerat. Indexeringens beteende kan "
+"justeras på <a href=\"@searchsettings\">sökinställningssidan</a>. Exempelvis "
+"anger <em>Antal poster som indexeras per schemalagd aktivitet</em> det "
+"maximala antalet nyckelord som indexeras i varje <a href=\"@cron\">cron</a>-"
+"körning. Om det är behövs kan du minska antalet för att förhindra timeouts "
+"och minnesfel under indexeringen."
+
+#: modules/search/search.module:101
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@search"
+"\">Search module</a>."
+msgstr "Läs mer om <a href=\"@search\">modulen Search</a> i onlinehandboken."
+
+#: modules/search/search.module:104
+msgid ""
+"The search engine maintains an index of words found in your site's content. "
+"To build and maintain this index, a correctly configured <a href=\"@cron"
+"\">cron maintenance task</a> is required. Indexing behavior can be adjusted "
+"using the settings below."
+msgstr ""
+"Sökmotorn upprätthåller ett index av ord som finns i din webbplats innehåll. "
+"För att bygga och underhålla detta index krävs att <a href=\"@cron\">cron</"
+"a> är korrekt konfigurerat. Indexeringsbeteendet kan justeras i "
+"inställningarna nedan."
+
+#: modules/search/search.module:106
+msgid ""
+"<ul>\n"
+"<li>Check if your spelling is correct.</li>\n"
+"<li>Remove quotes around phrases to match each word individually: <em>\"blue "
+"smurf\"</em> will match less than <em>blue smurf</em>.</li>\n"
+"<li>Consider loosening your query with <em>OR</em>: <em>blue smurf</em> will "
+"match less than <em>blue OR smurf</em>.</li>\n"
+"</ul>"
+msgstr ""
+"<ul>\n"
+"<li>Kontrollera att stavningen är korrekt.</li>\n"
+"<li>Ta bort citationstecken runt uttryck för att matcha orden individuellt: "
+"<em>\"blå smurf\"</em> matchar färre inlägg än <em>blå smurf</em>.</li>\n"
+"<li>Överväg att bredda sökningen med <em>OR</em>: <em>blå smurf</em> matchar "
+"färre inlägg än <em>blå OR smurf</em>.</li>\n"
+"</ul>"
+
+#: modules/search/search.module:152
+msgid "Search form"
+msgstr "Sökformulär"
+
+#: modules/search/search.module:922
+msgid ""
+"You must include at least one positive keyword with @count characters or "
+"more."
+msgstr ""
+"Du måste ha med minst ett positivt sökord med @count bokstäver eller mer."
+
+#: modules/search/search.module:926
+msgid ""
+"Search for either of the two terms with uppercase <strong>OR</strong>. For "
+"example, <strong>cats OR dogs</strong>."
+msgstr ""
+"Sök efter vilket som av de två angivna orden med hjälp av <strong>OR</"
+"strong> med stora bokstäver. Exempel: <strong>katter OR hundar</strong>."
+
+#: modules/search/search.module:1033
+msgid "Enter your keywords"
+msgstr "Ange sökord"
+
+#: modules/search/search.module:1067
+msgid "Search this site"
+msgstr "Sök på denna webbplats"
+
+#: modules/search/search.module:1071
+msgid "Enter the terms you wish to search for."
+msgstr "Ange de ord du vill söka efter."
+
+#: modules/search/search.module:144
+msgid "search content"
+msgstr "sök efter innehåll"
+
+#: modules/search/search.module:144
+msgid "use advanced search"
+msgstr "använd avancerad sökning"
+
+#: modules/search/search.module:144
+msgid "administer search"
+msgstr "administrera sökfunktionen"
+
+#: modules/search/search.module:176
+msgid "Search settings"
+msgstr "Inställningar för sökning"
+
+#: modules/search/search.module:177
+msgid "Configure relevance settings for search and other indexing options"
+msgstr ""
+"Konfigurera relevansinställningarna för sökning andra indexeringsalternativ"
+
+#: modules/search/search.module:185
+msgid "Clear index"
+msgstr "Rensa index"
+
+#: modules/search/search.module:193
+msgid "Top search phrases"
+msgstr "Topplista sökord"
+
+#: modules/search/search.module:194
+msgid "View most popular search phrases."
+msgstr "Visa de populäraste sökorden"

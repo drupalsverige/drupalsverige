@@ -1,0 +1,174 @@
+# Swedish translation of drupal (6.13)
+# Copyright (c) 2009 by the Swedish translation team
+# Generated from files:
+#  trigger.admin.inc,v 1.5 2008/01/08 10:35:43 goba
+#  trigger.module,v 1.13.2.3 2009/06/08 16:34:57 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-08-04 10:44+0200\n"
+"PO-Revision-Date: 2009-07-22 23:37+0200\n"
+"Language-Team: Swedish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/trigger/trigger.admin.inc:74
+msgid "Are you sure you want to unassign the action %title?"
+msgstr "Är du säker på att du vill koppla från åtgärden %title?"
+
+#: modules/trigger/trigger.admin.inc:76
+msgid "You can assign it again later if you wish."
+msgstr "Du kan tilldela den igen senare om du vill."
+
+#: modules/trigger/trigger.admin.inc:88,87
+msgid "Action %action has been unassigned."
+msgstr "Åtgärden %action har kopplats från."
+
+#: modules/trigger/trigger.admin.inc:144
+msgid "Trigger: "
+msgstr "Trigger: "
+
+#: modules/trigger/trigger.admin.inc:154
+msgid "unassign"
+msgstr "koppla från"
+
+#: modules/trigger/trigger.admin.inc:171
+msgid "Assign"
+msgstr "Tilldela"
+
+#: modules/trigger/trigger.admin.inc:176
+msgid "No available actions for this trigger."
+msgstr "Inga åtgärder finns tillgängliga för denna trigger."
+
+#: modules/trigger/trigger.admin.inc:192
+msgid "The action you chose is already assigned to that trigger."
+msgstr "Åtgärden du valde är redan tilldelad till denna trigger."
+
+#: modules/trigger/trigger.admin.inc:218
+msgid ""
+"You have added an action that changes a the property of a post. A Save post "
+"action has been added so that the property change will be saved."
+msgstr ""
+"Du har lagt till en åtgärd som ändrar ett inläggs egenskaper. En Spara-"
+"åtgärd har lagts till så att ändringen sparas."
+
+#: modules/trigger/trigger.admin.inc:238
+msgid "Operation"
+msgstr "Operation"
+
+#: modules/trigger/trigger.module:14
+msgid ""
+"Triggers are system events, such as when new content is added or when a user "
+"logs in. Trigger module combines these triggers with actions (functional "
+"tasks), such as unpublishing content or e-mailing an administrator. The <a "
+"href=\"@url\">Actions settings page</a> contains a list of existing actions "
+"and provides the ability to create and configure additional actions."
+msgstr ""
+"Triggrar är systemhändelser, som när nytt innehåll läggs till eller när en "
+"användare loggar in. Trigger-modulen kopplar samman dessa triggrar med "
+"åtgärder (funktionella uppgifter), som att avpublicera innehåll eller att "
+"skicka e-post till en administratör. <a href=\"@url\">Inställningssidan för "
+"Åtgärder</a> innehåller en lista över tillgängliga åtgärder och gör det "
+"möjligt att skapa och anpassa ytterligare åtgärder."
+
+#: modules/trigger/trigger.module:17
+msgid ""
+"Below you can assign actions to run when certain comment-related triggers "
+"happen. For example, you could promote a post to the front page when a "
+"comment is added."
+msgstr ""
+"Nedan kan du tilldela åtgärder som ska utföras när vissa kommentarrelaterade "
+"triggrar sker. Du kan exempelvis visa ett inlägg på startsidan när en "
+"kommentar läggs till."
+
+#: modules/trigger/trigger.module:19
+msgid ""
+"Below you can assign actions to run when certain content-related triggers "
+"happen. For example, you could send an e-mail to an administrator when a "
+"post is created or updated."
+msgstr ""
+"Nedan kan du tilldela åtgärder som ska utföras när vissa innehållsrelaterade "
+"triggrar sker. Du kan exempelvis skicka e-post till en administratör när ett "
+"inlägg skapas eller uppdateras."
+
+#: modules/trigger/trigger.module:21
+msgid ""
+"Below you can assign actions to run during each pass of a <a href=\"@cron"
+"\">cron maintenance task</a>."
+msgstr ""
+"Nedan kan du tilldela åtgärder som ska utföras vid varje <a href=\"@cron"
+"\">cron-körning</a>."
+
+#: modules/trigger/trigger.module:23
+msgid ""
+"Below you can assign actions to run when certain taxonomy-related triggers "
+"happen. For example, you could send an e-mail to an administrator when a "
+"term is deleted."
+msgstr ""
+"Nedan kan du tilldela åtgärder som ska utföras när vissa taxonomirelaterade "
+"triggrar sker. Du kan exempelvis skicka e-post till en administratör när en "
+"term raderas."
+
+#: modules/trigger/trigger.module:25
+msgid ""
+"Below you can assign actions to run when certain user-related triggers "
+"happen. For example, you could send an e-mail to an administrator when a "
+"user account is deleted."
+msgstr ""
+"Nedan kan du tilldela åtgärder som ska utföras när vissa användarrelaterade "
+"triggrar sker. Du kan exempelvis skicka e-post till en administratör när ett "
+"användarkonto raderas."
+
+#: modules/trigger/trigger.module:27
+msgid ""
+"The Trigger module provides the ability to trigger <a href=\"@actions"
+"\">actions</a> upon system events, such as when new content is added or when "
+"a user logs in."
+msgstr ""
+"Modulen Trigger ger möjlighet att utföra <a href=\"@actions\">åtgärder</a> "
+"vid vissa systemhändelser, som när nytt innehåll läggs till eller när en "
+"användare loggar in."
+
+#: modules/trigger/trigger.module:28
+msgid ""
+"The combination of actions and triggers can perform many useful tasks, such "
+"as e-mailing an administrator if a user account is deleted, or automatically "
+"unpublishing comments that contain certain words. By default, there are five "
+"\"contexts\" of events (Comments, Content, Cron, Taxonomy, and Users), but "
+"more may be added by additional modules."
+msgstr ""
+"Kombinationen av åtgärder och triggrar kan utföra många användbara "
+"uppgifter, som att skicka e-post till en administratör när ett användarkonto "
+"raderas eller att automatiskt avpublicera kommentarer som innehåller vissa "
+"ord. Som standard finns det fem \"händelsesammanhang\" (Kommentarer, "
+"Innehåll, Cron, Taxonomi och Användare), men tillagda moduler kan lägga till "
+"fler."
+
+#: modules/trigger/trigger.module:29
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@trigger"
+"\">Trigger module</a>."
+msgstr "Läs mer om <a href=\"@trigger\">modulen Trigger</a> i onlinehandboken."
+
+#: modules/trigger/trigger.module:39
+msgid "Triggers"
+msgstr "Triggrar"
+
+#: modules/trigger/trigger.module:40
+msgid "Tell Drupal when to execute actions."
+msgstr "Tala om för Drupal när åtgärder ska utföras."
+
+#: modules/trigger/trigger.module:85
+msgid "Cron"
+msgstr "Cron"
+
+#: modules/trigger/trigger.module:115
+msgid "Unassign an action from a trigger."
+msgstr "Koppla från en åtgärd från en trigger."
+
+#: modules/trigger/trigger.module:0
+msgid "trigger"
+msgstr "trigger"

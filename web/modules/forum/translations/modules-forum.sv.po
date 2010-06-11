@@ -1,0 +1,462 @@
+# Swedish translation of drupal (6.13)
+# Copyright (c) 2009 by the Swedish translation team
+# Generated from files:
+#  forum-list.tpl.php,v 1.4 2007/08/30 18:58:12 goba
+#  forum-submitted.tpl.php,v 1.3 2007/08/07 08:39:35 goba
+#  forum-topic-navigation.tpl.php,v 1.2 2007/08/07 08:39:35 goba
+#  forum.admin.inc,v 1.8.2.1 2009/05/26 08:13:00 goba
+#  forum.module,v 1.448.2.7 2009/06/03 18:27:48 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-08-04 10:44+0200\n"
+"PO-Revision-Date: 2009-08-04 09:57+0200\n"
+"Language-Team: Swedish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/forum/forum-list.tpl.php:38
+msgid "Topics"
+msgstr "Ämnen"
+
+#: modules/forum/forum-list.tpl.php:39
+msgid "Posts"
+msgstr "Inlägg"
+
+#: modules/forum/forum-list.tpl.php:40
+msgid "Last post"
+msgstr "Senaste inlägg"
+
+#: modules/forum/forum-submitted.tpl.php:21
+msgid "@time ago<br />by !author"
+msgstr "@time sedan<br />av !author"
+
+#: modules/forum/forum-topic-navigation.tpl.php:29
+msgid "Go to previous forum topic"
+msgstr "Gå till föregående diskussionsämne"
+
+#: modules/forum/forum-topic-navigation.tpl.php:32
+msgid "Go to next forum topic"
+msgstr "Gå till nästa diskussionsämne"
+
+#: modules/forum/forum.admin.inc:38
+msgid "Forum name"
+msgstr "Namn på forum"
+
+#: modules/forum/forum.admin.inc:41
+msgid "Short but meaningful name for this collection of threaded discussions."
+msgstr ""
+"Kort men meningsfullt namn för den här samlingen av trådade diskussioner."
+
+#: modules/forum/forum.admin.inc:47
+msgid "Description and guidelines for discussions within this forum."
+msgstr "Beskrivning och riktlinjer för diskussioner inom det här forumet."
+
+#: modules/forum/forum.admin.inc:54
+msgid ""
+"Forums are displayed in ascending order by weight (forums with equal weights "
+"are displayed alphabetically)."
+msgstr ""
+"Forum visas i ökande ordning baserat på vikt (forum med samma vikt visas i "
+"alfabetisk ordning)."
+
+#: modules/forum/forum.admin.inc:75
+msgid "forum container"
+msgstr "forumgrupp"
+
+#: modules/forum/forum.admin.inc:90
+msgid "Created new @type %term."
+msgstr "Skapade ny(tt) @type: %term."
+
+#: modules/forum/forum.admin.inc:93
+msgid "The @type %term has been updated."
+msgstr "@type %term har uppdaterats."
+
+#: modules/forum/forum.admin.inc:116
+msgid "Container name"
+msgstr "Namn på forumgrupp"
+
+#: modules/forum/forum.admin.inc:120
+msgid "Short but meaningful name for this collection of related forums."
+msgstr ""
+"Kort men meningsfullt namn för den här samlingen av närbesläktade forum."
+
+#: modules/forum/forum.admin.inc:128
+msgid "Description and guidelines for forums within this container."
+msgstr "Beskrivning och instruktioner för forum inom forumgrupperingar."
+
+#: modules/forum/forum.admin.inc:136
+msgid ""
+"Containers are displayed in ascending order by weight (containers with equal "
+"weights are displayed alphabetically)."
+msgstr ""
+"Forumgrupperingar visas i ökande ordning baserat på vikt (forumgrupperingar "
+"med samma vikt visas i alfabetisk ordning)."
+
+#: modules/forum/forum.admin.inc:168
+msgid "Are you sure you want to delete the forum %name?"
+msgstr "Är du säker på att du vill radera forumet %name?"
+
+#: modules/forum/forum.admin.inc:168
+msgid ""
+"Deleting a forum or container will also delete its sub-forums, if any. To "
+"delete posts in this forum, visit <a href=\"@content\">content "
+"administration</a> first. This action cannot be undone."
+msgstr ""
+"Om man raderar ett forum eller en forumgrupp, så kommer alla underliggande "
+"forum också att tas bort, om sådana finns. För att radera inlägg i detta "
+"forum, gå till <a href=\"@content\">innehållsadministrationen</a> först. "
+"Denna åtgärd kan inte ångras."
+
+#: modules/forum/forum.admin.inc:176
+msgid ""
+"The forum %term and all sub-forums and associated posts have been deleted."
+msgstr ""
+"Forumet %term och alla underliggande forum samt tillhörande inlägg har "
+"raderats."
+
+#: modules/forum/forum.admin.inc:192
+msgid "Hot topic threshold"
+msgstr "Tröskelvärde för hett ämne"
+
+#: modules/forum/forum.admin.inc:195
+msgid "The number of posts a topic must have to be considered \"hot\"."
+msgstr "Antalet inlägg ett ämne måste ha för att anses vara \"hett\"."
+
+#: modules/forum/forum.admin.inc:199
+msgid "Topics per page"
+msgstr "Ämnen per sida"
+
+#: modules/forum/forum.admin.inc:202
+msgid "Default number of forum topics displayed per page."
+msgstr "Det förvalda antalet forumtrådar som visas per sida."
+
+#: modules/forum/forum.admin.inc:204
+msgid "Posts - most active first"
+msgstr "Inlägg - mest aktiva först"
+
+#: modules/forum/forum.admin.inc:204
+msgid "Posts - least active first"
+msgstr "Inlägg - minst aktiva först"
+
+#: modules/forum/forum.admin.inc:206
+msgid "Default order"
+msgstr "Förvald ordning"
+
+#: modules/forum/forum.admin.inc:209
+msgid "Default display order for topics."
+msgstr "Förvald visningsordning för ämnen."
+
+#: modules/forum/forum.admin.inc:229
+msgid "edit container"
+msgstr "redigera gruppering"
+
+#: modules/forum/forum.admin.inc:232
+msgid "edit forum"
+msgstr "redigera forum"
+
+#: modules/forum/forum.admin.inc:244
+msgid ""
+"There are no existing containers or forums. Containers and forums may be "
+"added using the <a href=\"@container\">add container</a> and <a href=\"@forum"
+"\">add forum</a> pages."
+msgstr ""
+"Det finns inga tillgängliga forumgrupper eller forum. Du kan lägga till "
+"detta på sidorna för att lägga till <a href=\"@container\">forumgrupper</a> "
+"eller <a href=\"@forum\">forum</a>."
+
+#: modules/forum/forum.admin.inc:285
+msgid ""
+"Containers are usually placed at the top (root) level, but may also be "
+"placed inside another container or forum."
+msgstr ""
+"Forumgrupper placeras vanligtvis på översta nivån (rotnivån) bland dina "
+"forum, men du kan också placera en forumgrupp inne i en annan forumgrupp "
+"eller forum."
+
+#: modules/forum/forum.admin.inc:288
+msgid ""
+"Forums may be placed at the top (root) level, or inside another container or "
+"forum."
+msgstr ""
+"Forum placeras vanligtvis på översta nivån (rotnivån) bland dina forum, men "
+"du kan också placera ett forum inne i en annan forumgrupp eller forum."
+
+#: modules/forum/forum.admin.inc:177
+msgid "forum: deleted %term and all its sub-forums and associated posts."
+msgstr "forum: raderade %term inklusive alla underforum och deras inlägg."
+
+#: modules/forum/forum.module:15
+msgid ""
+"The forum module lets you create threaded discussion forums with "
+"functionality similar to other message board systems. Forums are useful "
+"because they allow community members to discuss topics with one another "
+"while ensuring those conversations are archived for later reference. The <a "
+"href=\"@create-topic\">forum topic</a> menu item (under <em>Create content</"
+"em> on the Navigation menu) creates the initial post of a new threaded "
+"discussion, or thread."
+msgstr ""
+"Modulen Forum ger dig möjlighet att skapa trådade diskussionsforum på din "
+"webbplats. Detta är snarlikt de som finns i andra meddelandesystem. Forum är "
+"användbara eftersom det gör det möjligt för intressegrupper att diskutera "
+"olika ämnen med varandra, och de arkiveras för framtida referens. Menyvalet "
+"<a href=\"@create-topic\">diskussionsämne</a> (under <em>Skapa innehåll</em> "
+"på navigationsmenyn) skapar det första inlägget på en ny trådad diskussion "
+"eller tråd."
+
+#: modules/forum/forum.module:16
+msgid ""
+"A threaded discussion occurs as people leave comments on a forum topic (or "
+"on other comments within that topic). A forum topic is contained within a "
+"forum, which may hold many similar or related forum topics. Forums are "
+"(optionally) nested within a container, which may hold many similar or "
+"related forums. Both containers and forums may be nested within other "
+"containers and forums, and provide structure for your message board. By "
+"carefully planning this structure, you make it easier for users to find and "
+"comment on a specific forum topic."
+msgstr ""
+"En trådad diskussion uppkommer då folk lämnar kommentarer på ett "
+"diskussionsämne (eller på andra kommentarer inom detta ämne). Ett "
+"diskussionsämne grupperas inom ett forum, som kan innehålla många likartade "
+"eller relaterade diskussionsämnen. Forum är (valbart) inbäddade i en "
+"forumgruppering, som kan innehålla många likartade eller relaterade forum. "
+"Både forumgrupperingar och forum kan bäddas in i andra forumgrupperingar och "
+"forum för att erhålla bättre struktur på din anslagstavla. Genom att "
+"noggrant planera strukturen kan du göra det enklare för användarna att hitta "
+"kommentarer på ett specifikt diskussionsämne."
+
+#: modules/forum/forum.module:17
+msgid "When administering a forum, note that:"
+msgstr "När du administrerar ett forum, tänk på att:"
+
+#: modules/forum/forum.module:18
+msgid ""
+"a forum topic (and all of its comments) may be moved between forums by "
+"selecting a different forum while editing a forum topic."
+msgstr ""
+"ett diskussionsämne (och alla dess kommentarer) kan flyttas mellan forum "
+"genom att välja ett nytt forum när du ändrar diskussionsämnet."
+
+#: modules/forum/forum.module:19
+msgid ""
+"when moving a forum topic between forums, the <em>Leave shadow copy</em> "
+"option creates a link in the original forum pointing to the new location."
+msgstr ""
+"valet <em>Lämna skuggkopia</em> skapar en länk till originalforumet som "
+"pekar på den nya platsen när du flyttar ett diskussionsämne mellan forum."
+
+#: modules/forum/forum.module:20
+msgid ""
+"selecting <em>Read only</em> under <em>Comment settings</em> while editing a "
+"forum topic will lock (prevent new comments) on the thread."
+msgstr ""
+"genom att välja <em>Endast läsa</em> under <em>Inställningar för "
+"kommentarer</em> när du ändrar ett diskussionsämne kommer det att låsa alla "
+"kommentarer och nya att förhindras."
+
+#: modules/forum/forum.module:21
+msgid ""
+"selecting <em>Disabled</em> under <em>Comment settings</em> while editing a "
+"forum topic will hide all existing comments on the thread, and prevent new "
+"ones."
+msgstr ""
+"genom att välja <em>Ej aktiverad</em> under <em>Inställningar för "
+"kommentarer</em> när du ändrar ett diskussionsämne kommer alla nuvarande "
+"kommentarer att gömmas och nya att förhindras."
+
+#: modules/forum/forum.module:22
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@forum"
+"\">Forum module</a>."
+msgstr "Läs mer om <a href=\"@forum\">modulen Forum</a> i onlinehandboken."
+
+#: modules/forum/forum.module:25
+msgid ""
+"This page displays a list of existing forums and containers. Containers "
+"(optionally) hold forums, and forums hold forum topics (a forum topic is the "
+"initial post to a threaded discussion). To provide structure, both "
+"containers and forums may be placed inside other containers and forums. To "
+"rearrange forums and containers, grab a drag-and-drop handle under the "
+"<em>Name</em> column and drag the forum or container to a new location in "
+"the list. (Grab a handle by clicking and holding the mouse while hovering "
+"over a handle icon.) Remember that your changes will not be saved until you "
+"click the <em>Save</em> button at the bottom of the page."
+msgstr ""
+"Detta är en lista över de befintliga forumgrupper och forum som du kan "
+"redigera. Forumgrupper innehåller forum som i sin tur innehåller trådade "
+"diskussioner. Både forumgrupper och forum kan läggas inne i andra forum "
+"eller forumgrupper för bättre struktur. Under kolumnen <em>Namn</em> kan du "
+"använda drag-och-släpp-handtaget för att ändra ordningen på forumgrupper och "
+"forum. (Ta tag i ett handtag genom att hålla musen över handtagsikonen, "
+"klicka och hålla musknappen nedtryckt.) Kom ihåg att dina ändringar inte "
+"kommer att sparas förrän du klickar på knappen <em>Spara</em> längst ner på "
+"sidan."
+
+#: modules/forum/forum.module:27
+msgid ""
+"By grouping related or similar forums, containers help organize forums. For "
+"example, a container named \"Food\" may hold two forums named \"Fruit\" and "
+"\"Vegetables\", respectively."
+msgstr ""
+"Forumgrupper hjälper dig att organisera dina forum. Syftet med en forumgrupp "
+"är att samla forum som är besläktade med varandra. Till exempel kan en "
+"forumgrupp som heter \"Mat\" innehålla forum med namnen \"Frukt\" och "
+"\"Grönsaker\"."
+
+#: modules/forum/forum.module:29
+msgid ""
+"A forum holds related or similar forum topics (a forum topic is the initial "
+"post to a threaded discussion). For example, a forum named \"Fruit\" may "
+"contain forum topics titled \"Apples\" and \"Bananas\", respectively."
+msgstr ""
+"Ett forum innehåller diskussionsämnen som är närbesläktade (ett "
+"diskussionsämne är det första inlägget i en trådad diskussion). Till exempel "
+"kan ett forum som heter \"Frukt\" innehålla diskussionsämnen med rubrikerna "
+"\"Äpplen\" och \"Bananer\"."
+
+#: modules/forum/forum.module:31
+msgid ""
+"These settings allow you to adjust the display of your forum topics. The "
+"content types available for use within a forum may be selected by editing "
+"the <em>Content types</em> on the <a href=\"@forum-vocabulary\">forum "
+"vocabulary page</a>."
+msgstr ""
+"Dessa inställningar låter dig ändra på visningen för diskussionsämnen. "
+"Tillgängliga innehållstyper som kan användas inom ett forum kan väljas genom "
+"att redigera <em>Innehållstyp</em> på <a href=\"@forum-vocabulary"
+"\">vokabulären för forumsidan</a>."
+
+#: modules/forum/forum.module:236
+msgid ""
+"The item %forum is only a container for forums. Please select one of the "
+"forums below it."
+msgstr ""
+"Komponenten %forum är bara en gruppering för forum. Var vänlig välj ett av "
+"de underordnade forumen."
+
+#: modules/forum/forum.module:302
+msgid "Forum topic"
+msgstr "Diskussionsämne"
+
+#: modules/forum/forum.module:304
+msgid ""
+"A <em>forum topic</em> is the initial post to a new discussion thread within "
+"a forum."
+msgstr ""
+"Ett <em>diskussionsämne</em> är det första inlägget för en ny trådad "
+"diskussion inom ett forum."
+
+#: modules/forum/forum.module:367
+msgid ""
+"This is the designated forum vocabulary. Some of the normal vocabulary "
+"options have been removed."
+msgstr ""
+"Detta är den speciella vokabulären för forum. Vissa av de vanliga "
+"alternativen för vokabulärer har tagits bort."
+
+#: modules/forum/forum.module:409,425
+msgid "Active forum topics"
+msgstr "Aktiva diskussionsämnen"
+
+#: modules/forum/forum.module:410,432
+msgid "New forum topics"
+msgstr "Nya diskussionsämnen"
+
+#: modules/forum/forum.module:414
+msgid "Number of topics"
+msgstr "Antal ämnen"
+
+#: modules/forum/forum.module:441
+msgid "Read the latest forum topics."
+msgstr "Läs de senaste diskussionsämnena."
+
+#: modules/forum/forum.module:460
+msgid "Leave shadow copy"
+msgstr "Lämna kvar skuggkopia"
+
+#: modules/forum/forum.module:460
+msgid ""
+"If you move this topic, you can leave a link in the old forum to the new "
+"forum."
+msgstr ""
+"Om du flyttar detta ämne kan du lämna en länk i det gamla forumet till det "
+"nya."
+
+#: modules/forum/forum.module:559
+msgid "Topic"
+msgstr "Ämne"
+
+#: modules/forum/forum.module:561
+msgid "Created"
+msgstr "Skapad"
+
+#: modules/forum/forum.module:562
+msgid "Last reply"
+msgstr "Senaste svar"
+
+#: modules/forum/forum.module:675
+msgid "Post new @node_type"
+msgstr "Skriv nytt @node_type"
+
+#: modules/forum/forum.module:724
+msgid "No forums defined"
+msgstr "Inga forum är definierade"
+
+#: modules/forum/forum.module:810
+msgid "This topic has been moved"
+msgstr "Denna diskussion har flyttats"
+
+#: modules/forum/forum.module:328
+msgid "create forum topics"
+msgstr "skapa diskussionsämnen"
+
+#: modules/forum/forum.module:328
+msgid "delete own forum topics"
+msgstr "radera egna diskussionsämnen"
+
+#: modules/forum/forum.module:328
+msgid "delete any forum topic"
+msgstr "radera alla diskussionsämnen"
+
+#: modules/forum/forum.module:328
+msgid "edit own forum topics"
+msgstr "redigera egna diskussionsämnen"
+
+#: modules/forum/forum.module:328
+msgid "edit any forum topic"
+msgstr "redigera ett diskussionsämne"
+
+#: modules/forum/forum.module:328
+msgid "administer forums"
+msgstr "administrera forum"
+
+#: modules/forum/forum.module:94
+msgid "Control forums and their hierarchy and change forum settings."
+msgstr "Hantera forum och deras hierarkier, och ändra inställningar för forum."
+
+#: modules/forum/forum.module:106
+msgid "Add container"
+msgstr "Lägg till forumgrupp"
+
+#: modules/forum/forum.module:115
+msgid "Add forum"
+msgstr "Lägg till forum"
+
+#: modules/forum/forum.module:140
+msgid "Edit container"
+msgstr "Redigera forumgrupp"
+
+#: modules/forum/forum.module:148
+msgid "Edit forum"
+msgstr "Redigera forum"
+
+#: modules/forum/forum.module:682
+msgid "You are not allowed to post new content in the forum."
+msgstr "Du har inte tillåtelse att posta nytt innehåll i forumet."
+
+#: modules/forum/forum.module:686
+msgid "<a href=\"@login\">Login</a> to post new content in the forum."
+msgstr "<a href=\"@login\">Logga in</a> för att posta nytt innehåll i forumet."

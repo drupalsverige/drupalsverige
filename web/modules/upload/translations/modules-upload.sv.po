@@ -1,0 +1,248 @@
+# Swedish translation of drupal (6.13)
+# Copyright (c) 2009 by the Swedish translation team
+# Generated from files:
+#  upload.admin.inc,v 1.7 2008/01/10 20:22:57 goba
+#  upload.module,v 1.197.2.4 2009/01/12 15:30:23 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-08-04 10:44+0200\n"
+"PO-Revision-Date: 2009-05-18 21:34+0200\n"
+"Language-Team: Swedish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/upload/upload.admin.inc:10
+msgid ""
+"The maximum allowed image size expressed as WIDTHxHEIGHT (e.g. 640x480). Set "
+"to 0 for no restriction."
+msgstr ""
+"Den maximalt tillåtna bildstorleken uttryckt som BREDDxHÖJD (t.ex. 640x480). "
+"Välj 0 för obegränsad storlek."
+
+#: modules/upload/upload.admin.inc:18
+msgid ""
+"Depending on your server environment, these settings may be changed in the "
+"system-wide php.ini file, a php.ini file in your Drupal root directory, in "
+"your Drupal site's settings.php file, or in the .htaccess file in your "
+"Drupal root directory."
+msgstr ""
+"Beroende på din servermiljö kan dessa inställningar ändras i hela systemets "
+"php.ini-fil, en php.ini-fil i din Drupal-rotkatalog, i din Drupal-webbplats "
+"settings.php-fil eller i .htaccess-filen i din rotkatalog för Drupal."
+
+#: modules/upload/upload.admin.inc:21,24,39,42
+msgid "The %role file size limit must be a number and greater than zero."
+msgstr ""
+"Filstorlekensbegränsningen för %role måste vara ett tal och större än noll."
+
+#: modules/upload/upload.admin.inc:21,24,31
+msgid "default"
+msgstr "standard"
+
+#: modules/upload/upload.admin.inc:31,49
+msgid ""
+"The %role maximum file size per upload is greater than the total file size "
+"allowed per user"
+msgstr ""
+"Den maximala filstorleken per uppladdning för %role är större än den "
+"tillåtna totala filstorleken per användare."
+
+#: modules/upload/upload.admin.inc:64
+msgid "General settings"
+msgstr "Allmänna inställningar"
+
+#: modules/upload/upload.admin.inc:69
+msgid "Maximum resolution for uploaded images"
+msgstr "Maximal bildstorlek för uppladdade bilder"
+
+#: modules/upload/upload.admin.inc:73
+msgid ""
+"The maximum allowed image size (e.g. 640x480). Set to 0 for no restriction. "
+"If an <a href=\"!image-toolkit-link\">image toolkit</a> is installed, files "
+"exceeding this value will be scaled down to fit."
+msgstr ""
+"Den maximalt tillåtna bildstorleken (till exempel 640x480). Ange 0 för att "
+"inte ha någon begränsning. Om ett <a href=\"!image-toolkit-link"
+"\">bildverktyg</a> är installerat kommer filer som överstiger detta värde "
+"att minskas ner så att de ryms inom gränsen."
+
+#: modules/upload/upload.admin.inc:74
+msgid "WIDTHxHEIGHT"
+msgstr "BREDDxHÖJD"
+
+#: modules/upload/upload.admin.inc:78
+msgid "List files by default"
+msgstr "Lista filer som förval"
+
+#: modules/upload/upload.admin.inc:81
+msgid "Display attached files when viewing a post."
+msgstr "Visa bifogade filer när ett inlägg visas."
+
+#: modules/upload/upload.admin.inc:97
+msgid ""
+"The default maximum file size a user can upload. If an image is uploaded and "
+"a maximum resolution is set, the size will be checked after the file has "
+"been resized."
+msgstr ""
+"Den maximala filstorleken som en användare kan ladda upp. Om en bild laddas "
+"upp och en maximal upplösning är inställd kommer storleken att kontrolleras "
+"efter att filen har minskats ner."
+
+#: modules/upload/upload.admin.inc:135
+msgid ""
+"The maximum size of a file a user can upload. If an image is uploaded and a "
+"maximum resolution is set, the size will be checked after the file has been "
+"resized."
+msgstr ""
+"Den maximala storleken på en fil som en användare kan ladda upp. Om en bild "
+"laddas upp och en maximal upplösning är inställd kommer storleken att "
+"kontrolleras efter att filen har minskats ner."
+
+#: modules/upload/upload.admin.inc:144
+msgid "The maximum size of all files a user can have on the site."
+msgstr "Den maximala storlek av alla filer en användare kan ha på webbplatsen."
+
+#: modules/upload/upload.module:16
+msgid ""
+"The upload module allows users to upload files to the site. The ability to "
+"upload files is important for members of a community who want to share work. "
+"It is also useful to administrators who want to keep uploaded files "
+"connected to posts."
+msgstr ""
+"Modulen Upload låter användare ladda upp filer till webbplatsen. Möjligheten "
+"att ladda upp filer är viktig för medlemmar av en grupp som vill ta del av "
+"varandras arbete. Det är också användbart för administratörer som vill ha "
+"uppladdade filer kopplade till ett inlägg."
+
+#: modules/upload/upload.module:17
+msgid ""
+"Users with the upload files permission can upload attachments to posts. "
+"Uploads may be enabled for specific content types on the content types "
+"settings page. Each user role can be customized to limit or control the file "
+"size of uploads, or the maximum dimension of image files."
+msgstr ""
+"Användare med rättigheter för att ladda upp filer kan lägga till bilagor "
+"till inlägg. Du kan välja vilka innehållstyper som kan använda bilagor på "
+"inställningssidan för innehållstyper. Varje användarroll kan anpassas med "
+"avseende på uppladdade filers storlek och storlek på bildfiler."
+
+#: modules/upload/upload.module:18
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@upload"
+"\">Upload module</a>."
+msgstr "Läs mer om <a href=\"@upload\">modulen Upload</a> i onlinehandboken."
+
+#: modules/upload/upload.module:21
+msgid ""
+"Users with the <a href=\"@permissions\">upload files permission</a> can "
+"upload attachments. Users with the <a href=\"@permissions\">view uploaded "
+"files permission</a> can view uploaded attachments. You can choose which "
+"post types can take attachments on the <a href=\"@types\">content types "
+"settings</a> page."
+msgstr ""
+"Användare med <a href=\"@permissions\">filuppladdningsrättigheter</a> kan "
+"ladda upp bilagor. Användare med <a href=\"@permissions\">behörighet att se "
+"uppladdade filer</a> kan se uppladdade filer. Du kan välja vilka "
+"innehållstyper som kan använda bilagor på sidan för inställning av <a href="
+"\"@types\">innehållstyper</a>."
+
+#: modules/upload/upload.module:67
+msgid "Read full article to view attachments."
+msgstr "Läs den fullständiga artikeln för att se bilagor."
+
+#: modules/upload/upload.module:213
+msgid "Attachments"
+msgstr "Bilagor"
+
+#: modules/upload/upload.module:226
+msgid "File attachments"
+msgstr "Bifogade filer"
+
+#: modules/upload/upload.module:229
+msgid ""
+"Changes made to the attachments are not permanent until you save this post. "
+"The first \"listed\" file will be included in RSS feeds."
+msgstr ""
+"Ändringar som görs på bilagorna är inte permanenta förrän du sparar detta "
+"inlägg. Den först \"visade\" filen kommer att inkluderas i RSS-flödet."
+
+#: modules/upload/upload.module:247
+msgid ""
+"File attachments are disabled. The file directories have not been properly "
+"configured."
+msgstr ""
+"Bifogade filer är inaktiverat. Katalogerna för filer är inte rätt inställda."
+
+#: modules/upload/upload.module:249
+msgid ""
+"Please visit the <a href=\"@admin-file-system\">file system configuration "
+"page</a>."
+msgstr ""
+"Besök <a href=\"@admin-file-system\">sidan för inställningar av filsystem</"
+"a>."
+
+#: modules/upload/upload.module:252
+msgid "Please contact the site administrator."
+msgstr "Kontakta webbplatsens administratör."
+
+#: modules/upload/upload.module:344
+msgid "Attachment"
+msgstr "Bilaga"
+
+#: modules/upload/upload.module:344,517
+msgid "Size"
+msgstr "Storlek"
+
+#: modules/upload/upload.module:491
+msgid "Attach new file"
+msgstr "Bifoga en ny fil"
+
+#: modules/upload/upload.module:493
+msgid "Images are larger than %resolution will be resized. "
+msgstr "Bilder större än %resolution kommer att minskas ner. "
+
+#: modules/upload/upload.module:493
+msgid ""
+"The maximum upload size is %filesize. Only files with the following "
+"extensions may be uploaded: %extensions. "
+msgstr ""
+"Den maximala uppladdningsstorleken är %filesize. Endast filer med följande "
+"filändelser kan laddas upp: %extensions. "
+
+#: modules/upload/upload.module:497
+msgid "Attach"
+msgstr "Bifoga"
+
+#: modules/upload/upload.module:502
+msgid "Please wait..."
+msgstr "Var god vänta..."
+
+#: modules/upload/upload.module:65,309
+msgid "1 attachment"
+msgid_plural "@count attachments"
+msgstr[0] "1 bilaga"
+msgstr[1] "@count bilagor"
+
+#: modules/upload/upload.module:46
+msgid "upload files"
+msgstr "ladda upp filer"
+
+#: modules/upload/upload.module:46
+msgid "view uploaded files"
+msgstr "visa uppladdade filer"
+
+#: modules/upload/upload.module:86
+msgid "File uploads"
+msgstr "Filuppladdning"
+
+#: modules/upload/upload.module:87
+msgid "Control how files may be attached to content."
+msgstr "Styr hur filer kan bifogas till innehåll."
+
+#: modules/upload/upload.module:0
+msgid "upload"
+msgstr "ladda upp"

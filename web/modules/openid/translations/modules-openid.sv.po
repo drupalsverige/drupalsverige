@@ -1,0 +1,212 @@
+# Swedish translation of drupal (6.13)
+# Copyright (c) 2009 by the Swedish translation team
+# Generated from files:
+#  openid.inc,v 1.8 2008/01/30 22:11:22 goba
+#  openid.pages.inc,v 1.5.2.1 2008/07/09 21:48:28 goba
+#  openid.module,v 1.19.2.6 2009/06/10 14:05:23 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-08-04 10:44+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Swedish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/openid/openid.inc:44
+msgid "OpenID redirect"
+msgstr "OpenID-omdirigering"
+
+#: modules/openid/openid.inc:67
+msgid "Send"
+msgstr "Skicka"
+
+#: modules/openid/openid.pages.inc:18
+msgid "OpenID login failed."
+msgstr "OpenID-inloggning misslyckades."
+
+#: modules/openid/openid.pages.inc:21
+msgid "OpenID login cancelled."
+msgstr "OpenID-inloggning avbröts."
+
+#: modules/openid/openid.pages.inc:39
+msgid "Successfully added %identity"
+msgstr "La till %identity"
+
+#: modules/openid/openid.pages.inc:66
+msgid "Add an OpenID"
+msgstr "Lägg till ett OpenID"
+
+#: modules/openid/openid.pages.inc:74
+msgid "That OpenID is already in use on this site."
+msgstr "Detta OpenID används redan på denna webbplats."
+
+#: modules/openid/openid.pages.inc:103
+msgid "Are you sure you want to delete the OpenID %authname for %user?"
+msgstr "Är du säker på att du vill radera OpenID %authname som tillhör %user?"
+
+#: modules/openid/openid.pages.inc:109
+msgid "OpenID deleted."
+msgstr "OpenID borttagen."
+
+#: modules/openid/openid.module:47
+msgid ""
+"This site supports <a href=\"@openid-net\">OpenID</a>, a secure way to log "
+"into many websites using a single username and password. OpenID can reduce "
+"the necessity of managing many usernames and passwords for many websites."
+msgstr ""
+"Denna webbplats stöder <a href=\"@openid-net\">OpenID</a>, ett säkert sätt "
+"att logga in på flera olika webbplatser med ett enda användarnamn och "
+"lösenord. OpenID kan göra att du slipper handskas med flera användarnamn och "
+"lösenord för olika webbplatser."
+
+#: modules/openid/openid.module:48
+msgid ""
+"To use OpenID you must first establish an identity on a public or private "
+"OpenID server. If you do not have an OpenID and would like one, look into "
+"one of the <a href=\"@openid-providers\">free public providers</a>. You can "
+"find out more about OpenID at <a href=\"@openid-net\">this website</a>."
+msgstr ""
+"För att använda OpenID måste du först etablera en identitet på en publik "
+"eller privat OpenID-server. Om du inte har ett OpenID och vill ha ett, pröva "
+"en <a href=\"@openid-providers\">gratis publik leverantör</a>. Du kan läsa "
+"mer om OpenID på <a href=\"@openid-net\">denna webbplats</a>."
+
+#: modules/openid/openid.module:49
+msgid ""
+"If you already have an OpenID, enter the URL to your OpenID server below (e."
+"g. myusername.openidprovider.com). Next time you login, you will be able to "
+"use this URL instead of a regular username and password. You can have "
+"multiple OpenID servers if you like; just keep adding them here."
+msgstr ""
+"Om du redan har ett OpenID, skriv in URLen till din OpenID-server nedan (t "
+"ex användarnamn.openidleverantör.com). Nästa gång du loggar in kan du "
+"använda denna URL istället för ett vanligt användarnamn och lösenord. Du kan "
+"ha flera OpenID-servrar om du vill – lägg bara till dem här."
+
+#: modules/openid/openid.module:53
+msgid ""
+"OpenID is a secure method for logging into many websites with a single "
+"username and password. It does not require special software, and it does not "
+"share passwords with any site to which it is associated; including your site."
+msgstr ""
+"OpenID är en säker metod att logga in på flera webbplatser med ett enda "
+"användarnamn och lösenord. Det kräver inte någon särskild mjukvara och det "
+"delar inte lösenord med någon annan webbplats som är kopplad till det. Det "
+"gäller också din egen webbplats."
+
+#: modules/openid/openid.module:54
+msgid ""
+"Users can create accounts using their OpenID, assign one or more OpenIDs to "
+"an existing account, and log in using an OpenID. This lowers the barrier to "
+"registration, which is good for the site, and offers convenience and "
+"security to the users. OpenID is not a trust system, so email verification "
+"is still necessary. The benefit stems from the fact that users can have a "
+"single password that they can use on many websites. This means they can "
+"easily update their single password from a centralized location, rather than "
+"having to change dozens of passwords individually."
+msgstr ""
+"Användare kan skapa konton med sitt OpenID, tilldela ett eller flera OpenID "
+"till existerande konton och logga in med ett OpenID. Detta gör det enklare "
+"att registrera sig, vilket är bra för webbplatsen och samtidigt smidigt och "
+"säkert för användaren. OpenID är inte ett tillitssystem, så verifiering via "
+"e-post krävs fortfarande. Fördelarna kommer av det faktum att användare kan "
+"ha ett enda lösenord som de kan använda på flera webbplatser. Detta innebär "
+"att de enkelt kan uppdatera sitt lösenord på ett centralt ställe istället "
+"för att behöva ändra på en massa olika ställen."
+
+#: modules/openid/openid.module:55
+msgid ""
+"The basic concept is as follows: A user has an account on an OpenID server. "
+"This account provides them with a unique URL (such as myusername."
+"openidprovider.com). When the user comes to your site, they are presented "
+"with the option of entering this URL. Your site then communicates with the "
+"OpenID server, asking it to verify the identity of the user. If the user is "
+"logged into their OpenID server, the server communicates back to your site, "
+"verifying the user. If they are not logged in, the OpenID server will ask "
+"the user for their password. At no point does your site record, or need to "
+"record the user's password."
+msgstr ""
+"Grundidén är följande: En användare har ett konto på en OpenID-server. Detta "
+"konto ger dem en unik URL (som användarnamn.openidleverantör.com). När "
+"användarna kommer till din webbplats ges de möjlighet att ange denna URL. "
+"Din webbplats kommunicerar med OpenID-servern och begär att användarens "
+"identitet bekräftas. Om användaren är inloggad på OpenID-servern kommer "
+"servern att svara webbplatsen med en bekräftelse av identiteten. Om de inte "
+"är inloggade kommer OpenID servern att fråga efter deras lösenord. Din "
+"webbplats lagrar aldrig, och behöver inte heller lagra, användarens lösenord."
+
+#: modules/openid/openid.module:56
+msgid ""
+"More information on OpenID is available at <a href=\"@openid-net\">OpenID."
+"net</a>."
+msgstr ""
+"Mer information om OpenID finns tillgänglig på <a href=\"@openid-net"
+"\">OpenID.net</a>."
+
+#: modules/openid/openid.module:57
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@handbook"
+"\">OpenID module</a>."
+msgstr "Läs mer om <a href=\"@contact\">modulen OpenID</a> i onlinehandboken."
+
+#: modules/openid/openid.module:69
+msgid "Once you have verified your email address, you may log in via OpenID."
+msgstr "När du bekräftat din e-postadress kan du logga in med OpenID."
+
+#: modules/openid/openid.module:91,108
+msgid "Log in using OpenID"
+msgstr "Inloggning med OpenID"
+
+#: modules/openid/openid.module:95
+msgid "Cancel OpenID login"
+msgstr "Avbryt inloggning med OpenID"
+
+#: modules/openid/openid.module:112
+msgid "What is OpenID?"
+msgstr "Vad är OpenID?"
+
+#: modules/openid/openid.module:161
+msgid ""
+"Sorry, that is not a valid OpenID. Please ensure you have spelled your ID "
+"correctly."
+msgstr ""
+"Tyvärr, detta är inget giltigt OpenID. Var vänlig kontrollera att du angivit "
+"ditt ID korrekt."
+
+#: modules/openid/openid.module:391
+msgid ""
+"You must validate your email address for this account before logging in via "
+"OpenID"
+msgstr ""
+"Du måste bekräfta din e-postadress för detta konto innan du loggar in med "
+"OpenID"
+
+#: modules/openid/openid.module:409
+msgid ""
+"OpenID registration failed for the reasons listed. You may register now, or "
+"if you already have an account you can <a href=\"@login\">log in</a> now and "
+"add your OpenID under \"My Account\""
+msgstr ""
+"OpenID-registreringen misslyckades på grund av angivna orsaker. Du kan "
+"registrera dig nu, eller om du redan har ett konto kan du <a href=\"@login"
+"\">logga in</a> nu och lägga till ditt OpenID under \"Mitt konto\""
+
+#: modules/openid/openid.module:14
+msgid "OpenID Login"
+msgstr "OpenID-inloggning"
+
+#: modules/openid/openid.module:21
+msgid "OpenID identities"
+msgstr "OpenID-identiteter"
+
+#: modules/openid/openid.module:30
+msgid "Delete OpenID"
+msgstr "Ta bort OpenID"
+
+#: modules/openid/openid.module:0
+msgid "openid"
+msgstr "openid"

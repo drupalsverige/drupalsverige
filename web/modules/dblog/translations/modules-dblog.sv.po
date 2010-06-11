@@ -1,0 +1,142 @@
+# Swedish translation of drupal (6.13)
+# Copyright (c) 2009 by the Swedish translation team
+# Generated from files:
+#  dblog.admin.inc,v 1.6.2.1 2008/09/17 05:47:53 goba
+#  dblog.module,v 1.21.2.2 2008/04/09 21:11:46 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-08-04 10:44+0200\n"
+"PO-Revision-Date: 2009-07-22 23:35+0200\n"
+"Language-Team: Swedish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/dblog/dblog.admin.inc:18
+msgid "Discard log entries above the following row limit"
+msgstr "Släng loggposter som överstiger följande radbegränsning"
+
+#: modules/dblog/dblog.admin.inc:21
+msgid ""
+"The maximum number of rows to keep in the database log. Older entries will "
+"be automatically discarded. (Requires a correctly configured <a href=\"@cron"
+"\">cron maintenance task</a>.)"
+msgstr ""
+"Maximalt antal rader att spara i databasens logg. Äldre poster kommer "
+"automatiskt att raderas. (Kräver att <a href=\"@cron\">schemalagda "
+"aktiviteter (cron)</a> är korrekt inställt.)"
+
+#: modules/dblog/dblog.admin.inc:91,119
+msgid "No log messages available."
+msgstr "Inga loggmeddelanden tillgängliga."
+
+#: modules/dblog/dblog.admin.inc:107
+msgid "Count"
+msgstr "Antal"
+
+#: modules/dblog/dblog.admin.inc:150
+msgid "Location"
+msgstr "Plats"
+
+#: modules/dblog/dblog.admin.inc:162,230
+msgid "Severity"
+msgstr "Grad"
+
+#: modules/dblog/dblog.admin.inc:270
+msgid "Filter log messages"
+msgstr "Filtrera logg efter meddelandetyp"
+
+#: modules/dblog/dblog.admin.inc:307
+msgid "You must select something to filter by."
+msgstr "Du måste välja något att filtrera på."
+
+#: modules/dblog/dblog.module:21
+msgid ""
+"The dblog module monitors your system, capturing system events in a log to "
+"be reviewed by an authorized individual at a later time. This is useful for "
+"site administrators who want a quick overview of activities on their site. "
+"The logs also record the sequence of events, so it can be useful for "
+"debugging site errors."
+msgstr ""
+"Modulen Dblog övervakar ditt system och registrerar systemhändelser i en "
+"logg som kan granskas av behörig person vid ett senare tillfälle. Detta är "
+"användbart för administratörer som vill ha en snabb överblick över "
+"aktiviteter på sin webbplats. Loggarna registrerar också händelsekedjor "
+"vilket gör dem användbara för att lösa problem på webbplatsen."
+
+#: modules/dblog/dblog.module:22
+msgid ""
+"The dblog log is simply a list of recorded events containing usage data, "
+"performance data, errors, warnings and operational information. "
+"Administrators should check the dblog report on a regular basis to ensure "
+"their site is working properly."
+msgstr ""
+"Övervakningsloggen är helt enkelt en lista med registrerade händelser som "
+"innehåller data om användning och prestanda, felmeddelanden, varningar och "
+"annan operativ information. Administratörer bör kontrollera "
+"övervakningsrapporten regelbundet för att säkerställa att webbplatsen "
+"fungerar ordentligt."
+
+#: modules/dblog/dblog.module:23
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@dblog"
+"\">Dblog module</a>."
+msgstr "Läs mer om <a href=\"@dblog\">modulen Dblog</a> i onlinehandboken."
+
+#: modules/dblog/dblog.module:26
+msgid ""
+"The dblog module monitors your website, capturing system events in a log to "
+"be reviewed by an authorized individual at a later time. The dblog log is "
+"simply a list of recorded events containing usage data, performance data, "
+"errors, warnings and operational information. It is vital to check the dblog "
+"report on a regular basis as it is often the only way to tell what is going "
+"on."
+msgstr ""
+"Modulen Dblog övervakar din webbplats och fångar in systemhändelser i en "
+"logg som sedan kan granskas av en auktoriserad person vid ett senare "
+"tillfälle. Övervakningsloggen är helt enkelt en lista med registrerade "
+"händelser som innehåller information om användning och prestanda, fel, "
+"varningar och driftsinformation. Det är väldigt viktigt att kontrollera "
+"övervakningsrapporten med jämna mellanrum då det ofta är det enda sättet att "
+"få reda på vad det är som försiggår."
+
+#: modules/dblog/dblog.module:47
+msgid ""
+"Settings for logging to the Drupal database logs. This is the most common "
+"method for small to medium sites on shared hosting. The logs are viewable "
+"from the admin pages."
+msgstr ""
+"Inställningar för loggning till Drupals databas. Detta är den vanligaste "
+"metoden för små till mediumstora webbplatser på en delad värddator. Loggarna "
+"kan man se från administratörssidorna."
+
+#: modules/dblog/dblog.module:55
+msgid "Recent log entries"
+msgstr "Senaste loggningarna"
+
+#: modules/dblog/dblog.module:56
+msgid "View events that have recently been logged."
+msgstr "Visa händelser som nyligen har loggats."
+
+#: modules/dblog/dblog.module:63
+msgid "Top 'page not found' errors"
+msgstr "Vanligaste 'sidan hittades inte'-felen"
+
+#: modules/dblog/dblog.module:64
+msgid "View 'page not found' errors (404s)."
+msgstr "Visa 'sidan hittades inte'-fel (404)"
+
+#: modules/dblog/dblog.module:71
+msgid "Top 'access denied' errors"
+msgstr "Vanligaste 'åtkomst nekad'-felen"
+
+#: modules/dblog/dblog.module:72
+msgid "View 'access denied' errors (403s)."
+msgstr "Visa 'åtkomst nekad'-fel (403)"
+
+#: modules/dblog/dblog.module:0
+msgid "dblog"
+msgstr "dblog"

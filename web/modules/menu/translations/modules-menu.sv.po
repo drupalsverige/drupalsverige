@@ -1,0 +1,389 @@
+# Swedish translation of drupal (6.13)
+# Copyright (c) 2009 by the Swedish translation team
+# Generated from files:
+#  menu.admin.inc,v 1.26.2.4 2009/02/25 13:15:40 goba
+#  menu.module,v 1.157.2.6 2009/04/27 12:50:13 goba
+#  menu.install,v 1.9.2.1 2009/01/06 15:46:37 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-08-04 10:44+0200\n"
+"PO-Revision-Date: 2009-07-22 23:37+0200\n"
+"Language-Team: Swedish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/menu/menu.admin.inc:54
+msgid "There are no menu items yet."
+msgstr "Just nu finns det inga menyval."
+
+#: modules/menu/menu.admin.inc:104
+msgid "reset"
+msgstr "återställ"
+
+#: modules/menu/menu.admin.inc:175
+msgid "Menu item"
+msgstr "Menyval"
+
+#: modules/menu/menu.admin.inc:177,299
+msgid "Expanded"
+msgstr "Utfällt"
+
+#: modules/menu/menu.admin.inc:260
+msgid ""
+"The path this menu item links to. This can be an internal Drupal path such "
+"as %add-node or an external URL such as %drupal. Enter %front to link to the "
+"front page."
+msgstr ""
+"Sökvägen som denna meny länkar till. Detta kan antingen vara en intern "
+"sökväg i Drupal som %add-node eller en extern URL som %drupal. Ange %front "
+"för att länka till startsidan."
+
+#: modules/menu/menu.admin.inc:281
+msgid ""
+"The link text corresponding to this item that should appear in the menu."
+msgstr "Länktexten tillhörande den här posten som ska visas i menyn."
+
+#: modules/menu/menu.admin.inc:289
+msgid "The description displayed when hovering over a menu item."
+msgstr "Beskrivningen som visas när man för pekaren över ett menyval."
+
+#: modules/menu/menu.admin.inc:295
+msgid "Menu items that are not enabled will not be listed in any menu."
+msgstr "Menyval som inte är aktiverade kommer inte att visas i någon meny."
+
+#: modules/menu/menu.admin.inc:301
+msgid ""
+"If selected and this menu item has children, the menu will always appear "
+"expanded."
+msgstr ""
+"Om detta väljs och det finns underliggande menyval kommer det alltid att "
+"vara utfällt."
+
+#: modules/menu/menu.admin.inc:403
+msgid "Menu name"
+msgstr "Menynamn"
+
+#: modules/menu/menu.admin.inc:405
+msgid ""
+"The machine-readable name of this menu. This text will be used for "
+"constructing the URL of the <em>menu overview</em> page for this menu. This "
+"name must contain only lowercase letters, numbers, and hyphens, and must be "
+"unique."
+msgstr ""
+"Det maskinläsbara namnet på denna meny. Denna text kommer att användas för "
+"att bygga upp URL:en till sidan <em>menyöversikt</em> för denna meny. Namnet "
+"kan bara innehålla gemena bokstäver, siffror och bindestreck. Dessutom måste "
+"det vara unikt."
+
+#: modules/menu/menu.admin.inc:460
+msgid "Are you sure you want to delete the custom menu %title?"
+msgstr "Är du säker på att du vill radera den anpassade menyn %title?"
+
+#: modules/menu/menu.admin.inc:492
+msgid "The custom menu %title has been deleted."
+msgstr "Det anpassade menyvalet %title har raderats."
+
+#: modules/menu/menu.admin.inc:502
+msgid ""
+"The menu name may only consist of lowercase letters, numbers, and hyphens."
+msgstr ""
+"Menynamnet får bara bestå av gemena bokstäver, siffror och bindestreck."
+
+#: modules/menu/menu.admin.inc:512
+msgid "The menu already exists."
+msgstr "Menyn finns redan."
+
+#: modules/menu/menu.admin.inc:564
+msgid "Are you sure you want to delete the custom menu item %item?"
+msgstr "Är du säker på att du vill radera det anpassade menyvalet %item?"
+
+#: modules/menu/menu.admin.inc:574
+msgid "The menu item %title has been deleted."
+msgstr "Menyvalet %title har raderats."
+
+#: modules/menu/menu.admin.inc:584
+msgid "Are you sure you want to reset the item %item to its default values?"
+msgstr ""
+"Är du säker på att du vill återställa menyvalet %item till dess "
+"standardvärde?"
+
+#: modules/menu/menu.admin.inc:584
+msgid "Any customizations will be lost. This action cannot be undone."
+msgstr ""
+"Alla anpassningar kommer att gå förlorade. Denna åtgärd kan inte ångras."
+
+#: modules/menu/menu.admin.inc:593
+msgid "The menu item was reset to its default settings."
+msgstr "Menyvalet återställdes till dess standardinställningar."
+
+#: modules/menu/menu.admin.inc:603
+msgid ""
+"The menu module allows on-the-fly creation of menu links in the content "
+"authoring forms. The following option sets the default menu in which a new "
+"link will be added."
+msgstr ""
+"Modulen Menu ger dig möjlighet att skapa menyval direkt i "
+"författarformulärets innehåll. Följande alternativ anger vilken meny som nya "
+"länkar läggs till i som standard."
+
+#: modules/menu/menu.admin.inc:609
+msgid "Default menu for content"
+msgstr "Förvald meny för innehåll"
+
+#: modules/menu/menu.admin.inc:612
+msgid ""
+"Choose the menu to be the default in the menu options in the content "
+"authoring form."
+msgstr ""
+"Välj vilken meny som skall användas som standard i menyinställningarna i "
+"formuläret föra att skapa innehåll."
+
+#: modules/menu/menu.admin.inc:616
+msgid "No primary links"
+msgstr "Inga primära länkar"
+
+#: modules/menu/menu.admin.inc:619
+msgid "Source for the primary links"
+msgstr "Källa för primära länkar"
+
+#: modules/menu/menu.admin.inc:623
+msgid "Select what should be displayed as the primary links."
+msgstr "Välj vad som skall visas som primära länkar."
+
+#: modules/menu/menu.admin.inc:626
+msgid "No secondary links"
+msgstr "Inga sekundära länkar"
+
+#: modules/menu/menu.admin.inc:629
+msgid "Source for the secondary links"
+msgstr "Källa för sekundära länkar"
+
+#: modules/menu/menu.admin.inc:633
+msgid ""
+"Select what should be displayed as the secondary links. You can choose the "
+"same menu for secondary links as for primary links (currently %primary). If "
+"you do this, the children of the active primary menu link will be displayed "
+"as secondary links."
+msgstr ""
+"Välj vad som ska visas som sekundära länkar. Du kan välja samma meny för "
+"sekundära länkar som för primära länkar (för närvarande %primary). Om du gör "
+"detta kommer underliggande menyval till den aktiva primärlänken att visas "
+"som sekundära länkar."
+
+#: modules/menu/menu.admin.inc:493
+msgid "Deleted custom menu %title and all its menu items."
+msgstr "Radera den anpassad menyn %title och alla dess menyval."
+
+#: modules/menu/menu.admin.inc:575
+msgid "Deleted menu item %title."
+msgstr "Raderade menyvalet %title."
+
+#: modules/menu/menu.admin.inc:457
+msgid ""
+"<strong>Warning:</strong> There is currently 1 menu item in %title. It will "
+"be deleted (system-defined items will be reset)."
+msgid_plural ""
+"<strong>Warning:</strong> There are currently @count menu items in %title. "
+"They will be deleted (system-defined items will be reset)."
+msgstr[0] ""
+"<strong>Varning:</strong> Det finns för närvarande ett menyval i %title. Det "
+"kommer att raderas (systemdefinierade alternativ kommer att återställas)."
+msgstr[1] ""
+"<strong>Varning:</strong> Det finns för närvarande @count menyval i %title. "
+"De kommer att raderas (systemdefinierade alternativ kommer att återställas)."
+
+#: modules/menu/menu.admin.inc:505
+msgid "The menu name can't be longer than 1 character."
+msgid_plural "The menu name can't be longer than @count characters."
+msgstr[0] "Menynamnet kan inte vara längre än ett tecken."
+msgstr[1] "Menynamnet kan inte vara längre än @count tecken."
+
+#: modules/menu/menu.module:21
+msgid ""
+"The menu module provides an interface to control and customize Drupal's "
+"powerful menu system. Menus are a hierarchical collection of links, or menu "
+"items, used to navigate a website, and are positioned and displayed using "
+"Drupal's flexible block system. By default, three menus are created during "
+"installation: <em>Navigation</em>, <em>Primary links</em>, and <em>Secondary "
+"links</em>. The <em>Navigation</em> menu contains most links necessary for "
+"working with and navigating your site, and is often displayed in either the "
+"left or right sidebar. Most Drupal themes also provide support for "
+"<em>Primary links</em> and <em>Secondary links</em>, by displaying them in "
+"either the header or footer of each page. By default, <em>Primary links</em> "
+"and <em>Secondary links</em> contain no menu items but may be configured to "
+"contain custom menu items specific to your site."
+msgstr ""
+"Modulen Menu tillhandahåller ett gränssnitt för att kontrollera och anpassa "
+"Drupals kraftfulla menysystem. Menyer är en hierarkisk samling av länkar, "
+"eller menyval, som används för att navigera på en webbplats. De placeras och "
+"visas genom att använda Drupals flexibla blocksystem. Som standard skapas "
+"tre menyer under installationen: <em>Navigering</em>, <em>Primära länkar</"
+"em> och <em>Sekundära länkar</em>. Menyn <em>Navigering</em> innehåller de "
+"flesta länkar som är nödvändiga för att arbeta med och navigera på din "
+"webbplats. Ofta visas de antingen i det vänstra eller högra sidfältet. De "
+"flesta teman i Drupal tillhandahåller stöd för <em>Primära länkar</em> och "
+"<em>Sekundära länkar</em> genom att antingen visa dem i huvud- eller "
+"sidfoten på varje sida. <em>Primära länkar</em> och <em>Sekundära länkar</"
+"em> innehåller inte som standard några menyval, men kan konfigureras att "
+"innehålla anpassade menyval som är specifika för just din webbplats."
+
+#: modules/menu/menu.module:22
+msgid ""
+"The <a href=\"@menu\">menus page</a> displays all menus currently available "
+"on your site. Select a menu from this list to add or edit a menu item, or to "
+"rearrange items within the menu. Create new menus using the <a href=\"@add-"
+"menu\">add menu page</a> (the block containing a new menu must also be "
+"enabled on the <a href=\"@blocks\">blocks administration page</a>)."
+msgstr ""
+"<a href=\"@menu\">Menysidan</a> visar alla menyer som för tillfället är "
+"tillgängliga på din webbsida. Välj en meny från denna lista för att lägga "
+"till eller redigera ett menyval, eller för att ändra ordningen på "
+"alternativen inom en meny. Skapa en ny meny genom att använda sidan <a href="
+"\"@add-menu\">lägg till meny</a> (blocket som innehåller en ny meny måste "
+"också vara aktiverat på sidan för <a href=\"@blocks\">administrering av "
+"block</a>)."
+
+#: modules/menu/menu.module:23
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@menu"
+"\">Menu module</a>."
+msgstr "Läs mer om <a href=\"@menu\">modulen Menu</a> i onlinehandboken."
+
+#: modules/menu/menu.module:26
+msgid ""
+"Menus are a collection of links (menu items) used to navigate a website. The "
+"menus currently available on your site are displayed below. Select a menu "
+"from this list to manage its menu items."
+msgstr ""
+"Menyer är en samling länkar (menyval) som används för att navigera på en "
+"webbplats. Menyer som just nu är tillgängliga för din webbplats visas här "
+"nedanför. Välj en meny från listan för att hantera dess menyval."
+
+#: modules/menu/menu.module:28
+msgid ""
+"Enter the name for your new menu. Remember to enable the newly created block "
+"in the <a href=\"@blocks\">blocks administration page</a>."
+msgstr ""
+"Ange ett namn för din nya meny. Kom ihåg att aktivera det nya blocket i <a "
+"href=\"@blocks\">administrationen för block</a>."
+
+#: modules/menu/menu.module:30
+msgid ""
+"To rearrange menu items, grab a drag-and-drop handle under the <em>Menu "
+"item</em> column and drag the items (or group of items) to a new location in "
+"the list. (Grab a handle by clicking and holding the mouse while hovering "
+"over a handle icon.) Remember that your changes will not be saved until you "
+"click the <em>Save configuration</em> button at the bottom of the page."
+msgstr ""
+"Under kolumnen <em>Menyval</em> kan du använda drag-och-släpp-handtaget för "
+"att ändra ordningen på menyn eller (gruppmenyn). (Ta tag i ett handtag genom "
+"att hålla musen över handtagsikonen, klicka och hålla musknappen nedtryckt.) "
+"Kom ihåg att dina ändringar inte kommer att sparas förrän du klickar på "
+"knappen <em>Spara inställningar</em> längst ner på sidan."
+
+#: modules/menu/menu.module:32
+msgid "Enter the title and path for your new menu item."
+msgstr "Ange titel och sökväg för ditt nya menyval."
+
+#: modules/menu/menu.module:381
+msgid "Delete this menu item."
+msgstr "Radera det här menyvalet."
+
+#: modules/menu/menu.module:396
+msgid ""
+"The link text corresponding to this item that should appear in the menu. "
+"Leave blank if you do not wish to add this post to the menu."
+msgstr ""
+"Länktexten som stämmer överens med detta val som ska synas i menyn. Lämna "
+"detta blankt om du inte vill lägga till detta alternativ i menyn."
+
+#: modules/menu/menu.module:40
+msgid "administer menu"
+msgstr "administrera meny"
+
+#: modules/menu/menu.module:48
+msgid "Menus"
+msgstr "Menyer"
+
+#: modules/menu/menu.module:49
+msgid ""
+"Control your site's navigation menu, primary links and secondary links. as "
+"well as rename and reorganize menu items."
+msgstr ""
+"Reglera din webbplats navigationsmeny, primära och sekundära länkar. Du kan "
+"också döpa om och ändra ordningen på menyvalen."
+
+#: modules/menu/menu.module:57
+msgid "List menus"
+msgstr "Visa menyer"
+
+#: modules/menu/menu.module:63
+msgid "Add menu"
+msgstr "Lägg till meny"
+
+#: modules/menu/menu.module:80
+msgid "Customize menu"
+msgstr "Anpassa meny"
+
+#: modules/menu/menu.module:90
+msgid "List items"
+msgstr "Visa alternativ"
+
+#: modules/menu/menu.module:96
+msgid "Add item"
+msgstr "Lägg till post"
+
+#: modules/menu/menu.module:104
+msgid "Edit menu"
+msgstr "Redigera meny"
+
+#: modules/menu/menu.module:112
+msgid "Delete menu"
+msgstr "Radera meny"
+
+#: modules/menu/menu.module:120
+msgid "Edit menu item"
+msgstr "Redigera menyval"
+
+#: modules/menu/menu.module:128
+msgid "Reset menu item"
+msgstr "Återställ menyval"
+
+#: modules/menu/menu.module:136
+msgid "Delete menu item"
+msgstr "Radera menyval"
+
+#: modules/menu/menu.install:12
+msgid ""
+"The navigation menu is provided by Drupal and is the main interactive menu "
+"for any site. It is usually the only menu that contains personalized links "
+"for authenticated users, and is often not even visible to anonymous users."
+msgstr ""
+"Navigationsmenyn tillhandahålls av Drupal och är den huvudsakliga "
+"interaktiva menyn för alla webbsidor. Den är vanligtvis den enda menyn som "
+"innehåller anpassade länkar för inloggade användare och visas oftast inte "
+"ens för gäster."
+
+#: modules/menu/menu.install:13
+msgid ""
+"Primary links are often used at the theme layer to show the major sections "
+"of a site. A typical representation for primary links would be tabs along "
+"the top."
+msgstr ""
+"Primära länkar används ofta i temalagret för att visa de större "
+"avdelningarna på webbplatsen. Ett vanligt sätt att presentera primära länkar "
+"är flikar högst upp på sidan."
+
+#: modules/menu/menu.install:14
+msgid ""
+"Secondary links are often used for pages like legal notices, contact "
+"details, and other secondary navigation items that play a lesser role than "
+"primary links"
+msgstr ""
+"Sekundära länkar används ofta för sidor som juridiska meddelanden, "
+"kontaktinformation och andra sekundära navigationsval som spelar mindre roll "
+"än de primära länkarna."

@@ -1,0 +1,463 @@
+# Swedish translation of drupal (6.13)
+# Copyright (c) 2009 by the Swedish translation team
+# Generated from files:
+#  aggregator-feed-source.tpl.php,v 1.1 2007/09/13 08:02:38 goba
+#  aggregator-summary-items.tpl.php,v 1.1 2007/09/13 08:02:38 goba
+#  aggregator.admin.inc,v 1.7.2.1 2008/04/25 21:11:57 goba
+#  aggregator.pages.inc,v 1.12.2.1 2008/08/16 21:13:48 dries
+#  aggregator.module,v 1.374.2.5 2009/03/30 12:15:53 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-08-04 10:44+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Swedish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/aggregator/aggregator-feed-source.tpl.php:30
+msgid "URL:"
+msgstr "URL:"
+
+#: modules/aggregator/aggregator-feed-source.tpl.php:33
+msgid "Updated:"
+msgstr "Uppdaterad:"
+
+#: modules/aggregator/aggregator-summary-items.tpl.php:23
+msgid "More"
+msgstr "Mer"
+
+#: modules/aggregator/aggregator.admin.inc:25
+msgid "Feed overview"
+msgstr "Översikt över nyhetsflöden"
+
+#: modules/aggregator/aggregator.admin.inc:27,38
+msgid "Items"
+msgstr "Poster"
+
+#: modules/aggregator/aggregator.admin.inc:27
+msgid "Last update"
+msgstr "Senaste uppdatering"
+
+#: modules/aggregator/aggregator.admin.inc:27
+msgid "Next update"
+msgstr "Nästa uppdatering"
+
+#: modules/aggregator/aggregator.admin.inc:30
+msgid "%time left"
+msgstr "%time återstår"
+
+#: modules/aggregator/aggregator.admin.inc:30
+msgid "remove items"
+msgstr "ta bort poster"
+
+#: modules/aggregator/aggregator.admin.inc:30
+msgid "update items"
+msgstr "uppdatera poster"
+
+#: modules/aggregator/aggregator.admin.inc:36
+msgid "Category overview"
+msgstr "Kategoriöversikt"
+
+#: modules/aggregator/aggregator.admin.inc:66
+msgid "The name of the feed (or the name of the website providing the feed)."
+msgstr ""
+"Nyhetsflödets namn (eller namnet på den webbplats du samlar innehåll från)."
+
+#: modules/aggregator/aggregator.admin.inc:73
+msgid "The fully-qualified URL of the feed."
+msgstr "Nyhetsflödets fullständiga URL."
+
+#: modules/aggregator/aggregator.admin.inc:77
+msgid "Update interval"
+msgstr "Uppdateringsintervall"
+
+#: modules/aggregator/aggregator.admin.inc:80
+msgid ""
+"The length of time between feed updates. (Requires a correctly configured <a "
+"href=\"@cron\">cron maintenance task</a>.)"
+msgstr ""
+"Hur ofta nyhetsflöden ska uppdateras. (Kräver att <a href=\"@cron\">cron</a> "
+"är korrekt inställt.)"
+
+#: modules/aggregator/aggregator.admin.inc:93
+msgid "Categorize news items"
+msgstr "Kategorisera nyhetsartiklar"
+
+#: modules/aggregator/aggregator.admin.inc:96
+msgid "New feed items are automatically filed in the checked categories."
+msgstr ""
+"Nya artiklar i detta flöde kommer automatiskt att sorteras i valda "
+"kategorier."
+
+#: modules/aggregator/aggregator.admin.inc:116
+msgid ""
+"The URL %url is invalid. Please enter a fully-qualified URL, such as http://"
+"www.example.com/feed.xml."
+msgstr ""
+"URL:en %url är ogiltig. Ange en giltig URL, såsom http://www.exempel.com/"
+"feed.xml."
+
+#: modules/aggregator/aggregator.admin.inc:127
+msgid "A feed named %feed already exists. Please enter a unique title."
+msgstr "Ett flöde med namnet %feed finns redan. Du måste ange en unik titel."
+
+#: modules/aggregator/aggregator.admin.inc:130
+msgid "A feed with this URL %url already exists. Please enter a unique URL."
+msgstr "Ett flöde med URL:en %url finns redan. Du måste ange en unik URL."
+
+#: modules/aggregator/aggregator.admin.inc:150
+msgid "The feed %feed has been updated."
+msgstr "Flödet %feed har uppdaterats."
+
+#: modules/aggregator/aggregator.admin.inc:162
+msgid "The feed %feed has been deleted."
+msgstr "Flödet %feed har raderats."
+
+#: modules/aggregator/aggregator.admin.inc:175
+msgid "The feed %feed has been added."
+msgstr "Flödet %feed har lagts till."
+
+#: modules/aggregator/aggregator.admin.inc:187
+msgid "Are you sure you want to remove all items from the feed %feed?"
+msgstr ""
+"Är du säker på att du vill ta bort alla poster från nyhetsflödet %feed?"
+
+#: modules/aggregator/aggregator.admin.inc:230
+msgid ""
+"A space-separated list of HTML tags allowed in the content of feed items. "
+"(Tags in this list are not removed by Drupal.)"
+msgstr ""
+"En lista över HTML-taggar som är tillåtna i nyhetsflödets innehåll. Separera "
+"taggarna med mellanslag. (Taggar i denna lista tas inte bort av Drupal.)"
+
+#: modules/aggregator/aggregator.admin.inc:234
+msgid "Items shown in sources and categories pages"
+msgstr "Artiklar som visas på käll- och kategorisidor"
+
+#: modules/aggregator/aggregator.admin.inc:236
+msgid "Number of feed items displayed in feed and category summary pages."
+msgstr ""
+"Antalet artiklar som kommer att visas på översiktsidor för flöden och "
+"kategorier."
+
+#: modules/aggregator/aggregator.admin.inc:240
+msgid "Discard items older than"
+msgstr "Ta bort poster äldre än"
+
+#: modules/aggregator/aggregator.admin.inc:242
+msgid ""
+"The length of time to retain feed items before discarding. (Requires a "
+"correctly configured <a href=\"@cron\">cron maintenance task</a>.)"
+msgstr ""
+"Hur länge artiklar i ett nyhetsflöde ska sparas innan det kastas bort. "
+"(Kräver att <a href=\"@cron\">cron</a> är korrekt inställt.)"
+
+#: modules/aggregator/aggregator.admin.inc:246
+msgid "Category selection type"
+msgstr "Typ av kategoriväljare"
+
+#: modules/aggregator/aggregator.admin.inc:247
+msgid "checkboxes"
+msgstr "kryssrutor"
+
+#: modules/aggregator/aggregator.admin.inc:247
+msgid "multiple selector"
+msgstr "flerval"
+
+#: modules/aggregator/aggregator.admin.inc:248
+msgid ""
+"The type of category selection widget displayed on categorization pages. "
+"(For a small number of categories, checkboxes are easier to use, while a "
+"multiple selector work well with large numbers of categories.)"
+msgstr ""
+"Vilken typ av kategoriväljare som visas på kategoriseringssidorna. (För ett "
+"litet antal kategorier är kryssrutor enklare att använda, medan "
+"flervalsväljare är bra när man arbetar med många kategorier.)"
+
+#: modules/aggregator/aggregator.admin.inc:295
+msgid "A category named %category already exists. Please enter a unique title."
+msgstr ""
+"En kategori med namnet %category finns redan. Du måste ange en unik titel."
+
+#: modules/aggregator/aggregator.admin.inc:314
+msgid "The category %category has been updated."
+msgstr "Kategorin %category har uppdaterats."
+
+#: modules/aggregator/aggregator.admin.inc:326
+msgid "The category %category has been deleted."
+msgstr "Kategorin %category har raderats."
+
+#: modules/aggregator/aggregator.admin.inc:339
+msgid "The category %category has been added."
+msgstr "Kategorin %category har lagts till."
+
+#: modules/aggregator/aggregator.admin.inc:161
+msgid "Feed %feed deleted."
+msgstr "Flödet %feed raderades."
+
+#: modules/aggregator/aggregator.admin.inc:174
+msgid "Feed %feed added."
+msgstr "Flödet %feed lades till."
+
+#: modules/aggregator/aggregator.admin.inc:325
+msgid "Category %category deleted."
+msgstr "Kategorin %category raderades."
+
+#: modules/aggregator/aggregator.admin.inc:338
+msgid "Category %category added."
+msgstr "Kategorin %category lades till."
+
+#: modules/aggregator/aggregator.pages.inc:67
+msgid "aggregator - @title"
+msgstr "innehållssamlare - @title"
+
+#: modules/aggregator/aggregator.pages.inc:174
+msgid "Save categories"
+msgstr "Spara kategorier"
+
+#: modules/aggregator/aggregator.pages.inc:184
+msgid "You are not allowed to categorize this feed item."
+msgstr "Du är inte behörig att kategorisera detta nyhetsflöde."
+
+#: modules/aggregator/aggregator.pages.inc:202
+msgid "The categories have been saved."
+msgstr "Kategorierna har sparats."
+
+#: modules/aggregator/aggregator.pages.inc:261
+msgid "%ago ago"
+msgstr "%ago sedan"
+
+#: modules/aggregator/aggregator.pages.inc:376
+msgid "@site_name - aggregated feeds in category @title"
+msgstr "@site_name - hopsamlade flöden i kategorin @title"
+
+#: modules/aggregator/aggregator.pages.inc:376
+msgid "@site_name - aggregated feeds"
+msgstr "@site_name - hopsamlade flöden"
+
+#: modules/aggregator/aggregator.pages.inc:380
+msgid "@site_name aggregator"
+msgstr "@site_name - nyhetssamlare"
+
+#: modules/aggregator/aggregator.pages.inc:458
+msgid "%age old"
+msgstr "%age gammal"
+
+#: modules/aggregator/aggregator.pages.inc:476
+msgid "!title feed"
+msgstr "!title-fält"
+
+#: modules/aggregator/aggregator.module:15
+msgid ""
+"The aggregator is a powerful on-site syndicator and news reader that gathers "
+"fresh content from RSS-, RDF-, and Atom-based feeds made available across "
+"the web. Thousands of sites (particularly news sites and blogs) publish "
+"their latest headlines and posts in feeds, using a number of standardized "
+"XML-based formats. Formats supported by the aggregator include <a href=\"@rss"
+"\">RSS</a>, <a href=\"@rdf\">RDF</a>, and <a href=\"@atom\">Atom</a>."
+msgstr ""
+"Nyhetssamlaren är ett kraftfullt verktyg för att samla in och visa nyheter "
+"från RSS-, RDF- och Atombaserade nyhetsflöden som finns tillgängliga på "
+"nätet. Tusentals webbplatser (företrädelsevis nyhetssidor och bloggar) "
+"publicerar sina senaste rubriker och inlägg i nyhetsflöden, i att antal "
+"standardiserade XML-baserade format. Format som stöds av nyhetssamlaren är "
+"<a href=\"@rss\">RSS</a>, <a href=\"@rdf\">RDF</a> och <a href=\"@atom"
+"\">Atom</a>."
+
+#: modules/aggregator/aggregator.module:16
+msgid ""
+"Feeds contain feed items, or individual posts published by the site "
+"providing the feed. Feeds may be grouped in categories, generally by topic. "
+"Users view feed items in the <a href=\"@aggregator\">main aggregator "
+"display</a> or by <a href=\"@aggregator-sources\">their source</a>. "
+"Administrators can <a href=\"@feededit\">add, edit and delete feeds</a> and "
+"choose how often to check each feed for newly updated items. The most recent "
+"items in either a feed or category can be displayed as a block through the "
+"<a href=\"@admin-block\">blocks administration page</a>. A <a href="
+"\"@aggregator-opml\">machine-readable OPML file</a> of all feeds is "
+"available. A correctly configured <a href=\"@cron\">cron maintenance task</"
+"a> is required to update feeds automatically."
+msgstr ""
+"Nyhetsflöden innehåller poster eller inlägg som publiceras av den webbplats "
+"som tillhandahåller flödet. Nyhetsflöden kan grupperas i kategorier, oftast "
+"efter ämne. Användare ser posterna i innehållssamlarens <a href=\"@aggregator"
+"\">huvudlista</a> eller efter <a href=\"@aggregator-sources\">källa</a>. "
+"Administratörer kan <a href=\"@feededit\">skapa, ändra och radera "
+"nyhetsflöden</a> och välja hur ofta varje flöde ska kontrolleras efter "
+"uppdaterade inlägg. De nyaste inläggen i antingen ett nyhetsflöde eller en "
+"kategori kan visas som ett block via <a href=\"@admin-block"
+"\">administrationssidan för block</a>. En <a href=\"@aggregator-opml\">OPML-"
+"fil</a> med alla nyhetsflöden finns tillgänglig. För att nyhetsflöden ska "
+"kunna uppdateras automatiskt krävs det att <a href=\"@cron\">cron</a> är "
+"korrekt inställt."
+
+#: modules/aggregator/aggregator.module:17
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@aggregator"
+"\">Aggregator module</a>."
+msgstr ""
+"Läs mer om <a href=\"@aggregator\">modulen Aggregator</a> i onlinehandboken."
+
+#: modules/aggregator/aggregator.module:20
+msgid ""
+"Thousands of sites (particularly news sites and blogs) publish their latest "
+"headlines and posts in feeds, using a number of standardized XML-based "
+"formats. Formats supported by the aggregator include <a href=\"@rss\">RSS</"
+"a>, <a href=\"@rdf\">RDF</a>, and <a href=\"@atom\">Atom</a>."
+msgstr ""
+"Tusentals webbplatser (framför allt nyhetssidor och bloggar) publicerar sina "
+"senaste inlägg i form av nyhetsflöden, med hjälp av ett antal "
+"standardiserade XML-baserade format. Format som stöds av innehållssamlaren "
+"är <a href=\"@rss\">RSS</a>, <a href=\"@rdf\">RDF</a> och <a href=\"@atom"
+"\">Atom</a>."
+
+#: modules/aggregator/aggregator.module:21
+msgid ""
+"Current feeds are listed below, and <a href=\"@addfeed\">new feeds may be "
+"added</a>. For each feed or feed category, the <em>latest items</em> block "
+"may be enabled at the <a href=\"@block\">blocks administration page</a>."
+msgstr ""
+"Nuvarande nyhetsflöden visas nedan och <a href=\"@addfeed\">nya kan läggas "
+"läggas till</a>. För varje flöde eller kategori kan man aktivera block med "
+"de <em>senaste inläggen</em> på <a href=\"@block\">administrationssidan för "
+"block</a>."
+
+#: modules/aggregator/aggregator.module:24
+msgid "Add a feed in RSS, RDF or Atom format. A feed may only have one entry."
+msgstr ""
+"Skapa ett nyhetsflöde i RSS-, RDF- eller Atom-format. Ett flöde kan bara ha "
+"en post."
+
+#: modules/aggregator/aggregator.module:26
+msgid ""
+"Categories allow feed items from different feeds to be grouped together. For "
+"example, several sport-related feeds may belong to a category named "
+"<em>Sports</em>. Feed items may be grouped automatically (by selecting a "
+"category when creating or editing a feed) or manually (via the "
+"<em>Categorize</em> page available from feed item listings). Each category "
+"provides its own feed page and block."
+msgstr ""
+"Kategorier låter inlägg från olika nyhetsflöden grupperas ihop. Flera "
+"sportrelaterade flöden kan till exempel tillhöra en kategori med namnet "
+"<em>Sport</em>. Inläggen kan antingen grupperas automatiskt (genom att välja "
+"en kategori när ett nyhetsflöde skapas eller ändras) eller manuellt (via "
+"<em>Kategorisera</em>-sidan som finns tillgänglig från nyhetsflödenas listor "
+"över inlägg). Varje kategori tillhandahåller egna nyhetsflöden och block."
+
+#: modules/aggregator/aggregator.module:306
+msgid "!title category latest items"
+msgstr "!title-kategorins senaste artiklar"
+
+#: modules/aggregator/aggregator.module:310
+msgid "!title feed latest items"
+msgstr "!title-flödets senaste artiklar"
+
+#: modules/aggregator/aggregator.module:321
+msgid "Number of news items in block"
+msgstr "Antal nyhetsartiklar i block"
+
+#: modules/aggregator/aggregator.module:340
+msgid "View this feed's recent news."
+msgstr "Visa senaste nytt för detta flöde."
+
+#: modules/aggregator/aggregator.module:348
+msgid "View this category's recent news."
+msgstr "Visa senaste nytt för denna kategori."
+
+#: modules/aggregator/aggregator.module:462
+msgid "The news items from %site have been removed."
+msgstr "Nyhetsartiklarna från %site har tagits bort."
+
+#: modules/aggregator/aggregator.module:603
+msgid "There is no new syndicated content from %site."
+msgstr "Det finns inget nytt utdelat innehåll från %site."
+
+#: modules/aggregator/aggregator.module:642,641
+msgid "There is new syndicated content from %site."
+msgstr "Det finns nytt utdelat innehåll från %site."
+
+#: modules/aggregator/aggregator.module:645
+msgid "feed not parseable"
+msgstr "nyhetsflödet ej läsbart"
+
+#: modules/aggregator/aggregator.module:649
+msgid "The feed from %site seems to be broken, because of error \"%error\"."
+msgstr ""
+"Innehållsflödet från %site verkar inte fungera på grund av felet \"%error\"."
+
+#: modules/aggregator/aggregator.module:718
+msgid ""
+"The feed from %site seems to be broken, because of error \"%error\" on line %"
+"line."
+msgstr ""
+"Innehållsflödet från %site verkar inte fungera på grund av felet \"%error\" "
+"på rad %line."
+
+#: modules/aggregator/aggregator.module:895
+msgid "blog it"
+msgstr "blogga om det"
+
+#: modules/aggregator/aggregator.module:896
+msgid "Comment on this news item in your personal blog."
+msgstr "Kommentera denna nyhetsartikel i din personliga blogg."
+
+#: modules/aggregator/aggregator.module:607
+msgid "Updated URL for feed %title to %url."
+msgstr "Uppdaterade URL:en för flödet %title till %url."
+
+#: modules/aggregator/aggregator.module:648
+msgid "The feed from %site seems to be broken, due to \"%error\"."
+msgstr ""
+"Innehållsflödet från %site verkar inte fungera på grund av felet \"%error\"."
+
+#: modules/aggregator/aggregator.module:717
+msgid ""
+"The feed from %site seems to be broken, due to an error \"%error\" on line %"
+"line."
+msgstr ""
+"Innehållsflödet från %site verkar inte fungera på grund av felet \"%error\" "
+"på rad %line."
+
+#: modules/aggregator/aggregator.module:281
+msgid "administer news feeds"
+msgstr "administrera nyhetsflöden"
+
+#: modules/aggregator/aggregator.module:281
+msgid "access news feeds"
+msgstr "åtkomst till nyhetsflöden"
+
+#: modules/aggregator/aggregator.module:83,138
+msgid "Feed aggregator"
+msgstr "Innehållssamlare"
+
+#: modules/aggregator/aggregator.module:84
+msgid ""
+"Configure which content your site aggregates from other sites, how often it "
+"polls them, and how they're categorized."
+msgstr ""
+"Ställ in vilket innehåll som din webbplats samlar ihop från andra "
+"webbplatser, hur ofta det sker och hur innehållet kategoriseras."
+
+#: modules/aggregator/aggregator.module:90
+msgid "Add feed"
+msgstr "Lägg till flöde"
+
+#: modules/aggregator/aggregator.module:116
+msgid "Update items"
+msgstr "Uppdatera poster"
+
+#: modules/aggregator/aggregator.module:145
+msgid "Sources"
+msgstr "Källor"
+
+#: modules/aggregator/aggregator.module:231
+msgid "Edit feed"
+msgstr "Redigera flöde"
+
+#: modules/aggregator/aggregator.module:239
+msgid "Edit category"
+msgstr "Redigera kategori"

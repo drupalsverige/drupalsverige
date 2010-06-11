@@ -1,0 +1,22 @@
+# Swedish translation of drupal (6.13)
+# Copyright (c) 2009 by the Swedish translation team
+# Generated from file: chameleon.theme,v 1.76.2.1 2009/04/30 00:13:31 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupal (6.13)\n"
+"POT-Creation-Date: 2009-08-04 10:44+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Swedish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: themes/chameleon/chameleon.theme:135,158
+msgid "By !author at @date"
+msgstr "Av !author, @date"
+
+#: themes/chameleon/chameleon.theme:0
+msgid "chameleon"
+msgstr "chameleon"
