@@ -1,0 +1,128 @@
+# This is a sample virtual host file that you can modify and use
+# as your apache configuration file for the drupalsverige site.
+# Replace all paths in this file with the paths you prefer.
+# This file contains everything you need for clean urls etc,
+# so you don't have to allow htaccess files.
+
+<VirtualHost *:80>
+
+  ServerName local.drupalsverige.se:80
+
+  CustomLog /srv/www/drupalsverige/log/access.log combined
+  ErrorLog  /srv/www/drupalsverige/log/error.log
+
+  DocumentRoot /srv/www/drupalsverige/web
+
+  <Directory /srv/www/drupalsverige/web>
+
+    # Allow from all as default.
+    Order deny,allow
+
+    # Allow symlinks.
+    Options FollowSymLinks
+
+    # Protect files and directories from prying eyes.
+    <FilesMatch "\.(engine|inc|info|install|module|profile|test|po|sh|.*sql|theme|tpl(\.php)?|xtmpl|svn-base)$|^(code-style\.pl|Entries.*|Repository|Root|Tag|Template|all-wcprops|entries|format)$">
+      Deny from all
+    </FilesMatch>
+
+    # Set the default handler.
+    DirectoryIndex index.php
+
+    # Make Drupal handle any 404 errors.
+    ErrorDocument 404 /index.php
+
+    # Force simple error message for requests for non-existent favicon.ico.
+    <Files favicon.ico>
+      ErrorDocument 404 "The requested file favicon.ico was not found."
+    </Files>
+
+    # Override some PHP 5 settings. More in sites/default/settings.php.
+    <IfModule mod_php5.c>
+      php_value magic_quotes_gpc                0
+      php_value register_globals                0
+      php_value session.auto_start              0
+      php_value mbstring.http_input             pass
+      php_value mbstring.http_output            pass
+      php_value mbstring.encoding_translation   0
+
+      php_admin_value memory_limit              96M
+      php_admin_value upload_max_filesize       64M
+      php_admin_value post_max_size             64M
+      php_admin_value max_input_time            60
+      php_admin_value max_execution_time        30
+    </IfModule>
+
+    # Cache non-dynamically generated pages.
+    <IfModule mod_expires.c>
+
+      ExpiresActive On
+      ExpiresDefault "modification plus 1 year"
+
+      <Files index.php>
+        ExpiresActive Off
+      </Files>
+
+    </IfModule>
+
+    # Compress output.
+    <IfModule mod_deflate.c>
+      AddOutputFilterByType DEFLATE text/plain text/xml text/html text/css application/x-javascript
+    </IfModule>
+
+   <IfModule mod_rewrite.c>
+
+      RewriteEngine on
+
+      # Don't rewrite cron requests.
+      RewriteRule ^cron.php$ - [L]
+
+      # Enforce domain.
+      RewriteCond %{HTTP_HOST} !^www.example.com(:.*)?$
+      RewriteCond %{HTTP_HOST} !^dev.example.com(:.*)?$
+      RewriteCond %{HTTP_HOST} ^(?:.*?)(:.*)?$
+      RewriteRule ^(.*)$ http://www.example.com%1/$1 [L,R=301]
+
+      # Route requests to Drupal's front controller.
+      RewriteCond %{REQUEST_FILENAME} !-f
+      RewriteCond %{REQUEST_FILENAME} !-d
+      RewriteCond %{REQUEST_URI} !=/favicon.ico
+      RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
+
+    </IfModule>
+
+  </Directory>
+  
+  # Directory for private files. Use together with downld module.
+  <Directory /srv/www/999/web/sites/example.com/files/private>
+    Deny from all
+  </Directory>      
+
+  # Block XMP-RPC. Remove if XML-RPC is needed.
+  <Location /xmlrpc.php>
+    Deny from all
+  </Location> 
+
+  # Only allow request for cron.php only from localhost.
+  <Location /cron.php>
+    Deny from all
+    Allow from 127.0.0.1
+  </Location> 
+
+  # Only allow install.php to be executed from localhost.
+  # To call install.php from external machine, use port forwarding, e.g.
+  # ssh -L 8080:127.0.0.1:80 green8.nodeone.se
+  <Location /install.php>
+    Deny from all
+    Allow from 127.0.0.1
+  </Location> 
+
+  # Only allow update.php to be executed from localhost.
+  # To call update.php from external machine, use port forwarding, e.g.
+  # ssh -L 8080:127.0.0.1:80 green8.nodeone.se
+  <Location /update.php>
+    Deny from all
+    Allow from 127.0.0.1
+  </Location> 
+
+</VirtualHost>
