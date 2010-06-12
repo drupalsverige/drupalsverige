@@ -1,0 +1,201 @@
+<?php
+
+// $Id: content_taxonomy_tree.module,v 1.1.2.5 2009/05/14 16:58:22 mh86 Exp $
+
+
+
+/**
+ * Implementation of hook_theme().
+ */
+function content_taxonomy_tree_theme() {
+  return array(
+    'content_taxonomy_tree' => array(
+      'arguments' => array('element' => NULL),
+    ),
+  );
+}
+
+/**
+ * Implementation of hook_widget_info().
+ */
+function content_taxonomy_tree_widget_info() {
+  return array(
+    'content_taxonomy_tree' => array(
+      'label' => t('Tree'),
+      'field types' => array('content_taxonomy'),
+      'multiple values' => CONTENT_HANDLE_MODULE,
+      'callbacks' => array(
+        'default value' => CONTENT_CALLBACK_DEFAULT,
+      ),
+    ),
+  );
+  return $items;
+}
+
+/**
+ * Implementation of hook_widget_settings
+ */
+function content_taxonomy_tree_widget_settings($op, $widget) {
+  switch ($op) {
+    case 'form':
+      $form['settings'] = array(
+        '#type' => 'fieldset',
+        '#title' => t('Settings for Trees'),
+        '#collapsible' => TRUE,
+        '#weight' => 10,
+      );
+      $form['settings']['expand_all'] = array(
+        '#type' => 'checkbox', 
+        '#title' => t('Expand whole tree by default'),
+        '#default_value' => isset($widget['expand_all']) ? $widget['expand_all'] : 0,
+        '#description' => t('Otherwise only branches, where a term is selected get expanded by default'),
+      );
+      return $form;
+
+    case 'save':
+      return array('expand_all');
+  }
+}
+
+/**
+ * Implementation of hook_elements().
+ */
+function content_taxonomy_tree_elements() {
+  return array(
+    'content_taxonomy_tree' => array(
+      '#input' => TRUE,
+      '#columns' => array('value'), 
+      '#delta' => 0,
+      '#process' => array('content_taxonomy_tree_process'),
+      '#element_validate' => array('content_taxonomy_tree_validate'),
+      '#autocomplete_path' => FALSE,
+      ),
+    );
+}
+
+/**
+ * Implementation of hook_widget().
+ */
+function content_taxonomy_tree_widget(&$form, &$form_state, $field, $items, $delta = NULL) {
+  $element = array(
+    '#type' => 'content_taxonomy_tree',
+    '#default_value' => !empty($items) ? $items : array(),
+  );
+  return $element;
+}
+
+/**
+ * Processes the content_taxonomy_tree form element
+ *
+ * uses the 'taxonomy_manager_tree' element type
+ */
+function content_taxonomy_tree_process($element, $edit, &$form_state, $form) {
+  $field_name = $element['#field_name'];
+  $field = $form['#field_info'][$field_name];
+  $field_key  = $element['#columns'][0];
+
+  if (is_array($element['#value'])) {
+    if (array_key_exists($field_key, $element['#value'])) {
+      //validation function where values are set haven't been called yet for this form element
+      //because some other element might have caused an validation error
+      //so we have to do the processing of the values here
+      if ($field['multiple']) {
+        $selected_terms = _taxonomy_manager_tree_get_selected_terms($element['#value']['value']);
+        $element['#value'] = content_transpose_array_rows_cols(array($field_key => array_values($selected_terms)));
+      }
+    }
+    $element['#value'] = content_taxonomy_tree_data2form($element, $element['#value'], $field);
+  }
+  
+  $element[$field_key] = array(
+    '#type' => 'taxonomy_manager_tree',
+    '#default_value' => isset($element['#value']) ? $element['#value'] : '',
+    '#vid' => $field['vid'],
+    '#parent' => content_taxonomy_field_get_parent($field), 
+    '#default_value' => is_array($element['#value']) ? $element['#value'] : array(),
+    '#render_whole_tree' => TRUE,
+    '#pager' => FALSE,
+    '#add_term_info' => FALSE,
+    '#expand_all' => $field['widget']['expand_all'],
+    '#tree_is_required' => $field['required'],  //using tree_is_required instead of required, prevents that error messages are shown twice
+    '#required' => FALSE,
+    '#multiple' => isset($field['multiple']) ? $field['multiple'] : FALSE,
+    '#field_name' => $element['#field_name'],
+    '#delta' => $element['#delta'],
+    '#columns' => $element['#columns'],
+    '#title' => $element['#title'],
+    '#description' => $element['#description'],
+  );
+  
+  
+  // Make sure field info will be available to the validator which
+  // does not get the values in $form.
+  $form_state['#field_info'][$field['field_name']] = $field;
+  
+  return $element;
+}
+
+/**
+ * Validation function for the content_taxonomy_tree element
+ *
+ * assigns the selected terms to the element
+ * additionally checks if terms are selected for required fields (if this check isn't already done by form.inc)
+ */
+function content_taxonomy_tree_validate($element, &$form_state) {
+  $field = $form_state['#field_info'][$element['#field_name']];
+  $field_key  = $element['#columns'][0];
+
+  $values = content_taxonomy_tree_form2data($element, $form_state, $field);
+  
+  //check for required fields
+  //if $element['#value'] is empty, it's validated by form.inc
+  //otherwise we have to check this by our own
+  if ($field['required'] && is_null($values[0]['value']) && !empty($element['#value'])) {
+    form_error($element[$field_key], t('!name field is required.', array('!name' => $element['#title'])));
+  }
+  if (($field['multiple'] >= 2) && (count($element['#value']) > $field['multiple'])) {
+      form_error($element[$field_key], t('%name: this field cannot hold more than @count values.', array('%name' => t($field['widget']['label']), '@count' => $field['multiple'])));
+   }
+  
+  form_set_value($element, $values, $form_state);
+  
+}
+
+/**
+ * Helper function to transpose the values as stored in the database
+ * to the format the content_taxonomy_tree needs to select the values
+ */
+function content_taxonomy_tree_data2form($element, $values, $field) {
+  $terms = array();
+  foreach ($values as $delta => $entry) {
+    if ($entry['value']) {
+      $terms[] = $entry['value'];
+    }
+  }
+  return $terms;
+}
+
+/**
+ * Helper function to transpose the values returned by submitting the content_taxonomy_tree
+ * to the format to be stored in the field
+ */
+function content_taxonomy_tree_form2data($element, &$form_state, $field) {
+  $field_key  = $element['#columns'][0];
+  $selected_terms = $form_state['values'][$element['#field_name']][$field_key]['selected_terms'];
+
+  if (!is_array($selected_terms) || !count($selected_terms)) {
+    $selected_terms[] = NULL;
+  }
+  
+  $form_state['#field_info'][$field['field_name']] = $field;
+  return content_transpose_array_rows_cols(array($element['#columns'][0] => array_values($selected_terms)));
+}
+
+/**
+ * FAPI theme for content_taxonomy_tree
+ *
+ * element already rendered by taxonomy_manager_tree
+ */
+function theme_content_taxonomy_tree($element) {
+  return $element['#children'];
+}

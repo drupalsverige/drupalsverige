@@ -1,0 +1,210 @@
+<?php
+// $Id: $
+
+
+/**
+ * Implementation of hook_install().
+ */
+function content_taxonomy_install() {
+  drupal_load('module', 'content');
+  content_notify('install', 'content_taxonomy');
+}
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function content_taxonomy_uninstall() {
+  drupal_load('module', 'content');
+  content_notify('uninstall', 'content_taxonomy');
+}
+
+/**
+ * Implementation of hook_enable().
+ *
+ * Notify content module when this module is enabled.
+ */
+function content_taxonomy_enable() {
+  drupal_load('module', 'content');
+  content_notify('enable', 'content_taxonomy');
+}
+
+/**
+ * Implementation of hook_disable().
+ *
+ * Notify content module when this module is disabled.
+ */
+function content_taxonomy_disable() {
+  drupal_load('module', 'content');
+  content_notify('disable', 'content_taxonomy');
+}
+
+
+/**
+ * Implemenation of hook_update_N().
+ * 
+ * updates existing fields from 5.x to 6.x
+ */
+function content_taxonomy_update_6000() {
+  if ($abort = content_check_update('content_taxonomy')) {
+    return $abort;
+  }
+  
+  drupal_load('module', 'content');
+  
+  $ret = array();
+
+  // Get the latest cache values and schema.
+  content_clear_type_cache(TRUE);
+
+  include_once(drupal_get_path('module', 'content') .'/content.install');
+  include_once(drupal_get_path('module', 'content') .'/includes/content.admin.inc');
+  $types = content_types_install();
+  foreach ($types as $type_name => $fields) {
+    foreach ($fields as $field) {
+      switch ($field['type']) {
+        case 'content_taxonomy':
+          $db_info = content_database_info($field);
+          $table = $db_info['table'];
+          
+          //fix old settings first and map them to the new ones.
+          $result = db_query("SELECT * FROM {". content_field_tablename() ."} WHERE type = 'content_taxonomy' AND field_name = '%s'", $field['field_name']);
+          while ($field = db_fetch_array($result)) {
+            $field_settings = unserialize($field['global_settings']);
+            $field_settings['save_term_node'] = isset($field_settings['save_term_node']) ? $field_settings['save_term_node'] : 0;
+            if ($field_settings['save'] == 'tag') {
+              $field_settings['save_term_node'] = 1;
+              $field['type_name'] = $type_name;
+              $field['columns'] = $db_info['columns'];
+              content_alter_schema(array(), $field);
+                
+              $sql_nodes = db_query("SELECT * FROM {node} WHERE type = '%s'", $type_name);
+              while ($node = db_fetch_object($sql_nodes)) {
+                $tids = content_taxonomy_install_terms_by_field($node, $field_settings);
+                foreach ($tids as $tid) {
+                  $record = array();
+                  foreach ($db_info['columns'] as $column => $attributes) {
+                    $record[$attributes['column']] = $tid;
+                  }
+                  $record['nid'] = $node->nid;
+                  $record['vid'] = $node->vid;
+                  if ($field['multiple']) {
+                    $record['delta'] = $tid;
+                  }
+                  if (db_result(db_query("SELECT COUNT(*) FROM {". $table ."} WHERE vid = %d", $node->vid))) {
+                    content_write_record($table, $record, array('vid'));
+                  }
+                  else {
+                    content_write_record($table, $record);
+                  }
+                }
+              }
+            }
+            if ($field_settings['save'] == 'both') {
+              $field_settings['save_term_node'] = 1;
+            }
+            unset($field_settings['save']);
+            $field_settings['hide_taxonomy_fields'] = isset($field_settings['hide_taxonomy_fields']) ? $field_settings['hide_taxonomy_fields'] : TRUE;
+            $field_settings['parent'] = $field_settings['tid']; 
+            
+            $field['global_settings'] = array();
+            $setting_names = module_invoke($field['module'], 'field_settings', 'save', $field);
+            if (is_array($setting_names)) {
+              foreach ($setting_names as $setting) {
+                $field['global_settings'][$setting] = isset($field_settings[$setting]) ? $field_settings[$setting] : '';
+              }
+            }
+            // 'columns' is a reserved word in MySQL4, so our column is named 'db_columns'.
+            $field['db_columns'] = $field['columns'];
+            drupal_write_record(content_field_tablename(), $field, 'field_name');
+          }
+          
+          foreach ($db_info['columns'] as $column => $attributes) {
+            $attributes['not null'] = FALSE;
+            $column = $attributes['column'];
+            db_change_field($ret, $table, $column, $column, $attributes);
+            db_field_set_no_default($ret, $table, $column);
+            $ret[] = update_sql("UPDATE {". $table ."} SET ". $column ." = NULL WHERE ". $column ." = 0");
+
+          }
+          break;
+      }
+    }
+  }
+  content_associate_fields('content_taxonomy');
+  content_associate_fields('content_autocomplete');
+  content_associate_fields('content_options');
+  content_clear_type_cache(TRUE);
+  return $ret;
+}
+
+/**
+ * Implemenation of hook_update_N().
+ * 
+ * Renaming of the Parent setting
+ */
+function content_taxonomy_update_6001() {
+  drupal_load('module', 'content');
+  $result = db_query("SELECT * FROM {". content_field_tablename() ."} WHERE type = 'content_taxonomy'");
+  while ($field = db_fetch_array($result)) {
+    $field['global_settings'] = unserialize($field['global_settings']);
+    if (!is_null($field['global_settings']['tid'])) {
+      $field['global_settings']['parent'] = $field['global_settings']['tid'];
+      unset($field['global_settings']['tid']);
+    }
+    // 'columns' is a reserved word in MySQL4, so our column is named 'db_columns'.
+    $field['db_columns'] = $field['columns'];
+    drupal_write_record(content_field_tablename(), $field, 'field_name');
+  }
+  $result = db_query("SELECT * FROM {". content_instance_tablename() ."} WHERE widget_type = 'content_taxonomy_select'");
+  while ($field = db_fetch_array($result)) {
+    $field['widget_settings'] = unserialize($field['widget_settings']);
+    $field['widget_settings']['group_parent'] = $field['widget_settings']['group_tid'];
+    unset($field['widget_settings']['group_tid']);
+    drupal_write_record(content_instance_tablename(), $field, array('field_name', 'type_name'));
+  }
+  return array();
+}
+
+/**
+ * Implemenation of hook_update_N().
+ * 
+ * Fixing parent setting
+ */
+function content_taxonomy_update_6002() {
+  drupal_load('module', 'content');
+  $result = db_query("SELECT * FROM {". content_field_tablename() ."} WHERE type = 'content_taxonomy'");
+  while ($field = db_fetch_array($result)) {
+    $field['global_settings'] = unserialize($field['global_settings']);
+    if (!$field['global_settings']['parent']) {
+      $field['global_settings']['parent'] = 0;
+    }
+    // 'columns' is a reserved word in MySQL4, so our column is named 'db_columns'.
+    $field['db_columns'] = $field['columns'];
+    drupal_write_record(content_field_tablename(), $field, 'field_name');
+  }
+  return array();
+}
+/**
+ * Helper function to get values from term_node table
+ * needed in update from 5.x to 6.x
+ */
+function content_taxonomy_install_terms_by_field($node, $field) {
+  $terms = array();
+  if (is_numeric($field['tid']) && $field['tid'] > 0 && $field['depth'] == 1) {
+    $result = db_query("SELECT n.tid FROM {term_hierarchy} h, {term_node} n, {term_data} td WHERE
+      n.nid = %d AND n.tid = h.tid AND h.parent = %d AND td.tid=n.tid AND td.vid=%d",
+     $node->nid, $field['tid'], $field['vid']);
+    
+    while ($data = db_fetch_array($result)) {
+      $terms[$data["tid"]] = $data["tid"];
+    }
+  }
+  else { 
+    $result = taxonomy_node_get_terms_by_vocabulary($node, $field['vid']);
+    foreach ($result as $tid => $term) {
+      $terms[$tid] = $tid;
+    }
+  }
+  
+  return $terms;
+}

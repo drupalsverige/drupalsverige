@@ -1,0 +1,101 @@
+<?php
+
+// $Id: content_taxonomy_options.module,v 1.1.4.7.2.4 2008/12/27 11:25:27 mh86 Exp $
+
+/**
+ * @file
+ * Defines a widget type for content_taxonomy for options
+ **/
+
+/**
+ * Implementation of hook_theme().
+ */
+function content_taxonomy_options_theme() {
+  return array(
+    'content_taxonomy_options_widgets_none' => array(
+      'arguments' => array('field' => NULL),
+    ),
+  );
+}
+
+/**
+ * Implementation of hook_widget_info().
+ */
+function content_taxonomy_options_widget_info() {
+  return array(
+    'content_taxonomy_options' => array(
+      'label' => t('Checkboxes/Radios'),
+      'field types' => array('content_taxonomy'),
+      'multiple values' => CONTENT_HANDLE_MODULE,
+      'callbacks' => array(
+        'default value' => CONTENT_CALLBACK_DEFAULT,
+      ),
+    ),
+    'content_taxonomy_select' => array(
+      'label' => t('Select List'),
+      'field types' => array('content_taxonomy'),
+      'multiple values' => CONTENT_HANDLE_MODULE,
+      'callbacks' => array(
+        'default value' => CONTENT_CALLBACK_DEFAULT,
+      ),
+    ),
+  );
+  return $items;
+}
+
+/**
+ * Implementation of hook_widget_settings
+ */
+function content_taxonomy_options_widget_settings($op, $widget) {
+  switch ($op) {
+    case 'form':
+      $form['settings'] = array(
+        '#type' => 'fieldset',
+        '#title' => t('Settings for Options'),
+        '#collapsible' => TRUE,
+        '#weight' => 10,
+      );
+      $form['settings']['show_depth'] = array(
+        '#type' => 'checkbox', 
+        '#title' => t('Indent child terms with \' - \' signs'),
+        '#default_value' => is_numeric($widget['show_depth']) ? $widget['show_depth'] : 1,
+        '#description' => t('If this option is checked, a hierarchy gets visualized by indenting child terms, otherwise it\'s a flat list'),
+      );
+      $form['settings']['group_parent'] = array(
+        '#title' => t('Parent term for OptGroups in select fields'),
+        '#type' => 'select',
+        '#default_value' => isset($widget['group_parent']) ? $widget['group_parent'] : 0,
+        '#options' => _content_taxonomy_get_all_terms(),
+        '#description' => t('This settings applies only for select fields. Select a parent term containg the grouping terms. Grouping terms should be parents of the selected terms (from the Global Settings).'),
+      );
+      return $form;
+      
+    case 'save':
+      return array('group_parent', 'show_depth');
+  }
+}
+
+/**
+ * Implementation of hook_widget().
+ */
+function content_taxonomy_options_widget(&$form, &$form_state, $field, $items, $delta = NULL) {
+  $element = array(
+    '#type' => ($field['widget']['type'] == 'content_taxonomy_select') ? 'optionwidgets_select' : 'optionwidgets_buttons', 
+    '#default_value' => !empty($items) ? $items : array(),
+  );
+  return $element;
+}
+
+/**
+ *  Theme the label for the empty value for options (for optional radios and single selects).
+ */
+function theme_content_taxonomy_options_widgets_none($field) {
+  switch ($field['widget']['type']) {
+    case 'content_taxonomy_options':
+      return t('N/A');
+    case 'content_taxonomy_select':
+      return t('- None -');
+    default :
+      return '';
+  }
+}
