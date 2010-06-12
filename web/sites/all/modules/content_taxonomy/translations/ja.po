@@ -1,0 +1,222 @@
+# $Id: ja.po,v 1.1.2.1 2008/05/31 08:16:58 imagine Exp $
+#
+# Japanese translation of Drupal (content_taxonomy)
+# Copyright 2008 0829 <hixarg+0829@gmail.com>
+# Generated from files:
+#  content_taxonomy.info,v 1.1.2.2.2.1 2008/04/30 08:05:19 mh86 Exp
+#  content_taxonomy.module,v 1.2.2.15.2.1 2008/04/30 08:05:19 mh86 Exp
+#  content_taxonomy_autocomplete.info,v 1.1.2.4.2.1 2008/04/30 08:05:19 mh86 Exp
+#  content_taxonomy_autocomplete.module,v 1.2.2.4.2.1 2008/04/30 08:05:19 mh86 Exp
+#  content_taxonomy_options.info,v 1.1.2.5.2.1 2008/04/30 08:05:19 mh86 Exp
+#  content_taxonomy_options.module,v 1.1.4.7.2.1 2008/04/30 08:05:19 mh86 Exp
+#  content_taxonomy_tree.info,v 1.1.2.1 2008/04/30 08:05:19 mh86 Exp
+#  content_taxonomy_tree.module,v 1.1.2.1 2008/04/30 08:05:19 mh86 Exp
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal 6.x\n"
+"POT-Creation-Date: 2008-05-11 16:35+0900\n"
+"PO-Revision-Date: 2008-05-22 01:27+0900\n"
+"Last-Translator: 0829 <hixarg+0829@gmail.com>\n"
+"Language-Team: DRUPAL*DRUPAL <hixarg+0829@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: modules/content_taxonomy/content_taxonomy.info:0
+msgid "Content Taxonomy"
+msgstr "コンテンツタクソノミー"
+
+#: modules/content_taxonomy/content_taxonomy.info:0
+msgid "Defines a field type for taxonomy terms"
+msgstr "タクソノミータームのフィールドタイプを定義します。"
+
+#: modules/content_taxonomy/content_taxonomy.info:0
+#: modules/content_taxonomy/content_taxonomy_autocomplete.info:0
+#: modules/content_taxonomy/content_taxonomy_options.info:0
+#: modules/content_taxonomy/content_taxonomy_tree.info:0
+msgid "CCK"
+msgstr "CCK"
+
+#: modules/content_taxonomy/content_taxonomy.module:16
+msgid "Defines a field type for referencing a taxonomy term. <em>Note: Requires content.module.</em>"
+msgstr "タクソノミータームを参照するためのフィールドタイプを定義します。 <strong>注： コンテンツモジュール（CCK）が必要です。</strong>"
+
+#: modules/content_taxonomy/content_taxonomy.module:40
+msgid "Content Taxonomy Fields"
+msgstr "コンテンツタクソノミーフィールド"
+
+#: modules/content_taxonomy/content_taxonomy.module:41
+msgid "Stores terms for the nodes in the database."
+msgstr "ノードに関連付けられたタームをデータベースに保存します。"
+
+#: modules/content_taxonomy/content_taxonomy.module:60
+msgid "Save values additionally in the term_node table."
+msgstr "term_node テーブルにも値を追加保存する"
+
+#: modules/content_taxonomy/content_taxonomy.module:62
+msgid "If this option is set, saving of terms is additionally handled by the taxonomy module. So saved terms from Content Taxonomy fields will appear as any other terms saved by the core taxonomy module. Set this option if you are using any other taxonomy application, like tagadelic. Otherwise terms are only saved in the cck tables and can only be accessed via the node or a view"
+msgstr "このオプションをセットした場合、タームの保存はタクソノミーモジュールによってさらに処理されます。 そのため、コンテンツタクソノミーフィールドを使用して保存されたタームはコアのタクソノミーモジュールによって保存された他のタームと同様に扱われます。 Tagadelic モジュールのような他のタクソノミー関連モジュールを使用している場合は、このオプションをセットしてください。 セットしない場合、タームは cck テーブルだけに保存され、ノードやビューを通してのみアクセス可能となります。"
+
+#: modules/content_taxonomy/content_taxonomy.module:67
+msgid "Specify terms to show"
+msgstr "表示するタームの指定"
+
+#: modules/content_taxonomy/content_taxonomy.module:82
+msgid "Vocabulary"
+msgstr "ボキャブラリ"
+
+#: modules/content_taxonomy/content_taxonomy.module:89
+msgid "Terms"
+msgstr "ターム"
+
+#: modules/content_taxonomy/content_taxonomy.module:93
+msgid "If any term is selected here, only child terms of the selected are going to be shown in the field. Otherwise the whole vocabulary selected above"
+msgstr "ここでタームを選択した場合は、選択したタームの下位タームのみがフィールドに表示されます。 選択していない場合は、上で選択したボキャブラリ内のすべてのタームが表示されます。"
+
+#: modules/content_taxonomy/content_taxonomy.module:98
+msgid "Depth of taxonomy tree"
+msgstr "タクソノミー階層の深さ"
+
+#: modules/content_taxonomy/content_taxonomy.module:100
+msgid "leave blank for unlimited depth"
+msgstr "タクソノミー階層の深さに制限を設けたくない場合は空欄のままにしてください。"
+
+#: modules/content_taxonomy/content_taxonomy.module:105
+msgid "Indent child terms with ' - ' signs"
+msgstr "下位のタームを ' - ' 記号でインデントする"
+
+#: modules/content_taxonomy/content_taxonomy.module:151
+msgid "As Text"
+msgstr "テキスト"
+
+#: modules/content_taxonomy/content_taxonomy.module:156
+msgid "As Link"
+msgstr "リンクを設定する"
+
+#: modules/content_taxonomy/content_taxonomy.module:0
+msgid "content_taxonomy"
+msgstr "コンテンツタクソノミー"
+
+#: modules/content_taxonomy/content_taxonomy_autocomplete.info:0
+msgid "Content Taxonomy Autocomplete"
+msgstr "コンテンツタクソノミーオートコンプリート"
+
+#: modules/content_taxonomy/content_taxonomy_autocomplete.info:0
+msgid "Defines a autocomplete widget type for content_taxonomy"
+msgstr "コンテンツタクソノミーのためにオートコンプリートタイプのウィジェットを定義します。"
+
+#: modules/content_taxonomy/content_taxonomy_autocomplete.module:15
+msgid "Defines a widget type for content_taxonomy with autocomplete. <em>Note: Requires content.module.</em>"
+msgstr "コンテンツタクソノミーでオートコンプリートを行うためのウィジェットタイプを定義します。 <strong>注： コンテンツモジュール（CCK）が必要です。</strong>"
+
+#: modules/content_taxonomy/content_taxonomy_autocomplete.module:50;71;36
+msgid "Autocomplete"
+msgstr "オートコンプリート"
+
+#: modules/content_taxonomy/content_taxonomy_autocomplete.module:77
+msgid "New terms from to user:"
+msgstr "ユーザからの新しいターム"
+
+#: modules/content_taxonomy/content_taxonomy_autocomplete.module:79
+msgid "Allow and insert new terms into the taxonomy tree"
+msgstr "新しいタームの追加およびタクソノミーツリーへの挿入を許可する"
+
+#: modules/content_taxonomy/content_taxonomy_autocomplete.module:80
+msgid "Deny any new terms"
+msgstr "新しいタームの追加はすべて拒否する"
+
+#: modules/content_taxonomy/content_taxonomy_autocomplete.module:92
+msgid "Extra Parent for new terms"
+msgstr "新しいタームの特別な上位"
+
+#: modules/content_taxonomy/content_taxonomy_autocomplete.module:94
+msgid "This setting is only relevant if you have set \"Allow and insert new terms into the taxonomy tree\". If you select any term here, new terms will get children of the selected one, otherwise new terms get children of the parent term selected in the data settings"
+msgstr "この設定は \"新しいタームの追加およびタクソノミーツリーへの挿入を許可する\" を選択した場合にのみ関連します。 ここで何らかのタームを選択した場合、新しく追加されたタームは選択したタームの下位タームとして追加されます。 どのタームも選択していない場合、新しく追加されたタームはデータ設定で選択したタームの下位タームとして追加されます。"
+
+#: modules/content_taxonomy/content_taxonomy_autocomplete.module:153
+#: modules/content_taxonomy/content_taxonomy_tree.module:96
+msgid "Preview"
+msgstr "プレビュー"
+
+#: modules/content_taxonomy/content_taxonomy_autocomplete.module:180
+msgid "You can provide only one value"
+msgstr "1つの値のみが設定できます"
+
+#: modules/content_taxonomy/content_taxonomy_autocomplete.module:185
+msgid "New tags are not allowed"
+msgstr "新しいタグは許可されていません"
+
+#: modules/content_taxonomy/content_taxonomy_autocomplete.module:0
+msgid "content_taxonomy_autocomplete"
+msgstr "コンテンツタクソノミーオートコンプリート"
+
+#: modules/content_taxonomy/content_taxonomy_options.info:0
+msgid "Content Taxonomy Options"
+msgstr "コンテンツタクソノミーオプション"
+
+#: modules/content_taxonomy/content_taxonomy_options.info:0
+msgid "Defines a option widget type for content_taxonomy for selects, radios/checkboxes"
+msgstr "コンテンツタクソノミーのために、選択リスト, ラジオボタン, チェックボックスのタイプのオプションウィジェットを定義します。"
+
+#: modules/content_taxonomy/content_taxonomy_options.module:16
+msgid "Defines a widget type for content_taxonomy for options (selects, radios/checkboxes). <em>Note: Requires content.module.</em>"
+msgstr "コンテンツタクソノミーでオプションウィジェットタイプ（選択リスト, ラジオボタン, チェックボックス）を定義します。 <strong>注： コンテンツモジュール（CCK）が必要です。</strong>"
+
+#: modules/content_taxonomy/content_taxonomy_options.module:26
+msgid "Checkboxes/Radios"
+msgstr "チェックボックス/ラジオボタン"
+
+#: modules/content_taxonomy/content_taxonomy_options.module:34
+msgid "Select List"
+msgstr "選択リスト"
+
+#: modules/content_taxonomy/content_taxonomy_options.module:62
+msgid "OptGroups"
+msgstr "グループ選択"
+
+#: modules/content_taxonomy/content_taxonomy_options.module:65
+msgid "This setting is optional and only relevant for select lists"
+msgstr "この設定はオプションで、選択リストの場合にのみ関連します。 "
+
+#: modules/content_taxonomy/content_taxonomy_options.module:70
+msgid "Parent for grouping in first bar"
+msgstr "1番目のバーでグループ化するための上位ターム"
+
+#: modules/content_taxonomy/content_taxonomy_options.module:0
+msgid "content_taxonomy_options"
+msgstr "コンテンツタクソノミーオプション"
+
+#: modules/content_taxonomy/content_taxonomy_tree.info:0
+msgid "Content Taxonomy Tree"
+msgstr "コンテンツタクソノミーツリー"
+
+#: modules/content_taxonomy/content_taxonomy_tree.info:0
+msgid "Defines a dynamic tree widget for Content Taxonomy"
+msgstr "コンテンツタクソノミーのためにダイナミックなツリー表示のウィジェットを定義します。"
+
+#: modules/content_taxonomy/content_taxonomy_tree.module:11
+msgid "Defines a widget type for content_taxonomy with a tree form. <em>Note: Requires content.module and the taxonomy manager.</em>"
+msgstr "コンテンツタクソノミーをツリー表示するためのウィジェットタイプを定義します。 <strong>注： コンテンツモジュール（CCK）が必要です。</strong>"
+
+#: modules/content_taxonomy/content_taxonomy_tree.module:34
+msgid "Tree"
+msgstr "ツリー"
+
+#: modules/content_taxonomy/content_taxonomy_tree.module:54
+msgid "Expand whole tree by default"
+msgstr "デフォルトですべてのツリーを展開する"
+
+#: modules/content_taxonomy/content_taxonomy_tree.module:56
+msgid "Otherwise only branches, where a term is selected get expanded by default"
+msgstr "チェックした場合、タームの選択部分がデフォルトで展開されたツリー表示となります。 チェックしない場合、分岐されているだけの閉じたツリー表示となります。"
+
+#: modules/content_taxonomy/content_taxonomy_tree.module:128
+msgid "This field is required"
+msgstr "このフィールドは必須です。"
+
+#: modules/content_taxonomy/content_taxonomy_tree.module:0
+msgid "content_taxonomy_tree"
+msgstr "コンテンツタクソノミーツリー"
+

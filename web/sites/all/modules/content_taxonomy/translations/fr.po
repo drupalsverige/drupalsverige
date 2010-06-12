@@ -1,0 +1,298 @@
+# $Id: fr.po,v 1.1.2.1 2009/04/07 10:52:21 slybud Exp $
+#
+# French translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  content_taxonomy.module,v 1.2.2.15.2.17 2009/02/02 18:07:50 mh86
+#  content_taxonomy_autocomplete.module,v 1.2.2.4.2.12 2009/02/02 17:26:38 mh86
+#  content_taxonomy_options.module,v 1.1.4.7.2.4 2008/12/27 11:25:27 mh86
+#  content_taxonomy_tree.module,v 1.1.2.4 2008/08/20 16:54:36 mh86
+#  content_taxonomy.info,v 1.1.2.2.2.1 2008/04/30 08:05:19 mh86
+#  content_taxonomy_autocomplete.info,v 1.1.2.4.2.1 2008/04/30 08:05:19 mh86
+#  content_taxonomy_options.info,v 1.1.2.5.2.1 2008/04/30 08:05:19 mh86
+#  content_taxonomy_tree.info,v 1.1.2.1 2008/04/30 08:05:19 mh86
+#  includes/content_taxonomy.token.inc: n/a
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: french translation for drupal6 content_taxonomy module\n"
+"POT-Creation-Date: 2009-04-07 11:50+0200\n"
+"PO-Revision-Date: 2009-04-07 12:48+0100\n"
+"Last-Translator: Sylvain Moreau <sylvain.moreau@ows.fr>\n"
+"Language-Team: Sylvain Moreau, OWS <sylvain.moreau@ows.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n>1);\n"
+
+#: content_taxonomy.module:16
+msgid "Defines a CCK field type for referencing taxonomy terms. The fields are independent from vocabulary settings and can be configured through the CCK admin field pages. The Content Taxonomy Module provides different widget types, at the moment including Option Widgets (Radios / Checkboxes, Selects), Autocompletes, Tree). The widget modules have to be enabled separately."
+msgstr "Définit un type de champ CCK pour référencer les termes de taxonomie. Les champs sont indépendant des paramètres de vocabulaire et peuvent être configurés par les pages d'admin du champ CCK. Le module Content Taxonomy fournit différents types de widget, incluant pour le moment les Widgets Option (Boutons Radio/Cases à Cocher, Listes déroulantes), AutoComplétion et Arborescence. Les modules de wisget doivent être activés séparément."
+
+#: content_taxonomy.module:49
+msgid "Content Taxonomy Fields"
+msgstr "Content Taxonomy Fields"
+
+#: content_taxonomy.module:50
+msgid "Stores terms for nodes in the database."
+msgstr "Stocke des termes pour les noeuds dans la base de données."
+
+#: content_taxonomy.module:69
+msgid "Save values additionally to the core taxonomy system (into the 'term_node' table)."
+msgstr "Enregistrer les valeurs en plus dans le système core de taxonomie (dans la table 'term_node')."
+
+#: content_taxonomy.module:71
+msgid "If this option is set, saving of terms is additionally handled by the taxonomy module. So saved terms from Content Taxonomy fields will appear as any other terms saved by the core taxonomy module. Set this option if you are using any other taxonomy application, like tagadelic. Otherwise terms are only saved in the cck tables and can only be accessed via the node or a view"
+msgstr "Si cette option est activée, l'enregistrement des termes est géré en plus par le module taxonomy. Ainsi, les termes enregistrés dans les champs Content Taxonomy apparaîtront comme n'importe quels autres termes enregistrées par le module taxonomy. Activez cette option si vous utilisez d'autres appicatifs de taxonomie, tel que tagadelic. Dans le cas contraire, les termes sont uniquement enregistrés dans les tables cck, et ne peuvent être accessibles qu'au travers du noeud ou d'une vue."
+
+#: content_taxonomy.module:80
+msgid "Vocabulary"
+msgstr "Vocabulaire"
+
+#: content_taxonomy.module:84
+msgid "Terms of the selected vocabulary get exposed to the field"
+msgstr "Les termes du vocabulaire sélectionné sont exposés dans le champ"
+
+#: content_taxonomy.module:89
+msgid "Advanced settings for hierarchical vocabularies"
+msgstr "Paramètres avancés pour des vocabulaires hiérarchiques"
+
+#: content_taxonomy.module:94
+msgid "Parent Term"
+msgstr "Terme Parent"
+
+#: content_taxonomy.module:98
+msgid "If any term is selected here, only child terms of the selected are going to be exposed the field. Otherwise the whole vocabulary selected above"
+msgstr "Si un terme est sélectionné ici, seuls les termes enfants de celui-ci seront exposés dans le filtre. Autrement, le vocabulaire complet sélectionné ci-dessus"
+
+#: content_taxonomy.module:102
+msgid "Advanced PHP code"
+msgstr "code PHP avancé"
+
+#: content_taxonomy.module:107
+msgid "PHP Code for selecting the parent term"
+msgstr "Code PHP pour la sélection du terme parent"
+
+#: content_taxonomy.module:111
+msgid "Advanced usage only: PHP code that returns the parent term ID. Should not include &lt;?php ?&gt; delimiters. If this field is filled out, the ID returned by this code will override the selected parent above."
+msgstr "Usage avancé uniquement : code PHP retournant l'ID du terme parent. Ne doit pas contenir les délimiteurs &lt;?php ?&gt;. Si ce champ est rempli, l'ID retourné par ce code remplacera le parent sélectionné ci-dessus."
+
+#: content_taxonomy.module:116
+msgid "Depth of taxonomy tree"
+msgstr "Profondeur de l'arbre de taxonomie"
+
+#: content_taxonomy.module:118
+msgid "By setting a numeric value, the depth of the hierarchy shown can be limited. Leave this field blank to show the whole hierarchy."
+msgstr "En définissant une valeur numérique, la profondeur de la hiérarchie affichée peut être limitée. Laissez ce champ vide pour afficher la hiérarchie complète."
+
+#: content_taxonomy.module:141
+msgid "@field-title term"
+msgstr "Terme @field-title"
+
+#: content_taxonomy.module:198
+msgid "As Text"
+msgstr "En tant que Texte"
+
+#: content_taxonomy.module:203
+msgid "As Link"
+msgstr "En tant que Lien"
+
+#: content_taxonomy.module:354;362
+msgid "content"
+msgstr "contenu"
+
+#: content_taxonomy.module:354
+msgid "Deleted field %field_name and its data."
+msgstr "Le champ %field_name et ses données ont été supprimés."
+
+#: content_taxonomy.module:362
+msgid "Entries with term id = %tid have been deleted out of %table for field %field_name."
+msgstr "Les enregistrements avec l'id de terme = %tid ont été supprimés de la table %table pour le champ %field_name."
+
+#: content_taxonomy.module:0
+msgid "content_taxonomy"
+msgstr "content_taxonomy"
+
+#: content_taxonomy_autocomplete.module:40
+msgid "Autocomplete (Freetagging)"
+msgstr "Autocomplétion (Étiquetage libre/Freetagging)"
+
+#: content_taxonomy_autocomplete.module:59
+msgid "Settings for Autocompletes"
+msgstr "Paramètres pour les Autocomplétions"
+
+#: content_taxonomy_autocomplete.module:65
+msgid "Freetagging settings"
+msgstr "Paramètres d'Etiquetage libre (Freetagging)"
+
+#: content_taxonomy_autocomplete.module:67
+msgid "Allow and insert new terms by the user into the vocabulary"
+msgstr "Autoriser et insérer de nouveaux termes par l'utilisateur dans le vocabulaire"
+
+#: content_taxonomy_autocomplete.module:68
+msgid "Deny any new terms"
+msgstr "Refuser tout nouveau terme"
+
+#: content_taxonomy_autocomplete.module:73
+msgid "Extra Parent for new terms"
+msgstr "Extra Parent pour les nouveaux termes"
+
+#: content_taxonomy_autocomplete.module:76
+msgid "This setting is only relevant if you have selected \"Allow and insert new terms by the user into the vocabulary\". If you select any term here, new terms will get children of the selected one, otherwise new terms get children of the parent term (root, if no parent selected) selected in the global settings."
+msgstr "Ce paramètre n'est significatif que si vous avez sélectionné \"Autoriser et insérer de nouveaux termes par l'utilisateur dans le vocabulaire\". Si vous sélectionner un terme ici, les nouveaux termes seront des enfants de celui-ci, sinon les nouveaux termes seront des enfants du terme parent (racine, si aucun parent sélectionné) sélectionné dans les paramètres globaux."
+
+#: content_taxonomy_autocomplete.module:81
+msgid "Maximum length of autocomplete"
+msgstr "Longueur maximale de l'autocomplétion"
+
+#: content_taxonomy_autocomplete.module:85
+msgid "Defines how many characters can be typed into the autocomplete field. For values higher than 255, remember that one term name can not be longer than 255 (would be cutted), nevertheless it's not a problem for multiple values, separated by commas."
+msgstr "Définit combien de caractères peuvent être tapés dans le champ a autocomplétion. Pour des valeurs supérieures à 255, souvenez-vous qu'un nom de terme ne peut être plus long que 255 caractères (il sera coupé), cependant, ceci ne constitue pas un problème pour des valeurs multiples, séparées par des virgules."
+
+#: content_taxonomy_autocomplete.module:97
+msgid "\"Maximum length\" must be a positive integer."
+msgstr "\"Longueur maximale\" doit être un entier positif."
+
+#: content_taxonomy_autocomplete.module:214
+msgid "You can provide only one value"
+msgstr "Vous ne pouvez fournir qu'une seule valeur"
+
+#: content_taxonomy_autocomplete.module:219
+msgid "New tags are not allowed"
+msgstr "Les nouveaux tags ne sont pas autorisés"
+
+#: content_taxonomy_autocomplete.module:26
+msgid "Autocomplete"
+msgstr "Autocomplétion"
+
+#: content_taxonomy_autocomplete.module:0
+msgid "content_taxonomy_autocomplete"
+msgstr "content_taxonomy_autocomplete"
+
+#: content_taxonomy_options.module:27
+msgid "Checkboxes/Radios"
+msgstr "Cases à cocher/Boutons Radio"
+
+#: content_taxonomy_options.module:35
+msgid "Select List"
+msgstr "Liste Déroulante"
+
+#: content_taxonomy_options.module:54
+msgid "Settings for Options"
+msgstr "Paramètres des Options"
+
+#: content_taxonomy_options.module:60
+msgid "Indent child terms with ' - ' signs"
+msgstr "Indenter les termes enfants avec des signes ' - '"
+
+#: content_taxonomy_options.module:62
+msgid "If this option is checked, a hierarchy gets visualized by indenting child terms, otherwise it's a flat list"
+msgstr "Si cette option est cochée, une hiérarchie est rendue visuelle par l'indentation des termes enfants, sinon ce sera une liste à plat"
+
+#: content_taxonomy_options.module:65
+msgid "Parent term for OptGroups in select fields"
+msgstr "Terme parent pour les Groupes d'Options (OptGroups) dans les champs menu déroulant"
+
+#: content_taxonomy_options.module:69
+msgid "This settings applies only for select fields. Select a parent term containg the grouping terms. Grouping terms should be parents of the selected terms (from the Global Settings)."
+msgstr "Ce paramètre s'applique uniquement pour les champs liste déroulante. Sélectionner un terme parent contenant les termes à grouper. Les termes à grouper doivent être parents des termes sélectionnés (dans la partie Paramètres Globaux)"
+
+#: content_taxonomy_options.module:95
+msgid "N/A"
+msgstr "N/A"
+
+#: content_taxonomy_options.module:97
+msgid "- None -"
+msgstr "- Aucun -"
+
+#: content_taxonomy_options.module:0
+msgid "content_taxonomy_options"
+msgstr "content_taxonomy_options"
+
+#: content_taxonomy_tree.module:24
+msgid "Tree"
+msgstr "Arborescence"
+
+#: content_taxonomy_tree.module:43
+msgid "Settings for Trees"
+msgstr "Paramètres pour les Arborescences"
+
+#: content_taxonomy_tree.module:49
+msgid "Expand whole tree by default"
+msgstr "Dérouler l'arborescence complète par défaut"
+
+#: content_taxonomy_tree.module:51
+msgid "Otherwise only branches, where a term is selected get expanded by default"
+msgstr "Sinon, seules les branches où un terme est sélectionné sont déroulées par défaut"
+
+#: content_taxonomy_tree.module:153
+msgid "!name field is required."
+msgstr "Le champ !name est obligatoire."
+
+#: content_taxonomy_tree.module:0
+msgid "content_taxonomy_tree"
+msgstr "content_taxonomy_tree"
+
+#: content_taxonomy.info:0
+msgid "Content Taxonomy"
+msgstr "Content Taxonomy"
+
+#: content_taxonomy.info:0
+msgid "Defines a field type for taxonomy terms"
+msgstr "Définit un type de champ pour les termes de taxonomie"
+
+#: content_taxonomy.info:0
+#: content_taxonomy_autocomplete.info:0
+#: content_taxonomy_options.info:0
+#: content_taxonomy_tree.info:0
+msgid "CCK"
+msgstr "CCK"
+
+#: content_taxonomy_autocomplete.info:0
+msgid "Content Taxonomy Autocomplete"
+msgstr "Content Taxonomy Autocomplete"
+
+#: content_taxonomy_autocomplete.info:0
+msgid "Defines a autocomplete widget type for content_taxonomy"
+msgstr "Définit un type de widget à autocomplétion pour content_taxonomy"
+
+#: content_taxonomy_options.info:0
+msgid "Content Taxonomy Options"
+msgstr "Content Taxonomy Options"
+
+#: content_taxonomy_options.info:0
+msgid "Defines a option widget type for content_taxonomy for selects, radios/checkboxes"
+msgstr "Définit un type de widget option pour content_taxonomy pour les listes déroulantes, les boutons radio et les cases à cocher"
+
+#: content_taxonomy_tree.info:0
+msgid "Content Taxonomy Tree"
+msgstr "Content Taxonomy Tree"
+
+#: content_taxonomy_tree.info:0
+msgid "Defines a dynamic tree widget for Content Taxonomy"
+msgstr "Définit un widget arborescence dynamique pour Content Taxonomy"
+
+#: includes/content_taxonomy.token.inc:10
+msgid "Name of top taxonomy term"
+msgstr "Nom du terme de taxonomie le plus haut"
+
+#: includes/content_taxonomy.token.inc:11
+msgid "ID of top taxonomy term"
+msgstr "ID du terme de taxonomie le plus haut"
+
+#: includes/content_taxonomy.token.inc:12
+msgid "Names of all taxonomy terms separated by commas"
+msgstr "Noms de tous les termes de taxonomie, séparés par des virgules"
+
+#: includes/content_taxonomy.token.inc:13
+msgid "IDs of all taxonomy terms separated by commas"
+msgstr "IDs de tous les termes de taxonomie, séparés par des virgules"
+
+#: includes/content_taxonomy.token.inc:14
+msgid "Name of terms vocabulary"
+msgstr "Nom du vocabulaire des termes"
+
+#: includes/content_taxonomy.token.inc:15
+msgid "ID of terms vocabulary"
+msgstr "ID du vocabulaire des termes"
+

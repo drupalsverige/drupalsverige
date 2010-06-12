@@ -1,0 +1,38 @@
+<?php
+// $Id: content_taxonomy_options.install,v 1.1.2.2 2008/12/17 21:31:07 mh86 Exp $
+
+/**
+ * Implementation of hook_install().
+ */
+function content_taxonomy_options_install() {
+  drupal_load('module', 'content');
+  content_notify('install', 'content_taxonomy_options');
+}
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function content_taxonomy_options_uninstall() {
+  drupal_load('module', 'content');
+  content_notify('uninstall', 'content_taxonomy_options');
+}
+
+/**
+ * Implementation of hook_enable().
+ *
+ * Notify content module when this module is enabled.
+ */
+function content_taxonomy_options_enable() {
+  drupal_load('module', 'content');
+  content_notify('enable', 'content_taxonomy_options');
+}
+
+/**
+ * Implementation of hook_disable().
+ *
+ * Notify content module when this module is disabled.
+ */
+function content_taxonomy_options_disable() {
+  drupal_load('module', 'content');
+  content_notify('disable', 'content_taxonomy_options');
+}
