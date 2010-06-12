@@ -1,0 +1,43 @@
+<?php
+// $Id: semanticviews.module,v 1.1.2.20 2010/04/10 04:07:25 bangpound Exp $
+/**
+ * @file semanticviews.module
+ * TODO: Enter file description here.
+ */
+
+/**
+ *  Implementation of hook_views_api().
+ */
+function semanticviews_views_api() {
+  return array(
+    'api' => 2.0,
+  );
+}
+
+/**
+ * Helper function that returns an array with field aliases as key and the
+ * field tokens as values.
+ *
+ * @see views_handler_field::get_render_tokens()
+ */
+function semanticviews_get_alias_tokens($view) {
+  $tokens = array();
+  // Now add replacements for our fields.
+  foreach ($view->display_handler->get_handlers('field') as $name => $handler) {
+    $tokens[$handler->field_alias] = "[$name]";
+  }
+  return $tokens;
+}
+
+/**
+ * Helper function that returns row replacements given a row and all tokens.
+ */
+function semanticviews_get_token_replacements($row, $tokens) {
+  $replacements = array();
+  foreach ($row as $alias => $value) {
+    if (!empty($tokens[$alias])) {
+      $replacements[$tokens[$alias]] = $value;
+    }
+  }
+  return $replacements;
+}

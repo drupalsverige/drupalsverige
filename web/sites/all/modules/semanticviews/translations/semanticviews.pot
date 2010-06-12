@@ -1,0 +1,91 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  semanticviews.views.inc,v 1.1.2.3 2009/09/20 22:22:59 bangpound
+#  semanticviews.info,v 1.1.2.2 2009/10/11 12:54:46 bangpound
+#  semanticviews_plugin_row_fields.inc,v 1.1.2.8 2009/09/26 22:17:39 bangpound
+#  semanticviews_plugin_style_default.inc,v 1.1.2.12 2009/10/29 21:42:41 bangpound
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2009-11-22 01:17+0100\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: semanticviews.views.inc:11 semanticviews.info:0
+msgid "Semantic Views"
+msgstr ""
+
+#: semanticviews.views.inc:12
+msgid "Displays rows one after another."
+msgstr ""
+
+#: semanticviews.views.inc:24
+msgid "Semantic Views : Fields"
+msgstr ""
+
+#: semanticviews.views.inc:25
+msgid "Displays the fields with an optional template."
+msgstr ""
+
+#: semanticviews_plugin_row_fields.inc:67
+msgid "Skip empty fields"
+msgstr ""
+
+#: semanticviews_plugin_row_fields.inc:68
+msgid "Do not output anything when a field has no content."
+msgstr ""
+
+#: semanticviews_plugin_style_default.inc:94
+msgid "If the output should be a HTML list, select the element and class attribute. The row element should also be set to %li."
+msgstr ""
+
+#: semanticviews_plugin_style_default.inc:103
+msgid "List type"
+msgstr ""
+
+#: semanticviews_plugin_style_default.inc:105
+msgid "None"
+msgstr ""
+
+#: semanticviews_plugin_style_default.inc:106
+msgid "Unordered list"
+msgstr ""
+
+#: semanticviews_plugin_style_default.inc:107
+msgid "Ordered list"
+msgstr ""
+
+#: semanticviews_plugin_style_default.inc:108
+msgid "Definition list"
+msgstr ""
+
+#: semanticviews_plugin_style_default.inc:144
+msgid "Insert a %hash where you want row enumeration."
+msgstr ""
+
+#: semanticviews_plugin_style_default.inc:154
+msgid "If the %last_every_nth option is empty or zero, the %first_class and %last_class are added once to only the first and last rows in the pager set. If this option is greater than 1, these classes are added to every n<sup>th</sup> row, which may be useful for grid layouts where the initial and final unit&rsquo;s lateral margins must be 0."
+msgstr ""
+
+#: semanticviews_plugin_style_default.inc:167
+msgid "FIRST/LAST every n<sup>th</sup>"
+msgstr ""
+
+#: semanticviews.info:0
+msgid "Views 2 plugins for UI management of output markup"
+msgstr ""
+
+#: semanticviews.info:0
+msgid "Views"
+msgstr ""
+
