@@ -1,0 +1,125 @@
+# $Id$
+#
+# Swedish translation of Drupal (better_exposed_filters)
+# Generated from files:
+#  better_exposed_filters.views.inc,v 1.2 2010/02/15 01:13:05 mikeker
+#  better_exposed_filters_exposed_form_plugin.inc,v 1.7 2010/04/06 06:16:43 mikeker
+#  better_exposed_filters.info,v 1.1 2009/12/22 03:59:52 mikeker
+#  better_exposed_filters.module,v 1.9 2010/04/09 05:30:33 mikeker
+#  better_exposed_filters.js: n/a
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Better Exposed Filters 6.x\n"
+"POT-Creation-Date: 2010-04-09 17:07+0200\n"
+"PO-Revision-Date: 2010-04-09 18:12+0100\n"
+"Last-Translator: Magnus Gunnarsson <magnus.gunnarsson76@gmail.com>\n"
+"Language-Team: drupalsverige.se\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Poedit-Language: Swedish\n"
+"X-Poedit-Country: SWEDEN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: better_exposed_filters.views.inc:22
+#: better_exposed_filters_exposed_form_plugin.inc:10
+#: better_exposed_filters.info:0
+msgid "Better Exposed Filters"
+msgstr "Bättre exponerade filtreringar"
+
+#: better_exposed_filters.views.inc:23
+msgid "Allow use of checkboxes/radio buttons for exposed filters"
+msgstr "Tillåter användande av kryssutor och radioknappar på exponerade filter"
+
+#: better_exposed_filters_exposed_form_plugin.inc:48
+msgid "Display \"@label\" exposed filter as"
+msgstr "Visa exponerat filter för \"@label\" som"
+
+#: better_exposed_filters_exposed_form_plugin.inc:51
+#: better_exposed_filters.module:68
+msgid "Default select list"
+msgstr "Förvald rullgardinslista"
+
+#: better_exposed_filters_exposed_form_plugin.inc:52
+#: better_exposed_filters.module:69
+msgid "Checkboxes/Radio Buttons"
+msgstr "Knappar för kryssrutor/radioknappar"
+
+#: better_exposed_filters_exposed_form_plugin.inc:53
+#: better_exposed_filters.module:70
+msgid "Hidden"
+msgstr "Gömd"
+
+#: better_exposed_filters_exposed_form_plugin.inc:55
+msgid ""
+"Select a format for the exposed filter.  The \"Hidden\" option is \n"
+"             generally used for multi-step filters.  Note: if \"Force single\" \n"
+"             is checked, radio buttons will be used.  If \"Force single\" is \n"
+"             unchecked, checkboxes will be used."
+msgstr "Välj ett format för det exponerade filtret. Alternativet \"Dolt\" används vanligtvis för filtrering i flera steg. Observera: om \"Tvinga enkelval\" är ikryssat så kommer radioknappar att användas istället, annars kommer kryssrutor att användas."
+
+#: better_exposed_filters_exposed_form_plugin.inc:66
+msgid "More options for \"@label\""
+msgstr "Fler alternativ för \"@label\""
+
+#: better_exposed_filters_exposed_form_plugin.inc:74
+#: better_exposed_filters.module:86
+msgid "Add select all/none links"
+msgstr "Lägg till länkar för att välja alla/ingen"
+
+#: better_exposed_filters_exposed_form_plugin.inc:77
+msgid ""
+"Add a \"Select All/None\" link when rendering the exposed filter using \n"
+"             checkboxes. If this option is disabled, edit the filter and uncheck\n"
+"             \"Force single\". NOTE: The link is built at page load, so it will not appear\n"
+"             in the \"Live Preview\" which is loaded dynamically."
+msgstr "Lägg till en länk \"Välj alla/ingen\" vid rendering av det exponerade filter som använder kryssrutor. Redigera filtret och välj bort \"Tvinga enkelval\" om detta alternativ är inaktiverat. Observera: Länken byggs vid laddning av sida, så den kommer kommer inte att synas i \"Förhandsgranskning\" vilket laddas dynamiskt."
+
+#: better_exposed_filters_exposed_form_plugin.inc:88
+#: better_exposed_filters.module:58
+msgid "Description"
+msgstr "Beskrivning"
+
+#: better_exposed_filters_exposed_form_plugin.inc:90
+msgid ""
+"Adds descriptive text to the exposed filter.  This is usually \n"
+"                               rendered in smaller print under the label or the options."
+msgstr "Lägger till beskrivande text för exponerat filter. Detta visas vanligtvis i mindre stil under etiketten för alternativet."
+
+#: better_exposed_filters.module:65
+msgid "Display exposed filter as"
+msgstr "Visa exponerat filter som"
+
+#: better_exposed_filters.module:72
+msgid ""
+"Select a format for the exposed filter.  The \"Hidden\" option is \n"
+"         generally used for multi-step filters.  Note: if \"Force single\" \n"
+"         is checked, radio buttons will be used.  If \"Force single\" is \n"
+"         unchecked, checkboxes will be used."
+msgstr "Välj ett format för exponerade filter. Alternativet \"Dolt\" används vanligtvis för filtrering i flera steg. Observera: om \"tvinga enkelval\" är ikryssat så kommer radioknappar att användas istället, annars kommer kryssrutor att användas."
+
+#: better_exposed_filters.module:88
+msgid ""
+"Add a \"Select All/None\" link when rendering the exposed filter using \n"
+"         checkboxes. NOTE: The link is built at page load, so it will not appear\n"
+"         in the \"Live Preview\" which is loaded dynamically."
+msgstr "Lägg till en länk \"Välj alla/ingen\" vid rendering av det exponerade filter som använder kryssrutor. Observera: Länken byggs vid laddning av sida, så den kommer kommer inte att synas i \"Förhandsgranskning\" vilket laddas dynamiskt."
+
+#: better_exposed_filters.info:0
+msgid "Allow the use of checkboxes or radio buttons for exposed Views filters"
+msgstr "Tillåter användandet av kryssutor och radioknappar på exponerade filter för Views"
+
+#: better_exposed_filters.info:0
+msgid "Views"
+msgstr "Visningar"
+
+#: better_exposed_filters.js:0
+msgid "Select All"
+msgstr "Välj alla"
+
+#: better_exposed_filters.js:0
+msgid "Select None"
+msgstr "Välj ingen"
+
