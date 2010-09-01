@@ -1,6 +1,7 @@
 .bzrignore
 .bzr
 .bzr/*
+.DS_store
 settings.php
 files
 files/*
