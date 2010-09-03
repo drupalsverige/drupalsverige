@@ -1,0 +1,747 @@
+/* $Id: $ */
+
+html, body { height: 100%; }
+
+body {
+	background: url(images/bg-body.png) repeat-x;
+}
+
+body.admin-menu {
+	background-position: 0 20px;
+}
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+
+
+#wrap { 
+	min-height: 100%; 
+}
+
+#page { 
+	overflow:auto;
+	padding-bottom: 150px; /* Must be same height as the footer */
+	background: transparent url(images/bg-main-menu.png) 0 145px no-repeat;	
+}  
+
+
+#skip-to-nav {
+	position: absolute;
+	text-indent: -9999em;
+}
+
+#site-header {
+	background: url(images/bg-header.png) no-repeat;
+	height: 145px;
+	position: relative;
+}
+
+h1#site-name {
+  margin-bottom: 0;
+}
+
+#site-menu {
+	position: absolute;
+	top: 100px;
+	left: 0;
+	height: 45px;
+	line-height: 45px;
+}
+
+#footer {
+	background: #777;
+	position: relative;
+	margin-top: -150px; /* Negative value of footer height */
+	height: 150px;
+	clear:both;
+	-moz-box-shadow: inset 0 10px 20px #555;
+	-webkit-box-shadow: inset 0 10px 20px #555;
+}
+
+#footer-inner {
+	padding: 40px 0;
+}
+
+#footer .block {
+	margin: 0;
+}
+
+#footer ul li {
+	list-style: none;
+}
+
+#footer a {
+	color: #bbb;
+}
+
+#site-header,
+#site-subheader,
+.column,
+.node,
+.comment,
+.block {
+  margin-bottom: 1.5em;
+}
+
+/* HTML Element */
+pre, code
+  {
+    font-size: 1.0em; /* Monospace fonts can be hard to read */
+    font-family: "Bitstream Vera Sans Mono", "Courier New", monospace;
+  }
+
+table
+  {
+    border-collapse: collapse;
+    width: 100%; /* Prevent cramped-looking tables */
+  }
+
+  th,
+  thead th,
+  tbody th
+  {
+    text-align: left;
+    padding-right: 0;
+    border-bottom: none;
+  }
+  
+  thead th {
+	background: #555;
+	border-bottom: 2px solid #777;
+	color: #eee;
+	font-weight: normal;
+	text-shadow: 0 1px 0 #000;
+  }
+
+  tbody
+  {
+    border-top: none;
+  }
+
+	td, th {
+		vertical-align: middle;
+		padding: 5px;
+		padding: 8px 10px;
+	}
+
+	th a {
+		color: #cce9fe;
+	}
+
+		th a:hover {
+			color: #91c8e5;
+		}
+
+	ul, ol {
+		margin-left: 40px;
+	}
+
+	ul li {
+		list-style: disc;
+	}
+
+	pre {
+		background: #eee;
+		padding: 10px;
+	}
+	
+	pre code {
+		margin: 20px;
+	}
+	blockquote {
+		background: transparent url(images/bg-blockqoute.png) 0 0 no-repeat;
+		font-family: 'Droid Sans', arial, sans-serif;
+		font-size: 14px;
+		color: #666;
+		font-style: italic;
+		padding: 20px 30px;
+		margin: 0 0 10px 0;
+	}
+	blockquote p {
+		margin: 0;
+		padding: 0 0 20px 0;
+		background: transparent url(images/bg-blockqoute-end.png) right bottom no-repeat;
+	}
+	
+/** abbreviations **/
+  abbr
+  {
+    border-bottom: 1px dotted #ccc;
+    cursor: help;
+    white-space: nowrap;
+  }
+
+  /* Date-based "abbreviations" show computer-friendly timestamps which are not
+     human-friendly. */
+  abbr.created
+  {
+    border: none;
+    cursor: auto;
+    white-space: normal;
+  }
+
+/** images **/
+  img
+  {
+    border: 0;
+  }
+  
+  /* On #page, else admin_menu looks like crap */
+  #page img, #footer img {
+	display: block;
+  }
+
+/** horizontal rules **/
+  hr
+  {
+    height: 1px;
+    border: 1px solid #ccc;
+  }
+
+  legend {
+	line-height: 16px;
+  }
+  
+  fieldset
+  {
+    margin: 1em 0;
+    padding: 0.5em;
+	border:1px solid #ccc;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	background: #eee;
+	-moz-box-shadow:1px 1px 8px #ddd inset;
+	-webkit-box-shadow:1px 1px 8px #ddd inset;
+	box-shadow:1px 1px 8px #ddd inset;
+  }
+  
+	html.js fieldset.collapsed {
+		margin-bottom: 20px;
+	}
+	
+  	html.js fieldset.collapsible.collapsed legend a {
+		background: url("images/menu-collapsed.png") 0 0 no-repeat;
+		padding: 0 5px 0 20px;
+	}
+
+  	html.js fieldset.collapsible legend a {
+		background: url("images/menu-expanded.png") 0 0 no-repeat;
+		padding: 0 5px 0 20px;
+	}
+
+
+fieldset fieldset {
+	background: #ddd;
+	-moz-box-shadow:1px 1px 8px #ccc inset;
+	-webkit-box-shadow:1px 1px 8px #ccc inset;
+	box-shadow:1px 1px 8px #ccc inset;
+}
+
+a {
+	color: #2476c6;
+	text-decoration: none;
+    -webkit-transition:color .2s ease-in-out;  
+    -moz-transition:color .2s ease-in-out;  
+    -o-transition:color .2s ease-in-out;  
+    transition:color .2s ease-in-out; 
+}
+
+a:hover {
+	color: #155b9f;
+}
+
+
+/*
+** Formatting for administration page
+**
+** The admin panel styles are a mess. IE has problems with this so this is
+** only a temporary fix. This should be fixed in core.
+*/
+div.admin-panel {
+  padding: 0;
+}
+
+div.admin-panel .body {
+  padding: 0 !important;
+}
+
+div.admin .left,
+div.admin .right {
+  width: 50%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+div.admin .right .admin-panel {
+  margin-left: 10px;
+}
+
+/* Theme settings */
+#div-zen-debug strong
+  {
+    float: left;
+    width: 90px;
+    margin-left: 0;
+    margin-right: 10px;
+    text-align: left;
+  }
+
+/* Headers */
+
+h1, h2, h3, h4 {
+	font-family: 'Droid Sans', arial, sans-serif;
+	font-weight: normal;
+	color: #333;
+}
+
+h2 {
+	font-size: 19px;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+h4 {
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+/* Forms */
+input.form-text {
+	font-size: 13px;
+	border: 1px solid #aaa;
+	border-color: #aaa #ddd #ddd #aaa;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	padding: 4px;
+	-moz-box-shadow: inset 0 2px 3px #ddd;
+	-webkit-box-shadow: inset 0 2px 3px #ddd;
+	box-shadow: inset 0 2px 3px #ddd;
+	-moz-background-clip: padding-box;
+	-webkit-background-clip: padding-box;
+}
+
+#user-login-form {
+	text-align: left;
+}
+
+#search {
+	position: absolute;
+	top: 0px;
+}
+
+
+#search label {
+	display: none;
+	position: absolute;
+	right: 200px;
+	width: 165px;
+	padding: 0 0 0 15px;
+	text-align: left;
+	line-height: 24px;
+	color: #fff;
+	font-weight: normal;
+	background: #bbb;
+	border: 1px solid #999;
+	border-color: #ccc #888 #888 #ccc;
+	text-shadow: 0 -1px 0 #777;
+	-moz-box-shadow: inset -20px -8px 15px #888;
+	-webkit-box-shadow: inset -20px -8px 15px #888;
+	box-shadow: inset -20px -8px 15px #888;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	border-radius: 40px;
+	-moz-background-clip: padding-box;
+	-webkit-background-clip: padding-box;
+}
+
+input.form-submit {
+	background: #e3e3e3 0 0px url(images/sprite-buttons.png) repeat-x;
+	border: 1px solid #eee;
+	border-color: #eee #ddd #ccc #eee;
+	color: #333;
+	text-shadow:0 1px 0 #fff;
+	font-weight: bold;
+	margin: 0;
+	padding: 4px 10px;
+	cursor: pointer;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	border-radius: 40px;
+	-moz-background-clip: padding-box;
+	-webkit-background-clip: padding-box;
+}
+
+input#edit-submit {
+	background: #e3e3e3 0 -50px url(images/sprite-buttons.png) repeat-x;
+	border-color: #6ed869 #32a01e #32a01e #6ed869;
+	color: #fff;
+	text-shadow:0 1px 0 #666;
+	-moz-box-shadow: inset 0 1px 0 #c2e8a7;
+	-webkit-box-shadow: inset 0 1px 0 #c2e8a7;
+	box-shadow: inset 0 1px 0 #c2e8a7;
+}
+	input.form-submit:hover {
+		-moz-box-shadow: 0 0 6px #999;
+		-webkit-box-shadow: 0 0 6px #999;
+		box-shadow: 0 0 6px #999;
+	}
+
+	input#edit-submit:hover {
+		-moz-box-shadow: inset 0 1px 0 #96cf6e,
+			0 0 6px #999;
+		-webkit-box-shadow: inset 0 1px 0 #96cf6e,
+			0 0 6px #999;
+		box-shadow: inset 0 1px 0 #96cf6e,
+			0 0 6px #999;
+	}
+	
+	input.form-submit:active, input#edit-submit:active {
+		-moz-box-shadow: inset 0 0 6px #333;
+		-webkit-box-shadow: inset 0 0 6px #333;
+		box-shadow: inset 0 0 6px #333;
+		outline: none;
+	}
+
+	
+/*
+#search label {
+	position: absolute;
+	left: 10px;
+	width: 220px;
+	text-align: left;
+	line-height: 25px;
+	color: #777;
+	font-weight: normal;
+}
+*/
+#search .form-text {
+	position: relative;
+	border: 1px solid #ccc;
+	width: 190px;
+	margin: 0;
+	padding: 4px 30px 4px 8px;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	border-radius: 40px;
+	-moz-background-clip: padding-box;
+	-webkit-background-clip: padding-box;
+}
+
+#search .form-text:focus {
+	outline: 0;
+	-moz-box-shadow: 0 0 5px #fff;
+	-webkit-box-shadow: 0 0 3px #fff;
+	box-shadow: 0 0 3px #fff;
+}
+
+#search .form-submit {
+	background: url(images/bg-submit-search.png) no-repeat;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	text-indent: -9999em;
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	right: 10px;
+	top: 5px;
+}
+
+/* Main menu */
+ul.main-menu a {
+	text-decoration: none;
+	font-family: 'Droid Sans', arial, serif;
+	font-size: 13px;
+	color: #565656;
+	padding: 3px 10px;
+	text-shadow: 0 1px 0 #fff;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	border-radius: 40px;
+    -webkit-transition:color .2s ease-in-out;  
+    -moz-transition:color .2s ease-in-out;  
+    -o-transition:color .2s ease-in-out;  
+    transition:color .2s ease-in-out; 
+}
+
+ul.main-menu a.active {
+	background: #fff;
+	border: 1px solid #fff;
+	border-color: #bbb #eee #eee #bbb;
+	-moz-box-shadow: inset 0 2px 3px #ddd;
+	-webkit-box-shadow: inset 0 2px 3px #ddd;
+	-moz-background-clip: padding-box;
+	-webkit-background-clip: padding-box;
+}
+
+ul.main-menu a:hover {
+	color: #111;
+}
+
+/* News  */
+div.view-news-listing .item {
+	margin-bottom: 20px;
+}
+
+div.view-news-listing .smaller {
+}
+
+	div.view-news-listing .smaller h2.title {
+		font-size: 14px;
+	}
+
+	div.view-news-listing .smaller .meta {
+		font-size: 12px;
+	}
+
+	div.view-news-listing .smaller .news-thumbnail {
+		display: none;
+	}
+
+
+div.meta {
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 5px 0;
+	color: #777;
+	margin-bottom: 20px;
+	font-family: Georgia, serif;
+}
+
+div.field-field-news-lead {
+	font-weight: bold;
+}
+
+div.commentcount {
+	text-align: left;
+	position: relative;
+	height: 26px;
+	margin-bottom: 20px;
+}
+
+	div.commentcount span {
+		display: block;
+		width: 26px;
+		height: 26px;
+		background: url(images/bg-comment-c.png) no-repeat;
+		text-align: center;
+		color: #fff;
+		font-size: 11px;
+		line-height: 20px;
+	}
+	
+div.news-thumbnail {
+	background: #f3f3f3;
+	float: right;
+	padding: 5px;
+	margin: 0 0 20px 20px;
+	border: 1px solid #eee;
+	border-color: #eee #ddd #ddd #eee;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 1px 1px 4px #ddd;
+}
+
+img.imagecache-news_fullsize {
+	background: #f3f3f3;
+	padding: 5px;
+	margin: 0 0 20px 0;
+	border: 1px solid #eee;
+	border-color: #eee #ddd #ddd #eee;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 1px 1px 4px #ddd;
+}
+
+div.date {
+	color: #777;
+	font-size: 12px;
+}
+
+div.bio {
+	background: #f6f6f6;
+	padding: 20px;
+	margin: 40px 0;
+}
+
+div.bio .avatar {
+	background: #fff;
+	float:left;
+	height: 70px;
+	padding: 3px;
+	width: 70px;	
+}
+
+div.bio .about {
+	margin-left: 95px;
+}
+
+	div.bio .about p {
+		margin: 0;
+	}
+
+/* Comments */
+
+div#comments {
+	background: #eee;
+	padding: 20px;
+	-moz-box-shadow:2px 2px 5px #ddd inset;
+	-webkit-box-shadow:2px 2px 5px #ddd inset;
+	box-shadow:2px 2px 5px #ddd inset;
+}
+
+	div#comments .comment .new {
+		color: #ff4444;
+		position: absolute;
+		right: 25px;
+	}
+
+	div#comments h2.title {
+		color: #666;
+		font-size: 17px;
+		text-shadow: 0 1px 0 #fff;
+	}
+	
+		div#comments h2.title span.count {
+			float: right;
+			color: #ccc;
+			font-size: 20px;
+		}
+	
+	div#comments div.submitted, #comment-form div.form-item {
+		color: #888;
+		margin-bottom: 1em;
+	}
+	
+	div#comments div.content {
+		position: relative;
+		background: #f6f6f6;
+		padding: 15px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+	}
+	
+		div#comments div.content p {
+			margin: 10px;
+		}
+	
+	div#comments div.indented {
+		padding-left: 30px;
+		margin: 0;
+		background: url(images/bg-comment-indent.png) -3px 10px no-repeat;	
+		border-left: 3px solid #ddd;
+	}
+	
+	
+	div#comments ul.links, div#comments ul.links li {
+		height: 38px;
+		line-height: 38px;
+		padding: 10px 5px 5px 10px;
+		background: #f6f6f6;
+		padding: 0;
+	}
+	
+	div#comments ul.links li a, legend {
+		background: #e3e3e3 url(images/sprite-buttons.png) repeat-x;
+		color: #555;
+		border: 1px solid #ddd;
+		border-color: #ddd #ccc #ccc #ddd;
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		border-radius: 20px;
+		/*padding: 5px 10px 5px 27px;*/
+		padding: 4px 9px;
+		margin: 0 6px 0 0;
+		text-shadow:0 1px 0 #fff;
+		text-transform: capitalize;
+	}
+	
+	div#comments ul.links li a:hover {
+		-moz-box-shadow: 0 0 4px #666;
+		-webkit-box-shadow: 0 0 4px #666;
+		box-shadow: 0 0 4px #666;
+	}
+	
+		div#comments ul.links li.comment_delete a {
+			background: #ba0808 url(images/sprite-buttons.png) 0 -100px repeat-x;
+			border-color: #a90505;
+			color: #eee;
+			text-shadow:0 -1px 0 #333;
+		}
+		div#comments ul.links li.comment_edit a {
+			/*background: #555 url(images/comment_edit.png) 2px 1px no-repeat;*/
+		}
+		div#comments ul.links li.comment_reply a {
+			/*background: #555 url(images/comment_reply.png) 7px 4px no-repeat;*/
+		}
+		
+
+/* Pager */	
+ul.pager {
+	background: #eee;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+	padding: 8px;
+	text-transform : capitalize;
+	text-shadow: 0 1px 0 #fff;
+	-moz-box-shadow:2px 2px 5px #CCCCCC inset;
+	-webkit-box-shadow:2px 2px 5px #CCCCCC inset;
+	box-shadow:2px 2px 5px #CCCCCC inset;
+}
+
+ul.pager li.pager-first {
+	margin-left: 0;
+}
+
+ul.pager li.pager-current {
+	background: #666;
+	color: #eee;
+	padding:5px 9px;
+	text-shadow: 0 -1px 0 #333;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	border-radius: 40px;
+}
+
+/* Messages */
+div.messages {
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+div.status {
+	background: #e2f4ff url(images/bg-message-status.png) 10px 8px no-repeat;
+	border: 3px solid #cbe6fd;
+	margin: 20px 0;
+	padding: 10px 50px;
+}
+div.error {
+	background: #ffe7e7 url(images/bg-message-error.png) 10px 8px no-repeat;
+	border: 3px solid #f8d6d6;
+	margin: 20px 0;
+	padding: 10px 50px;
+}
+div.warning {
+	background: #fff9e7 url(images/bg-message-warning.png) 10px 8px no-repeat;
+	border: 3px solid #f8e8d6;
+	margin: 20px 0;
+	padding: 10px 50px;
+}
+	div.error ul, div.warning ul {
+		margin-left: 15px;
+	}

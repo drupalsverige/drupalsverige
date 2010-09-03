@@ -1,0 +1,34 @@
+ $Id
+
+This is the NineSixty theme (http://drupal.org/project/ninesixty) developed as a Zen sub theme for use with Zen theme (http://drupal.org/project/zen).
+
+This theme is only for Drupal 6
+
+INSTALLATION:
+
+- Download Zen Theme for Drupal 6 version (http://drupal.org/project/zen) and unzip this theme into /sites/all/themes/
+
+- The Zen theme is the based theme that must be installed to have this sub theme work properly
+
+- Now unzip this theme (drupalsverige) and place it in your theme directory, so directory path should look like: /sites/all/themes/drupalsverige
+
+- Login as admin go to Administer --> themes and enable '960 Grid System (Zen sub theme)' theme (/admin/build/themes)
+
+- You can configure the theme settings. To do this click on 'configure' link next to the theme in the theme listing page.
+
+------------------------------------------
+What's different in this theme compare to the original NineSixty theme:
+------------------------------------------
+
+- It inherits all the theme settings from the Zen theme (ie inline block editing)
+
+- Added Debug mode (showing grid on the page) as a theme setting so you can enable/disable it in the theme settings (/admin/build/themes/settings/drupalsverige) 
+
+- Additional region added: 'content top' and 'content bottom' so blocks can be assigned to the top or bottom of the main content area.
+
+If you have any questions, leave a comment at: http://duvien.com/blog/960-grid-system-zen-sub-theme-drupal-6
+
+Or use the issue queue for this theme on drupal.org at: http://drupal.org/project/issues/drupalsverige
+
+This theme was developed by duvien (http://duvien.com)
+
