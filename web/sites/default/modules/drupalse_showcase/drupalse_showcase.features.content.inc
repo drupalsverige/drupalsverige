@@ -11,9 +11,10 @@ function drupalse_showcase_content_default_fields() {
     'field_name' => 'field_showcase_body',
     'type_name' => 'showcase',
     'display_settings' => array(
+      'weight' => '34',
+      'parent' => '',
       'label' => array(
-        'format' => 'above',
-        'exclude' => 0,
+        'format' => 'hidden',
       ),
       'teaser' => array(
         'format' => 'default',
@@ -65,9 +66,10 @@ function drupalse_showcase_content_default_fields() {
     'field_name' => 'field_showcase_image',
     'type_name' => 'showcase',
     'display_settings' => array(
+      'weight' => '31',
+      'parent' => '',
       'label' => array(
-        'format' => 'above',
-        'exclude' => 0,
+        'format' => 'hidden',
       ),
       'teaser' => array(
         'format' => 'image_plain',
@@ -123,9 +125,10 @@ function drupalse_showcase_content_default_fields() {
     'field_name' => 'field_showcase_link',
     'type_name' => 'showcase',
     'display_settings' => array(
+      'weight' => '33',
+      'parent' => '',
       'label' => array(
-        'format' => 'above',
-        'exclude' => 0,
+        'format' => 'inline',
       ),
       'teaser' => array(
         'format' => 'default',
@@ -162,6 +165,7 @@ function drupalse_showcase_content_default_fields() {
     'title' => 'none',
     'title_value' => '',
     'enable_tokens' => 0,
+    'validate_url' => '',
     'widget' => array(
       'default_value' => array(
         '0' => array(
@@ -183,9 +187,10 @@ function drupalse_showcase_content_default_fields() {
     'field_name' => 'field_showcase_provider',
     'type_name' => 'showcase',
     'display_settings' => array(
+      'weight' => '32',
+      'parent' => '',
       'label' => array(
-        'format' => 'above',
-        'exclude' => 0,
+        'format' => 'inline',
       ),
       'teaser' => array(
         'format' => 'default',
