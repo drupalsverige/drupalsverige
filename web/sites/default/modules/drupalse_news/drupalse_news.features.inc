@@ -1,37 +1,53 @@
 <?php
 
 /**
- * Implementation of hook_content_default_fields().
- */
-function drupalse_news_content_default_fields() {
-  module_load_include('inc', 'drupalse_news', 'drupalse_news.defaults');
-  $args = func_get_args();
-  return call_user_func_array('_drupalse_news_content_default_fields', $args);
-}
-
-/**
  * Implementation of hook_imagecache_default_presets().
  */
 function drupalse_news_imagecache_default_presets() {
-  module_load_include('inc', 'drupalse_news', 'drupalse_news.defaults');
-  $args = func_get_args();
-  return call_user_func_array('_drupalse_news_imagecache_default_presets', $args);
+  $items = array(
+    'news_thumbnail' => array(
+      'presetname' => 'news_thumbnail',
+      'actions' => array(
+        '0' => array(
+          'weight' => '0',
+          'module' => 'imagecache',
+          'action' => 'imagecache_scale_and_crop',
+          'data' => array(
+            'width' => '200px',
+            'height' => '200px',
+          ),
+        ),
+      ),
+    ),
+  );
+  return $items;
 }
 
 /**
  * Implementation of hook_node_info().
  */
 function drupalse_news_node_info() {
-  module_load_include('inc', 'drupalse_news', 'drupalse_news.features.node');
-  $args = func_get_args();
-  return call_user_func_array('_drupalse_news_node_info', $args);
+  $items = array(
+    'news' => array(
+      'name' => t('Nyhet'),
+      'module' => 'features',
+      'description' => t('En nyhet postas på nyhetssidan.'),
+      'has_title' => '1',
+      'title_label' => t('Titel'),
+      'has_body' => '0',
+      'body_label' => '',
+      'min_word_count' => '0',
+      'help' => '',
+    ),
+  );
+  return $items;
 }
 
 /**
- * Implementation of hook_views_default_views().
+ * Implementation of hook_views_api().
  */
-function drupalse_news_views_default_views() {
-  module_load_include('inc', 'drupalse_news', 'drupalse_news.features.views');
-  $args = func_get_args();
-  return call_user_func_array('_drupalse_news_views_default_views', $args);
+function drupalse_news_views_api() {
+  return array(
+    'api' => '2',
+  );
 }
