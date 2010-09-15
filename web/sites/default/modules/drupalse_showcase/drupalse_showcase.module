@@ -1,0 +1,3 @@
+<?php
+
+include_once('drupalse_showcase.features.inc');
