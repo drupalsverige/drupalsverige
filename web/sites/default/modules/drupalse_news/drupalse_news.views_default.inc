@@ -18,6 +18,47 @@ function drupalse_news_views_default_views() {
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
   $handler = $view->new_display('default', 'Förvalt', 'default');
   $handler->override_option('fields', array(
+    'field_news_image_fid' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_node' => 0,
+      'label_type' => 'none',
+      'format' => 'news_thumbnail_linked',
+      'multiple' => array(
+        'group' => TRUE,
+        'multiple_number' => '',
+        'multiple_from' => '',
+        'multiple_reversed' => FALSE,
+      ),
+      'exclude' => 0,
+      'id' => 'field_news_image_fid',
+      'table' => 'node_data_field_news_image',
+      'field' => 'field_news_image_fid',
+      'relationship' => 'none',
+      'override' => array(
+        'button' => 'Åsidosätt',
+      ),
+    ),
     'title' => array(
       'label' => '',
       'alter' => array(
@@ -74,9 +115,9 @@ function drupalse_news_views_default_views() {
       'empty' => '',
       'hide_empty' => 0,
       'empty_zero' => 0,
-      'date_format' => 'small',
-      'custom_date_format' => '',
-      'exclude' => 0,
+      'date_format' => 'custom',
+      'custom_date_format' => 'Y-m-d H:i',
+      'exclude' => 1,
       'id' => 'created',
       'table' => 'node',
       'field' => 'created',
@@ -88,8 +129,8 @@ function drupalse_news_views_default_views() {
     'name' => array(
       'label' => '',
       'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
+        'alter_text' => 1,
+        'text' => 'Skrivet av [name], [created] ',
         'make_link' => 0,
         'path' => '',
         'link_class' => '',
@@ -119,47 +160,6 @@ function drupalse_news_views_default_views() {
         'button' => 'Åsidosätt',
       ),
       'relationship' => 'none',
-    ),
-    'field_news_image_fid' => array(
-      'label' => '',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'link_to_node' => 0,
-      'label_type' => 'none',
-      'format' => 'news_thumbnail_linked',
-      'multiple' => array(
-        'group' => TRUE,
-        'multiple_number' => '',
-        'multiple_from' => '',
-        'multiple_reversed' => FALSE,
-      ),
-      'exclude' => 0,
-      'id' => 'field_news_image_fid',
-      'table' => 'node_data_field_news_image',
-      'field' => 'field_news_image_fid',
-      'relationship' => 'none',
-      'override' => array(
-        'button' => 'Åsidosätt',
-      ),
     ),
     'field_news_lead_value' => array(
       'label' => '',
@@ -283,21 +283,17 @@ function drupalse_news_views_default_views() {
   $handler->override_option('row_plugin', 'semanticviews_fields');
   $handler->override_option('row_options', array(
     'semantic_html' => array(
+      'field_news_image_fid' => array(
+        'element_type' => 'div',
+        'class' => 'image news-thumbnail',
+      ),
       'title' => array(
         'element_type' => 'h2',
         'class' => 'title',
       ),
-      'created' => array(
-        'element_type' => 'div',
-        'class' => 'date',
-      ),
       'name' => array(
         'element_type' => 'div',
-        'class' => 'user',
-      ),
-      'field_news_image_fid' => array(
-        'element_type' => 'div',
-        'class' => 'image news-thumbnail',
+        'class' => 'meta',
       ),
       'field_news_lead_value' => array(
         'element_type' => 'div',
