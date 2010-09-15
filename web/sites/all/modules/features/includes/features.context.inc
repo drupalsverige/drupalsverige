@@ -1,13 +1,12 @@
 <?php
-// $Id: features.context.inc,v 1.1.2.12 2010/03/06 06:15:09 yhahn Exp $
+// $Id: features.context.inc,v 1.1.2.19 2010/07/29 21:57:08 yhahn Exp $
 
 /**
  * Determine context major branch version.
  */
 function context_features_get_version() {
-  if (function_exists('context_ctools_plugin_api')) {
-    $api = context_ctools_plugin_api('context', 'plugins');
-    return $api['version'];
+  if (function_exists('context_context_plugins')) {
+    return 3;
   }
   return 2;
 }
@@ -23,6 +22,8 @@ function context_features_api() {
       'api' => 'context',
       'current_version' => 3,
       'module' => 'context',
+      'default_file' => FEATURES_DEFAULTS_CUSTOM,
+      'default_filename' => 'context',
     );
   }
   // 2.x
@@ -57,17 +58,16 @@ function context_features_export_options() {
 function context_features_export($data, &$export, $module_name = '') {
   // 3.x
   if (context_features_get_version() === 3) {
-    ctools_component_features_export('context', $data, $export, $module_name);
+    $pipe = ctools_component_features_export('context', $data, $export, $module_name);
 
-    $pipe = array();
     $contexts = context_load();
     foreach ($data as $identifier) {
       if (isset($contexts[$identifier])) {
         $context = $contexts[$identifier];
         // Conditions.
-        // Currently only node, menu and views conditions are supported.
+        // Currently only node and views conditions are supported.
         // @TODO: Should this be delegated to a method on the plugin?
-        foreach (array('node', 'menu', 'views') as $key) {
+        foreach (array('node', 'views') as $key) {
           if (!empty($context->conditions{$key}['values'])) {
             foreach ($context->conditions{$key}['values'] as $item) {
               // Special pipe for views
@@ -99,15 +99,7 @@ function context_features_export($data, &$export, $module_name = '') {
   $export['dependencies']['context'] = 'context';
 
   // Collect a context to module map
-  $map = array();
-  $modules = module_implements('context_default_contexts');
-  foreach ($modules as $module) {
-    $contexts = module_invoke($module, 'context_default_contexts');
-    foreach ($contexts as $context) {
-      $map["{$context['namespace']}-{$context['attribute']}-{$context['value']}"] = $module;
-    }
-  }
-
+  $map = features_get_default_map('context', NULL, 'context_features_identifier_2');
   $pipe = array();
   $contexts = context_enabled_contexts();
   foreach ($data as $identifier) {
@@ -196,7 +188,9 @@ function context_features_export_render($module, $data) {
       }
     }
 
-    $code[] = '  $items[] = '. context_var_export($context, '  ') .';';
+    $context_identifier = context_var_export($identifier);
+    $context_export = context_var_export($context, '  ');
+    $code[] = "  \$items[{$context_identifier}] = {$context_export};";
   }
 
   $code[] = '  return $items;';
@@ -218,10 +212,7 @@ function context_features_revert($module = NULL) {
     return $return;
   }
   // 2.x
-  if (module_hook($module, 'context_default_contexts')) {
-    $default_contexts = module_invoke($module, 'context_default_contexts');
-
-    // Delete overridden contexts
+  if ($default_contexts = features_get_default('context', $module)) {
     foreach($default_contexts as $default_context) {
       $current_context = new StdClass();
       $current_context->namespace = $default_context['namespace'];
@@ -231,9 +222,11 @@ function context_features_revert($module = NULL) {
       context_delete_context($context_to_delete);
     }
   }
-  else {
-    drupal_set_message(t('Could not load default contexts.'), 'error');
-    return FALSE;
-  }
-  return TRUE;
+}
+
+/**
+ * 2.x: Callback for generating the context exportable identifier.
+ */
+function context_features_identifier_2($object) {
+  return isset($object->namespace, $object->attribute, $object->value) ? "{$object->namespace}-{$object->attribute}-{$object->value}" : FALSE;
 }
