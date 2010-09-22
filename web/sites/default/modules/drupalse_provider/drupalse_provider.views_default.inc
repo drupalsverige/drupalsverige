@@ -163,6 +163,18 @@ function drupalse_provider_views_default_views() {
       'relationship' => 'none',
     ),
   ));
+  $handler->override_option('sorts', array(
+    'title' => array(
+      'order' => 'ASC',
+      'id' => 'title',
+      'table' => 'node',
+      'field' => 'title',
+      'override' => array(
+        'button' => 'Åsidosätt',
+      ),
+      'relationship' => 'none',
+    ),
+  ));
   $handler->override_option('filters', array(
     'field_provider_services_value_many_to_one' => array(
       'operator' => 'or',
