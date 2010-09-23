@@ -17,9 +17,22 @@ function drupalse_provider_views_default_views() {
   $view->api_version = 2;
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
   $handler = $view->new_display('default', 'Förvalt', 'default');
+  $handler->override_option('relationships', array(
+    'field_provider_region_value' => array(
+      'label' => 'Län term',
+      'required' => 0,
+      'id' => 'field_provider_region_value',
+      'table' => 'node_data_field_provider_region',
+      'field' => 'field_provider_region_value',
+      'override' => array(
+        'button' => 'Åsidosätt',
+      ),
+      'relationship' => 'none',
+    ),
+  ));
   $handler->override_option('fields', array(
     'title' => array(
-      'label' => 'Namn',
+      'label' => 'Företag',
       'alter' => array(
         'alter_text' => 0,
         'text' => '',
@@ -86,44 +99,6 @@ function drupalse_provider_views_default_views() {
       'field' => 'field_provider_city_value',
       'relationship' => 'none',
     ),
-    'field_provider_region_value' => array(
-      'label' => 'Län',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'link_to_node' => 0,
-      'label_type' => 'widget',
-      'format' => 'default',
-      'multiple' => array(
-        'group' => 1,
-        'multiple_number' => '',
-        'multiple_from' => '',
-        'multiple_reversed' => 0,
-      ),
-      'exclude' => 0,
-      'id' => 'field_provider_region_value',
-      'table' => 'node_data_field_provider_region',
-      'field' => 'field_provider_region_value',
-      'relationship' => 'none',
-    ),
     'field_provider_link_url' => array(
       'label' => 'Webbplats',
       'alter' => array(
@@ -162,8 +137,53 @@ function drupalse_provider_views_default_views() {
       'field' => 'field_provider_link_url',
       'relationship' => 'none',
     ),
+    'field_provider_region_value' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_node' => 0,
+      'label_type' => 'none',
+      'format' => 'default',
+      'multiple' => array(
+        'group' => 0,
+        'multiple_number' => '',
+        'multiple_from' => '',
+        'multiple_reversed' => 0,
+      ),
+      'exclude' => 1,
+      'id' => 'field_provider_region_value',
+      'table' => 'node_data_field_provider_region',
+      'field' => 'field_provider_region_value',
+      'relationship' => 'none',
+    ),
   ));
   $handler->override_option('sorts', array(
+    'name' => array(
+      'order' => 'ASC',
+      'id' => 'name',
+      'table' => 'term_data',
+      'field' => 'name',
+      'relationship' => 'field_provider_region_value',
+    ),
     'title' => array(
       'order' => 'ASC',
       'id' => 'title',
@@ -233,33 +253,6 @@ function drupalse_provider_views_default_views() {
       'field' => 'type',
       'relationship' => 'none',
     ),
-    'field_provider_region_value' => array(
-      'operator' => 'or',
-      'value' => array(),
-      'group' => '0',
-      'exposed' => TRUE,
-      'expose' => array(
-        'use_operator' => 0,
-        'operator' => 'field_provider_region_value_op',
-        'identifier' => 'field_provider_region_value',
-        'label' => 'Län',
-        'bef_filter_description' => '',
-        'bef_format' => 'default',
-        'optional' => 1,
-        'single' => 1,
-        'remember' => 0,
-        'reduce' => 0,
-        'bef_select_all_none' => 0,
-      ),
-      'id' => 'field_provider_region_value',
-      'table' => 'node_data_field_provider_region',
-      'field' => 'field_provider_region_value',
-      'override' => array(
-        'button' => 'Åsidosätt',
-      ),
-      'relationship' => 'none',
-      'reduce_duplicates' => 0,
-    ),
   ));
   $handler->override_option('access', array(
     'type' => 'none',
@@ -270,10 +263,10 @@ function drupalse_provider_views_default_views() {
   $handler->override_option('title', 'Leverantörer');
   $handler->override_option('use_ajax', TRUE);
   $handler->override_option('items_per_page', 0);
-  $handler->override_option('distinct', 1);
+  $handler->override_option('distinct', 0);
   $handler->override_option('style_plugin', 'table');
   $handler->override_option('style_options', array(
-    'grouping' => '',
+    'grouping' => 'field_provider_region_value',
     'override' => 1,
     'sticky' => 0,
     'order' => 'asc',
@@ -289,7 +282,6 @@ function drupalse_provider_views_default_views() {
         'separator' => '',
       ),
       'field_provider_city_value' => array(
-        'sortable' => 0,
         'separator' => '',
       ),
       'field_provider_region_value' => array(
