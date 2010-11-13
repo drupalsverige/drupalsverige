@@ -1,0 +1,3 @@
+For extending or modifying wysiwyg_imageupload have a look at the api at
+
+http://drupal.org/node/809604
