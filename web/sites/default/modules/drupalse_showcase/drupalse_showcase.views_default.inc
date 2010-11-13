@@ -438,39 +438,6 @@ function drupalse_showcase_views_default_views() {
         'button' => 'Använd standard',
       ),
     ),
-    'nothing' => array(
-      'label' => '',
-      'alter' => array(
-        'text' => '[title]
-[field_showcase_link_url]
-[field_showcase_body_value]',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'exclude' => 0,
-      'id' => 'nothing',
-      'table' => 'views',
-      'field' => 'nothing',
-      'override' => array(
-        'button' => 'Använd standard',
-      ),
-      'relationship' => 'none',
-    ),
     'field_showcase_image_fid' => array(
       'label' => '',
       'alter' => array(
@@ -511,6 +478,39 @@ function drupalse_showcase_views_default_views() {
       'override' => array(
         'button' => 'Åsidosätt',
       ),
+    ),
+    'nothing' => array(
+      'label' => '',
+      'alter' => array(
+        'text' => '[title]
+[field_showcase_link_url]
+[field_showcase_body_value]',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'exclude' => 0,
+      'id' => 'nothing',
+      'table' => 'views',
+      'field' => 'nothing',
+      'override' => array(
+        'button' => 'Använd standard',
+      ),
+      'relationship' => 'none',
     ),
   ));
   $handler->override_option('title', 'Webplatser som använder Drupal');
