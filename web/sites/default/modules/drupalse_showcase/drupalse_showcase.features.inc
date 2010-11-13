@@ -11,10 +11,11 @@ function drupalse_showcase_imagecache_default_presets() {
         '0' => array(
           'weight' => '0',
           'module' => 'imagecache',
-          'action' => 'imagecache_scale_and_crop',
+          'action' => 'imagecache_scale',
           'data' => array(
-            'width' => '400',
-            'height' => '235',
+            'width' => '350',
+            'height' => '',
+            'upscale' => 0,
           ),
         ),
       ),

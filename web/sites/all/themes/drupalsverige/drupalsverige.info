@@ -49,6 +49,7 @@ conditional-stylesheets[if !IE 7][all][] = ie_not7.css
 
   ; Optionally add some jquery scripts to your theme.
 scripts[] = js/global.js
+scripts[] = js/viewslivefilters.js
 
   ; The regions defined in Zen's default page.tpl.php file.  The name in
   ; brackets is the name of the variable in the page.tpl.php file, (e.g.
