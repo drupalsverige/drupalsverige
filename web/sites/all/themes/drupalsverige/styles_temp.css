@@ -2,6 +2,8 @@
   padding-top: 15px;
   background-color: #f3f3f3;
   padding-left: 10px;
+  padding-right: 15px;
+  padding-bottom: 15px;
 }
 
 .slideshow-block .description {
@@ -26,9 +28,12 @@
 .slideshow-block .url a, a:link, a:active, a:visited {
   color: #000;
   text-decoration: underline;
-  padding-bottom: 10px;
 }
 
 .slideshow-block .url a:hover {
   color: #666;
+}
+
+.slideshow-block .description-body {
+  padding-top: 10px;
 }
