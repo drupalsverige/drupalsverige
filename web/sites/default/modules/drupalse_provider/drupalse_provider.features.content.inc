@@ -106,6 +106,7 @@ function drupalse_provider_content_default_fields() {
     'title' => 'none',
     'title_value' => '',
     'enable_tokens' => 0,
+    'validate_url' => '',
     'widget' => array(
       'default_value' => array(
         '0' => array(
