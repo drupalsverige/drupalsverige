@@ -35,6 +35,7 @@ stylesheets[all][] = framework/text.css
 stylesheets[all][] = framework/960.css
 stylesheets[all][] = framework/debug.css
 stylesheets[all][] = styles.css
+stylesheets[all][] = styles_temp.css
 stylesheets[print][] = print.css
   ; To prevent stylesheets of a base theme or of a module from being included in
   ; our sub-theme, we specify it in our .info file (and we don't need to have a
