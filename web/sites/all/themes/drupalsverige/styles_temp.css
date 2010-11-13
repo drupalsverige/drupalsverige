@@ -1,7 +1,5 @@
 
-
-
-div.view-showcase div.image
+div.view-showcase table div.image
 {
   float:left;
   margin-right:5px;
@@ -13,28 +11,25 @@ div.view-showcase div.image
   border-width:1px;
   background:none repeat scroll 0 0 #F3F3F3;
   padding:5px;
-
 }
 
-
-div.view-showcase td
+div.view-showcase table td
 {
   vertical-align:top;
-  width:50%;
-  
+  width:50%;  
 }
 
-div.view-showcase td.col-1
+div.view-showcase table td.col-1
 {
   padding:0 1em 1em 0;
 }
 
-div.view-showcase td.col-2
+div.view-showcase table td.col-2
 {
   padding:0 0 1em;
 }
 
-div.view-showcase td .showcase-inner
+div.view-showcase table td .showcase-inner
 {
   -moz-border-radius:15px 15px 15px 15px;
   -webkit-border-radius: 15px;
@@ -44,6 +39,6 @@ div.view-showcase td .showcase-inner
   overflow:hidden;
 }
 
-div.view-showcase td h3{
+div.view-showcase table td h3{
   margin-bottom:5px;
 }
