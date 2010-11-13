@@ -323,47 +323,6 @@ function drupalse_showcase_views_default_views() {
   ));
   $handler = $view->new_display('block', 'Showcase (block)', 'block_1');
   $handler->override_option('fields', array(
-    'field_showcase_image_fid' => array(
-      'label' => '',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'link_to_node' => 0,
-      'label_type' => 'none',
-      'format' => 'showcase_thumb_default',
-      'multiple' => array(
-        'group' => TRUE,
-        'multiple_number' => '',
-        'multiple_from' => '',
-        'multiple_reversed' => FALSE,
-      ),
-      'exclude' => 0,
-      'id' => 'field_showcase_image_fid',
-      'table' => 'node_data_field_showcase_image',
-      'field' => 'field_showcase_image_fid',
-      'relationship' => 'none',
-      'override' => array(
-        'button' => 'Åsidosätt',
-      ),
-    ),
     'title' => array(
       'label' => '',
       'alter' => array(
@@ -512,6 +471,47 @@ function drupalse_showcase_views_default_views() {
       ),
       'relationship' => 'none',
     ),
+    'field_showcase_image_fid' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_node' => 0,
+      'label_type' => 'none',
+      'format' => 'showcase_thumb_default',
+      'multiple' => array(
+        'group' => TRUE,
+        'multiple_number' => '',
+        'multiple_from' => '',
+        'multiple_reversed' => FALSE,
+      ),
+      'exclude' => 0,
+      'id' => 'field_showcase_image_fid',
+      'table' => 'node_data_field_showcase_image',
+      'field' => 'field_showcase_image_fid',
+      'relationship' => 'none',
+      'override' => array(
+        'button' => 'Åsidosätt',
+      ),
+    ),
   ));
   $handler->override_option('title', 'Webplatser som använder Drupal');
   $handler->override_option('css_class', 'slideshow-block');
@@ -557,13 +557,13 @@ function drupalse_showcase_views_default_views() {
   ));
   $handler->override_option('row_options', array(
     'semantic_html' => array(
+      'nothing' => array(
+        'element_type' => 'div',
+        'class' => 'description',
+      ),
       'field_showcase_image_fid' => array(
         'element_type' => 'div',
         'class' => 'image',
-      ),
-      'nothing' => array(
-        'element_type' => 'div',
-        'class' => 'float-right',
       ),
     ),
     'skip_blank' => 0,
