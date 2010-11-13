@@ -244,7 +244,7 @@ function drupalse_provider_views_default_views() {
   ));
   $handler->override_option('filters', array(
     'field_provider_services_value_many_to_one' => array(
-      'operator' => 'or',
+      'operator' => 'and',
       'value' => array(),
       'group' => '0',
       'exposed' => TRUE,
