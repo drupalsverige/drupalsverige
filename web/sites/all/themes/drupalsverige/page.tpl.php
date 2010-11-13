@@ -51,7 +51,7 @@
         <?php endif; ?>
 
         <?php if ($search_box): ?>
-          <div id="search-box" class="grid-4 prefix-12"><?php print $search_box; ?></div>
+          <div id="search-box" class="grid-4 prefix-8"><?php print $search_box; ?></div>
         <?php endif; ?>
       </div> <!--/#header-inner -->
 
