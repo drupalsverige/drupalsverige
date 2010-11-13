@@ -29,39 +29,6 @@ function drupalse_showcase_views_default_views() {
     ),
   ));
   $handler->override_option('fields', array(
-    'title' => array(
-      'label' => '',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'link_to_node' => 0,
-      'exclude' => 1,
-      'id' => 'title',
-      'table' => 'node',
-      'field' => 'title',
-      'relationship' => 'none',
-      'override' => array(
-        'button' => 'Åsidosätt',
-      ),
-    ),
     'field_showcase_link_url' => array(
       'label' => '',
       'alter' => array(
@@ -98,6 +65,39 @@ function drupalse_showcase_views_default_views() {
       'id' => 'field_showcase_link_url',
       'table' => 'node_data_field_showcase_link',
       'field' => 'field_showcase_link_url',
+      'relationship' => 'none',
+      'override' => array(
+        'button' => 'Åsidosätt',
+      ),
+    ),
+    'title' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 1,
+        'path' => '[field_showcase_link_url]',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_node' => 0,
+      'exclude' => 1,
+      'id' => 'title',
+      'table' => 'node',
+      'field' => 'title',
       'relationship' => 'none',
       'override' => array(
         'button' => 'Åsidosätt',
@@ -145,9 +145,9 @@ function drupalse_showcase_views_default_views() {
       ),
     ),
     'title_1' => array(
-      'label' => 'av',
+      'label' => '',
       'alter' => array(
-        'alter_text' => 0,
+        'alter_text' => 1,
         'text' => 'av [title_1]',
         'make_link' => 1,
         'path' => '[field_provider_link_url]',
@@ -295,10 +295,10 @@ function drupalse_showcase_views_default_views() {
     'nothing' => array(
       'label' => '',
       'alter' => array(
-        'text' => '<h3 class="title">[title]</h3>
-<div class="link">[field_showcase_link_url] [title_1]</div>
+        'text' => '<h2 class="title">[title]</h3>
 <div class="image">[field_showcase_image_fid]</div>
 <div class="body">[field_showcase_body_value]</div>
+<div class="link">[title_1]</div>
 [edit_node]',
         'make_link' => 0,
         'path' => '',
