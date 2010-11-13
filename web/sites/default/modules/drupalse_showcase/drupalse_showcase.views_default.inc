@@ -53,11 +53,14 @@ function drupalse_showcase_views_default_views() {
       'hide_empty' => 0,
       'empty_zero' => 0,
       'link_to_node' => 0,
-      'exclude' => 0,
+      'exclude' => 1,
       'id' => 'title',
       'table' => 'node',
       'field' => 'title',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Åsidosätt',
+      ),
     ),
     'field_showcase_link_url' => array(
       'label' => '',
@@ -91,11 +94,14 @@ function drupalse_showcase_views_default_views() {
         'multiple_from' => '',
         'multiple_reversed' => FALSE,
       ),
-      'exclude' => 0,
+      'exclude' => 1,
       'id' => 'field_showcase_link_url',
       'table' => 'node_data_field_showcase_link',
       'field' => 'field_showcase_link_url',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Åsidosätt',
+      ),
     ),
     'field_provider_link_url' => array(
       'label' => 'av',
@@ -162,7 +168,7 @@ function drupalse_showcase_views_default_views() {
       'hide_empty' => 1,
       'empty_zero' => 0,
       'link_to_node' => 0,
-      'exclude' => 0,
+      'exclude' => 1,
       'id' => 'title_1',
       'table' => 'node',
       'field' => 'title',
@@ -203,7 +209,7 @@ function drupalse_showcase_views_default_views() {
         'multiple_from' => '',
         'multiple_reversed' => FALSE,
       ),
-      'exclude' => 0,
+      'exclude' => 1,
       'id' => 'field_showcase_image_fid',
       'table' => 'node_data_field_showcase_image',
       'field' => 'field_showcase_image_fid',
@@ -244,11 +250,14 @@ function drupalse_showcase_views_default_views() {
         'multiple_from' => '',
         'multiple_reversed' => FALSE,
       ),
-      'exclude' => 0,
+      'exclude' => 1,
       'id' => 'field_showcase_body_value',
       'table' => 'node_data_field_showcase_body',
       'field' => 'field_showcase_body_value',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Åsidosätt',
+      ),
     ),
     'edit_node' => array(
       'label' => '',
@@ -274,10 +283,45 @@ function drupalse_showcase_views_default_views() {
       'hide_empty' => 0,
       'empty_zero' => 0,
       'text' => 'Redigera länk',
-      'exclude' => 0,
+      'exclude' => 1,
       'id' => 'edit_node',
       'table' => 'node',
       'field' => 'edit_node',
+      'override' => array(
+        'button' => 'Åsidosätt',
+      ),
+      'relationship' => 'none',
+    ),
+    'nothing' => array(
+      'label' => '',
+      'alter' => array(
+        'text' => '<h3 class="title">[title]</h3>
+<div class="link">[field_showcase_link_url] [title_1]</div>
+<div class="image">[field_showcase_image_fid]</div>
+<div class="body">[field_showcase_body_value]</div>
+[edit_node]',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'exclude' => 0,
+      'id' => 'nothing',
+      'table' => 'views',
+      'field' => 'nothing',
       'override' => array(
         'button' => 'Åsidosätt',
       ),
@@ -372,6 +416,22 @@ function drupalse_showcase_views_default_views() {
     'skip_blank' => 0,
   ));
   $handler = $view->new_display('page', 'Sida', 'page_1');
+  $handler->override_option('style_plugin', 'grid');
+  $handler->override_option('style_options', array(
+    'grouping' => '',
+    'columns' => '2',
+    'alignment' => 'horizontal',
+    'fill_single_line' => 1,
+  ));
+  $handler->override_option('row_options', array(
+    'semantic_html' => array(
+      'nothing' => array(
+        'element_type' => 'div',
+        'class' => 'showcase-inner',
+      ),
+    ),
+    'skip_blank' => 0,
+  ));
   $handler->override_option('path', 'galleri');
   $handler->override_option('menu', array(
     'type' => 'normal',
