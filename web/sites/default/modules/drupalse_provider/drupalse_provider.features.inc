@@ -13,8 +13,18 @@ function drupalse_provider_imagecache_default_presets() {
           'module' => 'imagecache',
           'action' => 'imagecache_scale',
           'data' => array(
-            'width' => '100',
+            'width' => '200',
             'height' => '',
+            'upscale' => 0,
+          ),
+        ),
+        '1' => array(
+          'weight' => '0',
+          'module' => 'imagecache',
+          'action' => 'imagecache_scale',
+          'data' => array(
+            'width' => '',
+            'height' => '100',
             'upscale' => 0,
           ),
         ),
