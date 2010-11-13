@@ -55,11 +55,21 @@ div.view-provider table th.views-field-title
 
 div.view-provider .views-exposed-form
 {
-    -moz-border-radius:15px 15px 15px 15px;
+  -moz-border-radius:15px 15px 15px 15px;
   -webkit-border-radius: 15px;
 	border-radius: 15px;
   background-color:#F3F3F3;
   padding:15px;
   margin-bottom:1em;
+}
+
+.view-provider table caption
+{
+  font-family:'Droid Sans',arial,sans-serif;
+  font-size:1.2em;
+  margin-bottom:1em;
+  margin-top:1.5em;
+  text-align:left;
+  text-align:left;
 }
 

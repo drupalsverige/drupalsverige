@@ -72,7 +72,7 @@ function drupalse_news_views_default_views() {
         'strip_tags' => 0,
       ),
       'empty' => '',
-      'hide_empty' => 0,
+      'hide_empty' => 1,
       'empty_zero' => 0,
       'link_to_node' => 0,
       'label_type' => 'none',
