@@ -482,9 +482,9 @@ function drupalse_showcase_views_default_views() {
     'nothing' => array(
       'label' => '',
       'alter' => array(
-        'text' => '[title]
-[field_showcase_link_url]
-[field_showcase_body_value]',
+        'text' => '<h3 class="title">[title]</h3>
+<div class="url">[field_showcase_link_url]</div>
+<div class="description-body">[field_showcase_body_value]</div>',
         'make_link' => 0,
         'path' => '',
         'link_class' => '',
