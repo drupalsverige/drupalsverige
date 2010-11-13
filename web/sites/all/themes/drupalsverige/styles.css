@@ -19,6 +19,9 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 	margin-top:-32767px;/* thank you Erik J - negate effect of float*/
 }
 
+#site-name {
+  text-indent: -9999px;
+}
 
 #wrap { 
 	min-height: 100%; 
@@ -353,7 +356,7 @@ input.form-text {
 	display: none;
 	position: absolute;
 	right: 200px;
-	width: 165px;
+	width: 180px;
 	padding: 0 0 0 15px;
 	text-align: left;
 	line-height: 24px;
@@ -769,3 +772,47 @@ div.warning {
 #navbar-inner a {
   outline: 0;
 }
+
+/* FRONTPAGE SHOWCASE */
+
+.slideshow-block {
+  padding-top: 15px;
+  background-color: #f3f3f3;
+  padding-left: 10px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.slideshow-block .description {
+  float: right;
+  width: 290px;
+  padding-left: 20px;
+}
+
+.slideshow-block .image {
+  float: left;
+  width: 350px;
+  display: inline;
+  border: 1px solid #000;
+}
+
+.slideshow-block h3.title {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.slideshow-block .url a, a:link, a:active, a:visited {
+  color: #000;
+  text-decoration: underline;
+}
+
+.slideshow-block .url a:hover {
+  color: #666;
+}
+
+.slideshow-block .description-body {
+  padding-top: 10px;
+}
+
+
