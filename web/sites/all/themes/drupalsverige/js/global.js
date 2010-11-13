@@ -63,3 +63,10 @@ $(function() {
 	
 });
 
+if (Drupal.jsEnabled) {
+    $(document).ready(function()
+    {
+        var lab1 = $('#edit-search-theme-form-1-wrapper label');
+        lab1.each(function() { $(this).html($(this).html().replace(":", "")); });
+    });
+}
