@@ -818,7 +818,11 @@ div.warning {
   float: left;
   width: 350px;
   display: inline;
-  border: 1px solid #000;
+/*  border: 1px solid #000; */
+  border-color: #EEEEEE #DDDDDD #DDDDDD #EEEEEE;
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px;
 }
 
 .slideshow-block h3.title {
@@ -855,8 +859,4 @@ p {
 .view-news-listing .news-item {
   clear: both;
   margin-top: 20px;
-}
-
-.view-news-listing .news-item .meta {
-
 }
