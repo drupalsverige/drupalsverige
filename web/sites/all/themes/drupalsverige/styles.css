@@ -323,6 +323,7 @@ h1, h2, h3, h4 {
 h2 {
 	font-size: 19px;
 	margin-bottom: 5px;
+	margin-top: 10px;
 }
 
 h3 {
@@ -843,4 +844,9 @@ p {
   font-size: 14px;
   color: #333;
   line-height: 1.6em;
+}
+
+.view-news-listing .news-item {
+  clear: both;
+  margin-top: 20px;
 }
