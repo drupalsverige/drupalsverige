@@ -4,6 +4,7 @@ html, body { height: 100%; }
 
 body {
 	background: url(images/bg-body.png) repeat-x;
+	font: normal normal normal 14px/1.5 Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
 }
 
 body.admin-menu {
