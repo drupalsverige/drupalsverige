@@ -53,6 +53,12 @@ body:before {/* thanks to Maleika (Kohoutec)*/
   margin-top: 55px;
 }
 
+h1 {
+  text-shadow: #fdfdfd 2px 2px 2px;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
 h1#site-name {
   margin-bottom: 0;
 }
@@ -830,4 +836,10 @@ div.warning {
 #views-exposed-form-provider-page-1 .form-item{
   float: left;
   padding-right: 60px;
+}
+
+p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6em;
 }
