@@ -1,6 +1,40 @@
 <?php
 
 /**
+ * Implementation of hook_imagecache_default_presets().
+ */
+function drupalse_provider_imagecache_default_presets() {
+  $items = array(
+    'provider-logo' => array(
+      'presetname' => 'provider-logo',
+      'actions' => array(
+        '0' => array(
+          'weight' => '0',
+          'module' => 'imagecache',
+          'action' => 'imagecache_scale',
+          'data' => array(
+            'width' => '200',
+            'height' => '',
+            'upscale' => 0,
+          ),
+        ),
+        '1' => array(
+          'weight' => '0',
+          'module' => 'imagecache',
+          'action' => 'imagecache_scale',
+          'data' => array(
+            'width' => '',
+            'height' => '100',
+            'upscale' => 0,
+          ),
+        ),
+      ),
+    ),
+  );
+  return $items;
+}
+
+/**
  * Implementation of hook_node_info().
  */
 function drupalse_provider_node_info() {
