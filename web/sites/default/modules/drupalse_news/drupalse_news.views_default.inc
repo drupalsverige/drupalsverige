@@ -273,7 +273,7 @@ function drupalse_news_views_default_views() {
     ),
     'row' => array(
       'element_type' => 'div',
-      'class' => '',
+      'class' => 'news-item',
       'last_every_nth' => '0',
       'first_class' => 'first',
       'last_class' => 'last',
@@ -432,6 +432,25 @@ function drupalse_news_views_default_views() {
   $handler->override_option('title', '');
   $handler->override_option('items_per_page', 2);
   $handler->override_option('use_pager', FALSE);
+  $handler->override_option('style_options', array(
+    'grouping' => '',
+    'group' => array(
+      'element_type' => 'h3',
+      'class' => 'title',
+    ),
+    'list' => array(
+      'element_type' => '',
+      'class' => '',
+    ),
+    'row' => array(
+      'element_type' => 'div',
+      'class' => '',
+      'last_every_nth' => '0',
+      'first_class' => 'first',
+      'last_class' => 'last',
+      'striping_classes' => 'odd even',
+    ),
+  ));
   $handler->override_option('row_options', array(
     'semantic_html' => array(
       'created' => array(
@@ -634,6 +653,25 @@ function drupalse_news_views_default_views() {
   $handler->override_option('title', '');
   $handler->override_option('items_per_page', 1);
   $handler->override_option('use_pager', FALSE);
+  $handler->override_option('style_options', array(
+    'grouping' => '',
+    'group' => array(
+      'element_type' => 'h3',
+      'class' => 'title',
+    ),
+    'list' => array(
+      'element_type' => '',
+      'class' => '',
+    ),
+    'row' => array(
+      'element_type' => 'div',
+      'class' => '',
+      'last_every_nth' => '0',
+      'first_class' => 'first',
+      'last_class' => 'last',
+      'striping_classes' => 'odd even',
+    ),
+  ));
   $handler->override_option('row_options', array(
     'semantic_html' => array(
       'title' => array(
