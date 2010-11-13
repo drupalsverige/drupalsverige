@@ -1,14 +1,67 @@
 .slideshow-block {
-  background-color: green;
-  float: left;
+  padding-top: 15px;
+  background-color: #f3f3f3;
+  padding-left: 10px;
+  padding-right: 15px;
+  padding-bottom: 15px;
 }
 
-.slideshow-block .float-right {
-  background-color: blue;
+.slideshow-block .description {
   float: right;
-  width: 40px;
+  width: 290px;
+  padding-left: 20px;
 }
 
-imagecache-showcase_thumb_default {
-  
+.slideshow-block .image {
+  float: left;
+  width: 350px;
+  display: inline;
+  border: 1px solid #000;
+}
+
+.slideshow-block h3.title {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.slideshow-block .url a, a:link, a:active, a:visited {
+  color: #000;
+  text-decoration: underline;
+}
+
+.slideshow-block .url a:hover {
+  color: #666;
+}
+
+.slideshow-block .description-body {
+  padding-top: 10px;
+}
+
+#site-name {
+  text-indent: -9999px;
+}
+
+#search label {
+	display: none;
+	position: absolute;
+	right: 200px;
+	width: 180px;
+	padding: 0 0 0 15px;
+	text-align: left;
+	line-height: 24px;
+	color: #fff;
+	font-weight: normal;
+	background: #bbb;
+	border: 1px solid #999;
+	border-color: #ccc #888 #888 #ccc;
+	text-shadow: 0 -1px 0 #777;
+	-moz-box-shadow: inset -20px -8px 15px #888;
+	-webkit-box-shadow: inset -20px -8px 15px #888;
+	box-shadow: inset -20px -8px 15px #888;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	border-radius: 40px;
+	-moz-background-clip: padding-box;
+	-webkit-background-clip: padding-box;
 }
