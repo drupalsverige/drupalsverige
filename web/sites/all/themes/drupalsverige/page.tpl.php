@@ -132,7 +132,7 @@
       <?php if ($footer): ?>
         <div id="footer-region" class="region container-16 clear-block">
     	    <div id="footer-inner" class="grid-16">
-            <?php print $footer; ?>
+            <?php print $footer; ?>            
           </div>
     	  </div> <!--//end #footer-inner -->
       <?php endif; ?>
@@ -144,7 +144,8 @@
       <?php endif; ?>
     </div> <!-- /#footer -->
 
+<?php print $scripts; ?>
 <?php print $closure; ?>
-  <?php print $scripts; ?>
+  
 </body>
 </html>
