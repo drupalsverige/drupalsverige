@@ -1,4 +1,4 @@
-// $Id: README.txt,v 1.2 2008/05/21 05:04:45 webchick Exp $
+// $Id: README.txt,v 1.2.4.1 2009/03/21 19:43:51 mfer Exp $
 
 CONTENTS OF THIS FILE
 ---------------------
@@ -11,11 +11,10 @@ INTRODUCTION
 ------------
 
 Authors:
+* Matt Farina (mfer)
 * Jeff Robbins (jjeff)
 * Angela Byron (webchick)
 * Addison Berry (add1sun)
-
-This Module Made by Robots: http://www.lullabot.com
 
 jQuery Update module upgrades Drupal's stable version of jQuery in order to
 support the most current jQuery version available.
@@ -30,9 +29,12 @@ installation can run the most up-to-date jQuery plug-ins.
 INSTALLATION
 ------------
 
-1. Copy the jquery_update directory to your sites/SITENAME/modules directory.
+1. Copy the jquery_update directory to your sites/SITENAME/modules directory
+   or sites/all/modules directory.
 
 2. Enable the module at Administer >> Site building >> Modules.
 
-3. That's it. :) Thanks to the new theme system in Drupal 6.x+, you no longer
+3. Visit Administer > Site Configuration > jQuery Update to configure the module.
+
+4. That's it. :) Thanks to the new theme system in Drupal 6.x+, you no longer
    need to copy files around. Hooray!

@@ -1,5 +1,5 @@
 <?php
-// $Id: jquery_update.module,v 1.5 2008/06/21 23:01:08 webchick Exp $
+// $Id: jquery_update.module,v 1.5.2.2.2.8 2010/04/23 16:34:39 sun Exp $
 
 /**
  * @file
@@ -9,7 +9,7 @@
 /**
  * The path to the jQuery files that need to be replaced.
  */
-define('JQUERY_UPDATE_REPLACE_PATH', drupal_get_path('module', 'jquery_update') . '/replace');
+define('JQUERY_UPDATE_REPLACE_PATH', drupal_get_path('module', 'jquery_update') .'/replace');
 
 /**
  * Array of jQuery files to replace if jQuery is loaded.
@@ -18,6 +18,14 @@ function jquery_update_get_replacements() {
   return array(
     'module' => array(
       'misc/farbtastic/farbtastic.js' => 'farbtastic.js',
+      'misc/teaser.js' => 'teaser.js',
+      'misc/jquery.form.js' => 'jquery.form.js',
+      'misc/ahah.js' => 'ahah.js',
+      // Certain versions of Views re-add tabledrag.js as $type 'module'.
+      'misc/tabledrag.js' => 'tabledrag.js',
+    ),
+    'core' => array(
+      'misc/tabledrag.js' => 'tabledrag.js',
     ),
   );
 }
@@ -30,13 +38,15 @@ function jquery_update_get_replacements() {
  */
 function jquery_update_theme_registry_alter(&$theme_registry) {
   if (isset($theme_registry['page'])) {
-    // If jquery_update's preprocess function is there already, remove it.
-    if ($key = array_search('jquery_update_preprocess_page', $theme_registry['page']['preprocess functions'])) {
-      unset($theme_registry['page']['preprocess functions'][$key]);
+    if (count($theme_registry['page']['preprocess functions']) > 0) {
+      // If jquery_update's preprocess function is there already, remove it.
+      if ($key = array_search('jquery_update_preprocess_page', $theme_registry['page']['preprocess functions'])) {
+        unset($theme_registry['page']['preprocess functions'][$key]);
+      }
     }
     // Now tack it on at the end so it runs after everything else.
     $theme_registry['page']['preprocess functions'][] = 'jquery_update_preprocess_page';
-  } 
+  }
 }
 
 /**
@@ -47,11 +57,9 @@ function jquery_update_theme_registry_alter(&$theme_registry) {
 function jquery_update_preprocess_page(&$variables) {
   // Only do this for pages that have JavaScript on them.
   if (!empty($variables['scripts'])) {
-  
-    // Perform the logic if either jQuery Update's jquery.js is newer than
-    // core's, or if we're using a different compression type.
-    if (variable_get('jquery_update_replace', TRUE) ||
-        variable_get('jquery_update_compression_type', 'pack') != 'pack') {
+
+    // Perform the logic if either jQuery Update's jquery.js is newer than core's.
+    if (variable_get('jquery_update_replace', TRUE)) {
       // Get an array of all the JavaScript files loaded by Drupal on this page.
       $scripts = drupal_add_js();
 
@@ -66,12 +74,12 @@ function jquery_update_preprocess_page(&$variables) {
           // If the file to replace is loaded on this page...
           if (isset($scripts[$type][$find])) {
             // Create a new entry for the replacement file, and unset the original one.
-            $replace = JQUERY_UPDATE_REPLACE_PATH . '/' . $replace;
+            $replace = JQUERY_UPDATE_REPLACE_PATH .'/'. $replace;
             $scripts[$type][$replace] = $scripts[$type][$find];
             unset($scripts[$type][$find]);
           }
         }
-      } 
+      }
 
       $variables['scripts'] = drupal_get_js('header', $scripts);
     }
@@ -88,8 +96,8 @@ function jquery_update_preprocess_page(&$variables) {
  */
 function jquery_update_get_version($jquery_path = NULL) {
   $version = 0;
-  $pattern = '# * jQuery ([0-9\.a-z]+) - New Wave Javascript#';
-  
+  $pattern = '# * jQuery JavaScript Library v([0-9\.a-z]+)#';
+
   // No file is passed in so default to the file included with this module.
   if (is_null($jquery_path)) {
     $jquery_path = jquery_update_jquery_path();
@@ -141,14 +149,12 @@ function jquery_update_settings() {
 
   $form['jquery_update_compression_type'] = array(
     '#type' => 'radios',
-    '#title' => t('jQuery compression type'),
+    '#title' => t('Choose jQuery compression level'),
     '#options' => array(
-      'pack' => t('Packed'),
-      'min' => t('Minified'),
-      'none' => t('None'),
+      'min' => t('Production (Minified)'),
+      'none' => t('Development (Uncompressed Code)'),
     ),
-    '#default_value' => variable_get('jquery_update_compression_type', 'pack'),
-    '#description' => t('<cite>From <a href="http://docs.jquery.com/Downloading_jQuery">docs.jquery.com</a>:</cite> <q>The minified version, while having a larger file size than the packed version, is generally the best version to use on production deployments. The packed version requires non-trivial client-side processing time to uncompress the code.</q> "None" is provided for debugging purposes, but generally one of the compression options is recommended.'),
+    '#default_value' => variable_get('jquery_update_compression_type', 'min'),
   );
 
   return system_settings_form($form);
@@ -158,6 +164,6 @@ function jquery_update_settings() {
  * Return the path to the jQuery file.
  */
 function jquery_update_jquery_path() {
-  $jquery_file = array('none' => 'jquery.js', 'pack' => 'jquery.packed.js', 'min' => 'jquery.min.js');
-  return JQUERY_UPDATE_REPLACE_PATH . '/' . $jquery_file[variable_get('jquery_update_compression_type', 'pack')];
+  $jquery_file = array('none' => 'jquery.js', 'min' => 'jquery.min.js');
+  return JQUERY_UPDATE_REPLACE_PATH .'/'. $jquery_file[variable_get('jquery_update_compression_type', 'min')];
 }
