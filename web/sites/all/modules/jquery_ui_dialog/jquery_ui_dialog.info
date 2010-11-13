@@ -1,0 +1,16 @@
+; $Id: jquery_ui_dialog.info,v 1.1.2.16 2010/07/10 08:05:55 eugenmayer Exp $
+
+name = JQuery UI Dialog API
+description = A slim API to support jquery ui dialogs in Drupal. Just provides an direct interface to the jquery-ui-dialog plugin 
+package = WYSIWYG
+core = "6.x"
+dependencies[] = jquery_ui
+dependencies[] = jquery_update
+project = "jquery_ui_dialog"
+
+; Information added by drupal.org packaging script on 2010-07-10
+version = "6.x-1.10"
+core = "6.x"
+project = "jquery_ui_dialog"
+datestamp = "1278749408"
+
