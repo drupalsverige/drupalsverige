@@ -640,7 +640,7 @@ function drupalse_showcase_views_default_views() {
       'relationship' => 'none',
     ),
   ));
-  $handler->override_option('title', 'Webplatser som använder Drupal');
+  $handler->override_option('title', 'Webbplatser som använder Drupal');
   $handler->override_option('css_class', 'slideshow-block');
   $handler->override_option('use_pager', '0');
   $handler->override_option('use_more', 1);
