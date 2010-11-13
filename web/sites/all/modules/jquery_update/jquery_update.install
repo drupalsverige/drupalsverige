@@ -1,5 +1,5 @@
 <?php
-// $Id: jquery_update.install,v 1.3 2008/06/21 23:01:08 webchick Exp $
+// $Id: jquery_update.install,v 1.3.4.1 2009/04/23 18:15:57 mfer Exp $
 
 /**
  * @file
@@ -41,6 +41,16 @@ function jquery_update_update_6100() {
   $ret[] = update_sql("UPDATE {system} SET weight = 99 WHERE name = 'jquery_update' and type = 'module'");
 
   return $ret;
+}
+
+/**
+ * The packed version of jQuery is no longer distributed. If that is the chosen
+ * version update to minified.
+ */
+function jquery_update_update_6200() {
+  if (variable_get('jquery_update_compression_type', 'min') == 'pack') {
+    variable_set('jquery_update_compression_type', 'min');
+  }
 }
 
 /**
