@@ -97,7 +97,7 @@ h1#site-name {
 .node,
 .comment,
 .block {
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
 }
 
 /* HTML Element */
@@ -266,6 +266,7 @@ a {
 
 a:hover {
 	color: #155b9f;
+	text-decoration: underline;
 }
 
 
@@ -813,16 +814,20 @@ div.warning {
 }
 
 .slideshow-block .url a, a:link, a:active, a:visited {
-  color: #000;
-  text-decoration: underline;
+  color: #0678BE;
+ /* text-decoration: underline; */
 }
 
 .slideshow-block .url a:hover {
-  color: #666;
+/*  color: #666; */
+  text-decoration: underline;
 }
 
 .slideshow-block .description-body {
   padding-top: 10px;
 }
 
-
+#views-exposed-form-provider-page-1 .form-item{
+  float: left;
+  padding-right: 60px;
+}
