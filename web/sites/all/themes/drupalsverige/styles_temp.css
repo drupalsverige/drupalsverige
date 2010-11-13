@@ -42,3 +42,24 @@ div.view-showcase table td .showcase-inner
 div.view-showcase table td h3{
   margin-bottom:5px;
 }
+
+div.view-provider table th.views-field-field-provider-logo-fid
+{
+  width:220px;
+}
+
+div.view-provider table th.views-field-title
+{
+  width:220px;
+}
+
+div.view-provider .views-exposed-form
+{
+    -moz-border-radius:15px 15px 15px 15px;
+  -webkit-border-radius: 15px;
+	border-radius: 15px;
+  background-color:#F3F3F3;
+  padding:15px;
+  margin-bottom:1em;
+}
+
