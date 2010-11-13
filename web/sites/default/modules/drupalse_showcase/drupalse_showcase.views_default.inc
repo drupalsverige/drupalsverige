@@ -367,6 +367,7 @@ function drupalse_showcase_views_default_views() {
     'type' => 'none',
   ));
   $handler->override_option('title', 'Sajtgalleri');
+  $handler->override_option('use_ajax', TRUE);
   $handler->override_option('use_pager', 'mini');
   $handler->override_option('style_plugin', 'semanticviews_default');
   $handler->override_option('style_options', array(
