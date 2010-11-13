@@ -1,0 +1,14 @@
+.slideshow-block {
+  background-color: green;
+  float: left;
+}
+
+.slideshow-block .float-right {
+  background-color: blue;
+  float: right;
+  width: 40px;
+}
+
+imagecache-showcase_thumb_default {
+  
+}
