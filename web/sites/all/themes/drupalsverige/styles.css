@@ -766,3 +766,6 @@ div.warning {
   padding: 0 10px;
 }
 
+#navbar-inner a {
+  outline: 0;
+}
