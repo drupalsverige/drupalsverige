@@ -823,6 +823,7 @@ div.warning {
   border-style: solid;
   border-width: 1px;
   padding: 5px;
+  background-color:#fff;
 }
 
 .slideshow-block h3.title {
