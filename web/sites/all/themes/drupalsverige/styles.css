@@ -754,3 +754,7 @@ div.warning {
 	div.error ul, div.warning ul {
 		margin-left: 15px;
 	}
+	
+div	.main-content-padding {
+  padding: 0 10px;
+}
