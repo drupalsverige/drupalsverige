@@ -42,6 +42,14 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 	position: relative;
 }
 
+#header-inner #branding{
+  padding-top: 15px;
+}
+
+#search-box {
+  margin-top: 55px;
+}
+
 h1#site-name {
   margin-bottom: 0;
 }
