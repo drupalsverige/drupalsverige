@@ -1,14 +1,34 @@
 .slideshow-block {
-  background-color: green;
-  float: left;
+  padding-top: 15px;
+  background-color: #f3f3f3;
+  padding-left: 10px;
 }
 
-.slideshow-block .float-right {
-  background-color: blue;
+.slideshow-block .description {
   float: right;
-  width: 40px;
+  width: 290px;
+  padding-left: 20px;
 }
 
-imagecache-showcase_thumb_default {
-  
+.slideshow-block .image {
+  float: left;
+  width: 350px;
+  display: inline;
+  border: 1px solid #000;
+}
+
+.slideshow-block h3.title {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.slideshow-block .url a, a:link, a:active, a:visited {
+  color: #000;
+  text-decoration: underline;
+  padding-bottom: 10px;
+}
+
+.slideshow-block .url a:hover {
+  color: #666;
 }
