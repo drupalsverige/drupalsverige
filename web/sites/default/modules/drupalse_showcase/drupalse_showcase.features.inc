@@ -5,6 +5,20 @@
  */
 function drupalse_showcase_imagecache_default_presets() {
   $items = array(
+    'showcase_small_thumb' => array(
+      'presetname' => 'showcase_small_thumb',
+      'actions' => array(
+        '0' => array(
+          'weight' => '0',
+          'module' => 'imagecache',
+          'action' => 'imagecache_scale_and_crop',
+          'data' => array(
+            'width' => '185',
+            'height' => '115',
+          ),
+        ),
+      ),
+    ),
     'showcase_thumb' => array(
       'presetname' => 'showcase_thumb',
       'actions' => array(
