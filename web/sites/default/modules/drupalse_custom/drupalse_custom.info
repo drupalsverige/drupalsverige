@@ -1,0 +1,5 @@
+name = Drupalse custom
+description = Custom code.
+package = Custom
+core = 6.x
+version = "6.x-1.x-dev"
