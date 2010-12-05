@@ -149,7 +149,7 @@ function drupalse_showcase_content_default_fields() {
     ),
     'widget_active' => '1',
     'type' => 'link',
-    'required' => '0',
+    'required' => '1',
     'multiple' => '0',
     'module' => 'link',
     'active' => '1',
@@ -157,6 +157,7 @@ function drupalse_showcase_content_default_fields() {
       'target' => 'default',
       'rel' => '',
       'class' => '',
+      'title' => '',
     ),
     'display' => array(
       'url_cutoff' => '80',
@@ -165,11 +166,10 @@ function drupalse_showcase_content_default_fields() {
     'title' => 'none',
     'title_value' => '',
     'enable_tokens' => 0,
-    'validate_url' => '',
+    'validate_url' => 1,
     'widget' => array(
       'default_value' => array(
         '0' => array(
-          'title' => '',
           'url' => '',
         ),
       ),
