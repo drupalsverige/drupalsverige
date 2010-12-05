@@ -375,6 +375,7 @@ function drupalse_showcase_views_default_views() {
     'field_showcase_national_value_many_to_one' => array(
       'operator' => 'or',
       'value' => array(
+        '0' => '0',
         '1' => '1',
       ),
       'group' => '0',
