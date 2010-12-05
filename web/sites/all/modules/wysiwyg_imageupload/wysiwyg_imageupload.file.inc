@@ -168,7 +168,7 @@ function _wysiwyg_imageupload_save(&$entity) {
  * Cleanup all wui entries which have no corresponding file objects anymore
  */
 function _wysiwyg_imageupload_cleanup_temps() {
-  db_query('DELETE wui,wuir FROM {wysiwyg_imageupload_entity} AS wui LEFT JOIN {wysiwyg_imageupload_entity_revision} AS wuir ON wui.iid=wuir.iid WHERE NOT EXISTS (SELECT fid from {files} WHERE wui.fid=files.fid)');
+  db_query('DELETE wui,wuir FROM {wysiwyg_imageupload_entity} AS wui LEFT JOIN {wysiwyg_imageupload_entity_revision} AS wuir ON wui.iid=wuir.iid WHERE NOT EXISTS (SELECT fid from {files} as f WHERE wui.fid=f.fid)');
 }
 
 /**
