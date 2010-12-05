@@ -148,7 +148,7 @@ function drupalse_showcase_views_default_views() {
       'label' => '',
       'alter' => array(
         'alter_text' => 1,
-        'text' => 'av [title_1]',
+        'text' => 'Av [title_1]',
         'make_link' => 1,
         'path' => '[field_provider_link_url]',
         'link_class' => '',
@@ -173,7 +173,7 @@ function drupalse_showcase_views_default_views() {
       'table' => 'node',
       'field' => 'title',
       'override' => array(
-        'button' => 'Åsidosätt',
+        'button' => 'Override',
       ),
       'relationship' => 'field_showcase_provider_nid',
     ),
@@ -282,13 +282,13 @@ function drupalse_showcase_views_default_views() {
       'empty' => '',
       'hide_empty' => 0,
       'empty_zero' => 0,
-      'text' => 'Redigera länk',
+      'text' => 'Redigera',
       'exclude' => 1,
       'id' => 'edit_node',
       'table' => 'node',
       'field' => 'edit_node',
       'override' => array(
-        'button' => 'Åsidosätt',
+        'button' => 'Override',
       ),
       'relationship' => 'none',
     ),
@@ -328,6 +328,19 @@ function drupalse_showcase_views_default_views() {
       'relationship' => 'none',
     ),
   ));
+  $handler->override_option('sorts', array(
+    'created' => array(
+      'order' => 'DESC',
+      'granularity' => 'second',
+      'id' => 'created',
+      'table' => 'node',
+      'field' => 'created',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+    ),
+  ));
   $handler->override_option('filters', array(
     'type' => array(
       'operator' => 'in',
@@ -359,6 +372,35 @@ function drupalse_showcase_views_default_views() {
       'field' => 'status',
       'relationship' => 'none',
     ),
+    'field_showcase_national_value_many_to_one' => array(
+      'operator' => 'or',
+      'value' => array(
+        '1' => '1',
+      ),
+      'group' => '0',
+      'exposed' => TRUE,
+      'expose' => array(
+        'use_operator' => 0,
+        'operator' => 'field_showcase_national_value_many_to_one_op',
+        'identifier' => 'national',
+        'label' => '',
+        'bef_filter_description' => '',
+        'bef_format' => 'bef',
+        'optional' => 0,
+        'single' => 0,
+        'remember' => 0,
+        'reduce' => 0,
+        'bef_select_all_none' => 0,
+      ),
+      'id' => 'field_showcase_national_value_many_to_one',
+      'table' => 'node_data_field_showcase_national',
+      'field' => 'field_showcase_national_value_many_to_one',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+      'reduce_duplicates' => 0,
+    ),
   ));
   $handler->override_option('access', array(
     'type' => 'none',
@@ -367,8 +409,10 @@ function drupalse_showcase_views_default_views() {
     'type' => 'none',
   ));
   $handler->override_option('title', 'Sajtgalleri');
+  $handler->override_option('header_format', '1');
+  $handler->override_option('header_empty', 0);
   $handler->override_option('use_ajax', TRUE);
-  $handler->override_option('use_pager', 'mini');
+  $handler->override_option('use_pager', '1');
   $handler->override_option('style_plugin', 'semanticviews_default');
   $handler->override_option('style_options', array(
     'group' => array(
@@ -636,6 +680,67 @@ function drupalse_showcase_views_default_views() {
       'field' => 'nothing',
       'override' => array(
         'button' => 'Använd standard',
+      ),
+      'relationship' => 'none',
+    ),
+  ));
+  $handler->override_option('sorts', array(
+    'random' => array(
+      'order' => 'ASC',
+      'id' => 'random',
+      'table' => 'views',
+      'field' => 'random',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+      'relationship' => 'none',
+    ),
+  ));
+  $handler->override_option('filters', array(
+    'type' => array(
+      'operator' => 'in',
+      'value' => array(
+        'showcase' => 'showcase',
+      ),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'type',
+      'table' => 'node',
+      'field' => 'type',
+      'relationship' => 'none',
+    ),
+    'status' => array(
+      'operator' => '=',
+      'value' => '1',
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'status',
+      'table' => 'node',
+      'field' => 'status',
+      'relationship' => 'none',
+    ),
+    'promote' => array(
+      'operator' => '=',
+      'value' => '1',
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'promote',
+      'table' => 'node',
+      'field' => 'promote',
+      'override' => array(
+        'button' => 'Use default',
       ),
       'relationship' => 'none',
     ),
