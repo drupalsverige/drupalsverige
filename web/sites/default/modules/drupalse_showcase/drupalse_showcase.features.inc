@@ -1,6 +1,16 @@
 <?php
 
 /**
+ * Implementation of hook_ctools_plugin_api().
+ */
+function drupalse_showcase_ctools_plugin_api() {
+  list($module, $api) = func_get_args();
+  if ($module == "strongarm" && $api == "strongarm") {
+    return array("version" => 1);
+  }
+}
+
+/**
  * Implementation of hook_imagecache_default_presets().
  */
 function drupalse_showcase_imagecache_default_presets() {
@@ -45,7 +55,7 @@ function drupalse_showcase_node_info() {
     'showcase' => array(
       'name' => t('Showcase'),
       'module' => 'features',
-      'description' => '',
+      'description' => t('En Drupalwebbplats som är värld att lyfta fram på drupalsverige.se. Showcases kan markeras för visning på förstasidan, sorteras som svenska eller utländska/internationella webbplatser, och även länka till leverantörer.'),
       'has_title' => '1',
       'title_label' => t('Sajtnamn'),
       'has_body' => '0',

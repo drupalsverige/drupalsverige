@@ -11,14 +11,14 @@ function drupalse_showcase_content_default_fields() {
     'field_name' => 'field_showcase_body',
     'type_name' => 'showcase',
     'display_settings' => array(
-      'weight' => '34',
+      'weight' => '-2',
       'parent' => '',
       'label' => array(
         'format' => 'hidden',
       ),
       'teaser' => array(
         'format' => 'default',
-        'exclude' => 0,
+        'exclude' => 1,
       ),
       'full' => array(
         'format' => 'default',
@@ -54,7 +54,7 @@ function drupalse_showcase_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Brödtext',
-      'weight' => '34',
+      'weight' => '-2',
       'description' => '',
       'type' => 'text_textarea',
       'module' => 'text',
@@ -66,7 +66,7 @@ function drupalse_showcase_content_default_fields() {
     'field_name' => 'field_showcase_image',
     'type_name' => 'showcase',
     'display_settings' => array(
-      'weight' => '31',
+      'weight' => '-3',
       'parent' => '',
       'label' => array(
         'format' => 'hidden',
@@ -113,7 +113,7 @@ function drupalse_showcase_content_default_fields() {
       'default_image' => NULL,
       'use_default_image' => 0,
       'label' => 'Bild',
-      'weight' => '31',
+      'weight' => '-3',
       'description' => '',
       'type' => 'imagefield_widget',
       'module' => 'imagefield',
@@ -125,10 +125,10 @@ function drupalse_showcase_content_default_fields() {
     'field_name' => 'field_showcase_link',
     'type_name' => 'showcase',
     'display_settings' => array(
-      'weight' => '33',
+      'weight' => '-4',
       'parent' => '',
       'label' => array(
-        'format' => 'inline',
+        'format' => 'hidden',
       ),
       'teaser' => array(
         'format' => 'default',
@@ -175,10 +175,61 @@ function drupalse_showcase_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Länk',
-      'weight' => '33',
+      'weight' => '-4',
       'description' => '',
       'type' => 'link',
       'module' => 'link',
+    ),
+  );
+
+  // Exported field: field_showcase_national
+  $fields['showcase-field_showcase_national'] = array(
+    'field_name' => 'field_showcase_national',
+    'type_name' => 'showcase',
+    'display_settings' => array(
+      'weight' => '-1',
+      'parent' => '',
+      'label' => array(
+        'format' => 'above',
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'number_integer',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'number',
+    'active' => '1',
+    'prefix' => '',
+    'suffix' => '',
+    'min' => '',
+    'max' => '',
+    'allowed_values' => '0|Detta är en utländsk eller internationell webbplats
+1|Detta är en svensk webbplats',
+    'allowed_values_php' => '',
+    'widget' => array(
+      'default_value' => array(
+        '0' => array(
+          'value' => NULL,
+        ),
+      ),
+      'default_value_php' => NULL,
+      'label' => 'Svensk webbplats',
+      'weight' => '-1',
+      'description' => '',
+      'type' => 'optionwidgets_onoff',
+      'module' => 'optionwidgets',
     ),
   );
 
@@ -187,14 +238,14 @@ function drupalse_showcase_content_default_fields() {
     'field_name' => 'field_showcase_provider',
     'type_name' => 'showcase',
     'display_settings' => array(
-      'weight' => '32',
+      'weight' => 0,
       'parent' => '',
       'label' => array(
         'format' => 'inline',
       ),
       'teaser' => array(
         'format' => 'default',
-        'exclude' => 0,
+        'exclude' => 1,
       ),
       'full' => array(
         'format' => 'default',
@@ -233,7 +284,7 @@ function drupalse_showcase_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Leverantör',
-      'weight' => '32',
+      'weight' => 0,
       'description' => '',
       'type' => 'nodereference_select',
       'module' => 'nodereference',
@@ -246,6 +297,7 @@ function drupalse_showcase_content_default_fields() {
   t('Brödtext');
   t('Leverantör');
   t('Länk');
+  t('Svensk webbplats');
 
   return $fields;
 }
