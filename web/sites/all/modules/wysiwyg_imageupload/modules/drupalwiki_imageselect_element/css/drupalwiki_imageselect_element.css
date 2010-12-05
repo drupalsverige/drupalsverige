@@ -1,0 +1,13 @@
+.drupalwiki_imageselect_element_container span.select_option {
+  margin:0px 4px;
+}
+
+.drupalwiki_imageselect_element_container span.select_option img{
+  padding:2px;
+  border:2px dotted transparent;
+}
+
+
+.drupalwiki_imageselect_element_container span.selected img {  
+  border:2px dotted black;
+}

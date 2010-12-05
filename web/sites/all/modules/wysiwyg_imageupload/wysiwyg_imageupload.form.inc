@@ -193,15 +193,17 @@ function _wysiwyg_imageupload_details_form($img, $iid, $defaults = array()) {
     '#size' => 50
   );
   // Alignment / Floating
+  $m = drupal_get_path('module','wysiwyg_imageupload');
   $form['image_upload_details']['alignment'] = array(
     '#type' => 'select',
     '#title' => t('Image alignment'),
     '#options' => array(
-      'imgupl_floating_none' => t('Image is inline with the text (none)'),
-      'imgupl_floating_left' => t('Image on left, text on right'),
-      'imgupl_floating_right' => t('Image on right, text on left')
+      'imgupl_floating_left' => theme('image',"$m/images/left_float.png", $t = t('Image on left, text on right'), $t),
+      'imgupl_floating_none' => theme('image',"$m/images/none_float.png", $t = t('Image is inline with the text (none)'), $t),
+      'imgupl_floating_right' => theme('image',"$m/images/right_float.png", $t = t('Image on right, text on left'), $t),      
     ),
-    '#default_value' => $defaults['alignment']
+    '#default_value' => $defaults['alignment'],
+    '#after_build' => array('drupalwiki_imageselect_element_register'),
   );
   // Imagecache preset
   $form['image_upload_details']['imagecache'] = array(

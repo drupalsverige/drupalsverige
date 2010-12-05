@@ -1,0 +1,18 @@
+<?php
+
+function drupalwiki_imageselect_element_register($form_element, &$form_state)  {
+  $m = drupal_get_path('module','drupalwiki_imageselect_element');
+  drupal_add_js("$m/js/drupalwiki_imageselect_element.js");
+  drupal_add_js("$m/js/drupalwiki_imageselect_element.plugin.js");
+  drupal_add_css("$m/css/drupalwiki_imageselect_element.css");
+
+  if(!empty($form_element['#attributes']['class'])) {
+    $form_element['#attributes']['class'] .= 'drupalwiki-imageselect-element';
+  }
+  else {
+    $form_element['#attributes']['class'] = 'drupalwiki-imageselect-element';
+  }
+
+  // Add theme styles manually, as it seem not to work with the jstree API
+  return $form_element;
+}

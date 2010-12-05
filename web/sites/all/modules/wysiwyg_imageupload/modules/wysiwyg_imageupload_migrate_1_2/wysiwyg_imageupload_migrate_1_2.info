@@ -6,9 +6,9 @@ package = Drupal Wiki
 version = "6.x-1.0"
 core = "6.x"
 project = "wysiwyg_imageupload_migrate_1_2"
-; Information added by drupal.org packaging script on 2010-11-09
-version = "6.x-2.7"
+; Information added by drupal.org packaging script on 2010-11-13
+version = "6.x-2.8"
 core = "6.x"
 project = "wysiwyg_imageupload"
-datestamp = "1289290545"
+datestamp = "1289668874"
 

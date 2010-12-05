@@ -1,0 +1,43 @@
+<?php
+// $Id$
+
+function wysiwyg_imageupload_fancybox_install() {
+  db_query("UPDATE {system} SET weight = 10 WHERE name = 'wysiwyg_imageupload_fancybox'");
+  wysiwyg_imageupload_fancybox_add_field();
+}
+
+/**
+* Implementation of hook_schema().
+*/
+function wysiwyg_imageupload_fancybox_add_field() {
+  $ret = array();
+
+  $fancybox = array(
+    'type' => 'int',
+    'not null' => TRUE,
+    'default' => -1,
+    'description' => 'Use fancybox integration or not',
+  );
+  db_add_field($ret, 'wysiwyg_imageupload_entity', 'fancybox', $fancybox);
+  return $ret;
+}
+
+function wysiwyg_imageupload_fancybox_schema_alter(&$schema) {
+  // Add field to existing schema.
+  $schema['wysiwyg_imageupload_entity']['fields']['fancybox'] = array(
+    'type' => int,
+    'not null' => TRUE,
+    'default' => -1,
+    'description' => 'Use fancybox integration or not',
+  );
+}
+/**
+* Implementation of hook_uninstall().
+*/
+function wysiwyg_imageupload_fancybox_uninstall() {
+  // Remove tables.
+  db_drop_field($ret, 'wysiwyg_imageupload_entity', 'fancybox');
+  // Remove variables.
+  db_query("DELETE FROM {variable} WHERE name LIKE 'wysiwyg_imageupload_fancybox_%'");
+}
+?>
