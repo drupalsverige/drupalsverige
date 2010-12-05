@@ -4,10 +4,8 @@
  */
 function drupalse_custom_form_views_exposed_form_alter(&$form, $form_state) {
 
-   switch ($form['#id']){      
-   
+   switch ($form['#id']){
    case 'views-exposed-form-showcase-page-1':
-     dpm($form);
      $form['national']['#options']['0'] = t('Foreign or international website');
      $form['national']['#options']['1'] = t('Swedish website');
    break;
