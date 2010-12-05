@@ -1,5 +1,5 @@
 Drupal.behaviors.viewsLiveFilters = function() {
-  $('.view-provider .view-filters form:not(.viewsLiveFilters-processed)').each(function() {
+  $('.view-provider .view-filters form:not(.viewsLiveFilters-processed), .view-showcase .view-filters form:not(.viewsLiveFilters-processed)').each(function() {
     var form = this;
     var timeout = undefined;
     var delay = 1000;
