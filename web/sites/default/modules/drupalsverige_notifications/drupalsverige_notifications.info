@@ -1,0 +1,7 @@
+core = "6.x"
+dependencies[] = "rules"
+dependencies[] = "token"
+description = "Notifications: currently only nadam notifications on new user account registration."
+features[rules_categories][] = "drupalsverige_notify"
+name = "Notifications"
+package = "Features"

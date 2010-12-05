@@ -1,0 +1,3 @@
+<?php
+
+include_once('drupalsverige_notifications.features.inc');
