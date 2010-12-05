@@ -91,6 +91,7 @@ h1#site-name {
 
 #footer ul li {
 	list-style: none;
+        float:left;
 }
 
 #footer a {
