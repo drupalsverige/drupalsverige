@@ -11,7 +11,7 @@ function drupalse_provider_content_default_fields() {
     'field_name' => 'field_provider_city',
     'type_name' => 'provider',
     'display_settings' => array(
-      'weight' => '34',
+      'weight' => '4',
       'parent' => '',
       'label' => array(
         'format' => 'inline',
@@ -66,7 +66,7 @@ function drupalse_provider_content_default_fields() {
     'field_name' => 'field_provider_link',
     'type_name' => 'provider',
     'display_settings' => array(
-      'weight' => '35',
+      'weight' => '5',
       'parent' => '',
       'label' => array(
         'format' => 'inline',
@@ -128,17 +128,17 @@ function drupalse_provider_content_default_fields() {
     'field_name' => 'field_provider_logo',
     'type_name' => 'provider',
     'display_settings' => array(
-      'weight' => '31',
+      'weight' => '1',
       'parent' => '',
       'label' => array(
         'format' => 'hidden',
       ),
       'teaser' => array(
-        'format' => 'image_plain',
+        'format' => 'small_linked',
         'exclude' => 0,
       ),
       'full' => array(
-        'format' => 'image_plain',
+        'format' => 'large_default',
         'exclude' => 0,
       ),
       '4' => array(
@@ -187,9 +187,10 @@ function drupalse_provider_content_default_fields() {
     'field_name' => 'field_provider_region',
     'type_name' => 'provider',
     'display_settings' => array(
+      'weight' => '3',
+      'parent' => '',
       'label' => array(
         'format' => 'above',
-        'exclude' => 0,
       ),
       'teaser' => array(
         'format' => 'default',
@@ -241,7 +242,7 @@ function drupalse_provider_content_default_fields() {
     'field_name' => 'field_provider_services',
     'type_name' => 'provider',
     'display_settings' => array(
-      'weight' => '32',
+      'weight' => '2',
       'parent' => '',
       'label' => array(
         'format' => 'inline',

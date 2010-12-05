@@ -342,7 +342,7 @@ function drupalse_provider_views_default_views() {
     'default' => '-1',
   ));
   $handler = $view->new_display('page', 'Sida', 'page_1');
-  $handler->override_option('path', 'leverantörer');
+  $handler->override_option('path', 'leverantorer');
   $handler->override_option('menu', array(
     'type' => 'normal',
     'title' => 'Leverantörer',

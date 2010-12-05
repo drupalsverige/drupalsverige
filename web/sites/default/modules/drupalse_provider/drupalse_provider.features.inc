@@ -1,6 +1,16 @@
 <?php
 
 /**
+ * Implementation of hook_ctools_plugin_api().
+ */
+function drupalse_provider_ctools_plugin_api() {
+  list($module, $api) = func_get_args();
+  if ($module == "strongarm" && $api == "strongarm") {
+    return array("version" => 1);
+  }
+}
+
+/**
  * Implementation of hook_imagecache_default_presets().
  */
 function drupalse_provider_imagecache_default_presets() {
@@ -42,7 +52,7 @@ function drupalse_provider_node_info() {
     'provider' => array(
       'name' => t('Leverantör'),
       'module' => 'features',
-      'description' => '',
+      'description' => t('En leverantör av Drupaltjänster i Sverige.'),
       'has_title' => '1',
       'title_label' => t('Företagsnamn'),
       'has_body' => '0',
