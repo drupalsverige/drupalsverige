@@ -90,8 +90,16 @@ h1#site-name {
 }
 
 #footer ul li {
-	list-style: none;
-        float:left;
+  list-style: none;
+  float:left;
+  margin: 0 0.5em 0 0;
+  padding: 0 0.5em 0 0;
+  border-right: 1px solid #BBBBBB;
+}
+
+#footer ul li.last
+{
+  border:0;
 }
 
 #footer a {
