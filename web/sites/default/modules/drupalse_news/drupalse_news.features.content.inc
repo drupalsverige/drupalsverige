@@ -18,7 +18,7 @@ function drupalse_news_content_default_fields() {
       ),
       'teaser' => array(
         'format' => 'default',
-        'exclude' => 0,
+        'exclude' => 1,
       ),
       'full' => array(
         'format' => 'default',
@@ -68,11 +68,11 @@ function drupalse_news_content_default_fields() {
         'format' => 'hidden',
       ),
       'teaser' => array(
-        'format' => 'image_plain',
+        'format' => 'small_linked',
         'exclude' => 0,
       ),
       'full' => array(
-        'format' => 'image_plain',
+        'format' => 'large_default',
         'exclude' => 0,
       ),
       '4' => array(
