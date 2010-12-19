@@ -273,3 +273,8 @@ function phptemplate_links($links, $attributes = array()) {
 function ago($timestamp){
   return format_interval(time() - $timestamp, 1). ' '. t('ago');
 }
+
+
+function drupalsverige_filter_tips_more_info() {
+  return '';
+}
