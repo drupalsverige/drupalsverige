@@ -13,6 +13,11 @@ div.view-showcase table div.image img
   padding:5px;
 }
 
+div.view-showcase table div.body
+{
+  margin-left:200px;
+}
+
 div.view-showcase table td
 {
   vertical-align:top;
