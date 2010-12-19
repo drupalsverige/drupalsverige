@@ -18,28 +18,26 @@ div.view-showcase .showcase-wrapper div.body
   margin-left:200px;
 }
 
-
 div.view-showcase .showcase-wrapper h3{
   margin-bottom:5px;
 }
 
 div.view-showcase .showcase-wrapper {
   clear:left;
-	float:left;
-	width:100%;
-	overflow:hidden;
-      
-      background-color:#F3F3F3;
-      margin: 5px 5px 5px 0;
+  float:left;
+  width:100%;
+  overflow:hidden;
+  background-color:#F3F3F3;
+  margin: 5px 5px 5px 0;
 }
 
 div.view-showcase .showcase-wrapper-inner {
   float:left;
-	width:100%;
-	position:relative;
-	right:50%;
-     border-right: 10px solid #FFFFFF;
-     background-color:#F3F3F3;;
+  width:100%;
+  position:relative;
+  right:50%;
+  border-right: 10px solid #FFFFFF;
+  background-color:#F3F3F3;;
 }
 
 div.view-showcase .showcase-wrapper-inner div.showcase
@@ -65,8 +63,9 @@ div.view-showcase .showcase-wrapper-inner .even
   overflow:hidden;
 }
 
-
-
+div.view-provider table{
+  vertical-align: top;
+}
 
 
 div.view-provider table th.views-field-field-provider-logo-fid
@@ -93,8 +92,7 @@ div.view-provider .views-exposed-form
 {
   font-family:'Droid Sans',arial,sans-serif;
   font-size:1.2em;
-  margin-bottom:1em;
-  margin-top:1.5em;
+  line-height: 3em;
   text-align:left;
   text-align:left;
 }
