@@ -41,8 +41,8 @@ function wysiwyg_imageupload_menu() {
   $items['ajax/wysiwyg_imgupl/render_wysiwyg/%'] = array(
     'page callback' => '_wysiwyg_imageupload_render_wysiwyg',
     'page arguments' => array(3),
-    'access callback' => 'user_access',
-    'access arguments' => array('use wysiwyg image upload'),
+    'access callback' => '_wysiwyg_imageupload_access',
+    'access arguments' => array( 3, 'view'),
     'type' => MENU_CALLBACK,
   );
   // return multiple rendered images
@@ -62,13 +62,13 @@ function wysiwyg_imageupload_menu() {
     // That means, if we call the callback this way :
     // wysiwyg_imageupload/edit/12/foo/bar/cat/dog the from callback will be called as
     // wysiwyg_imageupload_edit_form($form_state,12,foo,bar,cat,dog) !!
-    // even though dont have the page arguments set like this : array('wysiwyg_imageupload_edit_form',2,3,4,5),
+    // even though we dont have the page arguments set like this : array('wysiwyg_imageupload_edit_form',2,3,4,5),
     // IF you set those arguments, they will be provided twice in the later form callback, so rather
     // wysiwyg_imageupload_edit_form($form_state,12,foo,bar,cat,dog,12,foo,bar,cat,dog)
     // what is not exepected and especially bad if you have optional parameters (which will get overridden then)
     'page arguments' => array('wysiwyg_imageupload_edit_form', 2),
-    'access callback' => 'user_access',
-    'access arguments' => array('use wysiwyg image upload'),
+    'access callback' => '_wysiwyg_imageupload_access',
+    'access arguments' => array(2,'update'),
     'type' => MENU_CALLBACK,
   );
 
@@ -76,8 +76,8 @@ function wysiwyg_imageupload_menu() {
   $items['wysiwyg_imageupload/reuse/%'] = array(
     'page callback' => 'drupal_get_form',
     'page arguments' => array('wysiwyg_imageupload_edit_form', 2, 3, TRUE),
-    'access callback' => 'user_access',
-    'access arguments' => array('use wysiwyg image upload'),
+    'access callback' => '_wysiwyg_imageupload_access',
+    'access arguments' => array(2,'view'),
     'type' => MENU_CALLBACK,
   );
 
@@ -103,6 +103,102 @@ function wysiwyg_imageupload_wysiwyg_include_directory($type) {
     case 'plugins':
       return $type;
   }
+}
+
+/**
+ * Access check for iid`s. There are several cases to cover
+ * - An iid is part of a node
+    view/update: Apply node permissions
+ * - An iid is part of a comment. 
+    view: Apply node permissions
+    update: The author or admin can edit it
+ * - And iid is part of any other unknown relation or not part of any relation at all
+    view: Author only
+    update: Author only
+ *
+ * The author is determined by the fid author.
+ */
+
+function _wysiwyg_imageupload_access($iid, $op) {
+  global $user;
+  /*********** CASE 1: Admin or not ******/
+  // If its an admin or someone with administer content, return true
+  if($user->uid == 1 || user_access('administer nodes')) {
+    return TRUE;
+  }
+
+  // Lets see, if this iid has any relation
+  $e = _wysiwyg_imageupload_load_inline_entity($iid);  
+  // Get the relation type
+  $relation = 'unknown';
+  $parent = NULL;
+  if($e->cid != 0) {
+    $parent = _comment_load($e->cid);    
+    // if op is view, use the node relation
+    if($op == 'view') {
+      // get the node as parent
+      $parent = node_load($parent->nid);
+      $relation = 'node';
+    }
+    else {
+      $relation = 'comment';
+    }
+
+    if($parent == NULL) {
+      // if the node does not exist, deny
+      return FALSE;
+    }
+  }
+  else if($e->nid != 0) {    
+    $parent = node_load($e->nid);    
+    $relation = 'node';
+    if($parent == NULL) {
+      // if the node does not exist, deny
+      return FALSE;
+    }
+  }
+  
+  // Ok as we looked for the relation, finally check the permissions.
+  switch($relation) {
+    case 'node':
+      /*********** CASE 2: its a node relation ******/
+      // Call any hooks implementing our access API. If none, use node_access as the default one.
+      $modules = module_implements('wysiwyg_imageupload_access');
+      if(count($modules) > 0) {
+        $grants = module_invoke_all('wysiwyg_imageupload_access',$op,$parent);
+        $result = true;
+        foreach($grants as $bool) {
+          $return = $return && $bool;
+        }
+        return $result;
+      }
+      // else
+      return node_access($op,$parent);
+    break;
+    case 'comment':
+      /*********** CASE 3: its a comment relation ******/
+      // we only get here for edit op, so check for the author
+      // as the check for the admin has been done before
+      if($op == 'update') {
+        // Thanks to drupal consistency...you "edit" a comment and "update" a node..
+        // so we need to swtich here, as comment access understands "edit"
+        $op = 'edit';
+      }
+      return comment_access($op,$parent);
+    break;
+    default:  
+      /*********** CASE 4: No relation (newly uploaded) or unknown ******/
+      // Grant for author only
+      // $e->uid is the uid out of the files table
+      if($e->uid == $user->uid) {
+        return TRUE;
+      }
+      //else
+      return FALSE;
+    break;
+  }
+  // we cant get here actually, anyway return FALSE
+  return FALSE;
 }
 
 /**

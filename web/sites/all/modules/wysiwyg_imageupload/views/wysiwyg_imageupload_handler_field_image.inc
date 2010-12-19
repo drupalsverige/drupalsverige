@@ -28,14 +28,14 @@ class wysiwyg_imageupload_handler_field_image extends views_handler_field {
     }
     $form['wui_preset'] = array(
       '#type' => 'select',
-      '#title' => t('User this imagecache preset'),
+      '#title' => t('Use this imagecache preset'),
       '#default_value' =>  $this->options['wui_preset'],
       '#options' => $styles,
     );
 
     $form['wui_link_for_browser'] = array(
       '#type' => 'checkbox',
-      '#title' => t('Links images for browser'),
+      '#title' => t('Create links on the images (for use in the image browser workflow)'),
       '#default_value' =>  $this->options['wui_link_for_browser']
     );
     return $form;

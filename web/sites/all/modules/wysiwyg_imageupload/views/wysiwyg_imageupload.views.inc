@@ -23,7 +23,7 @@ function _wysiwyg_imageupload_views_data_node_related(&$data) {
   // This displays a image, will all goodies, therefore it needs a extra handler.
   $data['wysiwyg_imageupload_entity_revision']['iid'] = array(
     'title' => t('Images'),
-    'help' => t('All images of all images.'),
+    'help' => t('All images of all nodes.'),
     'field' => array(
       'handler' => 'wysiwyg_imageupload_handler_field_images',
       'click sortable' => FALSE,
@@ -60,7 +60,7 @@ function _wysiwyg_imageupload_views_data_all_entities(&$data) {
   $data['wysiwyg_imageupload_entity']['table']['base'] = array(
     'field' => 'iid',
     'title' => t('WYSIWYG image upload'),
-    'help' => t("A image uploaded via wysiwyg imageupload."),
+    'help' => t("An image uploaded via wysiwyg imageupload."),
   );
 
   $data['wysiwyg_imageupload_entity']['table']['join'] = array(
@@ -106,7 +106,7 @@ function _wysiwyg_imageupload_views_data_all_entities(&$data) {
 
   $data['wysiwyg_imageupload_entity']['imagecache'] = array(
     'title' => t('imagecache'),
-    'help' => t('The imagecache of the image.'),
+    'help' => t('The imagecache preset of the image.'),
     'field' => array(
       'handler' => 'views_handler_field',
       'click sortable' => TRUE,
@@ -163,7 +163,7 @@ function _wysiwyg_imageupload_views_data_all_entities(&$data) {
 
   $data['wysiwyg_imageupload_entity']['temporary'] = array(
     'title' => t('temporary'),
-    'help' => t('The temporary of the image.'),
+    'help' => t('Is the image temporary.'),
     'sort' => array(
       'handler' => 'views_handler_sort',
     ),

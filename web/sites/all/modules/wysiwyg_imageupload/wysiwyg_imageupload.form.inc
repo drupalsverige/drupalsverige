@@ -144,6 +144,7 @@ function wysiwyg_imageupload_edit_form_validate($form, &$state) {
     // Dont be confused here, this create handler ignores the current iid, so always creates
     // a new one based on the current meta-data
     $new_iid = _wysiwyg_imageupload_create_inline_entity($old_img_obj, TRUE);
+    $state['values']['iid'] = $new_iid;
   }
 }
 
@@ -199,7 +200,9 @@ function _wysiwyg_imageupload_details_form($img, $iid, $defaults = array()) {
     '#title' => t('Image alignment'),
     '#options' => array(
       'imgupl_floating_left' => theme('image',"$m/images/left_float.png", $t = t('Image on left, text on right'), $t),
+      'imgupl_floating_none_left' => theme('image',"$m/images/none_left_float.png", $t = t('Image is inline with the text (left)'), $t),
       'imgupl_floating_none' => theme('image',"$m/images/none_float.png", $t = t('Image is inline with the text (none)'), $t),
+      'imgupl_floating_none_right' => theme('image',"$m/images/none_right_float.png", $t = t('Image is inline with the text (right)'), $t),
       'imgupl_floating_right' => theme('image',"$m/images/right_float.png", $t = t('Image on right, text on left'), $t),      
     ),
     '#default_value' => $defaults['alignment'],

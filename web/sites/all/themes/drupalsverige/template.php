@@ -91,10 +91,8 @@ function drupalsverige_theme(&$existing, $type, $theme, $path) {
   return $hooks;
 }
 
-function drupalsverige_preprocess_page(&$vars, $hook) {
-  // For easy printing of variables.
-  $vars['logo_img']         = $vars['logo'] ? theme('image', substr($vars['logo'], strlen(base_path())), t('Home'), t('Home')) : '';
-  $vars['linked_logo_img']  = $vars['logo_img'] ? l($vars['logo_img'], '<front>', array('rel' => 'home', 'title' => t('Home'), 'html' => TRUE)) : '';
+function drupalsverige_preprocess_page(&$vars, $hook) {  
+    
   //$vars['linked_site_name'] = $vars['site_name'] ? l($vars['site_name'], '<front>', array('rel' => 'home', 'title' => t('Home'))) : '';
   $vars['main_menu_links']      = theme('links', $vars['primary_links'], array('class' => 'links main-menu'));
   $vars['secondary_menu_links'] = theme('links', $vars['secondary_links'], array('class' => 'links secondary-menu'));
@@ -108,17 +106,18 @@ function drupalsverige_preprocess_page(&$vars, $hook) {
 
   // Classes for body element. Allows advanced theming based on context
   // (home page, node of certain type, etc.)
-  $classes = split(' ', $vars['body_classes']);
+  $classes = implode(' ', $vars['classes_array']);
+
  
 if (theme_get_setting('drupalsverige_debug')) {
     $classes[] = 'show-grid'; // Optionally add the wireframes style.
   }
 
   $vars['body_classes_array'] = $classes;
-  $vars['body_classes'] = implode(' ', $classes); // Concatenate with spaces.
+  $vars['body_classes'] = implode(' ', $vars['classes_array']); // Concatenate with spaces.
 
   // Remove node title from first page
-  if($vars['is_front']) {unset($vars['title']); }
+  if($vars['is_front']) { unset($vars['title']); }
 
 }
 
@@ -274,4 +273,9 @@ function phptemplate_links($links, $attributes = array()) {
 
 function ago($timestamp){
   return format_interval(time() - $timestamp, 1). ' '. t('ago');
+}
+
+
+function drupalsverige_filter_tips_more_info() {
+  return '';
 }

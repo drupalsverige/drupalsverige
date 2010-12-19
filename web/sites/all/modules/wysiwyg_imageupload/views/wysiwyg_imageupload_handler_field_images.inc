@@ -50,7 +50,7 @@ class wysiwyg_imageupload_handler_field_images extends views_handler_field_prere
     }
     $form['wui_preset'] = array(
       '#type' => 'select',
-      '#title' => t('User this imagecache preset'),
+      '#title' => t('Use this imagecache preset'),
       '#default_value' =>  $this->options['wui_preset'],
       '#options' => $styles,
     );
