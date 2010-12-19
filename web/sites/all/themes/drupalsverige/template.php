@@ -119,7 +119,7 @@ if (theme_get_setting('drupalsverige_debug')) {
   
 
   // Remove node title from first page
-  if($vars['is_front'] == TRUE) { unset($vars['title']); }
+  if($vars['is_front'] == TRUE) { $vars['title'] == ''; }
 
 }
 
