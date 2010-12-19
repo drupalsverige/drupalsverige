@@ -412,7 +412,6 @@ function drupalse_showcase_views_default_views() {
   $handler->override_option('title', 'Sajtgalleri');
   $handler->override_option('header_format', '1');
   $handler->override_option('header_empty', 0);
-  $handler->override_option('use_ajax', TRUE);
   $handler->override_option('use_pager', '1');
   $handler->override_option('style_plugin', 'semanticviews_default');
   $handler->override_option('style_options', array(
@@ -462,12 +461,24 @@ function drupalse_showcase_views_default_views() {
     'skip_blank' => 0,
   ));
   $handler = $view->new_display('page', 'Sida', 'page_1');
-  $handler->override_option('style_plugin', 'grid');
   $handler->override_option('style_options', array(
     'grouping' => '',
-    'columns' => '2',
-    'alignment' => 'horizontal',
-    'fill_single_line' => 1,
+    'group' => array(
+      'element_type' => 'h3',
+      'class' => 'title',
+    ),
+    'list' => array(
+      'element_type' => '',
+      'class' => '',
+    ),
+    'row' => array(
+      'element_type' => 'div',
+      'class' => 'showcase',
+      'last_every_nth' => '0',
+      'first_class' => 'first',
+      'last_class' => 'last',
+      'striping_classes' => 'odd even',
+    ),
   ));
   $handler->override_option('row_options', array(
     'semantic_html' => array(

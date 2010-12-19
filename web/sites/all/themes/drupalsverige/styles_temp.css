@@ -1,5 +1,5 @@
 
-div.view-showcase table div.image img
+div.view-showcase .showcase-wrapper div.image img
 {
   float:left;
   margin-right:5px;
@@ -13,40 +13,61 @@ div.view-showcase table div.image img
   padding:5px;
 }
 
-div.view-showcase table div.body
+div.view-showcase .showcase-wrapper div.body
 {
   margin-left:200px;
 }
 
-div.view-showcase table td
-{
-  vertical-align:top;
-  width:50%;  
+
+div.view-showcase .showcase-wrapper h3{
+  margin-bottom:5px;
 }
 
-div.view-showcase table td.col-1
-{
-  padding:0 1em 1em 0;
+div.view-showcase .showcase-wrapper {
+  clear:left;
+	float:left;
+	width:100%;
+	overflow:hidden;
+      
+      background-color:#F3F3F3;
+      margin: 5px 5px 5px 0;
 }
 
-div.view-showcase table td.col-2
-{
-  padding:0 0 1em;
+div.view-showcase .showcase-wrapper-inner {
+  float:left;
+	width:100%;
+	position:relative;
+	right:50%;
+     border-right: 10px solid #FFFFFF;
+     background-color:#F3F3F3;;
 }
 
-div.view-showcase table td .showcase-inner
+div.view-showcase .showcase-wrapper-inner div.showcase
 {
-  border-color: #EEEEEE #DDDDDD #DDDDDD #EEEEEE;
-  border-style: solid;
-  border-width: 1px;
-  padding: 10px;
-  background-color:#F3F3F3;  
+  padding:5px;
+}
+
+div.view-showcase .showcase-wrapper-inner .odd
+{
+ 	float:left;
+  width:46%;
+  position:relative;
+  left:51%;
   overflow:hidden;
 }
 
-div.view-showcase table td h3{
-  margin-bottom:5px;
+div.view-showcase .showcase-wrapper-inner .even
+{
+  float:left;
+  width:46%;
+  position:relative;
+  left:55%;
+  overflow:hidden;
 }
+
+
+
+
 
 div.view-provider table th.views-field-field-provider-logo-fid
 {
