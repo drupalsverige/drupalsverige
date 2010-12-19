@@ -116,10 +116,8 @@ if (theme_get_setting('drupalsverige_debug')) {
   $vars['body_classes_array'] = $classes;
   $vars['body_classes'] = implode(' ', $vars['classes_array']); // Concatenate with spaces.
 
-  
-
   // Remove node title from first page
-  if($vars['is_front'] == TRUE) { $vars['title'] == ''; }
+  if($vars['is_front']) { unset($vars['title']); }
 
 }
 
