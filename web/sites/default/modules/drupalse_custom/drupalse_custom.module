@@ -11,31 +11,3 @@ function drupalse_custom_form_views_exposed_form_alter(&$form, $form_state) {
    break;
    }
 }
-
-/*
-* Implementation of a Drupal action.
-* Disable comments for a node.*
-*/
-function action_node_disable_comments($op, $edit = array(), &$node) {
-  switch($op) {
-    case 'metadata':
-      return array(
-        'description' => t('Disable comments for node'),
-        'type' => t('Node'),
-        'batchable' => true,
-        'configurable' => false,
-      );
-
-    case 'do':
-      $node->comment = '0';
-      if (!$edit['defer']) {
-        node_save($node);
-      }
-      watchdog('action', t('Disabed comments on node id %id', array('%id' => intval($node->nid))));
-      break;
-
-    // process the HTML form to store configuration
-    case 'submit':
-      return '';
-  }
-}
