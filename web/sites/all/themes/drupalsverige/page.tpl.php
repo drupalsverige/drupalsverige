@@ -8,6 +8,7 @@
 <head>
   <title><?php print $head_title; ?></title>
   <?php print $head; ?>
+  <meta name="google-site-verification" content="vKXIIqciGRC4bMfaI5y6qeefkI75CtGhxsKUIN1lqQU" />
   <?php print $styles; ?>
   <link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
 </head>
