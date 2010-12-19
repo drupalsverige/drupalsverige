@@ -25,8 +25,8 @@
     <div id="site-header" class="clear-block">
 	    <div id="header-inner">
         <div id="branding" class="grid-4 clear-block">
-          <?php if ($linked_logo_img): ?>
-            <span id="logo" class="grid-1 alpha"><?php print $linked_logo_img; ?></span>
+          <?php if ($logo): ?>
+            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
           <?php endif; ?>
           <?php if ($site_name): ?>
 		  <?php if ($title): ?>

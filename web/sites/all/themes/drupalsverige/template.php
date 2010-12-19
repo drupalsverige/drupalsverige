@@ -91,10 +91,8 @@ function drupalsverige_theme(&$existing, $type, $theme, $path) {
   return $hooks;
 }
 
-function drupalsverige_preprocess_page(&$vars, $hook) {
-  // For easy printing of variables.
-  $vars['logo_img']         = $vars['logo'] ? theme('image', substr($vars['logo'], strlen(base_path())), t('Home'), t('Home')) : '';
-  $vars['linked_logo_img']  = $vars['logo_img'] ? l($vars['logo_img'], '<front>', array('rel' => 'home', 'title' => t('Home'), 'html' => TRUE)) : '';
+function drupalsverige_preprocess_page(&$vars, $hook) {  
+    
   //$vars['linked_site_name'] = $vars['site_name'] ? l($vars['site_name'], '<front>', array('rel' => 'home', 'title' => t('Home'))) : '';
   $vars['main_menu_links']      = theme('links', $vars['primary_links'], array('class' => 'links main-menu'));
   $vars['secondary_menu_links'] = theme('links', $vars['secondary_links'], array('class' => 'links secondary-menu'));
