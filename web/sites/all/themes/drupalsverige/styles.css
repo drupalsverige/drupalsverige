@@ -29,7 +29,7 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 }
 
 #page { 
-	overflow:auto;
+	overflow:hidden;
 	padding-bottom: 150px; /* Must be same height as the footer */
 	background: transparent url(images/bg-main-menu.png) 0 145px no-repeat;	
 }  
