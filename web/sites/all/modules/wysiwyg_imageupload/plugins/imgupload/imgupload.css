@@ -1,7 +1,22 @@
 .imgupl_floating_none
 {
-  float:none;
-  display:block;
+	float:none;
+	display:block;
+	text-align:center;
+}
+
+.imgupl_floating_none_left
+{
+	float:none;
+	display:block;
+	text-align:left;
+}
+
+.imgupl_floating_none_right
+{
+float:none;
+display:block;
+text-align:right;
 }
 
 .imgupl_floating_left

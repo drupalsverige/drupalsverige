@@ -115,16 +115,33 @@ function _wysiwyg_imageupload_save(&$entity) {
     // comments might be submitted as array.
     $entity = (object)$entity;
   }
-  $body = '';
   // how does that look like for a comment?
   if (!empty($entity->cid) && $entity->cid > 0) {
-    $body = $entity->comment;
+    _wysiwyg_imagegupload_save_images($entity, $entity->comment);
   }
   else {
-    $body = $entity->body;
+    _wysiwyg_imagegupload_save_images($entity, $entity->body);
+
+    $node = (array) $entity;
+    foreach ($node as $key => $field) {
+      if (strpos($key, 'field_') === 0) {
+        foreach ($field as $index => $field_item) {
+          if (!empty($field_item['value'])) {
+            $value = $field_item['value'];
+            _wysiwyg_imagegupload_save_images($entity, $value);
+          }
+        }
+      }
+    }
   }
+}
+
+/**
+ * Auxiliary function for _wysiwyg_imageupload_save().
+ */
+function _wysiwyg_imagegupload_save_images(&$entity, $value) {
   $images = array();
-  preg_match_all(_wysiwyg_imageupload_filter_pattern(), $body, $matches);
+  preg_match_all(_wysiwyg_imageupload_filter_pattern(), $value, $matches);
 
   if(empty($matches)) {
     return;

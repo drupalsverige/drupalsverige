@@ -156,10 +156,6 @@ function wysiwyg_imageupload_requirements($phase) {
   $requirements = array();
   if ($phase == 'runtime') {
     require_once('wysiwyg_imageupload.module');
-    variable_set('wysiwyg_imageupload_imgstyles', 'Spacing 20px Border=imgupl_styles_spacing_20_black_border
-        Black Border=imgupl_styles_black_border
-        Spacing 5px=imgupl_styles_spacing_5
-        Spacing 10px=imgupl_styles_spacing_10');
   }
   return $requirements;
 }

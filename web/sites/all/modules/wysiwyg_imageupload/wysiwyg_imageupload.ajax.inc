@@ -60,6 +60,12 @@ function _wysiwyg_imageupload_render_wysiwyg_images($iids, $revisioned, $form_id
   $iids = split(',', $iids);
   $output = array();
   foreach ($iids as $iid) {
+    // check access rights
+    if(_wysiwyg_imageupload_access($iid, 'view') == FALSE) {
+      $output[$idd] = 'You dont have the permission to view this image';
+      continue;
+    }
+    // else render the image
     $image_obj = _wysiwyg_imageupload_load_inline_entity($iid);
     $output[$iid] = theme('wysiwyg_imageupload_render_image_wysiwyg', $image_obj, array('wysiwyg_placeholder' => '1'));
   }
