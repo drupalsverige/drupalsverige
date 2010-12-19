@@ -106,17 +106,20 @@ function drupalsverige_preprocess_page(&$vars, $hook) {
 
   // Classes for body element. Allows advanced theming based on context
   // (home page, node of certain type, etc.)
-  $classes = split(' ', $vars['body_classes']);
+  $classes = implode(' ', $vars['classes_array']);
+
  
 if (theme_get_setting('drupalsverige_debug')) {
     $classes[] = 'show-grid'; // Optionally add the wireframes style.
   }
 
   $vars['body_classes_array'] = $classes;
-  $vars['body_classes'] = implode(' ', $classes); // Concatenate with spaces.
+  $vars['body_classes'] = implode(' ', $vars['classes_array']); // Concatenate with spaces.
+
+  
 
   // Remove node title from first page
-  if($vars['is_front']) {unset($vars['title']); }
+  if($vars['is_front'] == TRUE) { unset($vars['title']); }
 
 }
 
