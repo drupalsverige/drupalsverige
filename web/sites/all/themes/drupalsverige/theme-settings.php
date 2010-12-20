@@ -24,7 +24,7 @@ function drupalsverige_settings($saved_settings) {
 
   /*
    * Create the form using Forms API: http://api.drupal.org/api/6
-   */
+   *//*
   $form = array();
 
   /* -- Load debug css - 960 grid */
@@ -39,7 +39,7 @@ function drupalsverige_settings($saved_settings) {
  
 
   // Add the base theme's settings.
-  $form += zen_settings($saved_settings, $defaults);
+ // $form += zen_settings($saved_settings, $defaults);
 
   // Remove some of the base theme's settings.
   unset($form['themedev']['zen_layout']); // We don't need to select the base stylesheet.
