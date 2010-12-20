@@ -108,10 +108,14 @@ function drupalsverige_preprocess_page(&$vars, $hook) {
   // (home page, node of certain type, etc.)
   $classes = implode(' ', $vars['classes_array']);
 
- 
-if (theme_get_setting('drupalsverige_debug')) {
+
+  /*
+  if (theme_get_setting('drupalsverige_debug')) {
     $classes[] = 'show-grid'; // Optionally add the wireframes style.
   }
+   * 
+   */
+
 
   $vars['body_classes_array'] = $classes;
   $vars['body_classes'] = implode(' ', $vars['classes_array']); // Concatenate with spaces.
