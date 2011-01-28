@@ -1,0 +1,259 @@
+<?php
+// $Id: addtoany.module,v 1.7.2.8.2.10 2010/07/09 09:45:02 micropat Exp $
+
+/**
+ * @file
+ * Standalone module file to handle AddToAny button integration
+ */
+
+/**
+ * Implementation of hook_perm().
+ * 
+ * @return
+ */
+function addtoany_perm() {
+  $perms[] = 'administer addtoany';
+  return $perms;
+}
+
+/**
+ * Implementation of hook_link().
+ * 
+ * @param object $type
+ * @param object $node [optional]
+ * @param object $teaser [optional]
+ * @return
+ */
+function addtoany_link($type, $node = NULL, $teaser = FALSE) {
+  $links = array();
+
+  $types = variable_get('addtoany_nodetypes', array());
+
+  $show  = (!empty($types[$node->type]) && 
+           (($teaser && variable_get('addtoany_display_in_teasers', '1')!=0) ||
+           (!$teaser && variable_get('addtoany_display_in_nodelink', '1')!=0)));
+           
+  if ($type === 'node' && $show) {
+    $links['addtoany'] = array(
+        'title' => _addtoany_create_button($node, $teaser),
+        'html' => TRUE,
+      );
+  }
+
+  return $links;
+}
+
+/**
+ * Implementation of hook_block().
+ * 
+ * @param object $op [optional]
+ * @param object $delta [optional]
+ * @return 
+ */
+function addtoany_block($op = 'list', $delta = 0) {
+  if ($op == 'list') {
+    $blocks[0]['info'] = t('AddToAny button');
+    return $blocks;
+  }
+  else if ($op == 'view') {
+    $block['subject'] = t('AddToAny');
+    $block['content'] = _addtoany_create_button(menu_get_object());
+	$block['cache'] = BLOCK_NO_CACHE; // Caching issue: http://drupal.org/node/610564
+    return $block;
+  }
+}
+
+/**
+ * Implementation of hook_nodeapi().
+ *
+ * @param object $node
+ * @param object $op
+ * @param object $a3 [optional]
+ * @param object $a4 [optional]
+ */
+function addtoany_nodeapi(&$node, $op, $a3 = NULL, $a4 = NULL) {
+  switch ($op) {
+    case 'view':
+      // Only show comments on the full non-teasered page
+      if (!$a3 && $a4) {
+        $types  = variable_get('addtoany_nodetypes', array());
+        
+        $show  = (!empty($types[$node->type]) && 
+                   variable_get('addtoany_display_in_nodecont', '0'));
+         
+        $weight = variable_get('addtoany_display_weight', 40);
+        
+        if ($show) {
+          $node->content['addtoany'] = array(
+            '#value' => _addtoany_create_button($node, FALSE),
+            '#weight' => $weight,
+          );
+        }
+      }
+    break;
+  }
+}
+
+/**
+ * Implementation of hook_views_api().
+ */
+function addtoany_views_api() {
+  return array(
+    'api' => 2,
+    'path' => drupal_get_path('module', 'addtoany') . '/views',
+  );
+}
+
+/**
+ * Implementation of hook_menu().
+ */
+function addtoany_menu() {
+  $items = array();
+
+  $items['admin/settings/addtoany'] = array(
+    'title'            => t('AddToAny'),
+    'description'      => t('Settings for your <a href="http://www.addtoany.com/" target="blank">AddToAny</a> Share/Save buttons.'),
+    'page callback'    => 'drupal_get_form',
+    'page arguments'   => array('addtoany_admin_settings'),
+    'access arguments' => array('administer addtoany'),
+    'file'             => 'addtoany.admin.inc',
+  );
+
+  return $items;
+}
+
+/**
+ * Implementation of hook_footer().  Would use drupal_add_js, but external scripts are not well supported
+ * 
+ * @param object $main [optional]
+ * @return
+ *   String containing JavaScript code to initialize each drop-down menu
+ */
+function addtoany_footer($main = 0) {
+	global $_addtoany_script, $_addtoany_script_init;
+	
+	// Only output when needed (fixes http://drupal.org/node/843068)
+	if ( ! $_addtoany_script_init)
+		return;
+	
+	$javascript = "<script type=\"text/javascript\">\n"
+		. "<!--//--><![CDATA[//><!--\n"
+		. "da2a.init = function(){\n"
+		. $_addtoany_script
+		. "da2a.ready = true;\n"
+		. "}\n"
+		. "da2a.html_ready = true;\n"
+		. "if(da2a.script_ready && !da2a.ready)da2a.init();\n" // Call a2a.init() if external script is ready, and if a2a.init() hasn't been called already
+		. "//--><!]]>\n"
+		. "</script>\n";
+	
+	return $javascript;
+}
+
+/**
+ * Internal function to create asynchronous load JavaScript after first button, and create the on-ready JS for footer.
+ * 
+ * @param object $id_num
+ * @param object $link_name
+ * @param object $link_url
+ * @return 
+ *   String containing the asynchronous load JavaScript for the first button.
+ */
+function _addtoany_create_script($id_num, $link_name, $link_url) {
+	global $_addtoany_script, $_addtoany_script_init;
+		
+	$_addtoany_script .= "a2a_config.linkname='". check_plain($link_name)
+		. "'; a2a_config.linkurl='" . check_plain($link_url)
+		. "'; a2a.init('page', {target: '#da2a_" . $id_num . "'});\n";
+	
+	if ( ! $_addtoany_script_init) {
+		$script_url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ? 'https://static.addtoany.com/menu/page.js' : 'http://static.addtoany.com/menu/page.js';
+		$javascript_async = "<script type=\"text/javascript\">\n"
+			. "<!--//--><![CDATA[//><!--\n"
+			. "var a2a_config = a2a_config || {}, "
+				. "da2a = {ready: false, "
+				. "html_ready: false, "
+				. "script_ready: false, "
+				. "script_onready: function() { da2a.script_ready = true; if(da2a.html_ready)da2a.init(); }"
+			. "}; "
+			. "a2a_config.tracking_callback = ['ready', da2a.script_onready];"
+			. variable_get('addtoany_additional_js', '')
+			. "\n(function(){var a = document.createElement('script');a.type = 'text/javascript';a.async = true;a.src = '" . $script_url . "';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(a, s);})();\n"			
+			. "//--><!]]>\n"
+			. "</script>";
+	}
+	else
+		$javascript_async = "";
+	
+	$_addtoany_script_init = TRUE;
+	
+	return $javascript_async;
+}
+
+/**
+ * Internal function to generate code for AddToAny button
+ * 
+ * @param object $node [optional]
+ * @param object $teaser [optional]
+ * @return
+ *   String containing HTML code for the button
+ */
+function _addtoany_create_button($node=NULL, $teaser = FALSE) {
+	global $_addtoany_counter, $base_path;
+	
+	$_addtoany_counter++;
+	if ($_addtoany_counter == 1) {
+		drupal_add_css((drupal_get_path('module', 'addtoany') .'/addtoany.css'));
+	}
+	
+	$disable_dropdown = variable_get('addtoany_dropdown_disabled', '0');
+
+	if (is_object($node)) {
+	  	$link_name 	= (module_exists('page_title')) ? page_title_page_get_title() : $node->title;
+		$link_url 	= url('node/' . $node->nid, array('absolute' => 1));
+	} else { // Front page
+		$link_name	= (module_exists('page_title')) ? page_title_page_get_title() : variable_get('site_name', '');
+		$link_url = url('<front>', array('absolute' => 1));
+	}
+	
+	$javascript = ($disable_dropdown) ? '' : _addtoany_create_script($_addtoany_counter, $link_name, $link_url);
+	
+	$button_setting = variable_get('addtoany_image', 'share_save_171_16.png|171|16');
+
+	if ($button_setting == "custom") {
+		$button_image 		= variable_get('addtoany_custom_image', '');
+		$button_width    	= '';
+		$button_height		= ''; 
+	} elseif ($button_setting != "text") {
+		$button 			= explode('|', $button_setting);
+		$button_filename 	= $button[0];
+		$button_width    	= ' width="' . $button[1] . '"';
+		$button_height	= ' height="' . $button[2] . '"';
+		$button_image 	= $base_path . drupal_get_path('module', 'addtoany') . '/images/' . $button_filename;
+	}
+	
+	$button_text = variable_get('addtoany_link_text', '');
+	if (strlen($button_text) > 0)
+		$button_text = ' ' . $button_text; 
+	
+	$button_innerHTML = ($button_setting == "text") ? $button_text : sprintf('<img src="%s"%s%s %s/>%s',
+		$button_image,
+		$button_width,
+		$button_height,
+		variable_get('addtoany_image_attributes', 'alt="Share this"'),
+		$button_text
+	);
+	
+	return ( sprintf('
+		<a%s href="http://www.addtoany.com/share_save?linkurl=%s&amp;linkname=%s" id="da2a_%s">%s</a>
+		%s
+		',
+		$disable_dropdown ? '' : ' class="da2a_button"',
+		rawurlencode($link_url),
+		rawurlencode($link_name),
+		$_addtoany_counter,
+		$button_innerHTML,
+		$javascript
+	));
+
+}
